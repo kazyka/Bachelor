@@ -1,0 +1,25 @@
+%\ProvidesPackage{landscapePreamble}
+
+
+\usepackage{lscape} %http://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
+\usepackage{pdflscape} %http://texblog.org/2007/11/10/landscape-in-latex/
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{lscape}{%
+    \fancyhf{}
+    \fancyfoot[C]{
+    \begin{textblock}{20}(1,5){\rotatebox{90}{}}\end{textblock}
+    \begin{textblock}{1}(13,10.5){\rotatebox{90}{\thepage}}\end{textblock}}
+    \fancyfoot[C] {
+    \begin{textblock}{1}(18.75,3.5){\rotatebox{90}{\thepage}}\end{textblock}
+    \begin{textblock}{20}(1,13.25){\rotatebox{90}{}}\end{textblock}}
+
+    \setlength{\TPHorizModule}{28pt}
+    \setlength{\TPVertModule}{14pt}
+    \renewcommand{\headrulewidth}{0.0pt}
+    \renewcommand{\footrulewidth}{0.0pt}
+    }
