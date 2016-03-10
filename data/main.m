@@ -55,3 +55,8 @@ minK = min(left(:,3));
 maxI = max(left(:,1));
 maxJ = max(left(:,2));
 maxK = max(left(:,3));
+
+
+
+%billeder
+imagesc(imfuse(mri(:,:,160),segmentation(:,:,160),'blend'))
