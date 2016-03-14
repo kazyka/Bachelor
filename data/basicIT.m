@@ -1,4 +1,4 @@
-function [left, right, img2D] = basicIT(x)
+function [left, right] = basicIT(x)
 
 load(x);
 
@@ -63,4 +63,7 @@ maxK = max(left(:,3));
 
 
 %billeder
-img2D = imagesc(imfuse(mri(:,:,160),segmentation(:,:,160),'blend'));
+
+%img2D = imagesc(imfuse(mri(:,:,160),segmentation(:,:,160),'blend'));
+
+

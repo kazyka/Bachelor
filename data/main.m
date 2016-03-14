@@ -1,2 +1,2 @@
-[left, right, ~] = basicIT('1.mat');
+[left, right] = basicIT('1.mat');
 
