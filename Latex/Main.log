@@ -1,10 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  3 FEB 2016 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  29 MAR 2016 17:09
 entering extended mode
-**"C:/Users/Baby-/Google Drive/LaTeX/Latex-Skabelon/Thesis/Skabelon til stor Ra
-pport/Main.tex"
-
-("C:/Users/Baby-/Google Drive/LaTeX/Latex-Skabelon/Thesis/Skabelon til stor Rap
-port/Main.tex"
+**"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
+("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
@@ -2118,8 +2115,8 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip104
 \JustifyingParindent=\skip105
 ) (Main.aux (frontpage/titlepage.aux) (abstract/abstract.aux)
-(chapters/Intro/Intro.aux) (chapters/Spg1.aux) (chapters/Spg2.aux)
-(chapters/Spg3.aux) (appendix/logsystem.aux))
+(chapters/Intro/Intro.aux) (chapters/Kap1.aux) (chapters/Kap2.aux)
+(chapters/Kap3.aux) (appendix/logsystem.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -2267,6 +2264,12 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 14.
+
+<pictures/sam1.jpg, id=26, 506.89375pt x 378.41376pt>
+File: pictures/sam1.jpg Graphic file (type jpg)
+ <use pictures/sam1.jpg>
+Package pdftex.def Info: pictures/sam1.jpg used on input line 24.
+(pdftex.def)             Requested size: 166.7306pt x 124.46695pt.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
@@ -2275,12 +2278,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 32.
- [1{C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+[1{C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 \openout6 = `Main.ist'.
 
 
-]) (Main.toc
+ <./pictures/sam1.jpg>]) (Main.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 )
@@ -2446,9 +2450,9 @@ Package babel Info: Redefining danish shorthand "~
 
 
 ]
-\openout2 = `chapters/Spg1.aux'.
+\openout2 = `chapters/Kap1.aux'.
 
- (chapters/Spg1.tex)
+ (chapters/Kap1.tex)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "~
@@ -2462,9 +2466,9 @@ Package babel Info: Redefining danish shorthand "~
 
 
 ]
-\openout2 = `chapters/Spg2.aux'.
+\openout2 = `chapters/Kap2.aux'.
 
- (chapters/Spg2.tex
+ (chapters/Kap2.tex
 Kapitel 2.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
@@ -2511,10 +2515,10 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
  [7]
-\openout2 = `chapters/Spg3.aux'.
+\openout2 = `chapters/Kap3.aux'.
 
 
-(chapters/Spg3.tex
+(chapters/Kap3.tex
 Kapitel 3.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
@@ -2615,8 +2619,8 @@ Package babel Info: Redefining danish shorthand "~
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 (Main.aux (frontpage/titlepage.aux) (abstract/abstract.aux)
-(chapters/Intro/Intro.aux) (chapters/Spg1.aux) (chapters/Spg2.aux)
-(chapters/Spg3.aux) (appendix/logsystem.aux))
+(chapters/Intro/Intro.aux) (chapters/Kap1.aux) (chapters/Kap2.aux)
+(chapters/Kap3.aux) (appendix/logsystem.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 
 
@@ -2806,6 +2810,7 @@ gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
     Main.out
     Main.out
 frontpage/titlepage.tex
+pictures/sam1.jpg
 fmlfutmi.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
     umsa.fd    2013/01/14 v3.01 AMS symbols A
     umsb.fd    2013/01/14 v3.01 AMS symbols B
@@ -2813,10 +2818,10 @@ fmlfutmi.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 abstract/abstract.tex
 chapters/Intro/Intro.tex
   t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
-chapters/Spg1.tex
-chapters/Spg2.tex
+chapters/Kap1.tex
+chapters/Kap2.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
-chapters/Spg3.tex
+chapters/Kap3.tex
     Main.gls
 appendix/logsystem.tex
     Main.ver
@@ -2831,13 +2836,13 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 9F367D23EFA9BFD7783FFA7DB881DEAE;217.
  ) 
 Here is how much of TeX's memory you used:
- 43232 strings out of 493634
- 928899 string characters out of 3141315
+ 43241 strings out of 493634
+ 928957 string characters out of 3141315
  1267013 words of memory out of 3000000
- 45699 multiletter control sequences out of 15000+200000
+ 45704 multiletter control sequences out of 15000+200000
  88961 words of font info for 81 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,18n,85p,10550b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,18n,85p,10528b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
@@ -2845,9 +2850,9 @@ nts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /adobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/u
 topia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucr
 r8a.pfb>
-Output written on Main.pdf (15 pages, 94597 bytes).
+Output written on Main.pdf (15 pages, 143784 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,8 +1,8 @@
 SyncTeX Version:1
-Input:1:C:/Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.tex
+Input:1:C:/Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.tex
 Input:2:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls
 Input:3:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo
-Input:4:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\preamble\mainPreamble.sty
+Input:4:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\preamble\mainPreamble.sty
 Input:5:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\comment\comment.sty
 Input:6:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty
 Input:7:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def
@@ -200,7 +200,7 @@ Input:198:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\vh
 Input:199:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\ltxtable.sty
 Input:200:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty
 Input:201:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\sets.sty
-Input:202:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.hst
+Input:202:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.hst
 Input:203:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty
 Input:204:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex
 Input:205:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex
@@ -245,14 +245,14 @@ Input:243:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\front
 Input:244:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
 Input:245:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty
 Input:246:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty
-Input:247:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.aux
-Input:248:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\frontpage\titlepage.aux
-Input:249:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\abstract\abstract.aux
-Input:250:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Intro\Intro.aux
-Input:251:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg1.aux
-Input:252:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg2.aux
-Input:253:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg3.aux
-Input:254:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\appendix\logsystem.aux
+Input:247:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.aux
+Input:248:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\frontpage\titlepage.aux
+Input:249:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\abstract\abstract.aux
+Input:250:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Intro\Intro.aux
+Input:251:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap1.aux
+Input:252:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap2.aux
+Input:253:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap3.aux
+Input:254:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\appendix\logsystem.aux
 Input:255:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
 Input:256:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
 Input:257:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
@@ -262,16 +262,16 @@ Input:260:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp
 Input:261:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.sty
 Input:262:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 Input:263:C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-Input:264:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.out
-Input:265:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.out
-Input:266:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\frontpage\titlepage.tex
+Input:264:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.out
+Input:265:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.out
+Input:266:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\frontpage\titlepage.tex
 Output:pdf
 Magnification:1000
 Unit:1
 X Offset:0
 Y Offset:0
 Content:
-!25339
+!25031
 {1
 [266,32:4736286,50644703:28501632,45908417,0
 h266,32:4736286,4736286:0,0,0
@@ -352,46 +352,63 @@ x266,14:20990184,17722814
 g266,14:20990184,17722814
 k266,14:33237918,17722814:12247734
 )
-(266,21:5920358,43612921:27317560,737232,20949
-k266,21:17991994,43612921:12071636
-h266,20:17991994,43612921:0,0,0
-x266,20:21166281,43612921
-g266,21:21166281,43612921
-k266,21:33237917,43612921:12071636
+(266,21:5920358,34923724:27317560,737232,20949
+k266,21:17991994,34923724:12071636
+h266,20:17991994,34923724:0,0,0
+x266,20:21166281,34923724
+g266,21:21166281,34923724
+k266,21:33237917,34923724:12071636
 )
-(266,27:5920358,46847935:27317560,647390,213751
-k266,27:15964232,46847935:10043874
-h266,27:15964232,46847935:0,0,0
-x266,27:16640877,46847935
-x266,27:20122248,46847935
-g266,27:20317597,46847935
-x266,27:20620530,46847935
-x266,27:23194043,46847935
-g266,27:23194043,46847935
-k266,27:33237917,46847935:10043874
+(266,25:5920358,45104669:27317560,8157066,0
+k266,25:14115710,45104669:8195352
+h266,24:14115710,45104669:0,0,0
+(266,24:14115710,45104669:10926857,8157066,0
+(266,24:14115710,45104669:10926601,8157086,0
+(266,24:14115710,45104669:10926601,8157086,0
+(266,24:14115710,45104669:0,24799724,0
+(266,24:14115710,45104669:33219789,24799724,0
 )
-(266,28:5920358,48145555:27317560,647390,213751
-k266,28:12524384,48145555:6604026
-h266,28:12524384,48145555:0,0,0
-x266,28:13045316,48145555
-x266,28:13372785,48145555
-x266,28:17913950,48145555
-g266,28:18109299,48145555
-x266,28:18579270,48145555
-x266,28:24596407,48145555
-g266,28:24791756,48145555
-x266,28:26633892,48145555
-g266,28:26633892,48145555
-k266,28:33237918,48145555:6604026
+k266,24:14115711,45104669:-33219788
 )
-(266,30:5920358,49443175:27317560,614360,17458
-k266,30:18403268,49443175:12482910
-h266,29:18403268,49443175:0,0,0
-x266,29:19631043,49443175
-x266,29:20109507,49443175
-x266,29:20755009,49443175
-g266,30:20755009,49443175
-k266,30:33237919,49443175:12482910
+)
+)
+)
+g266,25:25042567,45104669
+k266,25:33237918,45104669:8195351
+)
+(266,27:5920358,46847934:27317560,647390,213751
+k266,27:15964232,46847934:10043874
+h266,27:15964232,46847934:0,0,0
+x266,27:16640877,46847934
+x266,27:20122248,46847934
+g266,27:20317597,46847934
+x266,27:20620530,46847934
+x266,27:23194043,46847934
+g266,27:23194043,46847934
+k266,27:33237917,46847934:10043874
+)
+(266,28:5920358,48145554:27317560,647390,213751
+k266,28:12524384,48145554:6604026
+h266,28:12524384,48145554:0,0,0
+x266,28:13045316,48145554
+x266,28:13372785,48145554
+x266,28:17913950,48145554
+g266,28:18109299,48145554
+x266,28:18579270,48145554
+x266,28:24596407,48145554
+g266,28:24791756,48145554
+x266,28:26633892,48145554
+g266,28:26633892,48145554
+k266,28:33237918,48145554:6604026
+)
+(266,30:5920358,49443174:27317560,614360,17458
+k266,30:18403268,49443174:12482910
+h266,29:18403268,49443174:0,0,0
+x266,29:19631043,49443174
+x266,29:20109507,49443174
+x266,29:20755009,49443174
+g266,30:20755009,49443174
+k266,30:33237919,49443174:12482910
 )
 ]
 (266,32:5920358,50644703:27317560,0,0
@@ -400,10 +417,10 @@ h266,32:5920358,50644703:27317560,0,0
 ]
 ]
 ]
-!3182
+!3620
 }1
-Input:267:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.toc
-!110
+Input:267:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.toc
+!88
 {2
 [1,31:4736286,50644703:28501632,45908417,0
 h1,31:4736286,4736286:0,0,0
@@ -548,10 +565,10 @@ k1,31:33237919,50644703:13562620
 ]
 ]
 ]
-!3414
+!3413
 }2
-Input:268:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.lof
-!110
+Input:268:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.lof
+!88
 {3
 [1,33:4736286,50644703:28501632,45908417,0
 h1,33:4736286,4736286:0,0,0
@@ -618,10 +635,10 @@ k1,33:33237918,50644703:13466459
 ]
 ]
 ]
-!1422
+!1421
 }3
-Input:269:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.lot
-!110
+Input:269:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.lot
+!88
 {4
 [1,35:4736286,50644703:28501632,45908417,0
 h1,35:4736286,4736286:0,0,0
@@ -687,14 +704,14 @@ k1,35:33237917,50644703:13370298
 ]
 ]
 ]
-!1397
+!1396
 }4
-Input:270:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.lox
+Input:270:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.lox
 Input:271:C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd
 Input:272:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 Input:273:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 Input:274:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd
-!413
+!391
 {5
 [1,39:4736286,50644703:28501632,45908417,0
 h1,39:4736286,4736286:0,0,0
@@ -1600,8 +1617,8 @@ k1,39:33237918,50644703:13483681
 ]
 !20906
 }5
-Input:275:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\abstract\abstract.tex
-!124
+Input:275:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\abstract\abstract.tex
+!102
 {6
 [1,39:4736286,50644703:28501632,45908417,0
 h1,39:4736286,4736286:0,0,0
@@ -1693,9 +1710,9 @@ k1,39:33237918,50644703:13483681
 ]
 !1959
 }6
-Input:276:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Intro\Intro.tex
+Input:276:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Intro\Intro.tex
 Input:277:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd
-!193
+!171
 {7
 [1,40:4736286,50644703:28501632,45908417,3587
 h1,40:4736286,4736286:0,0,0
@@ -2001,8 +2018,8 @@ k1,40:33237918,50644703:13483681
 ]
 !7525
 }7
-Input:278:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg1.tex
-!119
+Input:278:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap1.tex
+!97
 {8
 [1,41:4736286,50644703:28501632,45908417,0
 h1,41:4736286,4736286:0,0,0
@@ -2067,10 +2084,10 @@ k1,41:33237918,50644703:13483681
 ]
 ]
 ]
-!1380
+!1379
 }8
-Input:279:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg2.tex
-!119
+Input:279:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap2.tex
+!97
 {9
 [279,5:4736286,50644703:28501632,45908417,3587
 h279,5:4736286,4736286:0,0,0
@@ -2144,7 +2161,7 @@ k279,5:33237918,50644703:13483681
 ]
 ]
 ]
-!1676
+!1675
 }9
 Input:280:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd
 !79
@@ -2509,8 +2526,8 @@ g1,42:33237918,51509236
 ]
 !4166
 }11
-Input:281:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg3.tex
-!120
+Input:281:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap3.tex
+!98
 {12
 [1,43:4736286,51509236:28501632,46772950,3587
 h1,43:4736286,4736286:0,0,0
@@ -2584,10 +2601,10 @@ k1,43:33237918,51509236:13483681
 ]
 ]
 ]
-!1643
+!1642
 }12
-Input:282:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.gls
-!111
+Input:282:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.gls
+!89
 {13
 [1,50:4736286,51509236:28501632,46772950,3587
 h1,50:4736286,4736286:0,0,0
@@ -2655,13 +2672,13 @@ k1,50:33237918,51509236:13483681
 ]
 ]
 ]
-!1468
+!1467
 }13
-Input:283:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\appendix\logsystem.tex
-Input:284:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.ver
-Input:285:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.ver
-Input:286:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.ver
-!428
+Input:283:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\appendix\logsystem.tex
+Input:284:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.ver
+Input:285:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.ver
+Input:286:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.ver
+!340
 {14
 [1,51:4736286,51509236:28501632,46772950,3587
 h1,51:4736286,4736286:0,0,0
@@ -2961,8 +2978,8 @@ k1,51:33237918,51509236:13308582
 ]
 !8026
 }14
-Input:287:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.bbl
-!111
+Input:287:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.bbl
+!89
 {15
 [1,61:4736286,51509236:28501632,46772950,0
 h1,61:4736286,4736286:0,0,0
@@ -3027,19 +3044,19 @@ k1,61:33237918,51509236:13308582
 ]
 ]
 ]
-!1381
+!1380
 }15
-Input:288:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.ind
-Input:289:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\Main.aux
-Input:290:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\frontpage\titlepage.aux
-Input:291:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\abstract\abstract.aux
-Input:292:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Intro\Intro.aux
-Input:293:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg1.aux
-Input:294:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg2.aux
-Input:295:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\chapters\Spg3.aux
-Input:296:C:\Users\Baby-\Google Drive\LaTeX\Latex-Skabelon\Thesis\Skabelon til stor Rapport\appendix\logsystem.aux
-!1004
+Input:288:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.ind
+Input:289:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\Main.aux
+Input:290:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\frontpage\titlepage.aux
+Input:291:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\abstract\abstract.aux
+Input:292:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Intro\Intro.aux
+Input:293:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap1.aux
+Input:294:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap2.aux
+Input:295:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Kap3.aux
+Input:296:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\appendix\logsystem.aux
+!806
 Postamble:
-Count:2165
-!28
+Count:2182
+!27
 Post scriptum:

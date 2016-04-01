@@ -23,3 +23,10 @@ end
 warning('on','all')
 glcm(glcm == 0) = NaN;
 imgwhatevs = surf(glcm);
+
+%
+%Timeplan
+%3D Image Texture Analysis
+%Machine Learning
+%Machine Learning 3D
+%Forskel i slicing på 2D - Kun hvis tid
