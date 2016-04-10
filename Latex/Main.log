@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  29 MAR 2016 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 APR 2016 21:53
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2094,10 +2094,12 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )))
 \c@thm=\count296
 )
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.st
+y"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+ ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip92
@@ -2114,56 +2116,58 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedLeftParindent=\skip103
 \RaggedRightParindent=\skip104
 \JustifyingParindent=\skip105
-) (Main.aux (frontpage/titlepage.aux) (abstract/abstract.aux)
-(chapters/Intro/Intro.aux) (chapters/Kap1.aux) (chapters/Kap2.aux)
-(chapters/Kap3.aux) (appendix/logsystem.aux))
+) (Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
+(appendix/logsystem.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 8.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 20.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 20.
+
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
 "
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 8.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 20.
+
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
 "
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 8.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 20.
+
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
 "
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 8.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 20.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -2232,9 +2236,9 @@ Package caption Info: End \AtBeginDocument code.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 8.
+(lastpage)             ! on input line 20.
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring ON on input line 8.
+Package hyperref Info: Link coloring ON on input line 20.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -2243,9 +2247,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (Main.out) (Main.out)
 \@outlinefile=\write9
@@ -2256,54 +2260,106 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.13} (current compat level: 1.12).
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 8.
-\openout2 = `frontpage/titlepage.aux'.
+LaTeX Info: Redefining \selectfont on input line 20.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 47
+.
 
- (frontpage/titlepage.tex
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 14.
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.f
+d"
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 47.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 47.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 47.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 47.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 47.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
-<pictures/sam1.jpg, id=26, 506.89375pt x 378.41376pt>
-File: pictures/sam1.jpg Graphic file (type jpg)
- <use pictures/sam1.jpg>
-Package pdftex.def Info: pictures/sam1.jpg used on input line 24.
-(pdftex.def)             Requested size: 166.7306pt x 124.46695pt.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 47.
+
+<include/natbio-farve.pdf, id=54, 597.23125pt x 845.1575pt>
+File: include/natbio-farve.pdf Graphic file (type pdf)
+
+<use include/natbio-farve.pdf>
+Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
+(pdftex.def)             Requested size: 702.625pt x 602.25pt.
+File: include/natbio-farve.pdf Graphic file (type pdf)
+ <use include/natbio-farve.pdf>
+Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
+(pdftex.def)             Requested size: 702.625pt x 1003.75pt.
+
+<include/nat-en.pdf, id=57, 597.23125pt x 845.1575pt>
+File: include/nat-en.pdf Graphic file (type pdf)
+ <use include/nat-en.pdf>
+Package pdftex.def Info: include/nat-en.pdf used on input line 47.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 [1{C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 \openout6 = `Main.ist'.
 
 
- <./pictures/sam1.jpg>]) (Main.toc
+ <./include/natbio-farve.pdf> <./include/nat-en.pdf>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 53.
+ (Main.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 3.
 )
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 55.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \listoffigures
+l.55 \listoffigures
                     [1
 
 
@@ -2312,13 +2368,13 @@ l.31 \listoffigures
 \openout11 = `Main.lof'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 57.
  [2
 
 ] (Main.lot)
@@ -2326,60 +2382,27 @@ Package babel Info: Redefining danish shorthand "~
 \openout12 = `Main.lot'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 59.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 59.
  [3
 
-] (Main.lox
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 1.
-
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.f
-d"
-File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
-)
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 1.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+] (Main.lox)
 \tf@lox=\write13
 \openout13 = `Main.lox'.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
  [1
 
 ]
@@ -2388,13 +2411,13 @@ Package babel Info: Redefining danish shorthand "~
 
 (abstract/abstract.tex)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 39.
+(babel)             in language  on input line 63.
  [2
 
 ]
@@ -2408,149 +2431,92 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 9.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 5.
-
-
-FiXme Fatal Error: 'her er noget galt' on input line 5.
-
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 7.
-FiXme Note: 'en note' on input line 7.
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 9.
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-FiXme Error: 'en fejl' on input line 11.
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 15.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 23.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 25.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 29.
 )
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 64.
  [3
-
-
-
-]
-\openout2 = `chapters/Kap1.aux'.
-
- (chapters/Kap1.tex)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 41.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 41.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 41.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 41.
- [4
-
-
-
-]
-\openout2 = `chapters/Kap2.aux'.
-
- (chapters/Kap2.tex
-Kapitel 2.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 5.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 5.
-[5
 
 
 
 ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.19173pt.
+ Make it at least 24.80847pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 8.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 8.
- [6])
+(babel)             in language  on input line 64.
+[4] (Main.gls)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 42.
- [7]
-\openout2 = `chapters/Kap3.aux'.
-
-
-(chapters/Kap3.tex
-Kapitel 3.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 43.
- [8
-
-
-
-] (Main.gls)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
- [9
+(babel)             in language  on input line 74.
+ [5
 
 
 
@@ -2566,36 +2532,32 @@ Package babel Info: Redefining danish shorthand "~
 
  (Main.ver) (Main.ver) (Main.ver))
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 51.
+(babel)             in language  on input line 75.
 
-[10
+[6
 
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 81.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 57.
- (Main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
+(babel)             in language  on input line 81.
+ (Main.bbl)
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 61.
- [11
+(babel)             in language  on input line 85.
+ [7
 
 
 
@@ -2604,24 +2566,23 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 1,
-(FiXme)        Number of warnings: 1,
-(FiXme)        Number of errors: 1,
-(FiXme)        Number of fatal errors: 1,
-(FiXme)        Total: 4.
+FiXme Summary: Number of notes: 0,
+(FiXme)        Number of warnings: 0,
+(FiXme)        Number of errors: 0,
+(FiXme)        Number of fatal errors: 0,
+(FiXme)        Total: 0.
 
 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 88.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
-(Main.aux (frontpage/titlepage.aux) (abstract/abstract.aux)
-(chapters/Intro/Intro.aux) (chapters/Kap1.aux) (chapters/Kap2.aux)
-(chapters/Kap3.aux) (appendix/logsystem.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+(babel)             in language  on input line 88.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+(Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
+(appendix/logsystem.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 
 
  *File List*
@@ -2796,6 +2757,7 @@ tabularx.sty    2014/10/28 v2.10 `tabularx' package (DPC)
     sets.sty    
     Main.hst
 pgfplots.sty    2016/01/06 v1.13 Data Visualization (1.13)
+ eso-pic.sty    2015/07/21 v2.0g eso-pic (RN)
 ragged2e.sty    2009/05/21 v2.1 ragged2e Package (MS)
 everysel.sty    2011/10/28 v1.2 EverySelectfont Package (MS)
  fmlfutm.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futm.
@@ -2809,19 +2771,16 @@ ltcaption.sty    2013/06/09 v1.4-94 longtable captions (AR)
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
     Main.out
     Main.out
-frontpage/titlepage.tex
-pictures/sam1.jpg
 fmlfutmi.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
     umsa.fd    2013/01/14 v3.01 AMS symbols A
     umsb.fd    2013/01/14 v3.01 AMS symbols B
    ursfs.fd    1998/03/24 rsfs font definition file (jk)
+include/natbio-farve.pdf
+include/natbio-farve.pdf
+include/nat-en.pdf
 abstract/abstract.tex
 chapters/Intro/Intro.tex
-  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
-chapters/Kap1.tex
-chapters/Kap2.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
-chapters/Kap3.tex
     Main.gls
 appendix/logsystem.tex
     Main.ver
@@ -2831,28 +2790,26 @@ appendix/logsystem.tex
     Main.ind
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9F367D23EFA9BFD7783FFA7DB881DEAE;217.
+(rerunfilecheck)             Checksum: 67F2CD591D0086DBACCA7A7947BC72B7;788.
  ) 
 Here is how much of TeX's memory you used:
- 43241 strings out of 493634
- 928957 string characters out of 3141315
- 1267013 words of memory out of 3000000
- 45704 multiletter control sequences out of 15000+200000
- 88961 words of font info for 81 fonts, out of 3000000 for 9000
+ 43319 strings out of 493634
+ 930082 string characters out of 3141315
+ 1268005 words of memory out of 3000000
+ 45805 multiletter control sequences out of 15000+200000
+ 107271 words of font info for 108 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,18n,85p,10528b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/u
-topia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucr
-r8a.pfb>
-Output written on Main.pdf (15 pages, 143784 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Main.pdf (11 pages, 114360 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

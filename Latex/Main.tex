@@ -4,6 +4,18 @@
 \listfiles
 \usepackage{preamble/mainPreamble}
 
+\usepackage{eso-pic} % \AddToShipoutPicture
+
+
+\author{
+  \Large{
+    Mathias Bjørn Jørgensen \& Mirza Hasanbasic
+  }\\
+}
+\title{
+  \huge{MR Image texture analysis applied to the diagnosis of Alzheimer's Disease\\}
+}
+
 
 \begin{document}
 
@@ -23,7 +35,19 @@
 
 \setcounter{page}{0}
 \renewcommand\thepage{\roman{page}}
-\include{frontpage/titlepage}
+%\include{frontpage/titlepage}
+
+
+\AddToShipoutPicture*{\put(0,0){\includegraphics*[viewport=0 0 700 600]{include/natbio-farve}}}
+\AddToShipoutPicture*{\put(0,602){\includegraphics*[viewport=0 600 700 1600]{include/natbio-farve}}}
+
+\AddToShipoutPicture*{\put(0,0){\includegraphics*{include/nat-en}}}
+
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\clearpage\newpage
+\thispagestyle{plain}
 
 
 \tableofcontents
@@ -38,9 +62,9 @@
 \renewcommand\thepage{\arabic{page}}
 \include{abstract/abstract}
 \include{chapters/Intro/Intro}
-\include{chapters/Kap1}
-\include{chapters/Kap2}
-\include{chapters/Kap3}
+%\include{chapters/Kap1}
+%\include{chapters/Kap2}
+%\include{chapters/Kap3}
 
 
 \clearpage
