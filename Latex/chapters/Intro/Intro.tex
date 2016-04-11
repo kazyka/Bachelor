@@ -6,7 +6,7 @@ We will be using two different texture analysis on the data, XX and the gray lev
 We will calculate the GLCM using two different methods, one in 2D that that runs along the z-axis with angel 90 and distance 1 (Change depending on the results, and more research might include multiple angles).\cite{Castellano}
 The other method is calles voxel-based GLCM in 3D\fxnote{citation} space (VGLCM-TOP-3D), and is from the paper Voxel-Based Texture Analysis of the Brain (indsæt biblografi).
 We want to see if there is a difference between diagnostising a AD succesfully, by calculating the co-occurence matrix in 3D compared to 2D, and how well the GLCM methods work
-compared to XX. To do that we will use three different machine learning methods, k-NN, a-NN and Gaussian mixture, based on each of the image texture models.
+compared to XX. To do that we will use three different machine learning methods, k-NN and Gaussian mixture, based on each of the image texture models.
 
 We will also try to replicate the analysis from \cite{MRfreeborough}
 
@@ -27,7 +27,7 @@ About 70\% of the risk is believed to be genetic, where other factors include he
 Co occurence matrix is defined over an image to be the distribution values at a given offset.\cite{Bharati} With the co occurence matrix, we have matrix \textbf{C} defined over an $n \times m$ image, with $\Delta x, \Delta y$ being the parameterized offset, so
 
 \[
-C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m 
+C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \begin{dcases}
   1, \quad \text{if } I(p,q)=i \text{ and } I(p+\Delta x, q+ \Delta y) =j \\
   0, \quad \text{otherwise}
