@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
 A level-1 auxiliary file: abstract/abstract.aux
 A level-1 auxiliary file: chapters/Intro/Intro.aux
-A level-1 auxiliary file: appendix/logsystem.aux
 The style file: plain.bst
 Database file #1: mainBib.bib
+Too many commas in name 1 of "G. Castellano, L. Bonilha, L.M. Li, F. Cendes" for entry Castellano
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "G. Castellano, L. Bonilha, L.M. Li, F. Cendes" for entry Castellano
+while executing---line 1090 of file plain.bst
+(There were 2 error messages)

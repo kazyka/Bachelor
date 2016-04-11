@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 APR 2016 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  11 APR 2016 19:52
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -586,15 +586,17 @@ Package: babel 2016/01/08 3.9n The Babel package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-danish\danis
-h.ldf"
-Language: danish 2009/09/19 v1.3r Danish support from the babel system
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/01/08 3.9n Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-Package babel Info: Making " an active character on input line 82.
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
@@ -1860,9 +1862,9 @@ Package: translator 2010/06/12 ver 1.10
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transl
 ator\translator-language-mappings.tex"))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-danish\
-glossaries-danish.ldf"
-File: glossaries-danish.ldf 2014/11/23 v1.0
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-english
+\glossaries-english.ldf"
+File: glossaries-english.ldf 2014/11/23 v1.0
 )
 \gls@level=\count279
 \@gls@tmpb=\toks54
@@ -2097,27 +2099,62 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.st
 y"
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+)
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtool
+s.sty"
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count297
+\calc@Bcount=\count298
+\calc@Adimen=\dimen313
+\calc@Bdimen=\dimen314
+\calc@Askip=\skip92
+\calc@Bskip=\skip93
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count299
+\calc@Cskip=\skip94
+)
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
+sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count300
+\l_MT_multwidth_dim=\dimen315
+\origjot=\skip95
+\l_MT_shortvdotswithinadjustabove_dim=\dimen316
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen317
+\l_MT_above_intertext_sep=\dimen318
+\l_MT_below_intertext_sep=\dimen319
+\l_MT_above_shortintertext_sep=\dimen320
+\l_MT_below_shortintertext_sep=\dimen321
+)
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
- ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip92
-\RaggedLeftLeftskip=\skip93
-\RaggedRightLeftskip=\skip94
-\CenteringRightskip=\skip95
-\RaggedLeftRightskip=\skip96
-\RaggedRightRightskip=\skip97
-\CenteringParfillskip=\skip98
-\RaggedLeftParfillskip=\skip99
-\RaggedRightParfillskip=\skip100
-\JustifyingParfillskip=\skip101
-\CenteringParindent=\skip102
-\RaggedLeftParindent=\skip103
-\RaggedRightParindent=\skip104
-\JustifyingParindent=\skip105
-) (Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
-(appendix/logsystem.aux))
+\CenteringLeftskip=\skip96
+\RaggedLeftLeftskip=\skip97
+\RaggedRightLeftskip=\skip98
+\CenteringRightskip=\skip99
+\RaggedLeftRightskip=\skip100
+\RaggedRightRightskip=\skip101
+\CenteringParfillskip=\skip102
+\RaggedLeftParfillskip=\skip103
+\RaggedRightParfillskip=\skip104
+\JustifyingParfillskip=\skip105
+\CenteringParindent=\skip106
+\RaggedLeftParindent=\skip107
+\RaggedRightParindent=\skip108
+\JustifyingParindent=\skip109
+) (Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -2172,21 +2209,21 @@ LaTeX Font Info:    Try loading font information for T1+futs on input line 20.
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@lstlisting=\count297
+\c@lstlisting=\count301
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen313
+\scratchcounter=\count302
+\scratchdimen=\dimen322
 \scratchbox=\box90
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\nofMPsegments=\count303
+\nofMParguments=\count304
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen314
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen323
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks66
 ) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
@@ -2245,7 +2282,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count308
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
@@ -2294,16 +2331,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 47.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 47.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 47.
-
-<include/natbio-farve.pdf, id=54, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=41, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2314,7 +2342,7 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=57, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=44, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
  <use include/nat-en.pdf>
 Package pdftex.def Info: include/nat-en.pdf used on input line 47.
@@ -2347,14 +2375,6 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write10
 \openout10 = `Main.toc'.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 55.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 55.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 55.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -2367,198 +2387,71 @@ l.55 \listoffigures
 \tf@lof=\write11
 \openout11 = `Main.lof'.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 57.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 57.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 57.
  [2
 
 ] (Main.lot)
 \tf@lot=\write12
 \openout12 = `Main.lot'.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 59.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 59.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 59.
  [3
 
 ] (Main.lox)
 \tf@lox=\write13
 \openout13 = `Main.lox'.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 63.
  [1
 
 ]
 \openout2 = `abstract/abstract.aux'.
 
 
-(abstract/abstract.tex)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 63.
- [2
+(abstract/abstract.tex) [2
 
 ]
 \openout2 = `chapters/Intro/Intro.aux'.
 
  (chapters/Intro/Intro.tex
-Kapitel 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
+Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 9.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 11.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 11.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 19.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 19.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 19.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 21.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 23.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 23.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 25.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 29.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 29.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 7.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
+Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
+line 7.
+FiXme Note: 'citation' on input line 7.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 13.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 13.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
  [3
 
 
 
 ]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 25.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 24.80847pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
-[4] (Main.gls)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 74.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 74.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 74.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 74.
- [5
+[4] (Main.gls) [5
 
 
 
 
-]
-\openout2 = `appendix/logsystem.aux'.
-
- (appendix/logsystem.tex
-\openout8 = `Main.ver'.
-
-\vh@hstfile=\write14
-\openout14 = `Main.hst'.
-
- (Main.ver) (Main.ver) (Main.ver))
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 75.
-
-[6
-
-
-]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
- (Main.bbl)
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 85.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 85.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 85.
- [7
-
+] (Main.bbl) [6
 
 
 ]
@@ -2566,22 +2459,17 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 0,
+FiXme Summary: Number of notes: 1,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
-(FiXme)        Total: 0.
+(FiXme)        Total: 1.
 
 
 AED: lastpage setting LastPage
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 88.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
-(Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
-(appendix/logsystem.aux))
+(Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
 
 
@@ -2607,7 +2495,7 @@ textcomp.sty    2005/09/27 v1.99g Standard LaTeX package
 fourier-orns.sty    2004/01/30 1.1 fourier-ornaments package
    babel.sty    2016/01/08 3.9n The Babel package
  bblopts.cfg    2006/07/31 v1.0 MiKTeX 'babel' configuration
-  danish.ldf    2009/09/19 v1.3r Danish support from the babel system
+ english.ldf    2012/08/20 v3.3p English support from the babel system
  amsmath.sty    2013/01/14 v2.14 AMS math features
  amstext.sty    2000/06/29 v2.01
   amsgen.sty    1999/11/30 v2.0
@@ -2743,7 +2631,7 @@ tracklang.sty    2015/03/23 v1.2 (NLCT) Track Languages
 tracklang.tex
 translator.sty    2010/06/12 ver 1.10
 translator-language-mappings.tex
-glossaries-danish.ldf    2014/11/23 v1.0
+glossaries-english.ldf    2014/11/23 v1.0
 glossary-hypernav.sty    2016/01/24 v4.21 (NLCT)
 glossary-list.sty    2016/01/24 v4.21 (NLCT)
 glossary-long.sty    2016/01/24 v4.21 (NLCT)
@@ -2758,6 +2646,9 @@ tabularx.sty    2014/10/28 v2.10 `tabularx' package (DPC)
     Main.hst
 pgfplots.sty    2016/01/06 v1.13 Data Visualization (1.13)
  eso-pic.sty    2015/07/21 v2.0g eso-pic (RN)
+mathtools.sty    2015/11/12 v1.18 mathematical typesetting tools
+    calc.sty    2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+ mhsetup.sty    2010/01/21 v1.2a programming setup (MH)
 ragged2e.sty    2009/05/21 v2.1 ragged2e Package (MS)
 everysel.sty    2011/10/28 v1.2 EverySelectfont Package (MS)
  fmlfutm.fd    2004/10/30 Fontinst v1.926 font definitions for FML/futm.
@@ -2781,35 +2672,37 @@ include/nat-en.pdf
 abstract/abstract.tex
 chapters/Intro/Intro.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
+  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
     Main.gls
-appendix/logsystem.tex
-    Main.ver
-    Main.ver
-    Main.ver
     Main.bbl
     Main.ind
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 67F2CD591D0086DBACCA7A7947BC72B7;788.
+(rerunfilecheck)             Checksum: CDED20AA70632B7BCF66A151D71E2EE3;571.
  ) 
 Here is how much of TeX's memory you used:
- 43319 strings out of 493634
- 930082 string characters out of 3141315
- 1268005 words of memory out of 3000000
- 45805 multiletter control sequences out of 15000+200000
- 107271 words of font info for 108 fonts, out of 3000000 for 9000
+ 43864 strings out of 493634
+ 939988 string characters out of 3141315
+ 1268643 words of memory out of 3000000
+ 46331 multiletter control sequences out of 15000+200000
+ 121253 words of font info for 132 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,18n,85p,10528b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (11 pages, 114360 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
+aby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pf
+b><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/
+fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss9.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Main.pdf (10 pages, 148523 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,4 +6,20 @@ Peter A. Freeborough \& Nick~C. Fox.
   alzheimer's disease.
 \newblock {\em IEEE}, 17(3):5, June 1998.
 
+\bibitem{Castellano}
+L.M. Li F.~Cendes G.~Castellano, L.~Bonilha.
+\newblock Texture analysis of medical images.
+\newblock {\em Neuroimage Laboratory}, page~9, April 2004.
+
+\bibitem{Magnetic}
+Stephane Lehericy \& Malgorzata Marjanska \& Lilia Mesrob \& Marie Sarazin
+  \&~Serge Kinkingnehun.
+\newblock Magnetic resonance imaging of alzheimer's disease.
+\newblock {\em Springer Verlag}, 17(3):5, June 2005.
+
+\bibitem{Bharati}
+Image texture~analysis: methods and comparisons.
+\newblock Manish h. bharati, j. jay liu, john f. macgregor*.
+\newblock {\em Department of Chemical Engineering}, page~15, February 2004.
+
 \end{thebibliography}
