@@ -2448,16 +2448,6 @@ x273,7:20866185,8561451
 g273,8:20866185,8561451
 k273,8:33237917,8561451:12371732
 )
-(1,63:5920358,9987520:27317560,492286,162540
-h273,11:5920358,9987520:0,0,0
-x273,11:7190541,9987520
-g273,11:7339087,9987520
-x273,11:8609270,9987520
-g273,11:8757816,9987520
-x273,11:10027999,9987520
-k1,63:33237919,9987520:23209920
-g1,63:33237919,9987520
-)
 ]
 (1,63:5920358,50644703:27317560,442053,0
 (1,63:5920358,50644703:27317560,442053,0
@@ -2489,7 +2479,7 @@ g1,63:27317560,0
 ]
 )
 ]
-!2970
+!2717
 }6
 Input:274:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Intro\Intro.tex
 Input:275:C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd
@@ -5183,6 +5173,6 @@ Input:281:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\abstract\a
 Input:282:C:\Users\Baby-\Google Drive\KU\Datalogi\2år\Bachelor\Latex\chapters\Intro\Intro.aux
 !356
 Postamble:
-Count:3340
+Count:3333
 !27
 Post scriptum:
