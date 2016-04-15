@@ -1,22 +1,51 @@
-load('2.mat');
-grayScaleLevels = 256;
-test1 = LeftHippoMatrix('2.mat');
-[angle0x, angle45x, angle90x, angle135x] = glcm2Dx(test1,1);
-[angle0y, angle45y, angle90y, angle135y] = glcm2Dy(test1,1);
-[angle0z, angle45z, angle90z, angle135z] = glcm2Dz(test1,1);
-GLCM2dDist1 = cell(12,1);
-GLCM2dDist1{1} = angle0x;
-GLCM2dDist1{2} = angle45x;
-GLCM2dDist1{3} = angle90x;
-GLCM2dDist1{4} = angle135x;
-GLCM2dDist1{5} = angle0y;
-GLCM2dDist1{6} = angle45y;
-GLCM2dDist1{7} = angle90y;
-GLCM2dDist1{8} = angle135y;
-GLCM2dDist1{9} = angle0z;
-GLCM2dDist1{10} = angle45z;
-GLCM2dDist1{11} = angle90z;
-GLCM2dDist1{12} = angle135z;
+AD1 = GLCM2D('1.mat',10);
+AD1Derivations = cell(120, 1);
+for i=1:120
+    AD1Derivations{i} =  derivations(AD1.GLCM2dDist{i}, 256);
+end
+
+
+
+%Distance 1 til 10 for X 0 til 135 grader
+A = zeros(40,1);
+for i=1:10
+    A(i)    = AD1Derivations{1+(12*(i-1))}.my_asm;
+    A(10+i) = AD1Derivations{2+(12*(i-1))}.my_asm;
+    A(20+i) = AD1Derivations{3+(12*(i-1))}.my_asm;
+    A(30+i) = AD1Derivations{4+(12*(i-1))}.my_asm;
+end
+subplot(3,1,1)
+plot(A);
+title('X step 1-10 degree 0-135')
+
+
+%Distance 1 til 10 for Y 0 til 135 grader
+A = zeros(40,1);
+for i=1:10
+    A(i)    = AD1Derivations{5+(12*(i-1))}.my_asm;
+    A(10+i) = AD1Derivations{6+(12*(i-1))}.my_asm;
+    A(20+i) = AD1Derivations{7+(12*(i-1))}.my_asm;
+    A(30+i) = AD1Derivations{8+(12*(i-1))}.my_asm;
+end
+subplot(3,1,2)
+plot(A);
+title('y step 1-10 degree 0-135')
+
+A = zeros(40,1);
+for i=1:10
+    A(i)    = AD1Derivations{9+(12*(i-1))}.my_asm;
+    A(10+i) = AD1Derivations{10+(12*(i-1))}.my_asm;
+    A(20+i) = AD1Derivations{11+(12*(i-1))}.my_asm;
+    A(30+i) = AD1Derivations{12+(12*(i-1))}.my_asm;
+end
+subplot(3,1,3)
+plot(A);
+title('z step 1-10 degree 0-135')
+
+
+
+
+
 
 %figure(1);
 % angle0(angle0 == 0) = NaN;
@@ -58,70 +87,5 @@ GLCM2dDist1{12} = angle135z;
 
 
 %Finder værdier
-
-% i = 1;
-% j = 1;
-% Ci_y = 0;
-% for i = 1:grayScaleLevels
-%     Ci_y = Ci_y + glcm(i, j);
-% end
-% 
-% i = 1;
-% j = 1;
-% Ci_x = 0;
-% for j = 1:grayScaleLevels
-%     Ci_x = Ci_x + glcm(i, j);
-% end
-% 
-% 
-% Cxy = sum(nansum(glcm));
-% 
-% i = 1;
-% j = 1;
-% energy = 0;
-% for  i = 1:grayScaleLevels
-%     for j = 1:grayScaleLevels
-%         energy = energy + glcm(i, j)^2;
-%     end
-% end
-% 
-% correlation = corr(corr(glcm));
-% 
-% % i = 1;
-% % j = 1;
-% % entropy = 0;
-% % for  i = 1:grayScaleLevels
-% %     for j = 1:6
-% %         entropy = entropy + glcm(i, j) * log(glcm(i,j));
-% %     end
-% % end
-% % entropy = -entropy;
-% 
-% entropy = -sum(glcm(find(glcm)) .* log(glcm(find(glcm))));
-% 
-% i = 1;
-% j = 1;
-% contrast = 0;
-% for  i = 1:grayScaleLevels
-%     for j = 1:grayScaleLevels
-%         contrast = contrast +(glcm(i)-glcm(j))^2*glcm(i, j);
-%     end
-% end
-% 
-% i = 1;
-% j = 1;
-% variance = 0;
-% for  i = 1:grayScaleLevels
-%     for j = 1:grayScaleLevels
-%         variance = (glcm(i) - mean(mean(glcm)))^2* glcm(i, j);
-%     end
-% end
-
-
-
-
-
-
-
 
 
