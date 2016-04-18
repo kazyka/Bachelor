@@ -17,6 +17,7 @@ function [out] = derivations(my_glcm, gsl)
 %
 
 
+tmp = zeros(14,1);
 
 
 Ci_y = sum(my_glcm);
@@ -24,14 +25,18 @@ Ci_y = sum(my_glcm);
 Ci_x = sum(my_glcm,2);
 
 %Angular second moment
-i = 1;
-j = 1;
-out.my_asm = 0;
-for  i = 1:gsl
-     for j = 1:gsl
-         out.my_asm = out.my_asm + my_glcm(i, j)^2;
-     end
-end
+% i = 1;
+% j = 1;
+% out.my_asm = 0;
+% for  i = 1:gsl
+%      for j = 1:gsl
+%          out.my_asm = out.my_asm + my_glcm(i, j)^2;
+%      end
+% end
+
+out.my_asm = sum(sum(my_glcm.^2));
+
+% tmp(1,1) = sum(sum(my_glcm.^2));
 
 %Contrast
 %Can ignore n = 0 as 0^2 = 0 so 0*C_x-y = 0;
@@ -42,6 +47,9 @@ out.my_con = 0;
 for n = 1: (gsl - 1)
     out.my_con = out.my_con + n^2*C_xminusy(my_glcm,n);
 end
+
+
+
 
 %Correlation
 i = 1;
@@ -57,6 +65,8 @@ for i = 1:gsl
     end
 end
 out.my_corr = out.my_corr/(std_x*std_y);
+
+
 
 %Variance
 out.my_var = var(var(my_glcm));
