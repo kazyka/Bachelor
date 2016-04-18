@@ -1,4 +1,4 @@
-for i = 1:4
+for i = 1:1
     % get allfiles matching the pattern 'dataset(i)_*'
     files = dir(sprintf('%d.mat',i));
     for j = 1:length(files)
@@ -21,6 +21,25 @@ for i = 1:4
         
     end
 end
+
+
+load('datafile1.mat')
+
+%Plotter for data og variablen
+plottermachine(data_Derivations, 'my_asm');
+
+%Plotter alle
+plottingall(data_Derivations);
+
+
+
+
+
+
+
+
+
+
 
 
 

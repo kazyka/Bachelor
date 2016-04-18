@@ -12,19 +12,19 @@ end
 subplot(3,4,1)
 plot(A(1:10,1), '.');
 title({'X distance 1-10', 'degree 0'})
-axis([0 10 0 2.5*10^6])
+axis([0 10 0 max(A)])
 
 subplot(3,4,2)
 plot(A(11:20,1), '.');
-axis([0 10 0 2.5*10^6])
+axis([0 10 0 max(A)])
 
 subplot(3,4,3)
 plot(A(21:30,1), '.');
-axis([0 10 0 2.5*10^6])
+axis([0 10 0 max(A)])
 
 subplot(3,4,4)
 plot(A(31:40,1), '.');
-axis([0 10 0 2.5*10^6])
+axis([0 10 0 max(A)])
 
 
 
@@ -39,19 +39,19 @@ end
 subplot(3,4,5)
 plot(A(1:10,1), '.');
 title({'X distance 1-10', 'degree 0'})
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,6)
 plot(A(11:20,1), '.');
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,7)
 plot(A(21:30,1), '.');
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,8)
 plot(A(31:40,1), '.');
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 
 %Distance 1 til 10 for Z 0 til 135 grader
@@ -65,21 +65,21 @@ end
 subplot(3,4,9)
 plot(A(1:10,1), '.');
 title({'Z distance 1-10', 'degree 0'})
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,10)
 plot(A(11:20,1), '.');
 title({'Z distance 1-10', 'degree 0'})
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,11)
 plot(A(21:30,1), '.');
 title({'Z distance 1-10', 'degree 0'})
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 subplot(3,4,12)
 plot(A(31:40,1), '.');
 title({'Z distance 1-10', 'degree 0'})
-axis([0 10 0 5*10^3])
+axis([0 10 0 max(A)])
 
 figure;
