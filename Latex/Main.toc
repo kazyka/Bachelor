@@ -8,4 +8,4 @@
 \contentsline {subsection}{\numberline {1.4.1}K-nearest neighbors algorithm}{4}{subsection.1.4.1}
 \contentsline {chapter}{Appendices}{5}{section*.5}
 \contentsline {chapter}{\numberline {A}Co occurence matrix derivation features}{6}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{7}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{7}{equation.a.A.0.5}

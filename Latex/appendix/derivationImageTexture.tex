@@ -12,3 +12,18 @@ C_{x+y}(k) = \underset{i+j=k}{\sum_{i=1}^{N}\sum_{j=1}^{N}}, \quad \text{k = 2, 
 \[
 C_{x+y}(k) = \underset{|i-j|=k}{\sum_{i=1}^{N}\sum_{j=1}^{N}}, \quad \text{k=0,1,...,N-1}
 \]
+\begin{equation}\label{AngularSecondMoment}
+  f_1 = \sum_{i=1}^{N}\sum_{j=1}^{N}\{C(i,j)\}^2
+\end{equation}
+\begin{equation}\label{Contrast}
+  f_2 = \sum_{n=0}^{N-1} n^2 \left\{C_{x+y}(k)\right\}
+\end{equation}
+\begin{equation}\label{Correlation}
+  f_3 = \frac{\sum_{i=1}^{N}\sum_{j=1}^{n} i j C(i,j) - \mu_x \mu_y}{\sigma_x\sigma_y}
+\end{equation} 
+\begin{equation}\label{Variance}
+  f_4 = \sum_{i=1}^{N}\sum_{j=1}^{N}(i-\mu)^2 C(i,j)
+\end{equation}
+\begin{equation}\label{InverseDifferenceMoment}
+  f_5 = \sum_{i=1}^{N}\sum_{j=1}^{n} \frac{1}{1+(i-j)^2} C(i,j)
+\end{equation}

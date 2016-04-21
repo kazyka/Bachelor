@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  20 APR 2016 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  20 APR 2016 16:03
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2332,7 +2332,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=45, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=46, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2343,7 +2343,7 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=48, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=49, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
  <use include/nat-en.pdf>
 Package pdftex.def Info: include/nat-en.pdf used on input line 47.
@@ -2687,13 +2687,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C17AD8420AF801DB01EA31EC05D92E3;652.
+(rerunfilecheck)             Checksum: 4D613EC5AA236D484733C9F2C9676582;656.
  ) 
 Here is how much of TeX's memory you used:
- 43864 strings out of 493634
- 940141 string characters out of 3141315
- 1267643 words of memory out of 3000000
- 46324 multiletter control sequences out of 15000+200000
+ 43875 strings out of 493634
+ 940318 string characters out of 3141315
+ 1268643 words of memory out of 3000000
+ 46330 multiletter control sequences out of 15000+200000
  113210 words of font info for 122 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,18n,85p,10528b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2702,13 +2702,15 @@ m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
 aby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pf
 b><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/
-fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss9.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (11 pages, 147083 bytes).
+fourier-mlit.pfb><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmss9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/p
+utb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Main.pdf (11 pages, 154790 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
+
