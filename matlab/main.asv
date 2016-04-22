@@ -4,23 +4,25 @@ addpath(fullfile(pwd,'olddata'));
 
 load('labels.mat')
 
-%Er 1 eller 3 kontrol?
-tmp = 0;
+%1 left, 3 right?
+%Hvem er AD og KONTROL?
+tmp = 1;
 leftA = zeros(50,1);
-tmp2 = 0;
+tmp2 = 1;
 rightA = zeros(50,1);
 for i = 1:100
     if (labels(i) == 1)
-        leftA(i) = labels(i);
+        leftA(tmp) = labels(i);
         tmp = tmp + 1;
     else
-        rightA(i) = labels(i);
+        rightA(tmp2) = labels(i);
         tmp2 = tmp2 + 1;
     end
 end
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
-for i = 1:10
+%HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
+for i = 1:1
     % get allfiles matching the pattern 'dataset(i)_*'
     files = dir(sprintf('data/%d.mat',i));
     for j = 1:length(files)
@@ -50,11 +52,65 @@ for i = 1:10
     end
 end
 
+[data_Derivations] = dataexection(1,4);
 
 %LOADER OG PLOTTER DATA
-[DATA] = simpleAllplot(10);
+[DATA] = simpleAllplot(4);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------------------------------------
 % 
 % Metrics = cell(13,1);
 % Metrics{1} = 'Angular Second Moment';
@@ -117,24 +173,6 @@ end
 %     simpleplot(Dataset,Metrics{i}, i);
 % end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %------------------------------------------------------
 
 %figure(1);
@@ -167,7 +205,6 @@ end
  %img2D2 = imagesc(squeeze(mri(:,100,:)));
  %figure;
  %img2D2 = imagesc(squeeze(mri(100,:,:)));
- 
 % colormap gray;
 
 %

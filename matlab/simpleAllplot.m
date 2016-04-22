@@ -30,16 +30,18 @@ Metrics{13} = 'Information measures of correlation2';
 
 %SKAL ÆNDRES TIL AT PASSE TIL LABELS!!!!
 %Labels kører fra [3, 1, 3, 1, 3, 1, 1, 1, ...]
-DATA = cell(NumberOfPatients,1); 
-for i=1:NumberOfPatients
-    if (mod(i,2) == 0)
-        tmp = load(['datafile' num2str(i) '.mat']);
-        DATA{i/2} = tmp.data_Derivations;
-    else
-        tmp = load(['datafile' num2str(i) '.mat']);
-        DATA{NumberOfPatients/2 + ceil(i/2)} = tmp.data_Derivations;
-    end
-end
+% DATA = cell(NumberOfPatients,1); 
+% for i=1:NumberOfPatients
+%     if (mod(i,2) == 0)
+%         tmp = load(['datafile' num2str(i) '.mat']);
+%         DATA{i/2} = tmp.data_Derivations;
+%     else
+%         tmp = load(['datafile' num2str(i) '.mat']);
+%         DATA{NumberOfPatients/2 + ceil(i/2)} = tmp.data_Derivations;
+%     end
+% end
+
+[DATA] = dataloader(NumberOfPatients);
 
 %1-4 = x, 5-8=y og 9-12=z
 %alle angles, distance 10, asm variable, alle planer

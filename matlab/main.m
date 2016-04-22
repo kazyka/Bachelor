@@ -4,7 +4,17 @@ addpath(fullfile(pwd,'olddata'));
 
 load('labels.mat')
 
-%Er 1 eller 3 kontrol?
+%KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
+%HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
+[data_Derivations] = dataexection(1,4);
+
+%LOADER OG PLOTTER DATA
+[DATA] = simpleAllplot(4);
+
+
+
+%1 left, 3 right?
+%Hvem er AD og KONTROL?
 tmp = 1;
 leftA = zeros(50,1);
 tmp2 = 1;
@@ -19,42 +29,85 @@ for i = 1:100
     end
 end
 
-%KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
-for i = 1:10
-    % get allfiles matching the pattern 'dataset(i)_*'
-    files = dir(sprintf('data/%d.mat',i));
-    for j = 1:length(files)
-        %output for which file is loading currently
-        fprintf('Current file : %s\n',files(j).name)
-        
-        
-        %a = load(files(j).name);
-        %mri = a.mri;
-        %segmentation = a.segmentation;
-        
-        %tmp = load(sprintf('%d.mat',i));
-        %save(sprintf('datafile%1d',i), 'tmp');
-        
-        
-        %loads the file
-        data_load = GLCM2D(files(j).name,10);
-        
-        %Doing the calculation for GLCM
-        %First doing GLCM2D and then the derivation
-        data_Derivations = cell(120, 1);
-        for k=1:120
-            data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
-        end
-        
-        save(sprintf('data/datafile%1d',i), 'data_Derivations'); 
-    end
-end
 
 
-%LOADER OG PLOTTER DATA
-[DATA] = simpleAllplot(10);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------------------------------------
+% for i = 1:1
+%     % get allfiles matching the pattern 'dataset(i)_*'
+%     files = dir(sprintf('data/%d.mat',i));
+%     for j = 1:length(files)
+%         %output for which file is loading currently
+%         fprintf('Current file : %s\n',files(j).name)
+%         
+%         
+%         %a = load(files(j).name);
+%         %mri = a.mri;
+%         %segmentation = a.segmentation;
+%         
+%         %tmp = load(sprintf('%d.mat',i));
+%         %save(sprintf('datafile%1d',i), 'tmp');
+%         
+%         
+%         %loads the file
+%         data_load = GLCM2D(files(j).name,10);
+%         
+%         %Doing the calculation for GLCM
+%         %First doing GLCM2D and then the derivation
+%         data_Derivations = cell(120, 1);
+%         for k=1:120
+%             data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
+%         end
+%         
+%         save(sprintf('data/datafile%1d',i), 'data_Derivations'); 
+%     end
+% end
+
+%------------------------------------------------------
 % 
 % Metrics = cell(13,1);
 % Metrics{1} = 'Angular Second Moment';
@@ -117,24 +170,6 @@ end
 %     simpleplot(Dataset,Metrics{i}, i);
 % end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %------------------------------------------------------
 
 %figure(1);
@@ -167,7 +202,6 @@ end
  %img2D2 = imagesc(squeeze(mri(:,100,:)));
  %figure;
  %img2D2 = imagesc(squeeze(mri(100,:,:)));
- 
 % colormap gray;
 
 %
