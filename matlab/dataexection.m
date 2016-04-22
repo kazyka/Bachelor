@@ -1,6 +1,6 @@
 function [data_Derivations] = dataexection(start, finish)
 
-
+%Finds the files in a folder, and then calc
 
 for i = start:finish
     % get allfiles matching the pattern 'dataset(i)_*'

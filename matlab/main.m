@@ -6,9 +6,11 @@ load('labels.mat')
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
+%Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
 [data_Derivations] = dataexection(1,4);
 
 %LOADER OG PLOTTER DATA
+%Kalder dataloader -> loader fra data folder
 [DATA] = simpleAllplot(4);
 
 
