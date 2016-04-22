@@ -1,7 +1,7 @@
 %change current folder og kør koden under
+%RUN THESE FIRST
 addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'olddata'));
-
 load('labels.mat')
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
@@ -15,6 +15,22 @@ load('labels.mat')
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------------------------------------
 %1 left, 3 right?
 %Hvem er AD og KONTROL?
 tmp = 1;
@@ -30,7 +46,7 @@ for i = 1:100
         tmp2 = tmp2 + 1;
     end
 end
-
+%------------------------------------------------------
 
 
 
