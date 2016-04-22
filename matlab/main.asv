@@ -5,16 +5,16 @@ addpath(fullfile(pwd,'olddata'));
 load('labels.mat')
 
 %Er 1 eller 3 kontrol?
-tmp = 1;
+tmp = 0;
 leftA = zeros(50,1);
-tmp2 = 1;
+tmp2 = 0;
 rightA = zeros(50,1);
 for i = 1:100
     if (labels(i) == 1)
-        leftA(tmp) = labels(i);
+        leftA(i) = labels(i);
         tmp = tmp + 1;
     else
-        rightA(tmp2) = labels(i);
+        rightA(i) = labels(i);
         tmp2 = tmp2 + 1;
     end
 end

@@ -1,4 +1,6 @@
 function [DATA] = simpleAllplot(NumberOfPatients)
+
+%LOADS AND PLOTS THE DATA
 %defines names for figures, puts the controle first in a cell then all the
 %AD and then plots
 %If the number of arguments are 1, then it will not plot the plots
