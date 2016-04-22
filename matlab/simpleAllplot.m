@@ -1,4 +1,4 @@
-function [DATA] = simpleAllplot(NumberOfPatients, ~)
+function [DATA] = simpleAllplot(NumberOfPatients)
 %defines names for figures, puts the controle first in a cell then all the
 %AD and then plots
 %If the number of arguments are 1, then it will not plot the plots
@@ -25,6 +25,9 @@ Metrics{13} = 'Information measures of correlation2';
 %patienter
 %NumberOfPatients = 4;
 
+
+%SKAL ÆNDRES TIL AT PASSE TIL LABELS!!!!
+%Labels kører fra [3, 1, 3, 1, 3, 1, 1, 1, ...]
 DATA = cell(NumberOfPatients,1); 
 for i=1:NumberOfPatients
     if (mod(i,2) == 0)
@@ -65,11 +68,11 @@ for i=1:4 %datasæt
 end
 
     
-if nargin==2
+%if nargin==2
     for i = 1:12
         simpleplot(Dataset,Metrics{i}, i);
     end
-end
+%end
 
 
 

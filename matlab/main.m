@@ -1,5 +1,6 @@
 %change current folder og kør koden under
 addpath(fullfile(pwd,'data'));
+addpath(fullfile(pwd,'olddata'));
 
 load('labels.mat')
 
@@ -19,7 +20,7 @@ for i = 1:100
 end
 
 
-for i = 1:100
+for i = 1:10
     % get allfiles matching the pattern 'dataset(i)_*'
     files = dir(sprintf('data/%d.mat',i));
     for j = 1:length(files)
@@ -51,7 +52,7 @@ end
 
 
 
-[DATA] = simpleAllPlot(100,y);
+[DATA] = simpleAllplot(10);
 
 
 % 
