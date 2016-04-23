@@ -22,24 +22,6 @@ Metrics{11} = 'Difference Entropy';
 Metrics{12} = 'Information measures of correlation1';
 Metrics{13} = 'Information measures of correlation2';
 
-%ulige er AD og lige er kontrol
-%Cell af patient data, først alle kontrol patienter derefter alle AD
-%patienter
-%NumberOfPatients = 4;
-
-
-%SKAL ÆNDRES TIL AT PASSE TIL LABELS!!!!
-%Labels kører fra [3, 1, 3, 1, 3, 1, 1, 1, ...]
-% DATA = cell(NumberOfPatients,1); 
-% for i=1:NumberOfPatients
-%     if (mod(i,2) == 0)
-%         tmp = load(['datafile' num2str(i) '.mat']);
-%         DATA{i/2} = tmp.data_Derivations;
-%     else
-%         tmp = load(['datafile' num2str(i) '.mat']);
-%         DATA{NumberOfPatients/2 + ceil(i/2)} = tmp.data_Derivations;
-%     end
-% end
 
 [DATA] = dataloader(NumberOfPatients);
 
@@ -72,11 +54,11 @@ for i=1:4 %datasæt
 end
 
     
-%if nargin==2
-    for i = 1:12
-        simpleplot(Dataset,Metrics{i}, i);
-    end
-%end
+
+for i = 1:12
+    simpleplot(Dataset,Metrics{i}, i);
+end
+
 
 
 

@@ -2,7 +2,7 @@
 %RUN THESE FIRST
 addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'olddata'));
-load('labels.mat')
+% load('labels.mat')
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
@@ -13,6 +13,39 @@ load('labels.mat')
 %Kalder dataloader -> loader fra data folder
 [DATA] = simpleAllplot(4);
 
+[DATA] = dataloader(5);
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -31,69 +64,6 @@ load('labels.mat')
 
 
 %------------------------------------------------------
-%1 left, 3 right?
-%Hvem er AD og KONTROL?
-tmp = 1;
-leftA = zeros(50,1);
-tmp2 = 1;
-rightA = zeros(50,1);
-for i = 1:100
-    if (labels(i) == 1)
-        leftA(tmp) = labels(i);
-        tmp = tmp + 1;
-    else
-        rightA(tmp2) = labels(i);
-        tmp2 = tmp2 + 1;
-    end
-end
-%------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %------------------------------------------------------
 % for i = 1:1
 %     % get allfiles matching the pattern 'dataset(i)_*'
@@ -189,7 +159,7 @@ end
 % end
 
 %------------------------------------------------------
-
+%------------------------------------------------------
 %figure(1);
 % angle0(angle0 == 0) = NaN;
 %imgwhatevs = surf(GLCM2dDist1{1});
