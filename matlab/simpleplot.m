@@ -11,12 +11,11 @@ for k =1:3 %for x, y, z plan
              if (i <= NumberOfPatients/2)
                  plot(data((1+(i-1)*10):(10*i),j,k,variable_index), '- .k');
                  hold on;
-                 data((1+(i-1)*10):(10*i),j,k,variable_index)
-                 
+                 data((1+(i-1)*10):(10*i),j,k,variable_index);
              else
                  plot(data((1+(i-1)*10):(10*i),j,k,variable_index), '- .m');
                  hold on;
-                 data((1+(i-1)*10):(10*i),j,k,variable_index)
+                 data((1+(i-1)*10):(10*i),j,k,variable_index);
              end
         end
         hold off;

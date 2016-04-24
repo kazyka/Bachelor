@@ -21,7 +21,7 @@ addpath(fullfile(pwd,'olddata'));
 
 %-----------------------------------------
 
-NumberOfPatients = 100;
+NumberOfPatients = 4;
 [DATA] = dataloader(NumberOfPatients);
 %10 distance gange 2 mean af alle patienter, 4 angles, 3 akser, 13 variable
 %Første 10 distance er CONTROL
@@ -29,43 +29,52 @@ NumberOfPatients = 100;
 
 %Tager stepwise kun den ene variabel for alle patienter
 A = zeros(NumberOfPatients*10,4,3,13);
-%Distance 10 for Control og så Distance 10 for AD
-%For mean af hvor mange man nu kører
+%(Patients,angles,(x,y,z),variables)
 for i = 1:NumberOfPatients
     for j = 1:10
         for m = 1:3
             for k = 1:4
                 A(j+10*(i-1),k,m,1) = DATA{i,1}{(k+4*(m-1))+(12*(j-1)),1}.my_asm;
+                %A(j+10*(i-1),k,m,2) = DATA{i,1}{(k+4*(m-1))+(12*(j-1)),1}.my_con;
+                %A(j+10*(i-1),k,m,3) = DATA{i,1}{(k+4*(m-1))+(12*(j-1)),1}.my_corr;
+                %A(j+10*(i-1),k,m,4) = DATA{i,1}{(k+4*(m-1))+(12*(j-1)),1}.my_var;
+                %A(j+10*(i-1),k,m,5) = DATA{i,1}{(k+4*(m-1))+(12*(j-1)),1}.my_idm;
             end
         end
     end
 end
 
-%Distance 10, Antale kollonner som man skal finde mean af, (x,y,z),
-%(0,45,90,135). KUN FOR ASM
-tmp = zeros(10,NumberOfPatients/2,3,4);
-tmp2 = zeros(10,NumberOfPatients/2,3,4);
-meanControl = zeros(10,NumberOfPatients/2,3,4,13);
-for i=1:NumberOfPatients
+
+
+%Alle 10 Distance, Antale kollonner som man skal finde mean af, (0,45,90,135), (x,y,z)
+tmpCO = zeros(10,NumberOfPatients/2,4,3);
+tmpAD = zeros(10,NumberOfPatients/2,4,3);
+for i = 1:NumberOfPatients
     for j=1:10
         for m =1:3
             for k=1:4
                 if (i <= NumberOfPatients/2)
-                    tmp(j,i,m,k) = A(j+10*(i-1),k,m,1);
+                    tmpCO(j,i,k,m) = A(j+10*(i-1),k,m,1);
                 else
-                    tmp2(j,i-(NumberOfPatients/2),m,k) =  A(j+10*(i-1),k,m,1);
+                    tmpAD(j,i-(NumberOfPatients/2),k,m) =  A(j+10*(i-1),k,m,1);
                 end
             end
         end
     end
 end
-meanControl = mean(tmp,2);
-meanAD = mean(tmp2,2);
-subplot(2,1,1)
-plot(meanControl(:,:,3,1))
-subplot(2,1,2)
-plot(meanAD(:,:,3,1))
-hold on
+meanCO = mean(tmpCO,2);
+meanAD = mean(tmpAD,2);
+
+for angle = 1:4
+    for xyz = 1:3
+        subplot(3,4,angle+(4*(xyz-1)));
+        plot(meanCO(:,:,angle,xyz),'- .k')
+        hold on;
+        plot(meanAD(:,:,angle,xyz),'- .m')
+        hold off
+    end
+end
+
 
 
 
