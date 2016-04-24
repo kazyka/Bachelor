@@ -1,5 +1,10 @@
 function [DATA] = simpleAllplot(NumberOfPatients)
 
+if (mod(NumberOfPatients,2) ~= 0)
+    disp('ERROR: Input needs to be even. STOPPING FUNCTION')
+    return;
+end
+
 %LOADS AND PLOTS THE DATA
 %defines names for figures, puts the controle first in a cell then all the
 %AD and then plots
@@ -26,38 +31,39 @@ Metrics{13} = 'Information measures of correlation2';
 [DATA] = dataloader(NumberOfPatients);
 
 %1-4 = x, 5-8=y og 9-12=z
-%alle angles, distance 10, asm variable, alle planer
+%alle angles, distance 10, variable, alle planer
 %Datasæt(patient*distance,angles,planes,metric(minus imoc_2))
+%NumberOfPatients = 10;
 Dataset = zeros(NumberOfPatients*10,4,3,13);
-for i=1:4 %datasæt
+for i=1:NumberOfPatients %datasæt
     for j=1:10 %distance
         for m=1:3 %plans x,y,z
             for k=1:4  %angles 0-135
-                tmp = DATA(i);
-                index = j+10*(i-1);
-                Dataset(index,k,m,1) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_asm;
-                Dataset(index,k,m,2) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_con;
-                Dataset(index,k,m,3) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_corr;
-                Dataset(index,k,m,4) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_var;
-                Dataset(index,k,m,5) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_idm;
-                Dataset(index,k,m,6) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_sa;
-                Dataset(index,k,m,7) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_sv;
-                Dataset(index,k,m,8) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_se;
-                Dataset(index,k,m,9) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_en;
-                Dataset(index,k,m,10) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_dv;
-                Dataset(index,k,m,11) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_de;
-                Dataset(index,k,m,12) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc1;
-                %Dataset(j+10*(i-1),k,m,1) = tmp{1,1}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc2;
+%                 tmp = DATA(i);
+                index = j+10*(i-1); %For distance 1..10
+                Dataset(index,k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_asm;
+                Dataset(index,k,m,2) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_con;
+                Dataset(index,k,m,3) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_corr;
+                Dataset(index,k,m,4) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_var;
+                Dataset(index,k,m,5) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_idm;
+                Dataset(index,k,m,6) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_sa;
+                Dataset(index,k,m,7) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_sv;
+                Dataset(index,k,m,8) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_se;
+                Dataset(index,k,m,9) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_en;
+                Dataset(index,k,m,10) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_dv;
+                Dataset(index,k,m,11) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_de;
+                Dataset(index,k,m,12) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc1;
+                %Dataset(j+10*(i-1),k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc2;
             end
         end
     end
 end
 
-    
 
-for i = 1:12
+for i = 1:13
     simpleplot(Dataset,Metrics{i}, i);
 end
+
 
 
 

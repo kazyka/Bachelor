@@ -2,6 +2,9 @@ function [data_Derivations] = dataexection(start, finish)
 
 %Finds the files in a folder, and then calc
 
+load('labels.mat')
+name1 = 1;
+name3 = 1;
 for i = start:finish
     % get allfiles matching the pattern 'dataset(i)_*'
     files = dir(sprintf('data/%d.mat',i));
@@ -28,7 +31,13 @@ for i = start:finish
             data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
         end
         
-        save(sprintf('data/datafile%1d',i), 'data_Derivations'); 
+        if (labels(i) == 1)
+            save(sprintf('AD/datafileAD%1d',name1), 'data_Derivations');
+            name1 = name1 + 1;
+        else
+            save(sprintf('CONTROL/datafileCO%1d',name3), 'data_Derivations');
+            name3 = name3 + 1;
+        end
         
         if (i == finish)
             fprintf('Done');
