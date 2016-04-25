@@ -13,7 +13,7 @@ addpath(fullfile(pwd,'olddata'));
 
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
-[DATA] = simpleAllplot(6);
+[DATA] = simpleAllplot(100);
 
 
 
@@ -21,7 +21,7 @@ addpath(fullfile(pwd,'olddata'));
 
 %-----------------------------------------
 
-NumberOfPatients = 4;
+NumberOfPatients = 100;
 [DATA] = dataloader(NumberOfPatients);
 %10 distance gange 2 mean af alle patienter, 4 angles, 3 akser, 13 variable
 %Første 10 distance er CONTROL
@@ -62,8 +62,10 @@ for i = 1:NumberOfPatients
         end
     end
 end
+%Calculate means of AD, control and together
 meanCO = mean(tmpCO,2);
 meanAD = mean(tmpAD,2);
+meanALL = mean([meanCO  meanAD],2);
 
 for angle = 1:4
     for xyz = 1:3
@@ -71,6 +73,7 @@ for angle = 1:4
         plot(meanCO(:,:,angle,xyz),'- .k')
         hold on;
         plot(meanAD(:,:,angle,xyz),'- .m')
+        plot(meanALL(:,:,angle,xyz),'- .g')
         hold off
     end
 end

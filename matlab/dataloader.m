@@ -20,11 +20,11 @@ end
 DATAones = cell(tmp1counter,1);
 DATAthress = cell(tmp3counter,1);
 for i = 1:tmp1counter
-    tmp = load(['AD/datafileAD' num2str(i) '.mat']);
+    tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
     DATAones{i} = tmp.data_Derivations;
 end
 for i = 1:tmp3counter
-    tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
+    tmp = load(['AD/datafileAD' num2str(i) '.mat']);
     DATAthress{i} = tmp.data_Derivations;
 end
 

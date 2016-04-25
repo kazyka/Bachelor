@@ -31,7 +31,7 @@ for i = start:finish
             data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
         end
         
-        if (labels(i) == 1)
+        if (labels(i) == 3)
             save(sprintf('AD/datafileAD%1d',name1), 'data_Derivations');
             name1 = name1 + 1;
         else
