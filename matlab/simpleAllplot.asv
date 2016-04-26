@@ -1,24 +1,7 @@
 function [DATA] = simpleAllplot(NumberOfPatients ,looping, both)
-%SIMPLEALLPLOT loads the datafiles and then plots them
-%NumberOfPatients should be an even number
-%
-%looping should be between 1 and 13, for the number of variables you wish
-%to loop through
-%
-%both is if you wish to plot all the variables or only the mean or both
 
 if (mod(NumberOfPatients,2) ~= 0)
     disp('ERROR: Input needs to be even. STOPPING FUNCTION')
-    return;
-end
-
-if (looping > 13) || (looping < 1)
-    disp('ERROR: Input needs to be between 1 and 13. STOPPING FUNCTION')
-    return;
-end
-
-if (both > 3) || (both < 1)
-    disp('ERROR: Input needs to be between 1 and 3. STOPPING FUNCTION')
     return;
 end
 
@@ -79,20 +62,15 @@ for i=1:NumberOfPatients %datasæt
 end
 
 
-if (both == 1)
+if (both == 1) || (both == 3) 
     for i = 1:looping
         simpleplot(Dataset,Metrics{i}, i);
     end
-elseif (both == 2)
+elseif (both == 2) || (both == 3) 
     for i = 1:looping
         meanplotter(Dataset,Metrics{i}, i);
     end
 end
 
-if (both == 3) 
-    for i = 1:looping
-        simpleplot(Dataset,Metrics{i}, i);
-        meanplotter(Dataset,Metrics{i}, i);
-    end
-end
+
 
