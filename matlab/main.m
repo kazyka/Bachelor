@@ -4,6 +4,7 @@ addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'AD'));
 addpath(fullfile(pwd,'CONTROL'));
 addpath(fullfile(pwd,'olddata'));
+addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
@@ -13,12 +14,11 @@ addpath(fullfile(pwd,'olddata'));
 
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
-[DATA] = simpleAllplot(6, 2, 3);
+[DATA] = simpleAllplot(100, 12, 2);
 
 
 
 
-[DATA] = simpleAllplot(
 
 
 
