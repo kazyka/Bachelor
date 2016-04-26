@@ -7,8 +7,7 @@ Ci_x = sum(my_glcm,2);
 
 
 %If Ci_y(i) ~= 0 && Ci_x(j) ~= 0 er forskellig fra 0 så er produktet også.
-i = 1;
-j = 1;
+
 HXY2 = 0;
 for i = 1:N
     for j = 1:N

@@ -1,4 +1,4 @@
-k = 245;
+k = 147;
 Values = zeros(256-k,2);
 counter = 1;
 for i = 1:256
@@ -10,3 +10,6 @@ for i = 1:256
         end
     end
 end
+
+A = ones(256);
+CxminusTest = C_xminusy(A,k);

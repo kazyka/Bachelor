@@ -1,4 +1,4 @@
-function [out] = derivationsNew(my_glcm, gsl)
+function [out] = derivations(my_glcm, gsl)
 
 %
 %ASM = Angular second momemt
@@ -18,17 +18,7 @@ function [out] = derivationsNew(my_glcm, gsl)
 
 
 tmp = zeros(14,1);
-%Vector for C_xplusy (indgang 2 svarer til k = 2, så i = k)
-CV_xplusy = zeros(512,1);
-for i = 2:512
-    CV_xplusy(i) = C_xplusy(my_glcm,i);
-end
 
-%Vector for C_xminusy(indgang 1 svarer til k = 0, så i-1 = k)
-CV_xminusy = zeros(256,1);
-for i = 0:255
-    CV_xminusy(i+1) = C_xminusy(my_glcm,i);
-end
 
 Ci_y = sum(my_glcm);
 
@@ -95,21 +85,21 @@ end
 i = 2;
 out.my_sa = 0;
 for i = 2:(2*gsl)
-    out.my_sa = out.my_sa + i*CV_xplusy(i);
+    out.my_sa = out.my_sa + i*C_xplusy(my_glcm, i);
 end
 
 %Sum Variance
 i = 2;
 out.my_sv = 0;
 for i = 2:(2*gsl)
-    out.my_sv = out.my_sv + (i - out.my_sa)^2*CV_xplusy(i);
+    out.my_sv = out.my_sv + (i - out.my_sa)^2*C_xplusy(my_glcm, i);
 end
 
 %Sum Entropy
 i = 2;
 out.my_se = 0;
 for i = 2:(2*gsl)
-    tmp = CV_xplusy(i);
+    tmp = C_xplusy(my_glcm,i);
     if(tmp ~= 0)
         out.my_se = out.my_se + tmp*log(tmp);
     end
@@ -133,7 +123,7 @@ out.my_dv = 0;
 i = 1;
 my_dv_vec = zeros(gsl,1);
 for i = 1:gsl
-    my_dv_vec(i) = CV_xminusy(i);
+    my_dv_vec(i) = C_xminusy(my_glcm,i-1);
 end
 out.my_dv = var(my_dv_vec);
 
@@ -141,7 +131,7 @@ out.my_dv = var(my_dv_vec);
 out.my_de = 0;
 i = 0;
 for i = 0:(gsl - 1)
-    tmp = CV_xminusy(i+1);
+    tmp = C_xminusy(my_glcm,i);
     if(tmp ~= 0)
         out.my_de =  out.my_de + tmp*log(tmp);
     end
@@ -167,12 +157,11 @@ for i = 1:gsl
 end
 HY = -HY;
 
-MYHXY = HXY(my_glcm,256);
 
 
 %Information measures of correlation
-out.my_imoc1 = (MYHXY - HXY1(my_glcm,gsl)) / (max(HX,HY));
+out.my_imoc1 = (HXY(my_glcm,gsl) - HXY1(my_glcm,gsl)) / (max(HX,HY));
 
-out.my_imoc2 = sqrt(1 - exp(-2*(HXY2(my_glcm,gsl) - MYHXY)));
+out.my_imoc2 = sqrt(1 - exp(-2*(HXY2(my_glcm,gsl) - HXY(my_glcm,gsl))));
 
 
