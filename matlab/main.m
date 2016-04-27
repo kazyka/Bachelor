@@ -3,6 +3,8 @@
 addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'AD'));
 addpath(fullfile(pwd,'CONTROL'));
+addpath(fullfile(pwd,'ErodeAD'));
+addpath(fullfile(pwd,'ErodeCONTROL'));
 addpath(fullfile(pwd,'olddata'));
 addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
@@ -11,10 +13,10 @@ addpath(fullfile(pwd,'testFiles'));
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
 [data_Derivations] = dataexection(1,100);
-
+[data_DerivationsErode] = dataexecutionErode(1,100);
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
-[DATA] = simpleAllplot(100, 12, 2);
+[DATA] = simpleAllplot(100, 12, 3, 1);
 
 
 
