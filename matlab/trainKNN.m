@@ -1,4 +1,6 @@
 function [sampledKTrainData, indexAll, label]   = trainKNN(DATA, rngesus)
+%DOC
+
 
 %Setting the labels [1, 1, ..., 3, 3]
 tmpvalue = 80;
