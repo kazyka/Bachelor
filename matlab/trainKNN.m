@@ -3,6 +3,7 @@ function [sampledKTrainData, indexAll, label]   = trainKNN(DATA, rngesus)
 
 
 %Setting the labels [1, 1, ..., 3, 3]
+%tmpvalue er størrelsen af data der skal bruges.
 tmpvalue = 80;
 label = ones(tmpvalue,1);
 label((tmpvalue/2 +1):tmpvalue) = 3;

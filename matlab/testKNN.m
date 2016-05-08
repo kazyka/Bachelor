@@ -26,7 +26,7 @@ if (k > 0)
     %Får en accuracy der fortæller hvor præcis vores model er
     accuracymodel = sum(tmppredict)/length(tmppredict);
 else
-    accuracymodel = zeros(20,1);
+    accuracymodel = zeros((100-size(label,1)),1);
     k = 1;
     for k = 1:20
         KNNMdl = fitcknn(sampledKTrainData,label,'Distance','euclidean',...

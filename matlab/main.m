@@ -51,7 +51,7 @@ figure(2)
 
 %--------------
 
-numberSample = 40;
+numberSample = 45;
 A = ones(numberSample,1);
 B = zeros(numberSample,1);
 B(B==0) = 3;
@@ -100,8 +100,8 @@ for k = 1:20
     restLABELS = tmpidx(tmpvec);
     
     %predicter på de resterende data
-    tmppredict = zeros(20,1);
-    for i = 1:20
+    tmppredict = zeros(10,1);
+    for i = 1:10
         predictTEST = predict(KNNMdl, restKTrainData(i,:));
         tmppredict(i) = predictTEST == restLABELS(i);
     end
