@@ -27,6 +27,7 @@ if (k > 0)
     accuracymodel = sum(tmppredict)/length(tmppredict);
 else
     accuracymodel = zeros(20,1);
+    k = 1;
     for k = 1:20
         KNNMdl = fitcknn(sampledKTrainData,label,'Distance','euclidean',...
                 'NumNeighbors',k,'Standardize',0);
