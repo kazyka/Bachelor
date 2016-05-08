@@ -7,13 +7,12 @@
 \contentsline {section}{\numberline {1.4}Machine learning methods}{4}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}K-nearest neighbors algorithm}{4}{subsection.1.4.1}
 \contentsline {chapter}{\numberline {2}Tools}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Image texture (Co-occurrence)}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Principal Component analysis}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Application to images}{5}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Cross validation}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}K-nearest neighbors}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}K-means}{5}{section.2.5}
-\contentsline {chapter}{\numberline {3}Optimizing}{6}{chapter.3}
-\contentsline {chapter}{Appendices}{7}{section*.5}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{8}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{9}{equation.a.A.0.5}
+\contentsline {section}{\numberline {2.1}Erode}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Image texture (Co-occurrence)}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}K-nearest neighbors}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Cross validation}{7}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}Analysis of the data}{8}{chapter.3}
+\contentsline {chapter}{\numberline {4}Optimizing}{9}{chapter.4}
+\contentsline {chapter}{Appendices}{10}{section*.8}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{11}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{12}{equation.a.A.0.5}

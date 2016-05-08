@@ -1,8 +1,130 @@
 \chapter{Tools}
 
+Dette vil være en lille introduktion til de tools vi bruger til at analysere vores data med. Da vores data er MRI skanninger af hjernen, som er nogen voxels\footnote{noget her} som bliver repræsenteret i 3D.\\
+
+
+
 \section{Erode}
+Normalt brugte man dette til binære billeder, men senere hen er det udvidet til også at omfatte grayscale billeder. Grunden til at dette bruges er for at fjerne støj på billedet.
+
+Vi bruger Erode på vores MRI scanning, da der kan være gray-bit mix og derfor fjerner overflydig og blandet data. Hvis vi starter på hvordan 2D virker, så
+
+For at illustrere hvordan erosion virker, gør vi det på et 2D plan, betragt figur \ref{Erosion2D}, hvor vi bruger et plus til at fjerne støj.
+\begin{figure}[H]
+  \centering
+    \begin{tikzpicture}[scale=0.5]
+    \matrix[square matrix]
+    {
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=yellow!30]|$N_1$ & |[fill=yellow!30]|$\boxplus$ & |[fill=yellow!30]|$N_3$ & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+  \caption{Text}\label{Erosion2D}
+\end{figure}
+Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
+\begin{figure}[H]
+  \centering
+    \begin{tikzpicture}
+    \matrix[square matrixlarge]
+    {
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}
+    \matrix[square matrixlarge]
+    {
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}
+    \matrix[square matrixlarge]
+    {
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=blue!30]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+  \caption{Left: Middle: Right:}\label{ErosionExample}
+\end{figure}
+Således er støjen nu fjernet. Vi vil udvide dette til 3D, da vores MRI er i 3D. Som det ses på figur \ref{Erosion2D} har denne 4 naboer den tjekker, når man udvider til 3D, får vi 2 nye naboer, dvs 6 naboer i alt. Hvis en af dem er udenfor den ønskede matrix, eksluderes pixlen.
+
+
+Da vores data er i 3D, så i udvider vi erosion, hvor det stadig er et plus, men med 2 ekstra naboer
+Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 neighbours instead of 4, where we expand it for the 3D
+\begin{figure}[H]
+  \centering
+    \begin{tikzpicture}
+    \matrix[square matrix]
+    {
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]| & |[fill=yellow!30]|$N_5$ & |[fill=white]| & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}
+    \matrix[square matrix]
+    {
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=yellow!30]|$N_1$ & |[fill=yellow!30]|$\boxplus$ & |[fill=yellow!30]|$N_3$ & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+    \begin{tikzpicture}
+    \matrix[square matrix]
+    {
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]| & |[fill=yellow!30]|$N_6$ & |[fill=white]| & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
+    };
+    \end{tikzpicture}
+  \caption{Text}\label{Erosion3D}
+\end{figure}
 
 \section{Image texture (Co-occurrence)}
+
+Et image texture er bare et sæt af metricer? som udregnes for at opfatte texturen på et billede. Image textures giver os denne information.
+
+Der findes flere approaches til hvordan man udregner image textures, vi bruger den statistiske vej. Helt specifikt udregner vi en co occurence matricer, hvor man kan få en del numeriske features fra gray tones. Disse kan ses i appendix \ref{derivationfeatures} på s. \pageref{derivationfeatures}.
+
+Hvordan vi har 256x256 matrix, med en distance på $\delta$ og angles $\theta$, hvor $\delta = \{1,2,...,10\}$ og $\theta = \{0^\circ, 45^\circ, 90^\circ, 135^\circ\}$.
+
+Ud fra denne GLCM matrix så kan vi udregne textural features fra de 100 GLCM af MRI grayscale image data set.
+
+Snakke om hvordan den fungere, med distance og grader
 
 \section{Principal Component analysis}
 
@@ -12,9 +134,6 @@
 
 \subsection{Cross validation}
 
-\section{K-means}
-
-\subsection{Cross validation}
 
 
 

@@ -6,13 +6,12 @@
 \BOOKMARK [1][-]{section.1.4}{Machine learning methods}{chapter.1}% 6
 \BOOKMARK [2][-]{subsection.1.4.1}{K-nearest neighbors algorithm}{section.1.4}% 7
 \BOOKMARK [0][-]{chapter.2}{Tools}{}% 8
-\BOOKMARK [1][-]{section.2.1}{Image texture \(Co-occurrence\)}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{Principal Component analysis}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{Application to images}{section.2.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Cross validation}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{K-nearest neighbors}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{K-means}{chapter.2}% 14
-\BOOKMARK [0][-]{chapter.3}{Optimizing}{}% 15
-\BOOKMARK [0][-]{section*.5}{Appendices}{}% 16
-\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 17
-\BOOKMARK [0][-]{equation.a.A.0.5}{Litteratur}{}% 18
+\BOOKMARK [1][-]{section.2.1}{Erode}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Image texture \(Co-occurrence\)}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{K-nearest neighbors}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Cross validation}{section.2.3}% 12
+\BOOKMARK [0][-]{chapter.3}{Analysis of the data}{}% 13
+\BOOKMARK [0][-]{chapter.4}{Optimizing}{}% 14
+\BOOKMARK [0][-]{section*.8}{Appendices}{}% 15
+\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 16
+\BOOKMARK [0][-]{equation.a.A.0.5}{Litteratur}{}% 17

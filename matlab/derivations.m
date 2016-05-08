@@ -1,4 +1,4 @@
-function [out] = derivationsNew(my_glcm, gsl)
+function [out] = derivations(my_glcm, gsl)
 
 %
 %ASM = Angular second momemt
@@ -17,7 +17,7 @@ function [out] = derivationsNew(my_glcm, gsl)
 %
 
 
-tmp = zeros(14,1);
+
 %Vector for C_xplusy (indgang 2 svarer til k = 2, så i = k)
 CV_xplusy = zeros(512,1);
 for i = 2:512
@@ -50,9 +50,7 @@ out.my_asm = sum(sum(my_glcm.^2));
 
 %Contrast
 %Can ignore n = 0 as 0^2 = 0 so 0*C_x-y = 0;
-n = 1;
-i = 1;
-j = 1;
+
 out.my_con = 0;
 for n = 1: (gsl - 1)
     out.my_con = out.my_con + n^2*C_xminusy(my_glcm,n);
@@ -62,8 +60,7 @@ end
 
 
 %Correlation
-i = 1;
-j = 1;
+
 mu_x = mean(Ci_x);
 mu_y = mean(Ci_y);
 std_x = std(Ci_x);
@@ -82,8 +79,7 @@ out.my_corr = out.my_corr/(std_x*std_y);
 out.my_var = var(var(my_glcm));
 
 %Inverse difference moment
-i = 1;
-j = 1;
+
 out.my_idm = 0;
 for i = 1:gsl
     for j = 1:gsl
@@ -92,21 +88,19 @@ for i = 1:gsl
 end
 
 %Sum average
-i = 2;
+
 out.my_sa = 0;
 for i = 2:(2*gsl)
     out.my_sa = out.my_sa + i*CV_xplusy(i);
 end
 
 %Sum Variance
-i = 2;
 out.my_sv = 0;
 for i = 2:(2*gsl)
     out.my_sv = out.my_sv + (i - out.my_sa)^2*CV_xplusy(i);
 end
 
 %Sum Entropy
-i = 2;
 out.my_se = 0;
 for i = 2:(2*gsl)
     tmp = CV_xplusy(i);
@@ -116,8 +110,6 @@ for i = 2:(2*gsl)
 end
 
 %Entropy
-i = 1;
-j = 1;
 out.my_en = 0;
 for i = 1:gsl
     for j = 1:gsl
@@ -130,7 +122,6 @@ end
 
 %Difference variance
 out.my_dv = 0;
-i = 1;
 my_dv_vec = zeros(gsl,1);
 for i = 1:gsl
     my_dv_vec(i) = CV_xminusy(i);
@@ -139,7 +130,7 @@ out.my_dv = var(my_dv_vec);
 
 %Difference Entropy
 out.my_de = 0;
-i = 0;
+
 for i = 0:(gsl - 1)
     tmp = CV_xminusy(i+1);
     if(tmp ~= 0)

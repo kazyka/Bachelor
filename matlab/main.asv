@@ -39,12 +39,15 @@ simpleAllplot(DATA, NumberOfPatients, 12, 1);
 NumberOfPatients = 100;
 [DATATrain] = dataloader(NumberOfPatients,1);
 KTrainData = knndatasort2D(DATATrain,NumberOfPatients,1,1,3);
-figure(1)
-[trainedData, indexAll, label] = trainKNN(KTrainData, 6);
-figure(2)
-[accuracymodel] = testKNN(trainedData, KTrainData, indexAll, 1, label);
+[cerror, bib, trainedData] = trainKNN(KTrainData, 1);
+[accuracymodel] = testKNN(trainedData, bib, 1);
 
-
+% tmp = zeros(50,1);
+% for i = 1:50
+%     [classerror, accuracy] = imageKNN(KTrainData, i);
+%     tmp(i) = accuracy;
+% end
+% mean(tmp)
 
 
 
@@ -79,20 +82,20 @@ for k = 1:20
     classError(k) = kfoldLoss(CVKNNMdl);
 end
 plot(classError)
-%Samler index af kontrol og AD
-indexAll = [idxCO'; (idxAD'+50)];
 
 figure(2)
+
 accuracy = zeros(20,1);
 for k = 1:20
     KNNMdl = fitcknn(randomKTrainData,label,'Distance','euclidean',...
             'NumNeighbors',k,'Standardize',0);
+
     %fjerner data der er brugt.
     restKTrainData = KTrainData;
-    restKTrainData(indexAll, :) = [];
+    restKTrainData(bib, :) = [];
     %Finder de resterende index
     tmpvec = 1:100;
-    tmpvec(indexAll) = [];
+    tmpvec(bib) = [];
     %Sætter 1:50 = 1 og 51:100 = 3
     tmpidx = ones(100,1);
     tmpidx(51:100) = 3;
@@ -113,7 +116,7 @@ plot(accuracy)
 
 
 
-%---PCA ANALYSE---
+
 % Z = zscore(KTrainData);
 
 % bob = var(KTrainData);
@@ -140,10 +143,22 @@ find(hej1 ~= 0);
 
 
 
+%-----------MATLAB KNN TEST----------
+
+
+load fisheriris
+X = meas;
+Y = species;
+
+Mdl = fitcknn(X,Y,'NumNeighbors',5,'Standardize',1)
+classError = resubLoss(Class)
 
 
 
-%----LEGACY KODE-------
+
+
+
+
 % %leg
 % NumberOfPatients = 100;
 % [DATA] = dataloader(NumberOfPatients);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  21 APR 2016 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  6 MAY 2016 14:54
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2134,6 +2134,14 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen320
 \l_MT_below_shortintertext_sep=\dimen321
 )
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
@@ -2155,58 +2163,58 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip108
 \JustifyingParindent=\skip109
 ) (Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
-(chapters/Tools.aux) (chapters/Optimizing.aux)
+(chapters/Tools.aux) (chapters/Process.aux) (chapters/Optimizing.aux)
 (appendix/derivationImageTexture.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 20.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 48.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 48.
 
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
 "
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 20.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 48.
 
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
 "
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 20.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 48.
 
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
 "
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 48.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 20.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 48.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -2275,9 +2283,9 @@ Package caption Info: End \AtBeginDocument code.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 20.
+(lastpage)             ! on input line 48.
 \AtBeginShipoutBox=\box91
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 48.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -2286,9 +2294,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count308
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (Main.out) (Main.out)
 \@outlinefile=\write9
@@ -2299,8 +2307,8 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.13} (current compat level: 1.12).
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 20.
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 47
+LaTeX Info: Redefining \selectfont on input line 48.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 75
 .
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.f
@@ -2308,56 +2316,57 @@ d"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 47.
+(Font)              scaled to size 11.03998pt on input line 75.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 47.
+(Font)              scaled to size 8.27998pt on input line 75.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 47.
+(Font)              scaled to size 6.43999pt on input line 75.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 47.
+(Font)              scaled to size 11.03998pt on input line 75.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 47.
+(Font)              scaled to size 8.27998pt on input line 75.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 47.
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+(Font)              scaled to size 6.43999pt on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 75.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=78, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=74, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
-Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
+Package pdftex.def Info: include/natbio-farve.pdf used on input line 75.
 (pdftex.def)             Requested size: 702.625pt x 602.25pt.
 File: include/natbio-farve.pdf Graphic file (type pdf)
  <use include/natbio-farve.pdf>
-Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
+Package pdftex.def Info: include/natbio-farve.pdf used on input line 75.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=81, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=77, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
  <use include/nat-en.pdf>
-Package pdftex.def Info: include/nat-en.pdf used on input line 47.
+Package pdftex.def Info: include/nat-en.pdf used on input line 75.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-[1{C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1
 
 \openout6 = `Main.ist'.
 
 
- <./include/natbio-farve.pdf> <./include/nat-en.pdf>]
+{C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./include/n
+atbio-farve.pdf> <./include/nat-en.pdf>]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 53.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 81.
  (Main.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
@@ -2381,7 +2390,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \listoffigures
+l.83 \listoffigures
                     [1
 
 
@@ -2430,6 +2439,8 @@ line 7.
 FiXme Note: 'citation' on input line 7.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
+FiXme Note: 'Mere i intro. M\IeC {\r a}ske 3D vs 2D' on input line 17.
+FiXme Note: 'Mere til AD' on input line 21.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 25.
  [3
@@ -2448,29 +2459,61 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (chapters/Tools.tex
 Chapter 2.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
 
-FiXme Fatal Error: 'her er noget galt' on input line 24.
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[5
+
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 24.80847pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+FiXme Fatal Error: 'her er noget galt' on input line 147.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 26.
-FiXme Note: 'en note' on input line 26.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 149.
+FiXme Note: 'en note' on input line 149.
 
-LaTeX Warning: Marginpar on page 5 moved.
-
-
-FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 28.
+LaTeX Warning: Marginpar on page 7 moved.
 
 
-LaTeX Warning: Marginpar on page 5 moved.
+FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 151.
 
 
-FiXme Error: 'en fejl' on input line 30.
+LaTeX Warning: Marginpar on page 7 moved.
+
+
+FiXme Error: 'en fejl' on input line 153.
 
 )
 
-LaTeX Warning: Marginpar on page 5 moved.
+LaTeX Warning: Marginpar on page 7 moved.
 
-[5
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 24.80847pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+\openout2 = `chapters/Process.aux'.
+
+ (chapters/Process.tex
+Chapter 3.
+) [8
 
 
 
@@ -2478,12 +2521,12 @@ LaTeX Warning: Marginpar on page 5 moved.
 \openout2 = `chapters/Optimizing.aux'.
 
  (chapters/Optimizing.tex
-Chapter 3.
-) [6
+Chapter 4.
+) [9
 
 
 
-] (Main.gls) [7
+] (Main.gls) [10
 
 
 
@@ -2495,16 +2538,12 @@ Chapter 3.
 Appendix A.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 3.
-) [8
+) [11
 
 
-] (Main.bbl) [9
+] (Main.bbl) [12
 
 
 
@@ -2513,20 +2552,20 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 2,
+FiXme Summary: Number of notes: 4,
 (FiXme)        Number of warnings: 1,
 (FiXme)        Number of errors: 1,
 (FiXme)        Number of fatal errors: 1,
-(FiXme)        Total: 5.
+(FiXme)        Total: 7.
 
 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 (Main.aux (abstract/abstract.aux) (chapters/Intro/Intro.aux)
-(chapters/Tools.aux) (chapters/Optimizing.aux)
+(chapters/Tools.aux) (chapters/Process.aux) (chapters/Optimizing.aux)
 (appendix/derivationImageTexture.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 
 
  *File List*
@@ -2730,6 +2769,7 @@ chapters/Intro/Intro.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
   t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
 chapters/Tools.tex
+chapters/Process.tex
 chapters/Optimizing.tex
     Main.gls
 appendix/derivationImageTexture.tex
@@ -2737,33 +2777,34 @@ appendix/derivationImageTexture.tex
     Main.ind
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 32D75340E39A51FF8DF0590F5EDA40F2;1163.
+(rerunfilecheck)             Checksum: 24131C11752F36BABEFC21A03FFBD5AE;1073.
  ) 
 Here is how much of TeX's memory you used:
- 43949 strings out of 493634
- 941321 string characters out of 3141315
- 1269643 words of memory out of 3000000
- 46362 multiletter control sequences out of 15000+200000
- 135278 words of font info for 156 fonts, out of 3000000 for 9000
+ 47394 strings out of 493634
+ 1029941 string characters out of 3141315
+ 1434130 words of memory out of 3000000
+ 49790 multiletter control sequences out of 15000+200000
+ 133397 words of font info for 154 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,18n,85p,10528b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Baby-/AppData/L
+ 62i,19n,85p,10528b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
 aby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pf
 b><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/
 fourier-mlit.pfb><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmss9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss
-bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (13 pages, 185588 bytes).
+bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
+/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Main.pdf (16 pages, 205383 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,6 +6,34 @@
 
 \usepackage{eso-pic} % \AddToShipoutPicture
 \usepackage{mathtools}
+\usetikzlibrary{matrix}
+\usetikzlibrary{positioning}
+\tikzset{square matrix/.style={
+    matrix of nodes,
+    column sep=-\pgflinewidth, row sep=-\pgflinewidth,
+    nodes={draw,
+      minimum height=#1,
+      anchor=center,
+      text width=#1,
+      align=center,
+      inner sep=0pt
+    },
+  },
+  square matrix/.default=0.5cm
+}
+\tikzset{square matrixlarge/.style={
+    matrix of nodes,
+    column sep=-\pgflinewidth, row sep=-\pgflinewidth,
+    nodes={draw,
+      minimum height=#1,
+      anchor=center,
+      text width=#1,
+      align=center,
+      inner sep=0pt
+    },
+  },
+  square matrixlarge/.default=0.35cm
+}
 
 \author{
   \Large{
@@ -63,7 +91,7 @@
 \include{abstract/abstract}
 \include{chapters/Intro/Intro}
 \include{chapters/Tools}
-%\include{chapters/Kap2}
+\include{chapters/Process}
 \include{chapters/Optimizing}
 
 

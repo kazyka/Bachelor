@@ -1,4 +1,4 @@
-function [DATA] = dataloader(NumberOfPatients)
+function [DATA] = dataloader(NumberOfPatients,Start)
 
 if (mod(NumberOfPatients,2) ~= 0)
     disp('ERROR: Input needs to be even')
@@ -19,13 +19,13 @@ for i = 1:NumberOfPatients
 end
 DATAones = cell(tmp1counter,1);
 DATAthress = cell(tmp3counter,1);
-for i = 1:tmp1counter
+for i = Start:(tmp1counter+Start-1)
     tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i} = tmp.data_Derivations;
+    DATAones{i-Start+1} = tmp.data_Derivations;
 end
-for i = 1:tmp3counter
+for i = Start:(tmp3counter+Start-1)
     tmp = load(['AD/datafileAD' num2str(i) '.mat']);
-    DATAthress{i} = tmp.data_Derivations;
+    DATAthress{i-Start+1} = tmp.data_Derivations;
 end
 
 DATA = [DATAones; DATAthress];

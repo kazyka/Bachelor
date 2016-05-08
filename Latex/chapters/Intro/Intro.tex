@@ -4,7 +4,7 @@ In this report we will examine MRI data of the hippocampus using image texture a
 
 We will be using two different texture analysis on the data, XX and the gray level co-occ\-urren\-ce matrix (GLCM).
 We will calculate the GLCM using two different methods, one in 2D that that runs along the z-axis with angel 90 and distance 1 (Change depending on the results, and more research might include multiple angles).\cite{Castellano}
-The other method is calles voxel-based GLCM in 3D\fxnote{citation} space (VGLCM-TOP-3D), and is from the paper Voxel-Based Texture Analysis of the Brain (indsæt biblografi).
+The other method is calles voxel-based GLCM in 3D\fxnote[inline]{citation} space (VGLCM-TOP-3D), and is from the paper Voxel-Based Texture Analysis of the Brain (indsæt biblografi).
 We want to see if there is a difference between diagnostising a AD succesfully, by calculating the co-occurence matrix in 3D compared to 2D, and how well the GLCM methods work
 compared to XX. To do that we will use two different machine learning methods, k-NN and Gaussian mixture, based on each of the image texture models.
 
@@ -14,11 +14,11 @@ We will also try to replicate the analysis from \cite{MRfreeborough} and meanwhi
 
 \section{Problem Definition}
 
-Is it possible to classify MRI data of the hippocampus into groups of healthy controls vs Alzheimer's patient, using a predefined set of image texture metrices, with an accuracy great\-er than 80\%?
+Is it possible to classify MRI data of the hippocampus into groups of healthy controls vs Alzheimer's patient, using a predefined set of image texture metrices, with an accuracy great\-er than 80\%?\fxnote[inline]{Mere i intro. Måske 3D vs 2D}
 
 \section{Alzheimer's Disease}
 
-About 70\% of the risk is believed to be genetic, where other factors include head injuries, depression or hypertension. \cite{Magnetic}
+About 70\% of the risk is believed to be genetic, where other factors include head injuries, depression or hypertension. \cite{Magnetic} \fxnote[inline]{Mere til AD}
 
 \section{Image texture analysis methods}
 

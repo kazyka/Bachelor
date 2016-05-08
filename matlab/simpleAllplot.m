@@ -1,4 +1,4 @@
-function [DATA] = simpleAllplot(NumberOfPatients ,looping, both, Erode)
+function [DATA] = simpleAllplot(DATA, NumberOfPatients ,looping, both)
 %SIMPLEALLPLOT loads the datafiles and then plots them
 %NumberOfPatients should be an even number
 %
@@ -6,8 +6,7 @@ function [DATA] = simpleAllplot(NumberOfPatients ,looping, both, Erode)
 %to loop through
 %
 %both is if you wish to plot all the variables or only the mean or both
-%
-%Erode: 1 for running with erode, 0 running without
+
 
 if (mod(NumberOfPatients,2) ~= 0)
     disp('ERROR: Input needs to be even. STOPPING FUNCTION')
@@ -24,10 +23,7 @@ if (both > 3) || (both < 1)
     return;
 end
 
-if (Erode > 1) || (both < 0)
-    disp('ERROR: Input needs to be 1 for erode and 0 without. STOPPING FUNCTION')
-    return;
-end
+
 
 %LOADS AND PLOTS THE DATA
 %defines names for figures, puts the controle first in a cell then all the
@@ -51,11 +47,7 @@ Metrics{11} = 'Difference Entropy';
 Metrics{12} = 'Information measures of correlation1';
 Metrics{13} = 'Information measures of correlation2';
 
-if Erode == 0
-    [DATA] = dataloader(NumberOfPatients);
-else
-    [DATA] = dataloaderErode(NumberOfPatients);
-end
+
 %1-4 = x, 5-8=y og 9-12=z
 %alle angles, distance 10, variable, alle planer
 %Datasæt(patient*distance,angles,planes,metric(minus imoc_2))
