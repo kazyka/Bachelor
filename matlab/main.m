@@ -3,6 +3,8 @@
 addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'AD'));
 addpath(fullfile(pwd,'CONTROL'));
+addpath(fullfile(pwd,'3DAD'));
+addpath(fullfile(pwd,'3DCONTROL'));
 addpath(fullfile(pwd,'ErodeAD'));
 addpath(fullfile(pwd,'ErodeCONTROL'));
 addpath(fullfile(pwd,'olddata'));

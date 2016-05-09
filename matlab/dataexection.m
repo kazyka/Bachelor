@@ -23,19 +23,23 @@ for i = start:finish
         
         %loads the file
         data_load = GLCM2D(files(j).name,10);
-        
+        data_3D = GLCM3D(files(j).name,10);
         %Doing the calculation for GLCM
         %First doing GLCM2D and then the derivation
         data_Derivations = cell(120, 1);
+        data_Derivations3D = cell(130, 1);
         for k=1:120
             data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
+            data_Derivations3D{k} =  derivations(data_3D{k}, 256);
         end
         
         if (labels(i) == 3)
             save(sprintf('AD/datafileAD%1d',name1), 'data_Derivations');
+            save(sprintf('3DAD/datafileAD%1d',name1), 'data_Derivations3D');
             name1 = name1 + 1;
         else
             save(sprintf('CONTROL/datafileCO%1d',name3), 'data_Derivations');
+            save(sprintf('3DCONTROL/datafileCO%1d',name3), 'data_Derivations3D');
             name3 = name3 + 1;
         end
         
