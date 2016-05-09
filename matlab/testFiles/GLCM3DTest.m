@@ -1,4 +1,4 @@
-DataBox = LeftHippoMatrix('18.mat');
+DataBox = LeftHippoMatrix('12.mat');
 test = GLCM3D(DataBox,10);
 A = zeros(130,1);
 for i = 1:130
@@ -6,7 +6,7 @@ for i = 1:130
 end
 
 
-B = zeros(40,1);
+B = zeros(80,1);
 for i=1:10
     tmp = glcm2Dy(DataBox,i);
     B(1+4*(i-1)) = sum(sum(tmp.angle0y));
@@ -14,14 +14,31 @@ for i=1:10
     B(3+4*(i-1)) = sum(sum(tmp.angle90y));
     B(4+4*(i-1)) = sum(sum(tmp.angle135y));
 end
-C = zeros(40,1);
+for i=1:10
+    tmp = glcm2Dz(DataBox,i);
+    B(41+4*(i-1)) = sum(sum(tmp.angle0z));
+    B(42+4*(i-1)) = sum(sum(tmp.angle45z));
+    B(44+4*(i-1)) = sum(sum(tmp.angle90z));
+    B(43+4*(i-1)) = sum(sum(tmp.angle135z));
+end
+
+
+
+C = zeros(80,1);
 for i=1:10
     C(1+4*(i-1)) = A(3+13*(i-1));
     C(2+4*(i-1)) = A(4+13*(i-1));
     C(3+4*(i-1)) = A(1+13*(i-1));
     C(4+4*(i-1)) = A(2+13*(i-1));
+    C(41+4*(i-1)) = A(13+13*(i-1));
+    C(42+4*(i-1)) = A(5+13*(i-1));
+    C(43+4*(i-1)) = A(9+13*(i-1));
+    C(44+4*(i-1)) = A(1+13*(i-1));
+    
 end
-kage = 0;    
+
+
+kage = [B(41); B(42); B(43); C(41);C(42);C(43)];    
 kage = isequal(B,C);    
     
     
