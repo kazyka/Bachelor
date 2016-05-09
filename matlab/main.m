@@ -17,7 +17,7 @@ addpath(fullfile(pwd,'testFiles'));
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
 [data_Derivations] = dataexection(1,100);
-[data_DerivationsErode] = dataexecutionErode(1,100);
+%[data_DerivationsErode] = dataexecutionErode(1,100);
 
 %Huske huske
 %anglex0 = angley0
