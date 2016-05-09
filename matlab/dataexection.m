@@ -30,6 +30,8 @@ for i = start:finish
         data_Derivations3D = cell(130, 1);
         for k=1:120
             data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
+        end
+        for k=1:130
             data_Derivations3D{k} =  derivations(data_3D{k}, 256);
         end
         

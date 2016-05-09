@@ -1,12 +1,16 @@
 DataBox = LeftHippoMatrix('12.mat');
-test = GLCM3D(DataBox,10);
+test = GLCM3D('12.mat',10);
+test1 = GLCM3DErode('12.mat',10);
 
 
 A = cell(130, 1);
 for i = 1:130
     A{i} = derivations(test{i}, 256);
 end
-
+A1 = cell(130, 1);
+for i = 1:130
+    A1{i} = derivations(test1{i}, 256);
+end
 % 
 % 
 % A = zeros(130,1);
