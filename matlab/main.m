@@ -3,6 +3,10 @@
 addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'AD'));
 addpath(fullfile(pwd,'CONTROL'));
+addpath(fullfile(pwd,'3DAD'));
+addpath(fullfile(pwd,'3DCONTROL'));
+addpath(fullfile(pwd,'3DErodeAD'));
+addpath(fullfile(pwd,'3DErodeCONTROL'));
 addpath(fullfile(pwd,'ErodeAD'));
 addpath(fullfile(pwd,'ErodeCONTROL'));
 addpath(fullfile(pwd,'olddata'));
@@ -13,7 +17,7 @@ addpath(fullfile(pwd,'testFiles'));
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
 [data_Derivations] = dataexection(1,100);
-[data_DerivationsErode] = dataexecutionErode(1,100);
+%[data_DerivationsErode] = dataexecutionErode(1,100);
 
 %Huske huske
 %anglex0 = angley0
