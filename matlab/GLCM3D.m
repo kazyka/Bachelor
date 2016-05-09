@@ -31,26 +31,26 @@ for d = 1:distance
                 if (isnan(datapoint) == 0)
                     %Fire første svarer til glcm2D i x plan, samme
                     %rækkefølgeme som 2D
-                    if (i + d < sizex)
+                    if (i + d <= sizex)
                         %hvis forskelligt for nan sætter ind i glcm
                         if (isnan(data(i+d,j,k)) == 0)
                             glcm1(datapoint,data(i+d,j,k)) = glcm1(datapoint,data(i+d,j,k)) +1;
                         end
                     end
                     
-                    if (i + d < sizex && k+d < sizez)
+                    if (i + d <= sizex && k+d <= sizez)
                         if (isnan(data(i+d,j,k+d)) == 0)
                            glcm2(datapoint,data(i+d,j,k+d)) = glcm2(datapoint,data(i+d,j,k+d)) +1;
                         end
                     end
                     
-                    if (k+d < sizez)
+                    if (k+d <= sizez)
                         if (isnan(data(i,j,k+d)) == 0)
                            glcm3(datapoint,data(i,j,k+d)) = glcm3(datapoint,data(i,j,k+d)) +1;
                         end
                     end
                     
-                    if (i - d > 0 && k+d < sizez)
+                    if (i - d > 0 && k+d <= sizez)
                         if (isnan(data(i-d,j,k+d)) == 0)
                            glcm4(datapoint,data(i-d,j,k+d)) = glcm4(datapoint,data(i-d,j,k+d)) +1;
                         end
@@ -58,22 +58,22 @@ for d = 1:distance
                     %De resterende 9 værdier der ligger d højere end
                     %punktet vi kigger på
                     if (j-d > 0)
-                        if (i + d < sizex)
+                        if (i + d <= sizex)
                             if (isnan(data(i+d,j-d,k)) == 0)
                                 glcm5(datapoint,data(i+d,j-d,k)) = glcm5(datapoint,data(i+d,j-d,k)) +1;
                             end
                         end
-                        if (i + d < sizex && k + d < sizez)
+                        if (i + d <= sizex && k + d <= sizez)
                             if (isnan(data(i+d,j-d,k+d)) == 0)
                                 glcm6(datapoint,data(i+d,j-d,k+d)) = glcm6(datapoint,data(i+d,j-d,k+d)) +1;
                             end
                          end
-                         if (k + d < sizez)
+                         if (k + d <= sizez)
                             if (isnan(data(i,j-d,k+d)) == 0)
                                 glcm7(datapoint,data(i,j-d,k+d)) = glcm7(datapoint,data(i,j-d,k+d)) +1;
                             end
                          end
-                         if (i - d > 0 && k + d < sizez)
+                         if (i - d > 0 && k + d <= sizez)
                             if (isnan(data(i-d,j-d,k+d)) == 0)
                                 glcm8(datapoint,data(i-d,j-d,k+d)) = glcm8(datapoint,data(i-d,j-d,k+d)) +1;
                             end
@@ -95,7 +95,7 @@ for d = 1:distance
                             end
                          end                                                 
                          
-                         if (i + d < sizex && k - d > 0)
+                         if (i + d <= sizex && k - d > 0)
                             if (isnan(data(i+d,j-d,k-d)) == 0)
                                 glcm12(datapoint,data(i+d,j-d,k-d)) = glcm12(datapoint,data(i+d,j-d,k-d)) +1;
                             end
