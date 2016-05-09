@@ -1,4 +1,4 @@
-DataBox = LeftHippoMatrix('1.mat');
+DataBox = LeftHippoMatrix('12.mat');
 test = GLCM3D(DataBox,10);
 A = zeros(130,1);
 for i = 1:130

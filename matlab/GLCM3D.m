@@ -28,7 +28,7 @@ for d = 1:distance
             for k = 1:sizez
                 %Tjekker om datapunktet er forskelligt fra nan
                 datapoint = data(i,j,k);
-                if (isnan(datapoint) == 0)
+                if (isnan(datapoint) ~= 1)
                     %Fire første svarer til glcm2D i x plan, samme
                     %rækkefølgeme som 2D
                     if (i + d < sizex)

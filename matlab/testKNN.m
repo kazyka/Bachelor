@@ -18,8 +18,8 @@ if (k > 0)
     restLABELS = tmpidx(tmpvec);
 
     %predicter på de resterende data
-    tmppredict = zeros(20,1);
-    for i = 1:20
+    tmppredict = zeros(size(restKTrainData,1),1);
+    for i = 1:size(restKTrainData,1)
         predictTEST = predict(KNNMdl, restKTrainData(i,:));
         tmppredict(i) = predictTEST == restLABELS(i);
     end
@@ -44,8 +44,8 @@ else
         restLABELS = tmpidx(tmpvec);
 
         %predicter på de resterende data
-        tmppredict = zeros(20,1);
-        for i = 1:20
+        tmppredict = zeros(size(restKTrainData,1),1);
+        for i = 1:size(restKTrainData,1)
             predictTEST = predict(KNNMdl, restKTrainData(i,:));
             tmppredict(i) = predictTEST == restLABELS(i);
         end

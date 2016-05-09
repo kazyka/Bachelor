@@ -216,7 +216,7 @@ hxy2 = zeros(size_glcm_3,1);
 for k = 1:size_glcm_3 % number glcms
 
     glcm_sum(k) = sum(sum(glcm(:,:,k)));
-    glcm(:,:,k) = glcm(:,:,k)./glcm_sum(k); % Normalize each glcm
+%     glcm(:,:,k) = glcm(:,:,k)./glcm_sum(k); % Normalize each glcm
     glcm_mean(k) = mean2(glcm(:,:,k)); % compute mean after norm
     glcm_var(k)  = (std2(glcm(:,:,k)))^2;
     
