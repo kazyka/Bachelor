@@ -1,6 +1,4 @@
-kage = glcm2dNew('12.mat',1);
-
+kage = glcm2dFast('12.mat',1);
 A = kage{1};
-test1 = sum(sum(A));
-test2 = sum(A(:));
-[data_Derivations] = dataexection(1,2);
+test1 = derivationsTest(A,256);
+test2 = GLCM_Features1Test(A);
