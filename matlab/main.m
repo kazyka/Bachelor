@@ -13,6 +13,9 @@ addpath(fullfile(pwd,'olddata'));
 addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
 
+
+
+
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
@@ -32,12 +35,7 @@ NumberOfPatients = 10;
 %Kalder dataloader -> loader fra data folder
 simpleAllplot(DATA, NumberOfPatients, 12, 1);
 
-
-
-
-
 %-----KNN---------------
-
 
 
 NumberOfPatients = 100;

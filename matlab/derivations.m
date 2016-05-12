@@ -16,7 +16,7 @@ function [out] = derivations(my_glcm, gsl)
 %gsl = gray scale levels
 %
 
-
+my_glcm = my_glcm./sum(sum(my_glcm));
 
 %Vector for C_xplusy (indgang 2 svarer til k = 2, så i = k)
 CV_xplusy = zeros(512,1);
