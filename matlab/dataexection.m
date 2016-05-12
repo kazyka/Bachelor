@@ -22,10 +22,10 @@ for i = start:finish
         
         
         %loads the file
-        data_load = GLCM2D(files(j).name,10);
+        data_load = glcm2dFast(files(j).name,10);
         data_3D = GLCM3D(files(j).name,10);
         
-        data_loadErode = GLCM2DErode(files(j).name,10);
+        data_loadErode = glcm2dFastErode(files(j).name,10);
         data_3DErode = GLCM3DErode(files(j).name,10);
         %Doing the calculation for GLCM
         %First doing GLCM2D and then the derivation
@@ -34,8 +34,8 @@ for i = start:finish
         data_Derivations3D = cell(130, 1);
         data_Derivations3DErode = cell(130, 1);
         for k=1:120
-            data_Derivations{k} =  derivations(data_load.GLCM2dDist{k}, 256);
-            data_DerivationsErode{k} =  derivations(data_loadErode.GLCM2dDist{k}, 256);
+            data_Derivations{k} =  derivations(data_load{k}, 256);
+            data_DerivationsErode{k} =  derivations(data_loadErode{k}, 256);
         end
         for k=1:130
             data_Derivations3D{k} =  derivations(data_3D{k}, 256);

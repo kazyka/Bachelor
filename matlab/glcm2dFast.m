@@ -1,4 +1,4 @@
-function glcm2d = glcm2dNew(data, distance)
+function glcm2d = glcm2dFast(data, distance)
 DATA = LeftHippoMatrix(data);
 glcm2d = cell(12*distance,1);
 for i = 1:distance
