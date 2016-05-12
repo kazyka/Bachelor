@@ -1,7 +1,9 @@
 test = GLCM2D('1.mat',10);
-test2 = GLCMFeatures(test.GLCM2dDist{1,1});
+test2 = GLCMFeatures(glcm);
 mat = graycoprops(test.GLCM2dDist{1,1},{'contrast','homogeneity','Energy','Correlation'});
-test3 = derivations(test.GLCM2dDist{1,1}, 256);
+tic;test3 = derivations(glcm, 256); toc
+tic;test4 = GLCMDerivations(glcm);toc
+
 
 m = [1 2; 3 4];
 
@@ -27,5 +29,7 @@ plot(tmp1, 'g')
 plot(tmp2)
 hold off;
 
+
+tmp = GLCMFeatures(glcm);
 
 % open graycoprops

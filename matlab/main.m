@@ -13,6 +13,10 @@ addpath(fullfile(pwd,'olddata'));
 addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
 
+ open graycoprops
+ open testKNNMirza
+ open GLCMFeatures
+ open GLCMDerivations
 
 
 
