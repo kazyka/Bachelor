@@ -1,6 +1,7 @@
 function HXY1 = HXY1(my_glcm, N)
 
-
+% my_glcm = glcm;
+% N = 256;
 Ci_y = sum(my_glcm);
 
 Ci_x = sum(my_glcm,2);
@@ -17,3 +18,6 @@ for i = 1:N
     end
 end
 HXY1 = -HXY1;
+
+
+%sum(my_glcm(find(my_glcm))) burde gerne være 1

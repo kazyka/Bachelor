@@ -17,6 +17,7 @@ addpath(fullfile(pwd,'testFiles'));
  open testKNNMirza
  open GLCMFeatures
  open GLCMDerivations
+ open derivations
 
 
 
@@ -33,11 +34,11 @@ addpath(fullfile(pwd,'testFiles'));
 
 %LoadData
 NumberOfPatients = 10;
-[DATA] = dataloader(NumberOfPatients,1);
+[DATA] = dataloader(NumberOfPatients);
 [DATAErode] = dataloaderErode(NumberOfPatients,1);
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
-simpleAllplot(DATA, NumberOfPatients, 12, 1);
+simpleAllplot(DATA, NumberOfPatients, 1, 1);
 
 %-----KNN---------------
 
@@ -49,6 +50,8 @@ figure(1)
 [trainedData, indexAll, label] = trainKNN(KTrainData, 6);
 figure(2)
 [accuracymodel] = testKNN(trainedData, KTrainData, indexAll, 1, label);
+figure(3)
+crossingKNN = crossKNN(KTrainData, 5);
 
 
 

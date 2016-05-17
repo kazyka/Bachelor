@@ -4,6 +4,7 @@ function stats = GLCMDerivations(glcm)
 % Normalize the GLCM
 glcm = glcm./sum(glcm(:));
 
+
 %Finding the size of the glcm aka graylevels
 nGrayLevels = size(glcm, 1);
 
@@ -44,42 +45,29 @@ muY = mean(cY);
 stdX = std(cX);
 stdY = std(cY);
 
-HXY1 = -nansum(tmpGLCM(tmpsub)'.*log(cX(I).*cY(J))); 
+HXY1 = -nansum(tmpGLCM(tmpsub)'.*log(cX(I).*cY(J))); %Passer ikk med vores
 HXY2 = -nansum(cX(I).*cY(J).*log(cX(I).*cY(J)));
 HX   = -nansum(cX.*log(cX));
 HY   = -nansum(cY.*log(cY));
 HXY  = -nansum(tmpGLCM(:).*log(tmpGLCM(:)));
 
 
+
 stats.angularSecondMoment                = sum(tmpGLCM(:).^2);
 stats.contrast                           = sum(abs(I-J).^2.*tmpGLCM(tmpsub));
 stats.correlation                        = (sum(I.*J.*tmpGLCM(tmpsub)) - muX*muY) ./ (stdX*stdY);  
-stats.variance                           = sum(((I - muX).^2).*tmpGLCM(tmpsub)); %USIKKER
+stats.variance                           = sum(((I - mean(tmpGLCM(:))).^2).*tmpGLCM(tmpsub));
 stats.inverseDifferenceMoment            = sum(tmpGLCM(tmpsub)./(1 + (I-J).^2));
 stats.sumAverage                         = sum(bsxfun(@times,(2:2*nGrayLevels)',cXplusY));
 stats.sumVariance                        = sum(((2:2*nGrayLevels) - stats.sumAverage)'.^2.*cXplusY((2:2*nGrayLevels)-1,1));
 stats.sumEntropy                         = nansum(cXplusY.*log(cXplusY));
-stats.entropy                            = -HXY;
-%stats.differenceVariance                 = 
+stats.entropy                            = HXY;
+stats.differenceVariance                 = var(cXminusY);
 stats.differenceEntropy                  = nansum(cXminusY.*log(cXminusY));
-stats.informationMeasuresOfCorrelation1  = (HXY -HXY1)./(max(HX,HY));
-stats.informationMeasuresOfCorrelation2  = sqrt(1-exp(-2.*(HXY2-HXY)));
+stats.informationMeasuresOfCorrelation1  = (HXY - HXY1)./(max(HX,HY));
+stats.informationMeasuresOfCorrelation2  = sqrt(1-exp(-2.*(HXY2 - HXY)));
 
 
 end
 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
