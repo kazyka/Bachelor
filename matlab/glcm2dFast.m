@@ -1,8 +1,8 @@
 function glcm2d = glcm2dFast(data, distance)
-DATA = LeftHippoMatrix(data);
+
 glcm2d = cell(12*distance,1);
 for i = 1:distance
-    [glcm2dx, glcm2dy, glcm2dz] = glcm2DxNew(DATA,i);
+    [glcm2dx, glcm2dy, glcm2dz] = glcm2DallAngles(data,i);
     glcm2d{((i-1)*12)+1} = glcm2dx(:,:,1);
     glcm2d{((i-1)*12)+2} = glcm2dx(:,:,2);
     glcm2d{((i-1)*12)+3} = glcm2dx(:,:,3);

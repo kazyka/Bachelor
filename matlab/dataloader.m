@@ -1,4 +1,4 @@
-function [DATA] = dataloader(NumberOfPatients,Start)
+function [DATA] = dataloader(NumberOfPatients,Start, var)
 
 if (mod(NumberOfPatients,2) ~= 0)
     disp('ERROR: Input needs to be even')
@@ -19,16 +19,57 @@ for i = 1:NumberOfPatients
 end
 DATAones = cell(tmp1counter,1);
 DATAthress = cell(tmp3counter,1);
-for i = Start:(tmp1counter+Start-1)
-    tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i-Start+1} = tmp.data_Derivations;
-end
-for i = Start:(tmp3counter+Start-1)
-    tmp = load(['AD/datafileAD' num2str(i) '.mat']);
-    DATAthress{i-Start+1} = tmp.data_Derivations;
-end
 
-DATA = [DATAones; DATAthress];
+
+if (strcmp(var,'normal') == 1)
+
+    for i = Start:(tmp1counter+Start-1)
+        tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
+        DATAones{i-Start+1} = tmp.data_Derivations;
+    end
+    for i = Start:(tmp3counter+Start-1)
+        tmp = load(['AD/datafileAD' num2str(i) '.mat']);
+        DATAthress{i-Start+1} = tmp.data_Derivations;
+    end
+
+    DATA = [DATAones; DATAthress];
+    
+elseif (strcmp(var,'erode')  == 1)
+    for i = 1:tmp1counter
+        tmp = load(['ErodeCONTROL/ErodedatafileCO' num2str(i) '.mat']);
+        DATAones{i} = tmp.data_Derivations;
+    end
+    for i = 1:tmp3counter
+        tmp = load(['ErodeAD/ErodedatafileAD' num2str(i) '.mat']);
+        DATAthress{i} = tmp.data_Derivations;
+    end
+    DATA = [DATAones; DATAthress];
+    
+elseif (strcmp(var, '3D') || STRCMP(var, '3d'))  == 1
+    for i = Start:(tmp1counter+Start-1)
+    tmp = load(['3DCONTROL/datafileCO' num2str(i) '.mat']);
+    DATAones{i-Start+1} = tmp.data_Derivations;
+    end
+    for i = Start:(tmp3counter+Start-1)
+        tmp = load(['3DAD/datafileAD' num2str(i) '.mat']);
+        DATAthress{i-Start+1} = tmp.data_Derivations;
+    end
+
+    DATA = [DATAones; DATAthress];
+    
+elseif (strcmp(var, '3DERODE') || STRCMP(var, '3derode'))  == 1
+    for i = Start:(tmp1counter+Start-1)
+    tmp = load(['3DErodeCONTROL/datafileCO' num2str(i) '.mat']);
+    DATAones{i-Start+1} = tmp.data_Derivations;
+    end
+    for i = Start:(tmp3counter+Start-1)
+        tmp = load(['3DErodeAD/datafileAD' num2str(i) '.mat']);
+        DATAthress{i-Start+1} = tmp.data_Derivations;
+    end
+
+    DATA = [DATAones; DATAthress];
+    
+end
 
 
 

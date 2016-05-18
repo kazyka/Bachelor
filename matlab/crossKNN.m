@@ -16,9 +16,10 @@ figure(1)
 classError = zeros(20,1);
 for k = 1:20
     KNNMdl = fitcknn(randomKTrainData,samplelabel,'Distance','euclidean',...
-        'NumNeighbors',k,'Standardize',0);
+        'NumNeighbors',k,'Standardize',1);
     rng(rngesus); % For reproducibility
     CVKNNMdl = crossval(KNNMdl);
     classError(k) = kfoldLoss(CVKNNMdl);
 end
 plot(classError)
+end

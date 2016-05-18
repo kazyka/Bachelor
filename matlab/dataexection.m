@@ -11,22 +11,13 @@ for i = start:finish
     for j = 1:length(files)
         %output for which file is loading currently
         fprintf('Current file : %s\n',files(j).name)
-        
-        
-        %a = load(files(j).name);
-        %mri = a.mri;
-        %segmentation = a.segmentation;
-        
-        %tmp = load(sprintf('%d.mat',i));
-        %save(sprintf('datafile%1d',i), 'tmp');
-        
-        
+              
         %loads the file
-        data_load = glcm2dFast(files(j).name,10);
-        data_3D = GLCM3D(files(j).name,10);
+        data_load = glcm2dFast(LeftHippoMatrix(files(j).name, 'normal'), 10);
+        data_3D = GLCM3D(LeftHippoMatrix(files(j).name, 'normal'),10);
         
-        data_loadErode = glcm2dFastErode(files(j).name,10);
-        data_3DErode = GLCM3DErode(files(j).name,10);
+        data_loadErode = glcm2dFast(LeftHippoMatrix(files(j).name, 'erode'), 10);
+        data_3DErode = GLCM3DErode(LeftHippoMatrix(files(j).name, 'erode'),10);
         %Doing the calculation for GLCM
         %First doing GLCM2D and then the derivation
         data_Derivations = cell(120, 1);
@@ -34,12 +25,12 @@ for i = start:finish
         data_Derivations3D = cell(130, 1);
         data_Derivations3DErode = cell(130, 1);
         for k=1:120
-            data_Derivations{k} =  derivations(data_load{k}, 256);
-            data_DerivationsErode{k} =  derivations(data_loadErode{k}, 256);
+            data_Derivations{k} =  GLCMDerivations(data_load{k});
+            data_DerivationsErode{k} =  GLCMDerivations(data_loadErode{k});
         end
         for k=1:130
-            data_Derivations3D{k} =  derivations(data_3D{k}, 256);
-            data_Derivations3DErode{k} =  derivations(data_3DErode{k}, 256);
+            data_Derivations3D{k} =  GLCMDerivations(data_3D{k});
+            data_Derivations3DErode{k} =  GLCMDerivations(data_3DErode{k});
         end
         
         if (labels(i) == 3)

@@ -1,10 +1,33 @@
-function [hippoBox] = LeftHippoMatrix(x)
+function [hippoBox] = LeftHippoMatrix(x, var)
 
 load(x);
 
-sum_of_1 = size(find(segmentation == 1),1);
 
-left = zeros(sum_of_1,4);
+
+if (strcmp(var,'normal') == 1)
+    sum_of_1 = size(find(segmentation == 1),1);
+    left = zeros(sum_of_1,4);
+    
+elseif (strcmp(var,'erode') == 1)
+   [xx,yy,zz] = ndgrid(-1:1);
+    nhood = sqrt(xx.^2 + yy.^2 + zz.^2) <= 1.0;
+    segErode = imerode(segmentation, nhood);
+    % SE = strel('diamond', 1);
+    % segErode = imerode(segmentation, SE);
+    %sum_of_1 = size(find(segmentation == 1),1);
+    %sum_of_2 = size(find(segmentation == 2),1);
+
+    sum_of_1 = size(find(segErode == 1),1);
+    %sum_of_2_erode = size(find(segErode ==2),1);
+    %Procent = [sum_of_1_erode / sum_of_1 sum_of_2_erode / sum_of_2];
+
+    left = zeros(sum_of_1,4);
+else
+    disp('ERROR: Input needs to be normal or erode. STOPPING FUNCTION')
+    return;
+end
+    
+    
 counter1 = 0;
 for i = 1:256
      for j = 1:256

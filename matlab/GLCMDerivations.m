@@ -45,7 +45,7 @@ muY = mean(cY);
 stdX = std(cX);
 stdY = std(cY);
 
-HXY1 = -nansum(tmpGLCM(tmpsub)'.*log(cX(I).*cY(J))); %Passer ikk med vores
+HXY1 = -nansum(tmpGLCM(tmpsub)'.*log(cX(I).*cY(J))); 
 HXY2 = -nansum(cX(I).*cY(J).*log(cX(I).*cY(J)));
 HX   = -nansum(cX.*log(cX));
 HY   = -nansum(cY.*log(cY));

@@ -16,7 +16,6 @@ addpath(fullfile(pwd,'testFiles'));
  open graycoprops
  open testKNNMirza
  open GLCMFeatures
- open GLCMDerivations
  open derivations
 
 
@@ -33,25 +32,68 @@ addpath(fullfile(pwd,'testFiles'));
 %transpose(anglex90) = anglez90
 
 %LoadData
-NumberOfPatients = 10;
-[DATA] = dataloader(NumberOfPatients);
-[DATAErode] = dataloaderErode(NumberOfPatients,1);
+NumberOfPatients = 100;
+[DATA] = dataloader(NumberOfPatients,1,'normal');
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
-simpleAllplot(DATA, NumberOfPatients, 1, 1);
+%(DATA, NumberOfPatients ,looping, var)
+simpleAllplot(DATA, NumberOfPatients, 13, 'simple');
+
+
+
+%---FEATURE-----
+NumberOfPatients = 100;
+[DATATrain] = dataloader(NumberOfPatients,1, 'normal');
+%(DATA, NumberOfPatients,Distances,Angles,Planes)
+KTrainData = knndatasort2D(DATATrain,NumberOfPatients,10,4,3);
+
+
+%---Feature selection, Method: Forward selection---
+NumberOfPatients = 100;
+[Data] = dataloader(NumberOfPatients,1, 'normal');
+FWData = knndatasort2D(Data,NumberOfPatients,10,1,1);
+
+selectedData = zeros(NumberOfPatients,1);
+%input(dataset,oldAccuracy,selectedFeatures)
+%output(featureIndex,selectedDataset,newAccuracy,remaningDataset)
+
+tic; [tmp1, tmp2, tmp3, tmp4] = ForwardSelection(FWData,1,zeros(size(FWData,1),1)); toc
+tmp2 = tmp2(:,2);
+%tic; [featureIndex1, selectedDataset1, newAccuracy1, remainingDataset1] = ForwardSelection(remainingDataset,newAccuracy,selectedDataset(:,2)); toc
+%tic; [featureIndex2, selectedDataset2, newAccuracy2, remainingDataset2] = ForwardSelection(remainingDataset1,newAccuracy1,selectedDataset1); toc
+featureIndex = tmp1;
+accuracy = tmp3;
+for i = 1:14
+    [tmp1, tmp2, tmp3, tmp4] = ForwardSelection(tmp4, tmp3, tmp2);
+    featureIndex(i+1) = tmp1;
+    accuracy(i+1) = tmp3;
+    
+end
+
+
+
+
+
+
+%---PCA ANALYSE---
+Z = zscore(KTrainData);
+
+bob = var(KTrainData);
+
+[wcoeff,score,latent,~,explained] = pca(Z(:,1:398));
+
 
 %-----KNN---------------
 
 
-NumberOfPatients = 100;
-[DATATrain] = dataloader(NumberOfPatients,1);
+
 KTrainData = knndatasort2D(DATATrain,NumberOfPatients,1,1,3);
 figure(1)
 [trainedData, indexAll, label] = trainKNN(KTrainData, 6);
 figure(2)
 [accuracymodel] = testKNN(trainedData, KTrainData, indexAll, 1, label);
 figure(3)
-crossingKNN = crossKNN(KTrainData, 5);
+crossKNN(tmp2, 1);
 
 
 
@@ -122,12 +164,7 @@ crossingKNN = crossKNN(KTrainData, 5);
 
 
 
-%---PCA ANALYSE---
-% Z = zscore(KTrainData);
 
-% bob = var(KTrainData);
-
-% [wcoeff,~,latent,~,explained] = pca(Z);
 
 
 

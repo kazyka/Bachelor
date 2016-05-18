@@ -1,4 +1,4 @@
-function [DATA] = simpleAllplot(DATA, NumberOfPatients ,looping, both)
+function [DATA] = simpleAllplot(DATA, NumberOfPatients ,looping, var)
 %SIMPLEALLPLOT loads the datafiles and then plots them
 %NumberOfPatients should be an even number
 %
@@ -18,8 +18,8 @@ if (looping > 13) || (looping < 1)
     return;
 end
 
-if (both > 3) || (both < 1)
-    disp('ERROR: Input needs to be between 1 and 3. STOPPING FUNCTION')
+if (strcmp(var,'simple') && strcmp(var,'mean') && strcmp(var,'both') ~= 1)
+    disp('ERROR: Input needs to be simple, mean or both. STOPPING FUNCTION')
     return;
 end
 
@@ -50,7 +50,7 @@ Metrics{13} = 'Information measures of correlation2';
 
 %1-4 = x, 5-8=y og 9-12=z
 %alle angles, distance 10, variable, alle planer
-%Datasæt(patient*distance,angles,planes,metric(minus imoc_2))
+%Datasæt(patient*distance,angles,planes,metric)
 %NumberOfPatients = 10;
 Dataset = zeros(NumberOfPatients*10,4,3,13);
 for i=1:NumberOfPatients %datasæt
@@ -59,36 +59,36 @@ for i=1:NumberOfPatients %datasæt
             for k=1:4  %angles 0-135
 %                 tmp = DATA(i);
                 index = j+10*(i-1); %For distance 1..10
-                Dataset(index,k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_asm;
-                Dataset(index,k,m,2) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_con;
-                Dataset(index,k,m,3) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_corr;
-                Dataset(index,k,m,4) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_var;
-                Dataset(index,k,m,5) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_idm;
-                Dataset(index,k,m,6) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_sa;
-                Dataset(index,k,m,7) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_sv;
-                Dataset(index,k,m,8) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_se;
-                Dataset(index,k,m,9) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_en;
-                Dataset(index,k,m,10) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_dv;
-                Dataset(index,k,m,11) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_de;
-                Dataset(index,k,m,12) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc1;
-                %Dataset(j+10*(i-1),k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.my_imoc2;
+                Dataset(index,k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.angularSecondMoment;
+                Dataset(index,k,m,2) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.contrast;
+                Dataset(index,k,m,3) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.correlation;
+                Dataset(index,k,m,4) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.variance;
+                Dataset(index,k,m,5) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.inverseDifferenceMoment;
+                Dataset(index,k,m,6) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumAverage;
+                Dataset(index,k,m,7) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumVariance;
+                Dataset(index,k,m,8) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumEntropy;
+                Dataset(index,k,m,9) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.entropy;
+                Dataset(index,k,m,10) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.differenceVariance;
+                Dataset(index,k,m,11) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.differenceEntropy;
+                Dataset(index,k,m,12) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.informationMeasuresOfCorrelation1;
+                Dataset(index,k,m,13) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.informationMeasuresOfCorrelation2;
             end
         end
     end
 end
 
 
-if (both == 1)
+if (strcmp(var, 'simple') == 1)
     for i = 1:looping
         simpleplot(Dataset,Metrics{i}, i);
     end
-elseif (both == 2)
+elseif (strcmp(var, 'mean') == 2)
     for i = 1:looping
         meanplotter(Dataset,Metrics{i}, i);
     end
 end
 
-if (both == 3) 
+if (strcmp(var, 'both') == 3) 
     for i = 1:looping
         simpleplot(Dataset,Metrics{i}, i);
         meanplotter(Dataset,Metrics{i}, i);
