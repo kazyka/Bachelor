@@ -17,14 +17,14 @@ for i = start:finish
         data_3D = GLCM3D(LeftHippoMatrix(files(j).name, 'normal'),10);
         
         data_loadErode = glcm2dFast(LeftHippoMatrix(files(j).name, 'erode'), 10);
-        data_3DErode = GLCM3DErode(LeftHippoMatrix(files(j).name, 'erode'),10);
+        data_3DErode = GLCM3D(LeftHippoMatrix(files(j).name, 'erode'),10);
         %Doing the calculation for GLCM
         %First doing GLCM2D and then the derivation
-        data_Derivations = cell(120, 1);
-        data_DerivationsErode = cell(120, 1);
+        data_Derivations = cell(90, 1);
+        data_DerivationsErode = cell(90, 1);
         data_Derivations3D = cell(130, 1);
         data_Derivations3DErode = cell(130, 1);
-        for k=1:120
+        for k=1:90
             data_Derivations{k} =  GLCMDerivations(data_load{k});
             data_DerivationsErode{k} =  GLCMDerivations(data_loadErode{k});
         end

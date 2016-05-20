@@ -52,27 +52,27 @@ Metrics{13} = 'Information measures of correlation2';
 %alle angles, distance 10, variable, alle planer
 %Datasæt(patient*distance,angles,planes,metric)
 %NumberOfPatients = 10;
-Dataset = zeros(NumberOfPatients*10,4,3,13);
+Dataset = zeros(NumberOfPatients*10,9,13);
 for i=1:NumberOfPatients %datasæt
     for j=1:10 %distance
-        for m=1:3 %plans x,y,z
-            for k=1:4  %angles 0-135
+        for m=1:9 %plans x,y,z
 %                 tmp = DATA(i);
-                index = j+10*(i-1); %For distance 1..10
-                Dataset(index,k,m,1) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.angularSecondMoment;
-                Dataset(index,k,m,2) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.contrast;
-                Dataset(index,k,m,3) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.correlation;
-                Dataset(index,k,m,4) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.variance;
-                Dataset(index,k,m,5) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.inverseDifferenceMoment;
-                Dataset(index,k,m,6) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumAverage;
-                Dataset(index,k,m,7) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumVariance;
-                Dataset(index,k,m,8) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.sumEntropy;
-                Dataset(index,k,m,9) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.entropy;
-                Dataset(index,k,m,10) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.differenceVariance;
-                Dataset(index,k,m,11) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.differenceEntropy;
-                Dataset(index,k,m,12) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.informationMeasuresOfCorrelation1;
-                Dataset(index,k,m,13) = DATA{i}{(k+4*(m-1))+(12*(j-1)),1}.informationMeasuresOfCorrelation2;
-            end
+            index = j+10*(i-1); %For distance 1..10
+            %Dataset(index,m,1) DATA{i} {m}
+            
+            Dataset(index,m,1) = DATA{i}{m+(9*(j-1)),1}.angularSecondMoment;
+            Dataset(index,m,2) = DATA{i}{m+(9*(j-1)),1}.contrast;
+            Dataset(index,m,3) = DATA{i}{m+(9*(j-1)),1}.correlation;
+            Dataset(index,m,4) = DATA{i}{m+(9*(j-1)),1}.variance;
+            Dataset(index,m,5) = DATA{i}{m+(9*(j-1)),1}.inverseDifferenceMoment;
+            Dataset(index,m,6) = DATA{i}{m+(9*(j-1)),1}.sumAverage;
+            Dataset(index,m,7) = DATA{i}{m+(9*(j-1)),1}.sumVariance;
+            Dataset(index,m,8) = DATA{i}{m+(9*(j-1)),1}.sumEntropy;
+            Dataset(index,m,9) = DATA{i}{m+(9*(j-1)),1}.entropy;
+            Dataset(index,m,10) = DATA{i}{m+(9*(j-1)),1}.differenceVariance;
+            Dataset(index,m,11) = DATA{i}{m+(9*(j-1)),1}.differenceEntropy;
+            Dataset(index,m,12) = DATA{i}{m+(9*(j-1)),1}.informationMeasuresOfCorrelation1;
+            Dataset(index,m,13) = DATA{i}{m+(9*(j-1)),1}.informationMeasuresOfCorrelation2;            
         end
     end
 end

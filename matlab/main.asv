@@ -23,7 +23,7 @@ addpath(fullfile(pwd,'testFiles'));
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
-[data_Derivations] = dataexection(1,100);
+[data_Derivations] = dataexection(1,10);
 %[data_DerivationsErode] = dataexecutionErode(1,100);
 
 %Huske huske
@@ -32,7 +32,7 @@ addpath(fullfile(pwd,'testFiles'));
 %transpose(anglex90) = anglez45
 
 %LoadData
-NumberOfPatients = 100;
+NumberOfPatients = 10;
 [DATA] = dataloader(NumberOfPatients,1,'normal');
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
@@ -42,16 +42,16 @@ simpleAllplot(DATA, NumberOfPatients, 13, 'simple');
 
 
 %---FEATURE-----
-NumberOfPatients = 100;
+NumberOfPatients = 10;
 [DATATrain] = dataloader(NumberOfPatients,1, 'normal');
 %(DATA, NumberOfPatients,Distances,Angles,Planes)
 KTrainData = knndatasort2D(DATATrain,NumberOfPatients,10,9);
 
 
 %---Feature selection, Method: Forward selection---
-NumberOfPatients = 100;
+NumberOfPatients = 10;
 [Data] = dataloader(NumberOfPatients,1, 'normal');
-FWData = knndatasort2D(Data,NumberOfPatients,10,1);
+FWData = knndatasort2D(Data,NumberOfPatients,10,10,1);
 
 selectedData = zeros(NumberOfPatients,1);
 %input(dataset,oldAccuracy,selectedFeatures)
@@ -67,6 +67,7 @@ for i = 1:14
     [tmp1, tmp2, tmp3, tmp4] = ForwardSelection(tmp4, tmp3, tmp2);
     featureIndex(i+1) = tmp1;
     accuracy(i+1) = tmp3;
+    
 end
 
 
@@ -86,7 +87,7 @@ bob = var(KTrainData);
 
 
 
-KTrainData = knndatasort2D(DATATrain,NumberOfPatients,10,9);
+KTrainData = knndatasort2D(DATATrain,NumberOfPatients,1,1,3);
 figure(1)
 [trainedData, indexAll, label] = trainKNN(KTrainData, 6);
 figure(2)
