@@ -16,23 +16,23 @@ function [out] = derivationsTest(my_glcm, gsl)
 %gsl = gray scale levels
 %
 
-
+my_glcm = my_glcm./sum(sum(my_glcm));
 
 %Vector for C_xplusy (indgang 2 svarer til k = 2, så i = k)
-out.CV_xplusy = zeros(512,1);
+CV_xplusy = zeros(512,1);
 for i = 2:512
-    out.CV_xplusy(i) = C_xplusy(my_glcm,i);
+    CV_xplusy(i) = C_xplusy(my_glcm,i);
 end
 
 %Vector for C_xminusy(indgang 1 svarer til k = 0, så i-1 = k)
-out.CV_xminusy = zeros(256,1);
+CV_xminusy = zeros(256,1);
 for i = 0:255
-    out.CV_xminusy(i+1) = C_xminusy(my_glcm,i);
+    CV_xminusy(i+1) = C_xminusy(my_glcm,i);
 end
 
-out.Ci_y = sum(my_glcm);
+Ci_y = sum(my_glcm);
 
-out.Ci_x = sum(my_glcm,2);
+Ci_x = sum(my_glcm,2);
 
 %Angular second moment
 % i = 1;
@@ -61,19 +61,17 @@ end
 
 %Correlation
 
-out.mu_x = mean(out.Ci_x);
-out.mu_y = mean(out.Ci_y);
-out.stdTx = var(out.Ci_x)^0.5;
-out.stdTy = var(out.Ci_y)^0.5;
-out.std_x = std(out.Ci_x);
-out.std_y = std(out.Ci_y);
+mu_x = mean(Ci_x);
+mu_y = mean(Ci_y);
+std_x = std(Ci_x);
+std_y = std(Ci_y);
 out.my_corr = 0;
 for i = 1:gsl
     for j = 1:gsl
-        out.my_corr = out.my_corr + (i * j * my_glcm(i,j) - out.mu_x*out.mu_y);
+        out.my_corr = out.my_corr + (i * j * my_glcm(i,j) - mu_x*mu_y);
     end
 end
-out.my_corr = out.my_corr/(out.std_x*out.std_y);
+out.my_corr = out.my_corr/(std_x*std_y);
 
 
 
@@ -93,40 +91,34 @@ end
 
 out.my_sa = 0;
 for i = 2:(2*gsl)
-    out.my_sa = out.my_sa + i*out.CV_xplusy(i);
+    out.my_sa = out.my_sa + i*CV_xplusy(i);
 end
 
 %Sum Variance
 out.my_sv = 0;
 for i = 2:(2*gsl)
-    out.my_sv = out.my_sv + (i - out.my_sa)^2*out.CV_xplusy(i);
+    out.my_sv = out.my_sv + (i - out.my_sa)^2*CV_xplusy(i);
 end
 
 %Sum Entropy
 out.my_se = 0;
 for i = 2:(2*gsl)
-    tmp = out.CV_xplusy(i);
+    tmp = CV_xplusy(i);
     if(tmp ~= 0)
         out.my_se = out.my_se + tmp*log(tmp);
     end
 end
 
 %Entropy
-out.my_en = 0;
-for i = 1:gsl
-    for j = 1:gsl
-        tmp = my_glcm(i , j);
-        if(tmp ~= 0)
-            out.my_en = out.my_en + tmp*log(tmp);
-        end
-    end
-end
+Entropy = -nansum(my_glcm(:).*log(my_glcm(:)));
+
+out.my_en = Entropy;
 
 %Difference variance
 out.my_dv = 0;
 my_dv_vec = zeros(gsl,1);
 for i = 1:gsl
-    my_dv_vec(i) = out.CV_xminusy(i);
+    my_dv_vec(i) = CV_xminusy(i);
 end
 out.my_dv = var(my_dv_vec);
 
@@ -134,7 +126,7 @@ out.my_dv = var(my_dv_vec);
 out.my_de = 0;
 
 for i = 0:(gsl - 1)
-    tmp = out.CV_xminusy(i+1);
+    tmp = CV_xminusy(i+1);
     if(tmp ~= 0)
         out.my_de =  out.my_de + tmp*log(tmp);
     end
@@ -144,7 +136,7 @@ end
 
 HX = 0;
 for i = 1:gsl
-    tmp = out.Ci_x(i);
+    tmp = Ci_x(i);
     if(tmp ~= 0)
         HX = HX + tmp*log(tmp);
     end
@@ -153,19 +145,16 @@ HX = -HX;
 
 HY = 0;
 for i = 1:gsl
-    tmp = out.Ci_y(i);
+    tmp = Ci_y(i);
     if(tmp ~= 0)
         HY = HY + tmp*log(tmp);
     end
 end
 HY = -HY;
 
-MYHXY = HXY(my_glcm,256);
-
-
 %Information measures of correlation
-out.my_imoc1 = (MYHXY - HXY1(my_glcm,gsl)) / (max(HX,HY));
+out.my_imoc1 = (Entropy - HXY1(my_glcm,gsl)) / (max(HX,HY));
 
-out.my_imoc2 = sqrt(1 - exp(-2*(HXY2(my_glcm,gsl) - MYHXY)));
+out.my_imoc2 = sqrt(1 - exp(-2*(HXY2(my_glcm,gsl) - Entropy)));
 
 

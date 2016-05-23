@@ -27,17 +27,19 @@ tmpsub = 1:nGrayLevels*nGrayLevels;
 
 
 %Doing the GLCM Features
-tmpGLCM = glcm(:,:); 
+%tmpGLCM = glcm(:,:); 
 
-cX(:) = sum(tmpGLCM,2);
-cY(:) = sum(tmpGLCM,1);
-tmpcXpY = [(I+J)' tmpGLCM(tmpsub)'];
-tmpcXmY = [abs((I-J))' tmpGLCM(tmpsub)'];
+cX(:) = sum(glcm,2);
+cY(:) = sum(glcm,1);
+
+%Vector for C_xplusy (indgang 2 svarer til k = 2, så i = k)
 for i = 2:2*nGrayLevels
-    cXplusY(i-1,1) = sum(tmpcXpY(tmpcXpY(:,1)==i,2));
+    cXplusY(i-1,1) = C_xplusy(glcm,i);
 end
+
+%Vector for cXminusY(indgang 1 svarer til k = 0, så i-1 = k)
 for i = 0:nGrayLevels-1
-    cXminusY(i+1,1) = sum(tmpcXmY(tmpcXmY(:,1)==i,2));
+    cXminusY(i+1,1) = C_xminusy(glcm,i);
 end
 
 muX = mean(cX);
@@ -45,19 +47,19 @@ muY = mean(cY);
 stdX = std(cX);
 stdY = std(cY);
 
-HXY1 = -nansum(tmpGLCM(tmpsub)'.*log(cX(I).*cY(J))); 
+HXY1 = -nansum(glcm(tmpsub)'.*log(cX(I).*cY(J))); 
 HXY2 = -nansum(cX(I).*cY(J).*log(cX(I).*cY(J)));
 HX   = -nansum(cX.*log(cX));
 HY   = -nansum(cY.*log(cY));
-HXY  = -nansum(tmpGLCM(:).*log(tmpGLCM(:)));
+HXY  = -nansum(glcm(:).*log(glcm(:)));
 
 
 
-stats.angularSecondMoment                = sum(tmpGLCM(:).^2);
-stats.contrast                           = sum(abs(I-J).^2.*tmpGLCM(tmpsub));
-stats.correlation                        = (sum(I.*J.*tmpGLCM(tmpsub)) - muX*muY) ./ (stdX*stdY);  
-stats.variance                           = sum(((I - mean(tmpGLCM(:))).^2).*tmpGLCM(tmpsub));
-stats.inverseDifferenceMoment            = sum(tmpGLCM(tmpsub)./(1 + (I-J).^2));
+stats.angularSecondMoment                = sum(glcm(:).^2);
+stats.contrast                           = sum(abs(I-J).^2.*glcm(tmpsub));
+stats.correlation                        = (sum(I.*J.*glcm(tmpsub)) - muX*muY) ./ (stdX*stdY);  
+stats.variance                           = sum(((I - mean(glcm(:))).^2).*glcm(tmpsub));
+stats.inverseDifferenceMoment            = sum(glcm(tmpsub)./(1 + (I-J).^2));
 stats.sumAverage                         = sum(bsxfun(@times,(2:2*nGrayLevels)',cXplusY));
 stats.sumVariance                        = sum(((2:2*nGrayLevels) - stats.sumAverage)'.^2.*cXplusY((2:2*nGrayLevels)-1,1));
 stats.sumEntropy                         = nansum(cXplusY.*log(cXplusY));

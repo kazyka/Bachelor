@@ -23,7 +23,7 @@ addpath(fullfile(pwd,'testFiles'));
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
-[data_Derivations] = dataexection(1,100);
+[data_Derivations] = dataexecution(1,100);
 %[data_DerivationsErode] = dataexecutionErode(1,100);
 
 %Huske huske
