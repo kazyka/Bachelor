@@ -51,6 +51,30 @@ KTrainData = knndatasort2D(DATATrain,NumberOfPatients,10,9);
 %---Feature selection, Method: Forward selection---
 NumberOfPatients = 100;
 [Data] = dataloader(NumberOfPatients,1, 'normal');
+
+
+label = ones(NumberOfPatients,1);
+label((NumberOfPatients/2 +1):NumberOfPatients) = 3;
+%Initilize the data for random pick
+COKTrainData = Data(1:50,:);
+ADKTrainData = Data(51:100,:);
+%randomly sample from data, without replacment
+[sampledCOKTrainData, idxCO] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData, idxAD] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+sortedData = cell(100,1);
+for i=1:10
+    for j =1:5
+        sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
+        sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
+    end
+end
+
+
+%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+%distances(10)
+test = sortedData{1}{1}.angularSecondMoment;
+dataSorted = forwardFeatureDataSort(sortedData,NumberOfPatients);
+
 FWData = knndatasort2D(Data,NumberOfPatients,10,1);
 
 selectedData = zeros(NumberOfPatients,1);

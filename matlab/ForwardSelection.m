@@ -9,10 +9,10 @@ if isequal(selectedFeatures,zeros(size(dataset,1),1)) == 0
     end
 else %first iteration
     for i = 1:size(dataset,2)
-        Features(i) = crossKNN(dataset(:,i),5);
+        Features(i) = 1 - crossKNN(dataset(:,i),5);
     end    
 end
-[newAccuracy,featureIndex] = min(Features);
+[newAccuracy,featureIndex] = max(Features);
 
 selectedDataset = [selectedFeatures dataset(:,featureIndex)];
 
