@@ -72,7 +72,6 @@ end
 
 %Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
 %distances(10)
-test = sortedData{1}{1}.angularSecondMoment;
 dataSorted = forwardFeatureDataSort(sortedData,NumberOfPatients);
 
 FWData = knndatasort2D(Data,NumberOfPatients,10,1);

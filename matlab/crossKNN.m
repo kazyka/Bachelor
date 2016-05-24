@@ -1,4 +1,4 @@
-function crossKNN(KTrainData, rngesus)
+function [classError] = crossKNN(KTrainData, rngesus)
 
 %find the size of the trainData
 tmpPatients = size(KTrainData,1);
@@ -12,14 +12,11 @@ label((tmpPatients/2 +1):tmpPatients) = 3;
 [randomKTrainData, idx] = datasample(KTrainData, tmpPatients, 'Replace', false);
 samplelabel = label(idx);
 
-figure(1)
-classError = zeros(20,1);
-for k = 1:20
-    KNNMdl = fitcknn(randomKTrainData,samplelabel,'Distance','euclidean',...
-        'NumNeighbors',k,'Standardize',1);
-    rng(rngesus); % For reproducibility
-    CVKNNMdl = crossval(KNNMdl);
-    classError(k) = kfoldLoss(CVKNNMdl);
-end
-plot(classError)
+
+
+KNNMdl = fitcknn(randomKTrainData,samplelabel,'Distance','euclidean',...
+    'NumNeighbors',1,'Standardize',1);
+rng(rngesus); % For reproducibility
+CVKNNMdl = crossval(KNNMdl);
+classError = kfoldLoss(CVKNNMdl);
 end
