@@ -1,5 +1,10 @@
 function [] = ForwardSelection(dataset,k)
+%The label setting
+label = ones(10,1);
+label(6:10) = 3;
+label = [label; label; label; label; label; label; label; label; label; label];
 
+%tmp fil
 dataset = dataSorted;
 
 NumberOfFeatures = size(dataset,3);
@@ -45,23 +50,20 @@ toc;
 % dataset(:,featureIndex) = [];
 % remaningDataset = dataset;
 end
+[luder luderidx] = ((max(evaluate)));
 
 
-function [classError] = crossKNN(KTrainData, rngesus)
+function [classError] = crossKNN(KTrainData, rngesus, label)
 
 %find the size of the trainData
-tmpPatients = size(KTrainData,1);
-%The label setting
-label = ones(tmpPatients,1);
-label((tmpPatients/2 +1):tmpPatients) = 3;
-
+% tmpPatients = size(KTrainData,1);
 
 %Laver random sample uden replace og tilpasser labels dertil, når der skal
 %laves knn
-[randomKTrainData, idx] = datasample(KTrainData, tmpPatients, 'Replace', false);
-samplelabel = label(idx);
+% [randomKTrainData, idx] = datasample(KTrainData, tmpPatients, 'Replace', false);
+% samplelabel = label(idx);
 
-KNNMdl = fitcknn(randomKTrainData,samplelabel,'Distance','euclidean',...
+KNNMdl = fitcknn(KTrainData,label,'Distance','euclidean',...
     'NumNeighbors',1,'Standardize',1);
 rng(rngesus); % For reproducibility
 CVKNNMdl = crossval(KNNMdl);
