@@ -45,26 +45,26 @@ elseif (strcmp(var,'erode')  == 1)
     end
     DATA = [DATAones; DATAthress];
     
-elseif (strcmp(var, '3D') || STRCMP(var, '3d'))  == 1
+elseif (strcmp(var, '3D') || strcmp(var, '3d'))  == 1
     for i = Start:(tmp1counter+Start-1)
     tmp = load(['3DCONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i-Start+1} = tmp.data_Derivations;
+    DATAones{i-Start+1} = tmp.data_Derivations3D;
     end
     for i = Start:(tmp3counter+Start-1)
         tmp = load(['3DAD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i-Start+1} = tmp.data_Derivations;
+        DATAthress{i-Start+1} = tmp.data_Derivations3D;
     end
 
     DATA = [DATAones; DATAthress];
     
-elseif (strcmp(var, '3DERODE') || STRCMP(var, '3derode'))  == 1
+elseif (strcmp(var, '3Derode') || strcmp(var, '3derode'))  == 1
     for i = Start:(tmp1counter+Start-1)
     tmp = load(['3DErodeCONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i-Start+1} = tmp.data_Derivations;
+    DATAones{i-Start+1} = tmp.data_Derivations3DErode;
     end
     for i = Start:(tmp3counter+Start-1)
         tmp = load(['3DErodeAD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i-Start+1} = tmp.data_Derivations;
+        DATAthress{i-Start+1} = tmp.data_Derivations3DErode;
     end
 
     DATA = [DATAones; DATAthress];
