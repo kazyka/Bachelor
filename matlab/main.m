@@ -25,7 +25,8 @@ addpath(fullfile(pwd,'testFiles'));
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
 [data_Derivations] = dataexecution(1,100);
 %[data_DerivationsErode] = dataexecutionErode(1,100);
-
+[data123] = dataexecutionTestErode(1,100);
+[DataTest] = specialLoader(100,1);
 %Huske huske
 %anglex0 = angley0
 %angley90 = anglez90
@@ -55,9 +56,6 @@ NumberOfPatients = 100;
 [Data3] = dataloader(NumberOfPatients,1, '3D');
 [Data4] = dataloader(NumberOfPatients,1, '3Derode');
 
-
-label = ones(NumberOfPatients,1);
-label((NumberOfPatients/2 +1):NumberOfPatients) = 3;
 %Initilize the data for random pick
 COKTrainData = Data1(1:50,:);
 ADKTrainData = Data1(51:100,:);
@@ -71,8 +69,6 @@ for i=1:10
         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
     end
 end
-
-
 %Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
 %distances(10)
 dataSorted1 = forwardFeatureDataSort(sortedData,NumberOfPatients);
@@ -89,7 +85,6 @@ for i=1:10
         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
     end
 end
-
 dataSorted2 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 
 COKTrainData = Data3(1:50,:);
@@ -104,7 +99,6 @@ for i=1:10
         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
     end
 end
-
 dataSorted3 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 
 COKTrainData = Data4(1:50,:);
@@ -119,38 +113,28 @@ for i=1:10
         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
     end
 end
-
 dataSorted4 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 
-toDnormal = cell(5,1);
-treDnormal = cell(5,1);
-treDerode = cell(5,1);
-for i=1:5
-    toDnormal{i} = ForwardSelection(dataSorted1,i,20);
-    treDnormal{i} = ForwardSelection(dataSorted3,i,20);
-    treDerode{i} = ForwardSelection(dataSorted4,i,20);
+
+%Find best and accuracy K for all 4 datasets
+toDnormal = cell(10,1);
+toDerode = cell(10,1);
+treDnormal = cell(10,1);
+treDerode = cell(10,1);
+for i=1:10
+    toDnormal{i} = ForwardSelection(dataSorted1,i,15);
+    toDerode{i} = ForwardSelection(dataSorted2,i,15);
+    treDnormal{i} = ForwardSelection(dataSorted3,i,15);
+    treDerode{i} = ForwardSelection(dataSorted4,i,15);
 end
 
-
-% FWData = knndatasort2D(Data,NumberOfPatients,10,1);
-% 
-% selectedData = zeros(NumberOfPatients,1);
-% %input(dataset,oldAccuracy,selectedFeatures)
-% %output(featureIndex,selectedDataset,newAccuracy,remaningDataset)
-% 
-% tic; [tmp1, tmp2, tmp3, tmp4] = ForwardSelection(FWData,1,zeros(size(FWData,1),1)); toc
-% tmp2 = tmp2(:,2);
-% %tic; [featureIndex1, selectedDataset1, newAccuracy1, remainingDataset1] = ForwardSelection(remainingDataset,newAccuracy,selectedDataset(:,2)); toc
-% %tic; [featureIndex2, selectedDataset2, newAccuracy2, remainingDataset2] = ForwardSelection(remainingDataset1,newAccuracy1,selectedDataset1); toc
-% featureIndex = tmp1;
-% accuracy = tmp3;
-% for i = 1:14
-%     [tmp1, tmp2, tmp3, tmp4] = ForwardSelection(tmp4, tmp3, tmp2);
-%     featureIndex(i+1) = tmp1;
-%     accuracy(i+1) = tmp3;
-% end
-
-
+%Check if features alone
+toD3rode = cell(13,1);
+treDerode = cell(13,1);
+for i = 1:13
+    toDerode{i} = ForwardSelection(datasorted2(:,:,i,:));
+    treDerode{i} = ForwardSelection(datasorted4(:,:,i,:));
+end
 
 
 

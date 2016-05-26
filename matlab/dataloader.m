@@ -36,12 +36,12 @@ if (strcmp(var,'normal') == 1)
     
 elseif (strcmp(var,'erode')  == 1)
     for i = 1:tmp1counter
-        tmp = load(['ErodeCONTROL/ErodedatafileCO' num2str(i) '.mat']);
-        DATAones{i} = tmp.data_Derivations;
+        tmp = load(['ErodeCONTROL/datafileCO' num2str(i) '.mat']);
+        DATAones{i} = tmp.data_DerivationsErode;
     end
     for i = 1:tmp3counter
-        tmp = load(['ErodeAD/ErodedatafileAD' num2str(i) '.mat']);
-        DATAthress{i} = tmp.data_Derivations;
+        tmp = load(['ErodeAD/datafileAD' num2str(i) '.mat']);
+        DATAthress{i} = tmp.data_DerivationsErode;
     end
     DATA = [DATAones; DATAthress];
     
