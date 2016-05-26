@@ -1,9 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Main.aux
 A level-1 auxiliary file: abstract/abstract.aux
-A level-1 auxiliary file: chapters/Intro/Intro.aux
-A level-1 auxiliary file: chapters/Tools.aux
-A level-1 auxiliary file: chapters/Process.aux
-A level-1 auxiliary file: chapters/Optimizing.aux
+A level-1 auxiliary file: chapters/Introduction.aux
+A level-1 auxiliary file: chapters/Data.aux
+A level-1 auxiliary file: chapters/Method.aux
+A level-1 auxiliary file: chapters/Implementation.aux
+A level-1 auxiliary file: chapters/Result.aux
+A level-1 auxiliary file: chapters/Discussion.aux
+A level-1 auxiliary file: chapters/Conclusion.aux
 A level-1 auxiliary file: appendix/derivationImageTexture.aux
 The style file: plain.bst
 Database file #1: mainBib.bib

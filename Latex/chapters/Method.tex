@@ -1,4 +1,33 @@
-\chapter{Tools}
+\chapter{Method}
+
+
+
+\section{Image texture analysis methods}
+
+\subsection{Co occurrence matrix}
+
+Co occurence matrix is defined over an image to be the distribution values at a given offset.\cite{Bharati} With the co occurence matrix, we have matrix \textbf{C} defined over an $n \times m$ image, with $\Delta x, \Delta y$ being the parameterized offset, so
+
+\[
+C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
+\begin{dcases}
+  1, \quad \text{if } I(p,q)=i \text{ and } I(p+\Delta x, q+ \Delta y) =j \\
+  0, \quad \text{otherwise}
+\end{dcases}
+\]
+
+\section{Machine learning methods}
+
+\subsection{K-nearest neighbors algorithm}
+
+k-NN for short is a method that is used for classification and regression. Where the output is a class and member of this class, and this object is classified by its neighbors. For instance, if we chose k to 1, then the object will be assigned to the class of the single nearest neighbor.
+
+The algorithm consist of training examples, that are vectors in multidimensional space, with each its label. The most used distance metric is Euclidean distance.
+
+The drawback of k-NN is that classification can be skewed in that way, that the more frequent class tend to dominate the prediction of new examples, because they tend to be common among the k-NN due to their large number.
+
+The way we wish to implement the k-NN in matlab is, first we handle the data, then we will calculate the distance between two data instances and after that, we can locate k most similar data instances and generate a response from a set. After all this is done, we have to summarize the accuracy of predictions.
+
 
 Dette vil være en lille introduktion til de tools vi bruger til at analysere vores data med. Da vores data er MRI skanninger af hjernen, som er nogen voxels\footnote{noget her} som bliver repræsenteret i 3D.\\
 
