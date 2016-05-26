@@ -122,6 +122,16 @@ end
 
 dataSorted4 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 
+toDnormal = cell(5,1);
+treDnormal = cell(5,1);
+treDerode = cell(5,1);
+for i=1:5
+    toDnormal{i} = ForwardSelection(dataSorted1,i,20);
+    treDnormal{i} = ForwardSelection(dataSorted3,i,20);
+    treDerode{i} = ForwardSelection(dataSorted4,i,20);
+end
+
+
 % FWData = knndatasort2D(Data,NumberOfPatients,10,1);
 % 
 % selectedData = zeros(NumberOfPatients,1);
