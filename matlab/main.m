@@ -60,8 +60,8 @@ NumberOfPatients = 100;
 COKTrainData = Data1(1:50,:);
 ADKTrainData = Data1(51:100,:);
 %randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData, idxCO1] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData, idxAD1] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
 sortedData = cell(100,1);
 for i=1:10
     for j =1:5
@@ -76,8 +76,8 @@ dataSorted1 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 COKTrainData = Data2(1:50,:);
 ADKTrainData = Data2(51:100,:);
 %randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData, idxCO2] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData, idxAD2] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
 sortedData = cell(100,1);
 for i=1:10
     for j =1:5
@@ -90,8 +90,8 @@ dataSorted2 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 COKTrainData = Data3(1:50,:);
 ADKTrainData = Data3(51:100,:);
 %randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData, idxCO3] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData, idxAD3] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
 sortedData = cell(100,1);
 for i=1:10
     for j =1:5
@@ -104,8 +104,8 @@ dataSorted3 = forwardFeatureDataSort(sortedData,NumberOfPatients);
 COKTrainData = Data4(1:50,:);
 ADKTrainData = Data4(51:100,:);
 %randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData, idxCO4] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData, idxAD4] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
 sortedData = cell(100,1);
 for i=1:10
     for j =1:5
@@ -129,13 +129,18 @@ for i=1:10
 end
 
 %Check if features alone
-toD3rode = cell(13,1);
-treDerode = cell(13,1);
+SingleFeatures2d = cell(13,1);
+SingleFeatures3d = cell(13,1);
 for i = 1:13
-    toDerode{i} = ForwardSelection(datasorted2(:,:,i,:));
-    treDerode{i} = ForwardSelection(datasorted4(:,:,i,:));
+    SingleFeatures2d{i} = ForwardSelection(dataSorted2(:,:,i,:),4,9);
+    SingleFeatures3d{i} = ForwardSelection(dataSorted4(:,:,i,:),5,13);
 end
-
+onlyGoodData3derode = zeros(100,13,4,10);
+onlyGoodData3derode(:,:,4,:) = dataSorted4(:,:,13,:); %dataSorted4(:,:,9,:) dataSorted4(:,:,12,:) dataSorted4(:,:,13,:)];
+trederodeFast = cell(10,1);
+for i=1:10
+    trederodeFast{i} = ForwardSelection(onlyGoodData3derode,i,15);
+end
 
 
 

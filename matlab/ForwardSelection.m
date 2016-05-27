@@ -18,6 +18,7 @@ SelectedData = [];
 %test = find(dataset(:,8,8,10) == 0);
 
 for a = 1:Rounds
+    
     %NumberOfPatients, GLCMS, features, distances
     evaluate = zeros(NumberOfGLCMS,NumberOfFeatures,NumberOfDistances,a);
     tic;
@@ -36,7 +37,7 @@ for a = 1:Rounds
             end
         end
     end
-    toc;
+    
     [FeatureSelected(a,1), index] = max(evaluate(:));
     [FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4)] = ind2sub(size(evaluate),index);
     if a == 1
@@ -45,9 +46,10 @@ for a = 1:Rounds
         SelectedData = horzcat(SelectedData, dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4)));
     end 
     dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), :) = NaN; 
-    
+    toc;
+    fprintf('Round: %d  done \n',a)
 end
-
+fprintf('FS done for k = %d  done \n',knearest)
 
 % if isequal(selectedFeatures,zeros(size(dataset,1),1)) == 0
 %     for i = 1:size(dataset,2)
