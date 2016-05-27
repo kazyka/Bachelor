@@ -31,7 +31,7 @@ end
 %metric
 pcaholder = zeros(10, 9, 13);
 
-for k = 1:13
+for k = 1:11
     for i = 1:9
         if (isempty(pca(dataholder(:,:,i,k))) == 1)
             pcaholder(:,i,k) = NaN;
@@ -40,9 +40,27 @@ for k = 1:13
         end
     end
 end
-
-[~,~,~,~,test,~] = pca(dataholder(:,:,4,12));
-
+[~,~,~,~,pcaholder(:,6,12),~] = pca(dataholder(:,:,6,12));
+[~,~,~,~,test,~] = pca(dataholder(:,:,6,12));
+pcaholder(1:8,6,12) = test;
+for k = 12
+    for i = 7:9
+        if (isempty(pca(dataholder(:,:,i,k))) == 1)
+            pcaholder(:,i,k) = NaN;
+        else
+            [~,~,~,~,pcaholder(:,i,k),~] = pca(dataholder(:,:,i,k));
+        end
+    end
+end
+for k = 13
+    for i = 1:9
+        if (isempty(pca(dataholder(:,:,i,k))) == 1)
+            pcaholder(:,i,k) = NaN;
+        else
+            [~,~,~,~,pcaholder(:,i,k),~] = pca(dataholder(:,:,i,k));
+        end
+    end
+end
 
 
 pcaholder = mean(pcaholder,2);
