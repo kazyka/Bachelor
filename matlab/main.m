@@ -34,11 +34,11 @@ addpath(fullfile(pwd,'testFiles'));
 
 %LoadData
 NumberOfPatients = 100;
-[DATA] = dataloader(NumberOfPatients,1,'normal');
+[DATA] = dataloader(NumberOfPatients,1,'erode');
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
-simpleAllplot(DATA, NumberOfPatients, 13, 'simple');
+simpleAllplot(DATA, NumberOfPatients, 13, 'mean');
 
 
 
