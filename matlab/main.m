@@ -38,7 +38,7 @@ NumberOfPatients = 100;
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
-simpleAllplot(DATA, NumberOfPatients, 13, 'mean');
+simpleAllplot(DATA, NumberOfPatients, 13, 'both');
 
 
 

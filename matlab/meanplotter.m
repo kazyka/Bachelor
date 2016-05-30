@@ -7,9 +7,9 @@ tmpCO = zeros(10,NumberOfPatients/2,4,3,13);
 tmpAD = zeros(10,NumberOfPatients/2,4,3,13);
 
 for i = 1:NumberOfPatients
-    for j=1:10
-        for m =1:3
-            for k=1:4
+    for j=1:10 %Distance
+        for m =1:3 %plane
+            for k=1:4 %angle
                 if (i <= NumberOfPatients/2)
                     tmpCO(j,i,k,m,VARIABLE) = data(j+10*(i-1),k,m,VARIABLE);
                 else
