@@ -46,11 +46,11 @@ Metrics{10} = 'Difference Variance';
 Metrics{11} = 'Difference Entropy'; 
 Metrics{12} = 'Information measures of correlation1';
 Metrics{13} = 'Information measures of correlation2';
-
+% DATA = DATA;
 
 %1-4 = x, 5-8=y og 9-12=z
 %alle angles, distance 10, variable, alle planer
-%Datasæt(patient*distance,angles,planes,metric)
+%Datasæt(patient*distance,GLCMS,metric)
 %NumberOfPatients = 10;
 Dataset = zeros(NumberOfPatients*10,9,13);
 for i=1:NumberOfPatients %datasæt
@@ -82,13 +82,13 @@ if (strcmp(var, 'simple') == 1)
     for i = 1:looping
         simpleplot(Dataset,Metrics{i}, i);
     end
-elseif (strcmp(var, 'mean') == 2)
+elseif (strcmp(var, 'mean') == 1)
     for i = 1:looping
         meanplotter(Dataset,Metrics{i}, i);
     end
 end
 
-if (strcmp(var, 'both') == 3) 
+if (strcmp(var, 'both') == 1) 
     for i = 1:looping
         simpleplot(Dataset,Metrics{i}, i);
         meanplotter(Dataset,Metrics{i}, i);
