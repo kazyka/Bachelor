@@ -1,4 +1,4 @@
-function [data_Derivations] = dataexecution(start, finish)
+function [data_Derivations] = dataexecution(start, finish, leftright)
 
 %Finds the files in a folder, and then calc
 
@@ -13,11 +13,11 @@ for i = start:finish
         fprintf('Current file : %s\n',files(j).name)
               
         %loads the file
-        data_load = glcm2dFast(LeftHippoMatrix(files(j).name, 'normal'), 10);
-        data_3D = GLCM3D(LeftHippoMatrix(files(j).name, 'normal'),10);
+        data_load = glcm2dFast(HippoMatrix(files(j).name, 'noterode', leftright), 10');
+        data_3D = GLCM3D(HippoMatrix(files(j).name, 'noterode', leftright),10);
         
-        data_loadErode = glcm2dFast(LeftHippoMatrix(files(j).name, 'erode'), 10);
-        data_3DErode = GLCM3D(LeftHippoMatrix(files(j).name, 'erode'),10);
+        data_loadErode = glcm2dFast(HippoMatrix(files(j).name, 'erode', leftright), 10);
+        data_3DErode = GLCM3D(HippoMatrix(files(j).name, 'erode', leftright),10);
         %Doing the calculation for GLCM
         %First doing GLCM2D and then the derivation
         data_Derivations = cell(90, 1);
@@ -33,18 +33,34 @@ for i = start:finish
             data_Derivations3DErode{k} =  GLCMDerivations(data_3DErode{k});
         end
         
-        if (labels(i) == 3)
-            save(sprintf('AD/datafileAD%1d',name1), 'data_Derivations');
-            save(sprintf('3DAD/datafileAD%1d',name1), 'data_Derivations3D');
-            save(sprintf('ErodeAD/datafileAD%1d',name1), 'data_DerivationsErode');
-            save(sprintf('3DErodeAD/datafileAD%1d',name1), 'data_Derivations3DErode');
-            name1 = name1 + 1;
-        else
-            save(sprintf('CONTROL/datafileCO%1d',name3), 'data_Derivations');
-            save(sprintf('3DCONTROL/datafileCO%1d',name3), 'data_Derivations3D');
-            save(sprintf('ErodeCONTROL/datafileCO%1d',name3), 'data_DerivationsErode');
-            save(sprintf('3DErodeCONTROL/datafileCO%1d',name3), 'data_Derivations3DErode');
-            name3 = name3 + 1;
+        if (strcmp(leftright, 'left') == 1)
+            if (labels(i) == 3)
+                save(sprintf('left/AD/datafileAD%1d',name1), 'data_Derivations');
+                save(sprintf('left/3DAD/datafileAD%1d',name1), 'data_Derivations3D');
+                save(sprintf('left/ErodeAD/datafileAD%1d',name1), 'data_DerivationsErode');
+                save(sprintf('left/3DErodeAD/datafileAD%1d',name1), 'data_Derivations3DErode');
+                name1 = name1 + 1;
+            else
+                save(sprintf('left/CONTROL/datafileCO%1d',name3), 'data_Derivations');
+                save(sprintf('left/3DCONTROL/datafileCO%1d',name3), 'data_Derivations3D');
+                save(sprintf('left/ErodeCONTROL/datafileCO%1d',name3), 'data_DerivationsErode');
+                save(sprintf('left/3DErodeCONTROL/datafileCO%1d',name3), 'data_Derivations3DErode');
+                name3 = name3 + 1;
+            end
+        elseif (strcmp(leftright, 'right') == 1)
+            if (labels(i) == 3)
+                save(sprintf('right/AD/datafileAD%1d',name1), 'data_Derivations');
+                save(sprintf('right/3DAD/datafileAD%1d',name1), 'data_Derivations3D');
+                save(sprintf('right/ErodeAD/datafileAD%1d',name1), 'data_DerivationsErode');
+                save(sprintf('right/3DErodeAD/datafileAD%1d',name1), 'data_Derivations3DErode');
+                name1 = name1 + 1;
+            else
+                save(sprintf('right/CONTROL/datafileCO%1d',name3), 'data_Derivations');
+                save(sprintf('right/3DCONTROL/datafileCO%1d',name3), 'data_Derivations3D');
+                save(sprintf('right/ErodeCONTROL/datafileCO%1d',name3), 'data_DerivationsErode');
+                save(sprintf('right/3DErodeCONTROL/datafileCO%1d',name3), 'data_Derivations3DErode');
+                name3 = name3 + 1;
+            end
         end
         
         if (i == finish)

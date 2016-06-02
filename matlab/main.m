@@ -1,14 +1,7 @@
 %change current folder og kør koden under
 %RUN THESE FIRST
-addpath(fullfile(pwd,'data'));
-addpath(fullfile(pwd,'AD'));
-addpath(fullfile(pwd,'CONTROL'));
-addpath(fullfile(pwd,'3DAD'));
-addpath(fullfile(pwd,'3DCONTROL'));
-addpath(fullfile(pwd,'3DErodeAD'));
-addpath(fullfile(pwd,'3DErodeCONTROL'));
-addpath(fullfile(pwd,'ErodeAD'));
-addpath(fullfile(pwd,'ErodeCONTROL'));
+addpath(fullfile(pwd,'left'));
+addpath(fullfile(pwd,'right'));
 addpath(fullfile(pwd,'olddata'));
 addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
@@ -23,25 +16,25 @@ addpath(fullfile(pwd,'testFiles'));
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
-[data_Derivations] = dataexecution(1,100);
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 6, 'left', 'normal', 'erode');
 %[data_DerivationsErode] = dataexecutionErode(1,100);
-[data123] = dataexecutionTestErode(1,100);
-[DataTest] = specialLoader(100,1);
+%[data123] = dataexecutionTestErode(1,100);
+%[DataTest] = specialLoader(100,1);
 %Huske huske
 %anglex0 = angley0
 %angley90 = anglez90
 %transpose(anglex90) = anglez45
 
 %LoadData
-NumberOfPatients = 100;
-[DATA] = dataloader(NumberOfPatients,1,'erode');
+NumberOfPatients = 8;
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'erode');
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
-simpleAllplot(DATA, NumberOfPatients, 13, 'mean');
+simpleAllplot(DATA2D, NumberOfPatients, 13, 'mean');
 
 
-
+%----SKAL TILPASSES NY DATALOADER----% dataloader(NumberOfPatients , start, 'left/right', 'normal/normalize', 'erode/noterode');
 %---FEATURE-----
 NumberOfPatients = 100;
 [DATATrain] = dataloader(NumberOfPatients,1, 'normal');

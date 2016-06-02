@@ -1,11 +1,15 @@
-function [DATA] = dataloader(NumberOfPatients,Start, var)
+function [DATA2D, DATA3D] = dataloader(NumberOfPatients, Start, leftright, norm, erode)
+
+%lefthright can be 'left' or 'right'
+%norm can be 'normal' or 'normalize'
+%erode can be 'noterode' or 'erode'
 
 if (mod(NumberOfPatients,2) ~= 0)
     disp('ERROR: Input needs to be even')
     return;
 end
 
-load('labels.mat')
+load('labels.mat');
 
 
 tmp1counter = 0;
@@ -17,57 +21,161 @@ for i = 1:NumberOfPatients
         tmp3counter = tmp3counter + 1;
     end
 end
-DATAones = cell(tmp1counter,1);
-DATAthress = cell(tmp3counter,1);
+DATAones2D = cell(tmp1counter,1);
+DATAones3D = cell(tmp1counter,1);
+DATAthress2D = cell(tmp3counter,1);
+DATAthress3D = cell(tmp3counter,1);
 
 
-if (strcmp(var,'normal') == 1)
+if (strcmp(leftright,'left') == 1)
+    if (strcmp(norm, 'normal') == 1)
+        if (strcmp(erode, 'erode') == 1)
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['left/normal/erode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['left/normal/erode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normal/erode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
 
-    for i = Start:(tmp1counter+Start-1)
-        tmp = load(['CONTROL/datafileCO' num2str(i) '.mat']);
-        DATAones{i-Start+1} = tmp.data_Derivations;
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+            
+        else
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['left/normal/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['left/normal/noterode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normal/noterode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+        end
+    else
+        if (strcmp(erode, 'erode') == 1)
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['left/normalize/erode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['left/normalize/erode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normalize/erode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+            
+        else
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['left/normalize/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['left/normalize/noterode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['left/normalize/noterode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+
+        end
     end
-    for i = Start:(tmp3counter+Start-1)
-        tmp = load(['AD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i-Start+1} = tmp.data_Derivations;
-    end
+else
+    if (strcmp(norm, 'normal') == 1)
+        if (strcmp(erode, 'erode') == 1)
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['right/normal/erode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['right/normal/erode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normal/erode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
 
-    DATA = [DATAones; DATAthress];
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+            
+        else
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['right/normal/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['right/normal/noterode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normal/noterode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+        end
+    else
+        if (strcmp(erode, 'erode') == 1)
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['right/normalize/erode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['right/normalize/erode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normalize/erode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+            
+        else
+            for i = Start:(tmp3counter+Start-1)
+                tmp = load(['right/normalize/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
+                DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+            for i = Start:(tmp1counter+Start-1)
+                tmp = load(['right/normalize/noterode/CO/2D/datafileCO' num2str(i) '.mat']);
+                DATAones2D{i-Start+1} = tmp.data_Derivations2D;
+                tmp = load(['right/normalize/noterode/CO/3D/datafileCO' num2str(i) '.mat']);
+                DATAones3D{i-Start+1} = tmp.data_Derivations3D;
+            end
+
+            DATA2D = [DATAones2D; DATAthress2D];
+            DATA3D = [DATAones3D; DATAthress3D];
+
+        end
+    end
+end
     
-elseif (strcmp(var,'erode')  == 1)
-    for i = 1:tmp1counter
-        tmp = load(['ErodeCONTROL/datafileCO' num2str(i) '.mat']);
-        DATAones{i} = tmp.data_DerivationsErode;
-    end
-    for i = 1:tmp3counter
-        tmp = load(['ErodeAD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i} = tmp.data_DerivationsErode;
-    end
-    DATA = [DATAones; DATAthress];
-    
-elseif (strcmp(var, '3D') || strcmp(var, '3d'))  == 1
-    for i = Start:(tmp1counter+Start-1)
-    tmp = load(['3DCONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i-Start+1} = tmp.data_Derivations3D;
-    end
-    for i = Start:(tmp3counter+Start-1)
-        tmp = load(['3DAD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i-Start+1} = tmp.data_Derivations3D;
-    end
 
-    DATA = [DATAones; DATAthress];
-    
-elseif (strcmp(var, '3Derode') || strcmp(var, '3derode'))  == 1
-    for i = Start:(tmp1counter+Start-1)
-    tmp = load(['3DErodeCONTROL/datafileCO' num2str(i) '.mat']);
-    DATAones{i-Start+1} = tmp.data_Derivations3DErode;
-    end
-    for i = Start:(tmp3counter+Start-1)
-        tmp = load(['3DErodeAD/datafileAD' num2str(i) '.mat']);
-        DATAthress{i-Start+1} = tmp.data_Derivations3DErode;
-    end
-
-    DATA = [DATAones; DATAthress];
     
 end
 

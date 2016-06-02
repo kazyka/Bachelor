@@ -1,8 +1,15 @@
-function stats = GLCMDerivations(glcm)
+function stats = GLCMDerivations(glcm, norm)
 
 
 % Normalize the GLCM
-glcm = glcm./sum(glcm(:));
+if (strcmp(norm, 'normalize') == 1)
+    glcm = glcm./sum(glcm(:));
+elseif (strcmp(norm, 'normal') == 1)
+    glcm = glcm;
+else
+    return;
+end
+
 
 
 %Finding the size of the glcm aka graylevels
