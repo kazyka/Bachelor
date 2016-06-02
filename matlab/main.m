@@ -3,8 +3,8 @@
 addpath(fullfile(pwd,'left'));
 addpath(fullfile(pwd,'right'));
 addpath(fullfile(pwd,'data'));
-addpath(fullfile(pwd,'olddata'));
-addpath(fullfile(pwd,'testFiles'));
+%addpath(fullfile(pwd,'olddata'));
+%addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
 
  open graycoprops
