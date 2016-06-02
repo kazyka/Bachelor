@@ -2,6 +2,7 @@
 %RUN THESE FIRST
 addpath(fullfile(pwd,'left'));
 addpath(fullfile(pwd,'right'));
+addpath(fullfile(pwd,'data'));
 addpath(fullfile(pwd,'olddata'));
 addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
@@ -16,7 +17,14 @@ addpath(fullfile(pwd,'testFiles'));
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 6, 'left', 'normal', 'erode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'left', 'normalize', 'noterode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'left', 'normalize', 'erode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'left', 'normal', 'noterode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'left', 'normal', 'erode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'right', 'normalize', 'noterode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'right', 'normalize', 'erode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'right', 'normal', 'noterode');
+[data_Derivations2D, data_Derivations3D] = datacalculation(1, 2, 'right', 'normal', 'erode');
 %[data_DerivationsErode] = dataexecutionErode(1,100);
 %[data123] = dataexecutionTestErode(1,100);
 %[DataTest] = specialLoader(100,1);

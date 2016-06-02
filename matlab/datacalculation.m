@@ -43,11 +43,11 @@ for i = start:finish
                     if (labels(i) == 3)
                         save(sprintf('left/normal/erode/AD/2D/datafileAD%1d',name3), 'data_Derivations2D');
                         save(sprintf('left/normal/erode/AD/3D/datafileAD%1d',name3), 'data_Derivations3D');
-                        name3 = name3 + 1
+                        name3 = name3 + 1;
                     else
                         save(sprintf('left/normal/erode/CO/2D/datafileCO%1d',name1), 'data_Derivations2D');
                         save(sprintf('left/normal/erode/CO/3D/datafileCO%1d',name1), 'data_Derivations3D');
-                        name1 = name1 + 1
+                        name1 = name1 + 1;
                     end
                 else
                     if (labels(i) == 3)
