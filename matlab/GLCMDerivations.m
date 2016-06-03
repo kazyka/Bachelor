@@ -1,13 +1,8 @@
 function stats = GLCMDerivations(glcm, norm)
 
-
 % Normalize the GLCM
 if (strcmp(norm, 'normalize') == 1)
     glcm = glcm./sum(glcm(:));
-elseif (strcmp(norm, 'normal') == 1)
-    glcm = glcm;
-else
-    return;
 end
 
 
@@ -74,7 +69,12 @@ stats.entropy                            = HXY;
 stats.differenceVariance                 = var(cXminusY);
 stats.differenceEntropy                  = nansum(cXminusY.*log(cXminusY));
 stats.informationMeasuresOfCorrelation1  = (HXY - HXY1)./(max(HX,HY));
-stats.informationMeasuresOfCorrelation2  = sqrt(1-exp(-2.*(HXY2 - HXY)));
+if (strcmp(norm, 'normalize') == 1)
+    stats.informationMeasuresOfCorrelation2  = sqrt(1-exp(-2.*(HXY2 - HXY)));
+else
+    stats.informationMeasuresOfCorrelation2  = NaN;
+end
+
 
 
 end
