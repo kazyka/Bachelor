@@ -12,7 +12,8 @@ addpath(fullfile(pwd,'data'));
  open GLCMFeatures
  open derivations
 
-
+load('6.mat');
+t4 = squeeze(max(mri));
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
