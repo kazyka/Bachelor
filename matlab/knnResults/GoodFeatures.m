@@ -1,19 +1,149 @@
+BestSingleFeaturesErode = cell(8,1);
+NumberOfPatients =100;
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'erode');
+COKTrainData = DATA2D(1:50,:);
+ADKTrainData = DATA2D(51:100,:);
+COKTrainData3D = DATA3D(1:50,:);
+ADKTrainData3D = DATA3D(51:100,:);
+%randomly sample from data, without replacment
+[sampledCOKTrainData2D, idxCO2D] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData2D, idxAD2D] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData3D, idxCO3D] = datasample(COKTrainData3D, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData3D, idxAD3D] = datasample(ADKTrainData3D, NumberOfPatients/2, 'Replace', false);
+sortedData2D = cell(100,1);
+sortedData3D = cell(100,1);
+for i=1:10
+    for j =1:5
+        sortedData2D{j+10*(i-1)} = sampledCOKTrainData2D{j+5*(i-1)};
+        sortedData2D{5+j+10*(i-1)} = sampledADKTrainData2D{j+5*(i-1)};
+        sortedData3D{j+10*(i-1)} = sampledCOKTrainData3D{j+5*(i-1)};
+        sortedData3D{5+j+10*(i-1)} = sampledADKTrainData3D{j+5*(i-1)};
+    end
+end
+%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+%distances(10)
+dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
+dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-debug = HippoMatrix('32.mat', 'erode', 'right');
-%debug2d = glcm2dFast(debug,10);
-debug3d = GLCM3D(debug, 10);
+SingleFeatures2d = cell(13,1);
+SingleFeatures3d = cell(13,1);
+for i = 1:13
+    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
+    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+end
+BestSingleFeaturesErode{1} = SingleFeatures2d;
+BestSingleFeaturesErode{2} = SingleFeatures3d;
 
-GLCMDerivations(debug, 'normal');
-hu = (nansum(nansum(debug)));
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'right', 'normal', 'erode');
+COKTrainData = DATA2D(1:50,:);
+ADKTrainData = DATA2D(51:100,:);
+COKTrainData3D = DATA3D(1:50,:);
+ADKTrainData3D = DATA3D(51:100,:);
+%randomly sample from data, without replacment
+[sampledCOKTrainData2D, idxCO2D] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData2D, idxAD2D] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData3D, idxCO3D] = datasample(COKTrainData3D, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData3D, idxAD3D] = datasample(ADKTrainData3D, NumberOfPatients/2, 'Replace', false);
+sortedData2D = cell(100,1);
+sortedData3D = cell(100,1);
+for i=1:10
+    for j =1:5
+        sortedData2D{j+10*(i-1)} = sampledCOKTrainData2D{j+5*(i-1)};
+        sortedData2D{5+j+10*(i-1)} = sampledADKTrainData2D{j+5*(i-1)};
+        sortedData3D{j+10*(i-1)} = sampledCOKTrainData3D{j+5*(i-1)};
+        sortedData3D{5+j+10*(i-1)} = sampledADKTrainData3D{j+5*(i-1)};
+    end
+end
+%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+%distances(10)
+dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
+dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-t1 = debug(:,:,1);
-t2 = debug(:,:,2);
-t3 = isnan(debug(14,6,3));
+SingleFeatures2d = cell(13,1);
+SingleFeatures3d = cell(13,1);
+for i = 1:13
+    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
+    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+end
 
-load('6.mat');
-t4 = squeeze(max(mri));
+BestSingleFeaturesErode{3} = SingleFeatures2d;
+BestSingleFeaturesErode{4} = SingleFeatures3d;
+
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normalize', 'erode');
+COKTrainData = DATA2D(1:50,:);
+ADKTrainData = DATA2D(51:100,:);
+COKTrainData3D = DATA3D(1:50,:);
+ADKTrainData3D = DATA3D(51:100,:);
+%randomly sample from data, without replacment
+[sampledCOKTrainData2D, idxCO2D] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData2D, idxAD2D] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData3D, idxCO3D] = datasample(COKTrainData3D, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData3D, idxAD3D] = datasample(ADKTrainData3D, NumberOfPatients/2, 'Replace', false);
+sortedData2D = cell(100,1);
+sortedData3D = cell(100,1);
+for i=1:10
+    for j =1:5
+        sortedData2D{j+10*(i-1)} = sampledCOKTrainData2D{j+5*(i-1)};
+        sortedData2D{5+j+10*(i-1)} = sampledADKTrainData2D{j+5*(i-1)};
+        sortedData3D{j+10*(i-1)} = sampledCOKTrainData3D{j+5*(i-1)};
+        sortedData3D{5+j+10*(i-1)} = sampledADKTrainData3D{j+5*(i-1)};
+    end
+end
+%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+%distances(10)
+dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
+dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
+
+SingleFeatures2d = cell(13,1);
+SingleFeatures3d = cell(13,1);
+for i = 1:13
+    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
+    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+end
+
+BestSingleFeaturesErode{5} = SingleFeatures2d;
+BestSingleFeaturesErode{6} = SingleFeatures3d;
+
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'right', 'normalize', 'erode');
+COKTrainData = DATA2D(1:50,:);
+ADKTrainData = DATA2D(51:100,:);
+COKTrainData3D = DATA3D(1:50,:);
+ADKTrainData3D = DATA3D(51:100,:);
+%randomly sample from data, without replacment
+[sampledCOKTrainData2D, idxCO2D] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData2D, idxAD2D] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+[sampledCOKTrainData3D, idxCO3D] = datasample(COKTrainData3D, NumberOfPatients/2, 'Replace', false);
+[sampledADKTrainData3D, idxAD3D] = datasample(ADKTrainData3D, NumberOfPatients/2, 'Replace', false);
+sortedData2D = cell(100,1);
+sortedData3D = cell(100,1);
+for i=1:10
+    for j =1:5
+        sortedData2D{j+10*(i-1)} = sampledCOKTrainData2D{j+5*(i-1)};
+        sortedData2D{5+j+10*(i-1)} = sampledADKTrainData2D{j+5*(i-1)};
+        sortedData3D{j+10*(i-1)} = sampledCOKTrainData3D{j+5*(i-1)};
+        sortedData3D{5+j+10*(i-1)} = sampledADKTrainData3D{j+5*(i-1)};
+    end
+end
+%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+%distances(10)
+dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
+dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
+
+SingleFeatures2d = cell(13,1);
+SingleFeatures3d = cell(13,1);
+for i = 1:13
+    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
+    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+end
+
+BestSingleFeaturesErode{7} = SingleFeatures2d;
+BestSingleFeaturesErode{8} = SingleFeatures3d;
 
 
-d = 1;
-offsets = [0 d; -d d;-d 0;-d -d];
-tmp0 = graycomatrix(squeeze(debug(15,:,:)),'Offset', offsets,'NumLevels', 256, 'GrayLimits', [1 256]);
+
+save(sprintf('knnResults/GoodFeaturesErode'), 'BestSingleFeaturesErode');
+
+
+
+
+

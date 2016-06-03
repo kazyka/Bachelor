@@ -28,7 +28,7 @@ end
 
 
 knnmodels = cell(10,1);
-tmp = horzcat(chosenTrainKfolds{1},trainKfolds{1});
+%tmp = horzcat(chosenTrainKfolds{1},trainKfolds{1});
 for i = 1:10
     if size(ChosenData,1) == 0
         knnmodels{i} = fitcknn(trainKfolds{i},label90,'Distance','euclidean',...

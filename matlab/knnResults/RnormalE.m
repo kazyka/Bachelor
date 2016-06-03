@@ -1,5 +1,5 @@
 NumberOfPatients =100;
-[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'erode');
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'right', 'normal', 'erode');
 COKTrainData = DATA2D(1:50,:);
 ADKTrainData = DATA2D(51:100,:);
 COKTrainData3D = DATA3D(1:50,:);
@@ -31,5 +31,5 @@ for i=1:10
     treD{i} = ForwardSelection(dataSorted3D,i,10);
     fprintf('FS done for k = %d  done \n',i)
 end
-save(sprintf('knnResults/Left2DudenNormErode'), 'toD');
-save(sprintf('knnResults/Left3DudenNormErode'), 'treD');
+save(sprintf('knnResults/Right2DudenNormErode'), 'toD');
+save(sprintf('knnResults/Right3DudenNormErode'), 'treD');
