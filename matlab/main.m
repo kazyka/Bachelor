@@ -26,6 +26,7 @@ addpath(fullfile(pwd,'data'));
 
 [data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'erode');
 [data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'noterode');
+
 [data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'erode');
 [data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'noterode');
 
