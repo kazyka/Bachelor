@@ -31,5 +31,5 @@ for i=1:10
     treD{i} = ForwardSelection(dataSorted3D,i,10);
     fprintf('FS done for k = %d  done \n',i)
 end
-save(sprintf('knnResults/Right2DudenNormalizedErode'), 'toD');
-save(sprintf('knnResults/Right3DudenNormalizedErode'), 'treD');
+save(sprintf('knnResults/Right2DNormalizedErode'), 'toD');
+save(sprintf('knnResults/Right3DNormalizedErode'), 'treD');

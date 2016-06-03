@@ -55,99 +55,101 @@ NumberOfPatients = 100;
 %(DATA, NumberOfPatients,Distances,Angles,Planes)
 KTrainData = knndatasort2D(DATATrain,NumberOfPatients,10,9);
 
+% 
+% %---Feature selection, Method: Forward selection--- 
 
-%---Feature selection, Method: Forward selection---
-NumberOfPatients = 100;
-[Data1] = dataloader(NumberOfPatients,1, 'normal');
-[Data2] = dataloader(NumberOfPatients,1, 'erode');
-[Data3] = dataloader(NumberOfPatients,1, '3D');
-[Data4] = dataloader(NumberOfPatients,1, '3Derode');
-
-%Initilize the data for random pick
-COKTrainData = Data1(1:50,:);
-ADKTrainData = Data1(51:100,:);
-%randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO1] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD1] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
-sortedData = cell(100,1);
-for i=1:10
-    for j =1:5
-        sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
-        sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
-    end
-end
-%Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
-%distances(10)
-dataSorted1 = forwardFeatureDataSort(sortedData,NumberOfPatients);
-
-COKTrainData = Data2(1:50,:);
-ADKTrainData = Data2(51:100,:);
-%randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO2] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD2] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
-sortedData = cell(100,1);
-for i=1:10
-    for j =1:5
-        sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
-        sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
-    end
-end
-dataSorted2 = forwardFeatureDataSort(sortedData,NumberOfPatients);
-
-COKTrainData = Data3(1:50,:);
-ADKTrainData = Data3(51:100,:);
-%randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO3] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD3] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
-sortedData = cell(100,1);
-for i=1:10
-    for j =1:5
-        sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
-        sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
-    end
-end
-dataSorted3 = forwardFeatureDataSort(sortedData,NumberOfPatients);
-
-COKTrainData = Data4(1:50,:);
-ADKTrainData = Data4(51:100,:);
-%randomly sample from data, without replacment
-[sampledCOKTrainData, idxCO4] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
-[sampledADKTrainData, idxAD4] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
-sortedData = cell(100,1);
-for i=1:10
-    for j =1:5
-        sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
-        sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
-    end
-end
-dataSorted4 = forwardFeatureDataSort(sortedData,NumberOfPatients);
-
-
-%Find best and accuracy K for all 4 datasets
-toDnormal = cell(10,1);
-toDerode = cell(10,1);
-treDnormal = cell(10,1);
-treDerode = cell(10,1);
-for i=1:10
-    toDnormal{i} = ForwardSelection(dataSorted1,i,15);
-    toDerode{i} = ForwardSelection(dataSorted2,i,15);
-    treDnormal{i} = ForwardSelection(dataSorted3,i,15);
-    treDerode{i} = ForwardSelection(dataSorted4,i,15);
-end
-
-%Check if features alone
-SingleFeatures2d = cell(13,1);
-SingleFeatures3d = cell(13,1);
-for i = 1:13
-    SingleFeatures2d{i} = ForwardSelection(dataSorted2(:,:,i,:),4,9);
-    SingleFeatures3d{i} = ForwardSelection(dataSorted4(:,:,i,:),5,13);
-end
-onlyGoodData3derode = zeros(100,13,4,10);
-onlyGoodData3derode(:,:,4,:) = dataSorted4(:,:,13,:); %dataSorted4(:,:,9,:) dataSorted4(:,:,12,:) dataSorted4(:,:,13,:)];
-trederodeFast = cell(10,1);
-for i=1:10
-    trederodeFast{i} = ForwardSelection(onlyGoodData3derode,i,15);
-end
+% Laves i knnResults nu
+% NumberOfPatients = 100;
+% [Data1] = dataloader(NumberOfPatients,1, 'normal');
+% [Data2] = dataloader(NumberOfPatients,1, 'erode');
+% [Data3] = dataloader(NumberOfPatients,1, '3D');
+% [Data4] = dataloader(NumberOfPatients,1, '3Derode');
+% 
+% %Initilize the data for random pick
+% COKTrainData = Data1(1:50,:);
+% ADKTrainData = Data1(51:100,:);
+% %randomly sample from data, without replacment
+% [sampledCOKTrainData, idxCO1] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+% [sampledADKTrainData, idxAD1] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+% sortedData = cell(100,1);
+% for i=1:10
+%     for j =1:5
+%         sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
+%         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
+%     end
+% end
+% %Dataset form , patients(100) X glcms(9 2d, 13 3d) X features(13) X
+% %distances(10)
+% dataSorted1 = forwardFeatureDataSort(sortedData,NumberOfPatients);
+% 
+% COKTrainData = Data2(1:50,:);
+% ADKTrainData = Data2(51:100,:);
+% %randomly sample from data, without replacment
+% [sampledCOKTrainData, idxCO2] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+% [sampledADKTrainData, idxAD2] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+% sortedData = cell(100,1);
+% for i=1:10
+%     for j =1:5
+%         sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
+%         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
+%     end
+% end
+% dataSorted2 = forwardFeatureDataSort(sortedData,NumberOfPatients);
+% 
+% COKTrainData = Data3(1:50,:);
+% ADKTrainData = Data3(51:100,:);
+% %randomly sample from data, without replacment
+% [sampledCOKTrainData, idxCO3] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+% [sampledADKTrainData, idxAD3] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+% sortedData = cell(100,1);
+% for i=1:10
+%     for j =1:5
+%         sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
+%         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
+%     end
+% end
+% dataSorted3 = forwardFeatureDataSort(sortedData,NumberOfPatients);
+% 
+% COKTrainData = Data4(1:50,:);
+% ADKTrainData = Data4(51:100,:);
+% %randomly sample from data, without replacment
+% [sampledCOKTrainData, idxCO4] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
+% [sampledADKTrainData, idxAD4] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
+% sortedData = cell(100,1);
+% for i=1:10
+%     for j =1:5
+%         sortedData{j+10*(i-1)} = sampledCOKTrainData{j+5*(i-1)};
+%         sortedData{5+j+10*(i-1)} = sampledADKTrainData{j+5*(i-1)};
+%     end
+% end
+% dataSorted4 = forwardFeatureDataSort(sortedData,NumberOfPatients);
+% 
+% 
+% %Find best and accuracy K for all 4 datasets
+% toDnormal = cell(10,1);
+% toDerode = cell(10,1);
+% treDnormal = cell(10,1);
+% treDerode = cell(10,1);
+% for i=1:10
+%     toDnormal{i} = ForwardSelection(dataSorted1,i,15);
+%     toDerode{i} = ForwardSelection(dataSorted2,i,15);
+%     treDnormal{i} = ForwardSelection(dataSorted3,i,15);
+%     treDerode{i} = ForwardSelection(dataSorted4,i,15);
+% end
+% 
+% %Check if features alone
+% SingleFeatures2d = cell(13,1);
+% SingleFeatures3d = cell(13,1);
+% for i = 1:13
+%     SingleFeatures2d{i} = ForwardSelection(dataSorted2(:,:,i,:),4,9);
+%     SingleFeatures3d{i} = ForwardSelection(dataSorted4(:,:,i,:),5,13);
+% end
+% onlyGoodData3derode = zeros(100,13,4,10);
+% onlyGoodData3derode(:,:,4,:) = dataSorted4(:,:,13,:); %dataSorted4(:,:,9,:) dataSorted4(:,:,12,:) dataSorted4(:,:,13,:)];
+% trederodeFast = cell(10,1);
+% for i=1:10
+%     trederodeFast{i} = ForwardSelection(onlyGoodData3derode,i,15);
+% end
 
 
 
