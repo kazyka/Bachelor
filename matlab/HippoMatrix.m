@@ -39,7 +39,7 @@ counter1 = 0;
 for i = 1:256
      for j = 1:256
          for k = 1:256
-             if segmentation(i, j, k) == 1;
+             if segmentation(i, j, k) == tmp;
                  counter1 = counter1 + 1;
                  left(counter1,1) = i;
                  left(counter1,2) = j;

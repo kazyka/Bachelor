@@ -29,6 +29,7 @@ treD = cell(10,1);
 for i=1:1
     toD{i} = ForwardSelection(dataSorted2D,i,1);
     treD{i} = ForwardSelection(dataSorted3D,i,1);
+    fprintf('FS done for k = %d  done \n',i)
 end
 save(sprintf('knnResults/2DudenNormErode'), 'toD');
 save(sprintf('knnResults/3DudenNormErode'), 'treD');
