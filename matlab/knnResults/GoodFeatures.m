@@ -25,11 +25,15 @@ end
 dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
 dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-SingleFeatures2d = cell(13,1);
-SingleFeatures3d = cell(13,1);
+SingleFeatures2d = cell(13,5);
+SingleFeatures3d = cell(13,5);
 for i = 1:13
-    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
-    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+    for j = 1:10
+        SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
+        SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
+        fprintf('FS done for k = %d  done \n',j)
+    end
+    fprintf('GF done for feature = %d  done \n',i)
 end
 BestSingleFeaturesErode{1} = SingleFeatures2d;
 BestSingleFeaturesErode{2} = SingleFeatures3d;
@@ -59,13 +63,16 @@ end
 dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
 dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-SingleFeatures2d = cell(13,1);
-SingleFeatures3d = cell(13,1);
+SingleFeatures2d = cell(13,5);
+SingleFeatures3d = cell(13,5);
 for i = 1:13
-    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
-    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+    for j = 1:10
+        SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
+        SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
+        fprintf('FS done for k = %d  done \n',j)
+    end
+    fprintf('GF done for feature = %d  done \n',i)
 end
-
 BestSingleFeaturesErode{3} = SingleFeatures2d;
 BestSingleFeaturesErode{4} = SingleFeatures3d;
 
@@ -94,13 +101,16 @@ end
 dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
 dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-SingleFeatures2d = cell(13,1);
-SingleFeatures3d = cell(13,1);
+SingleFeatures2d = cell(13,5);
+SingleFeatures3d = cell(13,5);
 for i = 1:13
-    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
-    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+    for j = 1:10
+        SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
+        SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
+        fprintf('FS done for k = %d  done \n',j)
+    end
+    fprintf('GF done for feature = %d  done \n',i)
 end
-
 BestSingleFeaturesErode{5} = SingleFeatures2d;
 BestSingleFeaturesErode{6} = SingleFeatures3d;
 
@@ -129,13 +139,16 @@ end
 dataSorted2D = forwardFeatureDataSort(sortedData2D,NumberOfPatients);
 dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
-SingleFeatures2d = cell(13,1);
-SingleFeatures3d = cell(13,1);
+SingleFeatures2d = cell(13,5);
+SingleFeatures3d = cell(13,5);
 for i = 1:13
-    SingleFeatures2d{i} = ForwardSelection(dataSorted2D(:,:,i,:),4,9);
-    SingleFeatures3d{i} = ForwardSelection(dataSorted3D(:,:,i,:),5,13);
+    for j = 1:10
+        SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
+        SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
+        fprintf('FS done for k = %d  done \n',j)
+    end
+    fprintf('GF done for feature = %d  done \n',i)
 end
-
 BestSingleFeaturesErode{7} = SingleFeatures2d;
 BestSingleFeaturesErode{8} = SingleFeatures3d;
 
