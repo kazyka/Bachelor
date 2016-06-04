@@ -7,13 +7,11 @@ addpath(fullfile(pwd,'data'));
 %addpath(fullfile(pwd,'testFiles'));
 % load('labels.mat')
 
- open graycoprops
- open testKNNMirza
- open GLCMFeatures
- open derivations
+% open graycoprops
+% open testKNNMirza
+% open GLCMFeatures
+% open derivations
 
-load('6.mat');
-t4 = squeeze(max(mri));
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
