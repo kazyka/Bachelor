@@ -12,15 +12,18 @@ for k =1:9 %for alle angles
     end
     for i = 1:NumberOfPatients   %Kører alle patients vi har
          if (i <= NumberOfPatients/2)
-             plot(data((1+(i-1)*10):(10*i),k,variable_index), '- .k');
+             h1a = plot(data((1+(i-1)*10):(10*i),k,variable_index), '- .b'); h1a.Color(4)=0.9;
              hold on;
              data((1+(i-1)*10):(10*i),k,variable_index);
          else
-             plot(data((1+(i-1)*10):(10*i),k,variable_index), '- .m');
+             alpha(1)
+             h2a = plot(data((1+(i-1)*10):(10*i),k,variable_index), '- .r'); h2a.Color(4)=0.3;
+             
              hold on;
              data((1+(i-1)*10):(10*i),k,variable_index);
          end
     end
     hold off;
+    alpha(1)
     %axis([0 10 0 500])
 end    
