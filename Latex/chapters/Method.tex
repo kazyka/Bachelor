@@ -9,7 +9,7 @@ Et image texture er bare et sæt af metricer? som udregnes for at opfatte textur
 Der findes flere approaches til hvordan man udregner image textures, vi bruger den statistiske vej.
 
 \subsection{Co occurrence matrix}
-The co-occurence matrix is a method to measure the greyscale intensity (GI) of an image, it is defined as the distribution values at a given offset. The element (i,j) in the co-occurence matrix, \textbf{C}, over an image $n \times m$, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
+The co-occurence matrix (COM) is a method to measure the greyscale intensity (GI) of an image, it is defined as the distribution values at a given offset. The element (i,j) in the COM, \textbf{C}, over an image $n \times m$, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
 
 \[
 C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
@@ -19,10 +19,17 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \end{dcases}
 \]
 \fxnote[inline]{find reference}
-The element (5,4) can therefore be translated to meaning how many times is there an element in the image with greyscale \fxnote[inline]{level or intensity?} intensity 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity 4, i.e. if the offset is 1,0 and the first element is (x,y) (4,3) with intensity 5 it would mean that element (x,y) (5,3) would have GI 4.
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with GI 4, i.e. if the offset is (1,0) and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(5,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.\\
+A single image have multiple COMs as different offsets creates different relations. Consider a 3 by 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. \fxnote[inline]{Lave 3x3 matrice med offsets.}
+Focusing on the two offsets {(1,0), (-1,0)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry COMs$_{1,0}$(1,2) and COMs$_{-1,0}$(2,1) with one, showing that COMs$_{1,0}$$^\textbf{T}$ = COMs$_{-1,0}$. This leaves four different offsets for analysis {(1,0),(1,1), (0,1)),(-1,1)}, which are denoted angle 0$^\circ$
 
 
-The co-occurrence matrix is quadratic with the number of rows and columns equal to difference between the largest and smallest greyscale intensity, for example if we have greyscale intensities varying between 0 and 256 we get a 256 $\times$ 256 co-ocurrence matrix.
+The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 COM.
+\fxnote[inline]{Show example on a 5x5 matrix with GI 8, offset [1 0] and [0 1]}
+
+
+
+
 
 
 
