@@ -26,3 +26,5 @@ main.pdf
 *.run.xml
 *.log
 *.aux
+*.aux
+*.lox

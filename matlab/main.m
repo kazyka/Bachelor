@@ -12,6 +12,12 @@ addpath(fullfile(pwd,'data'));
 % open GLCMFeatures
 % open derivations
 
+load('1.mat');
+imagesc(squeeze(mri(70,:,:)))
+figure()
+load('2.mat');
+imagesc(squeeze(mri(70,:,:)))
+
 
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN

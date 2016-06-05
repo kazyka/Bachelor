@@ -3,7 +3,9 @@
 
 \section{Image texture analysis methods}
 \subsection{Co-occurrence matrix}
-The co-occurence matrix (COM) is a method to measure the greyscale intensity (GI) of an image, it is defined as the distribution values at a given offset. The element (i,j) in the COM, \textbf{C}, over an image $n \times m$, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
+
+
+The co-occurence matrix (COM) is second-order statistics methods, which is based on information about gray levels in pair of pixes. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
 
 \[
 C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
@@ -13,8 +15,24 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \end{dcases}
 \]
 \fxnote[inline]{find reference}
-The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with GI 4, i.e. if the offset is (1,0) and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(5,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.\\
+
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity  (GI) 4, i.e. if the offset is (1,0) and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(5,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{2DCOM.eps}
+  \caption{Example of the offsets for the 2D}\label{2DCOM}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{GLCM.eps}
+  \caption{Example how the values in the GLCM are calclulated of the 4-by-5 image I. Element (1, 1) in the GLCM contains the value 1 because there is only one instance inf the image where two horizontally adjacent pixels have the values 1 and 1.}\label{GLCM}
+\end{figure}
+
+
 A single image have multiple COMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. \fxnote[inline]{Lave 3x3 matrice med offsets.}
+
 Focusing on the two offsets {(1,0), (-1,0)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry COMs$_{1,0}$(1,2) and COMs$_{-1,0}$ (2,1) with one, showing that COMs$_{1,0}$$^\textbf{T}$ = COMs$_{-1,0}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(1,0),(1,1), (0,1)),(-1,1)} in general {(d,0),(d,d),(0,d),(-d,d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
 \fxnote[inline]{show 3x3 matrix with angles clearly visible}\\
 
@@ -23,6 +41,12 @@ The co-occurrence matrix is quadratic with the number of rows and columns equal 
 
 Extending this method to three-dimensions it is necessary to look on how the offsets are defined because the size of the COM is defined by the amount of GIs and not by the images it is derived from. Considering a 3 $\times$ 3 $\times$ 3 matrix we have a possible of 26 offsets. In two-dimensions it is possible to eliminate half of the offsets because of the relation COM$_{d,d}^\textbf{T}$ = COM$_{-d,-d}$, and it is the same case in three-dimensions with the relation being COM$_{d,d,d}^\textbf{T}$ = COM$_{-d,-d,-d}$. This leaves 13 offsets which are illustrated below.\\
 \fxnote[inline]{3 gange 3 gange, farv de ønskede dele eller noget}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{3DCOM.eps}
+  \caption{Example of the offsets for the 3D}\label{3DCOM}
+\end{figure}
 
 
 \subsection{Texture features from co-occurrence matrix}
@@ -167,7 +191,7 @@ Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 ne
 
 
 
-
+\fxnote[inline]{Vi billede af eroded og original mask}
 
 
 
