@@ -7,13 +7,12 @@
 \contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{6}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Machine learning methods}{6}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}K-nearest neighbors algorithm}{6}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Erode}{6}{section.3.3}
-\contentsline {section}{\numberline {3.4}Image texture (Co-occurrence)}{7}{section.3.4}
-\contentsline {section}{\numberline {3.5}Principal Component analysis}{8}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Application to images}{8}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}K-nearest neighbors}{8}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Cross validation}{8}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.2.1}Crossval}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Feature selection}{6}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{6}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Sequential Forward Feature}{6}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}K-nearest neighbors algorithm}{6}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Erode}{7}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{9}{chapter.4}
 \contentsline {chapter}{\numberline {5}Result}{10}{chapter.5}
 \contentsline {chapter}{\numberline {6}Discussion}{11}{chapter.6}

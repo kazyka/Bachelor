@@ -25,3 +25,4 @@ main.pdf
 *.brf
 *.run.xml
 *.log
+*.aux
