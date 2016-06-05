@@ -59,9 +59,9 @@ For at illustrere hvordan erosion virker, gør vi det på et 2D plan, betragt fi
     \matrix[square matrix]
     {
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=yellow!30]|$N_1$ & |[fill=yellow!30]|$\boxplus$ & |[fill=yellow!30]|$N_3$ & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=red!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=red!30]|$N_1$ & |[fill=red!30]|$\boxplus$ & |[fill=red!30]|$N_3$ & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=red!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
@@ -90,12 +90,12 @@ Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
     {
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=yellow!50]| & |[fill=blue!30]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
-    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=yellow!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=blue!30]| & |[fill=blue!30]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=red!50]| & |[fill=blue!30]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
+    |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=red!50]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     };
@@ -129,7 +129,7 @@ Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 ne
     {
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]| & |[fill=yellow!30]|$N_5$ & |[fill=white]| & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]| & |[fill=red!30]|$N_5$ & |[fill=white]| & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
@@ -138,9 +138,9 @@ Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 ne
     \matrix[square matrix]
     {
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=yellow!30]|$N_1$ & |[fill=yellow!30]|$\boxplus$ & |[fill=yellow!30]|$N_3$ & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]|   & |[fill=yellow!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=red!30]|$N_2$ & |[fill=white]|   & |[fill=white]|\\
+    |[fill=white]| & |[fill=red!30]|$N_1$ & |[fill=red!30]|$\boxplus$ & |[fill=red!30]|$N_3$ & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]|   & |[fill=red!30]|$N_4$ & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
@@ -149,7 +149,7 @@ Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 ne
     {
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
-    |[fill=white]| & |[fill=white]| & |[fill=yellow!30]|$N_6$ & |[fill=white]| & |[fill=white]|\\
+    |[fill=white]| & |[fill=white]| & |[fill=red!30]|$N_6$ & |[fill=white]| & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]| & |[fill=white]|   & |[fill=white]|\\
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
