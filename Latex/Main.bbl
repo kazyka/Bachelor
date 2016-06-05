@@ -1,5 +1,16 @@
 \begin{thebibliography}{1}
 
+\bibitem{Who}
+Dementia.
+\newblock \url{http://www.who.int/mediacentre/factsheets/fs362/en/}.
+\newblock Accessed: 2016 April.
+
+\bibitem{AlzheimerLancet}
+Anne Corbett Carol Brayne Dag Aarsland Emma~Jones Clive~Ballard,
+  Serge~Gauthier.
+\newblock Alzheimer's disease.
+\newblock {\em Lancet}, page~13, March 2011.
+
 \bibitem{MRfreeborough}
 Peter A. Freeborough \& Nick~C. Fox.
 \newblock Mr image texture analysis to the diagnosis and tracking of
@@ -11,10 +22,9 @@ L.M. Li F.~Cendes G.~Castellano, L.~Bonilha.
 \newblock Texture analysis of medical images.
 \newblock {\em Neuroimage Laboratory}, page~9, April 2004.
 
-\bibitem{Magnetic}
-Stephane Lehericy \& Malgorzata Marjanska \& Lilia Mesrob \& Marie Sarazin
-  \&~Serge Kinkingnehun.
-\newblock Magnetic resonance imaging of alzheimer's disease.
-\newblock {\em Springer Verlag}, 17(3):5, June 2005.
+\bibitem{Voxel}
+Sanjay~Kalra Rouzbeh~Maani, Yee Hong~Yang.
+\newblock Voxel-based texture analysis of the brain.
+\newblock {\em Plos One}, page~19, March 2015.
 
 \end{thebibliography}

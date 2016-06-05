@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  4 JUN 2016 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  5 JUN 2016 15:52
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2342,7 +2342,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 45.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=98, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=94, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2353,13 +2353,13 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 45.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=101, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=97, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
-
-<use include/nat-en.pdf>
+ <use include/nat-en.pdf>
 Package pdftex.def Info: include/nat-en.pdf used on input line 45.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
- [1
+
+[1
 
 \openout6 = `Main.ist'.
 
@@ -2426,22 +2426,20 @@ l.53 \listoffigures
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 7.
-
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 3.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 7.
-FiXme Note: 'citation' on input line 7.
+line 3.
+FiXme Note: 'Hvorfor' on input line 3.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
-FiXme Note: 'Mere i intro. M\IeC {\r a}ske 3D vs 2D' on input line 17.
-FiXme Note: 'Mere til AD' on input line 21.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 12.
 ) [3
 
 
@@ -2593,11 +2591,11 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 6,
+FiXme Summary: Number of notes: 4,
 (FiXme)        Number of warnings: 1,
 (FiXme)        Number of errors: 1,
 (FiXme)        Number of fatal errors: 1,
-(FiXme)        Total: 9.
+(FiXme)        Total: 7.
 
 
 AED: lastpage setting LastPage
@@ -2808,8 +2806,8 @@ include/natbio-farve.pdf
 include/nat-en.pdf
 abstract/abstract.tex
 chapters/Introduction.tex
-   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
   t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 chapters/Data.tex
 chapters/Method.tex
 chapters/Implementation.tex
@@ -2824,13 +2822,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 20467ED0CE701BDC717B4962A89BD96F;1416.
+(rerunfilecheck)             Checksum: CA743637A106B33173E40800BFB8D6E1;1349.
  ) 
 Here is how much of TeX's memory you used:
- 47446 strings out of 493634
- 1030833 string characters out of 3141315
- 1448397 words of memory out of 3000000
- 49805 multiletter control sequences out of 15000+200000
+ 47453 strings out of 493634
+ 1030947 string characters out of 3141315
+ 1448374 words of memory out of 3000000
+ 49811 multiletter control sequences out of 15000+200000
  133397 words of font info for 154 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2847,9 +2845,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (20 pages, 213789 bytes).
+Output written on Main.pdf (20 pages, 214412 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
