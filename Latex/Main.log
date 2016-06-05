@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  5 JUN 2016 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  5 JUN 2016 16:40
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -1766,183 +1766,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 115.
 
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
-ossaries.sty"
-Package: glossaries 2016/01/24 v4.21 (NLCT)
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.
-sty"
-Package: mfirstuc 2015/12/17 v2.02 (NLCT)
-\@glsmfirst=\toks51
-\@glsmrest=\toks52
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase.
-sty"
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
-Package: xfor 2009/02/05 v1.05 (NLCT)
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
-base.sty"
-Package: datatool-base 2016/01/18 v2.25 (NLCT)
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty"
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count194
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
-fp.sty"
-Package: datatool-fp 2016/01/18 v2.25 (NLCT)
- ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
-Package: fp 1995/04/02
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
-Package: defpattern 1994/10/12
-\actioncount=\count195
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
-Package: fp-basic 1996/05/13
-\FP@xs=\count196
-\FP@xia=\count197
-\FP@xib=\count198
-\FP@xfa=\count199
-\FP@xfb=\count266
-\FP@rega=\count267
-\FP@regb=\count268
-\FP@regs=\count269
-\FP@times=\count270
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
-"
-Package: fp-addons 1995/03/15
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
-Package: fp-snap 1995/04/05
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
-Package: fp-exp 1995/04/03
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
-Package: fp-trigo 1995/04/14
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
-Package: fp-pas 1994/08/29
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
-Package: fp-random 1995/02/23
-\FPseed=\count271
-) ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
-Package: fp-eqn 1995/04/03
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
-Package: fp-upn 1996/10/21
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
-Package: fp-eval 1995/04/03
-)))
-\@dtl@toks=\toks53
-\@dtl@tmpcount=\count272
-\dtl@tmplength=\skip79
-\dtl@sortresult=\count273
-\@dtl@numgrpsepcount=\count274
-\@dtl@datatype=\count275
-\dtl@codeA=\count276
-\dtl@codeB=\count277
-\@dtl@foreach@level=\count278
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
-ossaries-compatible-307.sty"
-Package: glossaries-compatible-307 2016/01/24 v4.21 (NLCT)
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\tracklan
-g.sty"
-Package: tracklang 2015/03/23 v1.2 (NLCT) Track Languages
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang\trackl
-ang.tex"))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transl
-ator\translator.sty"
-Package: translator 2010/06/12 ver 1.10
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transl
-ator\translator-language-mappings.tex"))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-english
-\glossaries-english.ldf"
-File: glossaries-english.ldf 2014/11/23 v1.0
-)
-\gls@level=\count279
-\@gls@tmpb=\toks54
-\gls@tmplen=\skip80
-\glskeylisttok=\toks55
-\glslabeltok=\toks56
-\glsshorttok=\toks57
-\glslongtok=\toks58
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
-glossary-hypernav.sty"
-Package: glossary-hypernav 2016/01/24 v4.21 (NLCT)
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
-glossary-list.sty"
-Package: glossary-list 2016/01/24 v4.21 (NLCT)
-\glslistdottedwidth=\skip81
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
-glossary-long.sty"
-Package: glossary-long 2016/01/24 v4.21 (NLCT)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip82
-\LTright=\skip83
-\LTpre=\skip84
-\LTpost=\skip85
-\LTchunksize=\count280
-\LTcapwidth=\dimen282
-\LT@head=\box84
-\LT@firsthead=\box85
-\LT@foot=\box86
-\LT@lastfoot=\box87
-\LT@cols=\count281
-\LT@rows=\count282
-\c@LT@tables=\count283
-\c@LT@chunks=\count284
-\LT@p@ftn=\toks59
-)
-\glsdescwidth=\skip86
-\glspagelistwidth=\skip87
-)
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
-glossary-super.sty"
-Package: glossary-super 2016/01/24 v4.21 (NLCT)
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\super
-tabular.sty"
-Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count285
-\ST@wd=\dimen283
-\ST@rightskip=\skip88
-\ST@leftskip=\skip89
-\ST@parfillskip=\skip90
-\ST@pageleft=\dimen284
-\ST@headht=\dimen285
-\ST@tailht=\dimen286
-\ST@pagesofar=\dimen287
-\ST@pboxht=\dimen288
-\ST@lineht=\dimen289
-\ST@stretchht=\dimen290
-\ST@prevht=\dimen291
-\ST@toadd=\dimen292
-\ST@dimen=\dimen293
-\ST@pbox=\box88
-))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
-glossary-tree.sty"
-Package: glossary-tree 2016/01/24 v4.21 (NLCT)
-\glstreeindent=\skip91
-))
-\glswrite=\write6
-\glo@main@file=\write7
-\openout7 = `Main.glo'.
-
-Package glossaries Info: Writing glossary file Main.glo on input line 122.
-
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\vhistory.
 sty"
 Package: vhistory 
@@ -1951,21 +1774,38 @@ Package: ltxtable 1995/12/11 v0.2 longtable/tabularx merge (DPC)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
 Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen294
-\TX@old@table=\dimen295
-\TX@old@col=\dimen296
-\TX@target=\dimen297
-\TX@delta=\dimen298
-\TX@cols=\count286
-\TX@ftn=\toks60
+\TX@col@width=\dimen282
+\TX@old@table=\dimen283
+\TX@old@col=\dimen284
+\TX@target=\dimen285
+\TX@delta=\dimen286
+\TX@cols=\count194
+\TX@ftn=\toks51
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip79
+\LTright=\skip80
+\LTpre=\skip81
+\LTpost=\skip82
+\LTchunksize=\count195
+\LTcapwidth=\dimen287
+\LT@head=\box84
+\LT@firsthead=\box85
+\LT@foot=\box86
+\LT@lastfoot=\box87
+\LT@cols=\count196
+\LT@rows=\count197
+\c@LT@tables=\count198
+\c@LT@chunks=\count199
+\LT@p@ftn=\toks52
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\sets.sty"
 Package: sets 
-\c@s@tlength=\count287
+\c@s@tlength=\count266
 )
-Reading file Main.hst...
-(Main.hst)
-\vh@verfile=\write8
+File Main.hst not found.
+\vh@verfile=\write6
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.
 sty"
@@ -1977,12 +1817,12 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 s.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
 score.code.tex"
-\t@pgfplots@toka=\toks61
-\t@pgfplots@tokb=\toks62
-\t@pgfplots@tokc=\toks63
-\pgfplots@tmpa=\dimen299
-\c@pgfplots@coordindex=\count288
-\c@pgfplots@scanlineindex=\count289
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen288
+\c@pgfplots@coordindex=\count267
+\c@pgfplots@scanlineindex=\count268
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 plotssysgeneric.code.tex"))
@@ -1998,7 +1838,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 ompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
 ompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count290
+\c@pgfmathroundto@lastzeros=\count269
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
 fplotsutil.code.tex"
@@ -2008,14 +1848,14 @@ ucture\pgfplotsliststructure.code.tex")
 ucture\pgfplotsliststructureext.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsarray.code.tex"
-\c@pgfplotsarray@tmp=\count291
+\c@pgfplotsarray@tmp=\count270
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsmatrix.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtabl
 e\pgfplotstableshared.code.tex"
-\c@pgfplotstable@counta=\count292
-\t@pgfplotstable@a=\toks64
+\c@pgfplotstable@counta=\count271
+\t@pgfplotstable@a=\toks56
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsdeque.code.tex")
@@ -2027,7 +1867,7 @@ fplotsbinary.data.code.tex"))
 fplotsutil.verb.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pg
 flibrarypgfplots.surfshading.code.tex"
-\c@pgfplotslibrarysurf@no=\count293
+\c@pgfplotslibrarysurf@no=\count272
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 librarypgfplots.surfshading.pgfsys-pdftex.def")))
@@ -2059,16 +1899,16 @@ s.paths.code.tex")
 r\tikz\libraries\tikzlibrarydecorations.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 oduledecorations.code.tex"
-\pgfdecoratedcompleteddistance=\dimen300
-\pgfdecoratedremainingdistance=\dimen301
-\pgfdecoratedinputsegmentcompleteddistance=\dimen302
-\pgfdecoratedinputsegmentremainingdistance=\dimen303
-\pgf@decorate@distancetomove=\dimen304
-\pgf@decorate@repeatstate=\count294
-\pgfdecorationsegmentamplitude=\dimen305
-\pgfdecorationsegmentlength=\dimen306
+\pgfdecoratedcompleteddistance=\dimen289
+\pgfdecoratedremainingdistance=\dimen290
+\pgfdecoratedinputsegmentcompleteddistance=\dimen291
+\pgfdecoratedinputsegmentremainingdistance=\dimen292
+\pgf@decorate@distancetomove=\dimen293
+\pgf@decorate@repeatstate=\count273
+\pgfdecorationsegmentamplitude=\dimen294
+\pgfdecorationsegmentlength=\dimen295
 )
-\tikz@lib@dec@box=\box89
+\tikz@lib@dec@box=\box88
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
@@ -2078,13 +1918,13 @@ corations\pgflibrarydecorations.pathmorphing.code.tex"))
 r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
 corations\pgflibrarydecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count295
-\pgfplots@xmin@reg=\dimen307
-\pgfplots@xmax@reg=\dimen308
-\pgfplots@ymin@reg=\dimen309
-\pgfplots@ymax@reg=\dimen310
-\pgfplots@zmin@reg=\dimen311
-\pgfplots@zmax@reg=\dimen312
+\pgfplots@numplots=\count274
+\pgfplots@xmin@reg=\dimen296
+\pgfplots@xmax@reg=\dimen297
+\pgfplots@ymin@reg=\dimen298
+\pgfplots@ymax@reg=\dimen299
+\pgfplots@zmin@reg=\dimen300
+\pgfplots@zmax@reg=\dimen301
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryplotmarks.code.tex"
@@ -2103,16 +1943,16 @@ s.sty"
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count296
-\calc@Bcount=\count297
-\calc@Adimen=\dimen313
-\calc@Bdimen=\dimen314
-\calc@Askip=\skip92
-\calc@Bskip=\skip93
+\calc@Acount=\count275
+\calc@Bcount=\count276
+\calc@Adimen=\dimen302
+\calc@Bdimen=\dimen303
+\calc@Askip=\skip83
+\calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count298
-\calc@Cskip=\skip94
+\calc@Ccount=\count277
+\calc@Cskip=\skip85
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
 sty"
@@ -2122,15 +1962,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count299
-\l_MT_multwidth_dim=\dimen315
-\origjot=\skip95
-\l_MT_shortvdotswithinadjustabove_dim=\dimen316
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen317
-\l_MT_above_intertext_sep=\dimen318
-\l_MT_below_intertext_sep=\dimen319
-\l_MT_above_shortintertext_sep=\dimen320
-\l_MT_below_shortintertext_sep=\dimen321
+\g_MT_multlinerow_int=\count278
+\l_MT_multwidth_dim=\dimen304
+\origjot=\skip86
+\l_MT_shortvdotswithinadjustabove_dim=\dimen305
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen306
+\l_MT_above_intertext_sep=\dimen307
+\l_MT_below_intertext_sep=\dimen308
+\l_MT_above_shortintertext_sep=\dimen309
+\l_MT_below_shortintertext_sep=\dimen310
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarymatrix.code.tex"
@@ -2140,7 +1980,7 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@thm=\count300
+\c@thm=\count279
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
@@ -2148,20 +1988,20 @@ Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip96
-\RaggedLeftLeftskip=\skip97
-\RaggedRightLeftskip=\skip98
-\CenteringRightskip=\skip99
-\RaggedLeftRightskip=\skip100
-\RaggedRightRightskip=\skip101
-\CenteringParfillskip=\skip102
-\RaggedLeftParfillskip=\skip103
-\RaggedRightParfillskip=\skip104
-\JustifyingParfillskip=\skip105
-\CenteringParindent=\skip106
-\RaggedLeftParindent=\skip107
-\RaggedRightParindent=\skip108
-\JustifyingParindent=\skip109
+\CenteringLeftskip=\skip87
+\RaggedLeftLeftskip=\skip88
+\RaggedRightLeftskip=\skip89
+\CenteringRightskip=\skip90
+\RaggedLeftRightskip=\skip91
+\RaggedRightRightskip=\skip92
+\CenteringParfillskip=\skip93
+\RaggedLeftParfillskip=\skip94
+\RaggedRightParfillskip=\skip95
+\JustifyingParfillskip=\skip96
+\CenteringParindent=\skip97
+\RaggedLeftParindent=\skip98
+\RaggedRightParindent=\skip99
+\JustifyingParindent=\skip100
 ) (Main.aux (abstract/abstract.aux) (chapters/Introduction.aux)
 (chapters/Data.aux) (chapters/Method.aux) (chapters/Implementation.aux)
 (chapters/Result.aux) (chapters/Discussion.aux) (chapters/Conclusion.aux)
@@ -2220,22 +2060,22 @@ LaTeX Font Info:    Try loading font information for T1+futs on input line 18.
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@lstlisting=\count301
+\c@lstlisting=\count280
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen322
-\scratchbox=\box90
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks65
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen323
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks66
+\scratchcounter=\count281
+\scratchdimen=\dimen311
+\scratchbox=\box89
+\nofMPsegments=\count282
+\nofMParguments=\count283
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count284
+\MPscratchDim=\dimen312
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
+\everyMPtoPDFconversion=\toks58
 ) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -2245,7 +2085,6 @@ Package caption Info: longtable package is loaded.
 sty"
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
-Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -2285,7 +2124,7 @@ Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 18.
-\AtBeginShipoutBox=\box91
+\AtBeginShipoutBox=\box90
 Package hyperref Info: Link coloring ON on input line 18.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2293,15 +2132,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count287
 )
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
 
 (Main.out) (Main.out)
-\@outlinefile=\write9
-\openout9 = `Main.out'.
+\@outlinefile=\write7
+\openout7 = `Main.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
@@ -2361,8 +2200,6 @@ Package pdftex.def Info: include/nat-en.pdf used on input line 45.
 
 [1
 
-\openout6 = `Main.ist'.
-
 
 {C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./include/n
 atbio-farve.pdf> <./include/nat-en.pdf>]
@@ -2384,8 +2221,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
 )
-\tf@toc=\write10
-\openout10 = `Main.toc'.
+\tf@toc=\write8
+\openout8 = `Main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
@@ -2396,20 +2233,20 @@ l.53 \listoffigures
 
 
 ] (Main.lof)
-\tf@lof=\write11
-\openout11 = `Main.lof'.
+\tf@lof=\write9
+\openout9 = `Main.lof'.
 
  [2
 
 ] (Main.lot)
-\tf@lot=\write12
-\openout12 = `Main.lot'.
+\tf@lot=\write10
+\openout10 = `Main.lot'.
 
  [3
 
 ] (Main.lox)
-\tf@lox=\write13
-\openout13 = `Main.lox'.
+\tf@lox=\write11
+\openout11 = `Main.lox'.
 
  [1
 
@@ -2426,15 +2263,11 @@ l.53 \listoffigures
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 3.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 3.
-FiXme Note: 'Hvorfor' on input line 3.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 3.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
-
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -2460,9 +2293,32 @@ Chapter 2.
  (chapters/Method.tex
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 11.
-FiXme Note: 'find reference' on input line 21.
-FiXme Note: 'level or intensity?' on input line 22.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 5.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 15.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
+line 15.
+FiXme Note: 'find reference' on input line 15.
+FiXme Note: 'level or intensity?' on input line 16.
+FiXme Note: 'Lave 3x3 matrice med offsets.' on input line 17.
+FiXme Note: 'show 3x3 matrix with angles clearly visible' on input line 19.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--20
+
+ []
+
+
+LaTeX Warning: Marginpar on page 5 moved.
+
+FiXme Note: 'Show example on a 5x5 matrix with GI 8, offset [1 0] and [0 1]' on
+ input line 22.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
 
 LaTeX Warning: Marginpar on page 5 moved.
 
@@ -2471,46 +2327,44 @@ LaTeX Warning: Marginpar on page 5 moved.
 
 
 ]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 62.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 62.
+FiXme Note: '3 gange 3 gange, farv de \IeC {\o }nskede dele eller noget' on inp
+ut line 25.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 24.80847pt.
+ Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 24.80847pt.
+ Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7]
 
-FiXme Fatal Error: 'her er noget galt' on input line 195.
+FiXme Fatal Error: 'her er noget galt' on input line 190.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 197.
-FiXme Note: 'en note' on input line 197.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 192.
+FiXme Note: 'en note' on input line 192.
 
 LaTeX Warning: Marginpar on page 8 moved.
 
 
-FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 199.
+FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 194.
 
 
 LaTeX Warning: Marginpar on page 8 moved.
 
 
-FiXme Error: 'en fejl' on input line 201.
+FiXme Error: 'en fejl' on input line 196.
 
 )
 
@@ -2518,7 +2372,7 @@ LaTeX Warning: Marginpar on page 8 moved.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 24.80847pt.
+ Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -2558,7 +2412,7 @@ Chapter 7.
 
 
 
-] (Main.gls) [13
+] [13
 
 
 
@@ -2578,7 +2432,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 ])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 24.80847pt.
+ Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -2591,11 +2445,11 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 4,
+FiXme Summary: Number of notes: 7,
 (FiXme)        Number of warnings: 1,
 (FiXme)        Number of errors: 1,
 (FiXme)        Number of fatal errors: 1,
-(FiXme)        Total: 7.
+(FiXme)        Total: 10.
 
 
 AED: lastpage setting LastPage
@@ -2742,43 +2596,11 @@ hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
      url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
  hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
 rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-glossaries.sty    2016/01/24 v4.21 (NLCT)
-mfirstuc.sty    2015/12/17 v2.02 (NLCT)
-textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-    xfor.sty    2009/02/05 v1.05 (NLCT)
-datatool-base.sty    2016/01/18 v2.25 (NLCT)
-  substr.sty    2009/10/20 v1.2 Handle substrings
-datatool-fp.sty    2016/01/18 v2.25 (NLCT)
-      fp.sty    1995/04/02
-defpattern.sty    1994/10/12
-fp-basic.sty    1996/05/13
-fp-addons.sty    1995/03/15
- fp-snap.sty    1995/04/05
-  fp-exp.sty    1995/04/03
-fp-trigo.sty    1995/04/14
-  fp-pas.sty    1994/08/29
-fp-random.sty    1995/02/23
-  fp-eqn.sty    1995/04/03
-  fp-upn.sty    1996/10/21
- fp-eval.sty    1995/04/03
-glossaries-compatible-307.sty    2016/01/24 v4.21 (NLCT)
-tracklang.sty    2015/03/23 v1.2 (NLCT) Track Languages
-tracklang.tex
-translator.sty    2010/06/12 ver 1.10
-translator-language-mappings.tex
-glossaries-english.ldf    2014/11/23 v1.0
-glossary-hypernav.sty    2016/01/24 v4.21 (NLCT)
-glossary-list.sty    2016/01/24 v4.21 (NLCT)
-glossary-long.sty    2016/01/24 v4.21 (NLCT)
-longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
-glossary-super.sty    2016/01/24 v4.21 (NLCT)
-supertabular.sty    2004/02/20 v4.1e the supertabular environment
-glossary-tree.sty    2016/01/24 v4.21 (NLCT)
 vhistory.sty    
 ltxtable.sty    1995/12/11 v0.2 longtable/tabularx merge (DPC)
 tabularx.sty    2014/10/28 v2.10 `tabularx' package (DPC)
+longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
     sets.sty    
-    Main.hst
 pgfplots.sty    2016/01/06 v1.13 Data Visualization (1.13)
  eso-pic.sty    2015/07/21 v2.0g eso-pic (RN)
 mathtools.sty    2015/11/12 v1.18 mathematical typesetting tools
@@ -2806,15 +2628,14 @@ include/natbio-farve.pdf
 include/nat-en.pdf
 abstract/abstract.tex
 chapters/Introduction.tex
-  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 chapters/Data.tex
 chapters/Method.tex
+  t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
 chapters/Implementation.tex
 chapters/Result.tex
 chapters/Discussion.tex
 chapters/Conclusion.tex
-    Main.gls
 appendix/derivationImageTexture.tex
     Main.bbl
     Main.ind
@@ -2822,18 +2643,18 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: CA743637A106B33173E40800BFB8D6E1;1349.
+(rerunfilecheck)             Checksum: 1CB5DFE45AC5F15C6BA4F04FEB294F74;1389.
  ) 
 Here is how much of TeX's memory you used:
- 47453 strings out of 493634
- 1030947 string characters out of 3141315
- 1448374 words of memory out of 3000000
- 49811 multiletter control sequences out of 15000+200000
- 133397 words of font info for 154 fonts, out of 3000000 for 9000
+ 43771 strings out of 493634
+ 969609 string characters out of 3141315
+ 1334844 words of memory out of 3000000
+ 46247 multiletter control sequences out of 15000+200000
+ 142027 words of font info for 158 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
 aby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pf
 b><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/
@@ -2845,9 +2666,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (20 pages, 214412 bytes).
+Output written on Main.pdf (20 pages, 219805 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
