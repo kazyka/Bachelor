@@ -38,12 +38,12 @@ addpath(fullfile(pwd,'data'));
 %transpose(anglex90) = anglez45
 
 %LoadData
-NumberOfPatients = 8;
-[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'erode');
+NumberOfPatients = 100;
+[DATA2D, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normalize', 'erode');
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
-simpleAllplot(DATA2D, NumberOfPatients, 13, 'mean');
+simpleAllplot(DATA2D, NumberOfPatients, 1, 'simple');
 
 
 %----SKAL TILPASSES NY DATALOADER----% dataloader(NumberOfPatients , start, 'left/right', 'normal/normalize', 'erode/noterode');
