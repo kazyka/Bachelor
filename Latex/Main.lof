@@ -2,9 +2,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Text\relax }}{7}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Left: Middle: Right:\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Text\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of the offsets for the 2D\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example how the values in the GLCM are calclulated of the 4-by-5 image I. Element (1, 1) in the GLCM contains the value 1 because there is only one instance inf the image where two horizontally adjacent pixels have the values 1 and 1.\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of the offsets for the 3D\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Text\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Left: Middle: Right:\relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of the offsets for the 3D\relax }}{9}{figure.caption.10}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Example of the offsets for the 3D\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Text\relax }}{10}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

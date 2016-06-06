@@ -40,15 +40,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="237.36869"
-     inkscape:cy="387.13967"
+     inkscape:zoom="1.979899"
+     inkscape:cx="277.56031"
+     inkscape:cy="334.55706"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -168,8 +168,8 @@
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.07330859px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.00643468;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.0064347, 2.01286939;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 114.14724,572.53975 c 0,108.9702 0,108.9702 0,108.9702"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.41938198;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.41938207, 2.83876413;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 114.14724,464.7719 c 0,216.73805 0,216.73805 0,216.73805"
        id="path4456"
        inkscape:connector-curvature="0" />
     <path
@@ -273,5 +273,38 @@
            height="19.697958"
            x="26.263966"
            y="565.97375" /></flowRegion><flowPara
-         id="flowPara6626">Pixel of interest</flowPara></flowRoot>  </g>
+         id="flowPara6626">Pixel of interest</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4183"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(26.999279,-40.21176)"><flowRegion
+         id="flowRegion4185"><rect
+           id="rect4187"
+           width="14.285715"
+           height="22.857168"
+           x="70.714287"
+           y="600.21936" /></flowRegion><flowPara
+         id="flowPara4189">Y</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4183-7"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(117.64299,130.01753)"><flowRegion
+         id="flowRegion4185-0"><rect
+           id="rect4187-3"
+           width="14.285715"
+           height="22.857168"
+           x="70.714287"
+           y="600.21936" /></flowRegion><flowPara
+         id="flowPara4215">Z</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4183-76"
+       style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(332.30041,191.13176)"><flowRegion
+         id="flowRegion4185-5"><rect
+           id="rect4187-1"
+           width="14.285715"
+           height="22.857168"
+           x="70.714287"
+           y="600.21936" /></flowRegion><flowPara
+         id="flowPara4231">X</flowPara></flowRoot>  </g>
 </svg>
