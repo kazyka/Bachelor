@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  6 JUN 2016 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  6 JUN 2016 17:18
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -726,29 +726,56 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box29
 )
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
-sty" ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks29
 )
-\lst@mode=\count103
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count103
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count104
+\c@subtable=\count105
+)
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
+\lst@mode=\count106
 \lst@gtempboxa=\box30
 \lst@token=\toks30
-\lst@length=\count104
-\lst@currlwidth=\dimen113
-\lst@column=\count105
-\lst@pos=\count106
-\lst@lostspace=\dimen114
-\lst@width=\dimen115
-\lst@newlines=\count107
-\lst@lineno=\count108
-\lst@maxwidth=\dimen116
+\lst@length=\count107
+\lst@currlwidth=\dimen120
+\lst@column=\count108
+\lst@pos=\count109
+\lst@lostspace=\dimen121
+\lst@width=\dimen122
+\lst@newlines=\count110
+\lst@lineno=\count111
+\lst@maxwidth=\dimen123
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count109
-\lst@skipnumbers=\count110
+\c@lstnumber=\count112
+\lst@skipnumbers=\count113
 \lst@framebox=\box31
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
@@ -758,8 +785,8 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen117
-\extrarowheight=\dimen118
+\col@sep=\dimen124
+\extrarowheight=\dimen125
 \NC@list=\toks31
 \extratabsurround=\skip51
 \backup@length=\skip52
@@ -787,10 +814,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count111
+\Gread@gobject=\count114
 ))
-\Gin@req@height=\dimen119
-\Gin@req@width=\dimen120
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -874,8 +901,8 @@ cs.sty"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common.tex"
 \pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen121
-\pgfutil@tempdimb=\dimen122
+\pgfutil@tempdima=\dimen128
+\pgfutil@tempdimb=\dimen129
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common-lists.tex"))
@@ -909,20 +936,20 @@ fkeys.code.tex"
 fkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen123
-\pgf@y=\dimen124
-\pgf@xa=\dimen125
-\pgf@ya=\dimen126
-\pgf@xb=\dimen127
-\pgf@yb=\dimen128
-\pgf@xc=\dimen129
-\pgf@yc=\dimen130
+\pgf@x=\dimen130
+\pgf@y=\dimen131
+\pgf@xa=\dimen132
+\pgf@ya=\dimen133
+\pgf@xb=\dimen134
+\pgf@yb=\dimen135
+\pgf@xc=\dimen136
+\pgf@yc=\dimen137
 \w@pgf@writea=\write4
 \r@pgf@reada=\read1
-\c@pgf@counta=\count112
-\c@pgf@countb=\count113
-\c@pgf@countc=\count114
-\c@pgf@countd=\count115
+\c@pgf@counta=\count115
+\c@pgf@countb=\count116
+\c@pgf@countc=\count117
+\c@pgf@countd=\count118
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
@@ -944,8 +971,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count116
-\pgfsyssoftpath@bigbuffer@items=\count117
+\pgfsyssoftpath@smallbuffer@items=\count119
+\pgfsyssoftpath@bigbuffer@items=\count120
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsysprotocol.code.tex"
@@ -963,8 +990,8 @@ calc.code.tex"
 util.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 parser.code.tex"
-\pgfmath@dimen=\dimen131
-\pgfmath@count=\count118
+\pgfmath@dimen=\dimen138
+\pgfmath@count=\count121
 \pgfmath@box=\box33
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
@@ -990,37 +1017,37 @@ functions.misc.code.tex")
 functions.integerarithmetics.code.tex")))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 float.code.tex"
-\c@pgfmathroundto@lastzeros=\count119
+\c@pgfmathroundto@lastzeros=\count122
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen132
-\pgf@picmaxx=\dimen133
-\pgf@picminy=\dimen134
-\pgf@picmaxy=\dimen135
-\pgf@pathminx=\dimen136
-\pgf@pathmaxx=\dimen137
-\pgf@pathminy=\dimen138
-\pgf@pathmaxy=\dimen139
-\pgf@xx=\dimen140
-\pgf@xy=\dimen141
-\pgf@yx=\dimen142
-\pgf@yy=\dimen143
-\pgf@zx=\dimen144
-\pgf@zy=\dimen145
+\pgf@picminx=\dimen139
+\pgf@picmaxx=\dimen140
+\pgf@picminy=\dimen141
+\pgf@picmaxy=\dimen142
+\pgf@pathminx=\dimen143
+\pgf@pathmaxx=\dimen144
+\pgf@pathminy=\dimen145
+\pgf@pathmaxy=\dimen146
+\pgf@xx=\dimen147
+\pgf@xy=\dimen148
+\pgf@yx=\dimen149
+\pgf@yy=\dimen150
+\pgf@zx=\dimen151
+\pgf@zy=\dimen152
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen146
-\pgf@path@lasty=\dimen147
+\pgf@path@lastx=\dimen153
+\pgf@path@lasty=\dimen154
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen148
-\pgf@shorten@start@additional=\dimen149
+\pgf@shorten@end@additional=\dimen155
+\pgf@shorten@start@additional=\dimen156
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorescopes.code.tex"
@@ -1028,19 +1055,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box34
 \pgf@hbox=\box35
 \pgf@layerbox@main=\box36
-\pgf@picture@serial@count=\count120
+\pgf@picture@serial@count=\count123
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen150
+\pgflinewidth=\dimen157
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen151
-\pgf@pt@y=\dimen152
-\pgf@pt@temp=\dimen153
+\pgf@pt@x=\dimen158
+\pgf@pt@y=\dimen159
+\pgf@pt@temp=\dimen160
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorequick.code.tex"
@@ -1057,13 +1084,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen154
+\pgfarrowsep=\dimen161
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen155
-\pgf@sys@shading@range@num=\count121
+\pgf@max=\dimen162
+\pgf@sys@shading@range@num=\count124
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreimage.code.tex"
@@ -1098,8 +1125,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen156
-\pgf@nodesepend=\dimen157
+\pgf@nodesepstart=\dimen163
+\pgf@nodesepend=\dimen164
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-1-18.sty"
@@ -1121,8 +1148,8 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 .code.tex")
-\pgffor@iter=\dimen158
-\pgffor@skip=\dimen159
+\pgffor@iter=\dimen165
+\pgffor@skip=\dimen166
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 ))
@@ -1133,63 +1160,43 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count122
-\pgfplotmarksize=\dimen160
+\pgf@plot@mark@count=\count125
+\pgfplotmarksize=\dimen167
 )
-\tikz@lastx=\dimen161
-\tikz@lasty=\dimen162
-\tikz@lastxsaved=\dimen163
-\tikz@lastysaved=\dimen164
-\tikzleveldistance=\dimen165
-\tikzsiblingdistance=\dimen166
+\tikz@lastx=\dimen168
+\tikz@lasty=\dimen169
+\tikz@lastxsaved=\dimen170
+\tikz@lastysaved=\dimen171
+\tikzleveldistance=\dimen172
+\tikzsiblingdistance=\dimen173
 \tikz@figbox=\box39
 \tikz@figbox@bg=\box40
 \tikz@tempbox=\box41
 \tikz@tempbox@bg=\box42
-\tikztreelevel=\count123
-\tikznumberofchildren=\count124
-\tikznumberofcurrentchild=\count125
-\tikz@fig@count=\count126
+\tikztreelevel=\count126
+\tikznumberofchildren=\count127
+\tikznumberofcurrentchild=\count128
+\tikz@fig@count=\count129
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 odulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count127
-\pgfmatrixcurrentcolumn=\count128
-\pgf@matrix@numberofcolumns=\count129
+\pgfmatrixcurrentrow=\count130
+\pgfmatrixcurrentcolumn=\count131
+\pgf@matrix@numberofcolumns=\count132
 )
-\tikz@expandcount=\count130
+\tikz@expandcount=\count133
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
-y"
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
-ty"
-Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen167
-\captionmargin@=\dimen168
-\captionwidth=\dimen169
-\caption@tempdima=\dimen170
-\caption@indent=\dimen171
-\caption@parindent=\dimen172
-\caption@hangindent=\dimen173
-)
-\c@ContinuedFloat=\count131
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
-)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.
 sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count132
-\c@@ppsavesec=\count133
-\c@@ppsaveapp=\count134
+\c@@pps=\count134
+\c@@ppsavesec=\count135
+\c@@ppsaveapp=\count136
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -1200,9 +1207,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count135
-\Gm@cntv=\count136
-\c@Gm@tempcnt=\count137
+\Gm@cnth=\count137
+\Gm@cntv=\count138
+\c@Gm@tempcnt=\count139
 \Gm@bindingoffset=\dimen174
 \Gm@wd@mp=\dimen175
 \Gm@odd@mp=\dimen176
@@ -1234,17 +1241,14 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks48
 \XKV@tempa@toks=\toks49
 )
-\XKV@depth=\count138
+\XKV@depth=\count140
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@fixmecount=\count139
-\c@fxnotecount=\count140
-\c@fxwarningcount=\count141
-\c@fxerrorcount=\count142
-\c@fxfatalcount=\count143
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\showkeys.sty"
-Package: showkeys 2014/10/28 v3.17 Show cite and label keys (DPC, MH)
+\c@fixmecount=\count141
+\c@fxnotecount=\count142
+\c@fxwarningcount=\count143
+\c@fxerrorcount=\count144
+\c@fxfatalcount=\count145
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\draftwatermark\dra
 ftwatermark.sty"
@@ -1261,7 +1265,7 @@ Package: everypage 2007/06/20 1.1 Hooks to run on every page
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count144
+\c@lips@count=\count146
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
@@ -1305,24 +1309,24 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count145
-\l_tmpa_int=\count146
-\l_tmpb_int=\count147
-\g_tmpa_int=\count148
-\g_tmpb_int=\count149
+\c_max_int=\count147
+\l_tmpa_int=\count148
+\l_tmpb_int=\count149
+\g_tmpa_int=\count150
+\g_tmpb_int=\count151
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count150
+\g__prg_map_int=\count152
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count151
-\l__iow_target_count_int=\count152
-\l__iow_current_line_int=\count153
-\l__iow_current_word_int=\count154
-\l__iow_current_indentation_int=\count155
+\l_iow_line_count_int=\count153
+\l__iow_target_count_int=\count154
+\l__iow_current_line_int=\count155
+\l__iow_current_word_int=\count156
+\l__iow_current_indentation_int=\count157
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen182
 \c_max_dim=\dimen183
@@ -1343,18 +1347,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count156
-\l_keys_choice_int=\count157
+\g__keyval_level_int=\count158
+\l_keys_choice_int=\count159
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count158
-\c__fp_middle_shift_int=\count159
-\c__fp_trailing_shift_int=\count160
-\c__fp_big_leading_shift_int=\count161
-\c__fp_big_middle_shift_int=\count162
-\c__fp_big_trailing_shift_int=\count163
-\c__fp_Bigg_leading_shift_int=\count164
-\c__fp_Bigg_middle_shift_int=\count165
-\c__fp_Bigg_trailing_shift_int=\count166
+\c__fp_leading_shift_int=\count160
+\c__fp_middle_shift_int=\count161
+\c__fp_trailing_shift_int=\count162
+\c__fp_big_leading_shift_int=\count163
+\c__fp_big_middle_shift_int=\count164
+\c__fp_big_trailing_shift_int=\count165
+\c__fp_Bigg_leading_shift_int=\count166
+\c__fp_Bigg_middle_shift_int=\count167
+\c__fp_Bigg_trailing_shift_int=\count168
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box43
 \l_tmpa_box=\box44
@@ -1405,23 +1409,23 @@ L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode
 .def"
 File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count167
+\l__driver_color_stack_int=\count169
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\
 xparse.sty"
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count168
-\l__xparse_m_args_int=\count169
-\l__xparse_mandatory_args_int=\count170
-\l__xparse_processor_int=\count171
-\l__xparse_v_nesting_int=\count172
+\l__xparse_current_arg_int=\count170
+\l__xparse_m_args_int=\count171
+\l__xparse_mandatory_args_int=\count172
+\l__xparse_processor_int=\count173
+\l__xparse_v_nesting_int=\count174
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count173
+\etb@tempcnta=\count175
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1605,14 +1609,14 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 .................................................
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count174
+\c@tracingmulticols=\count176
 \mult@box=\box58
 \multicol@leftmargin=\dimen269
-\c@unbalance=\count175
-\c@collectmore=\count176
-\doublecol@number=\count177
-\multicoltolerance=\count178
-\multicolpretolerance=\count179
+\c@unbalance=\count177
+\c@collectmore=\count178
+\doublecol@number=\count179
+\multicoltolerance=\count180
+\multicolpretolerance=\count181
 \full@width=\dimen270
 \page@free=\dimen271
 \premulticols=\dimen272
@@ -1643,14 +1647,14 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box79
 \@tempa=\box80
 \@tempa=\box81
-\c@columnbadness=\count180
-\c@finalcolumnbadness=\count181
+\c@columnbadness=\count182
+\c@finalcolumnbadness=\count183
 \last@try=\dimen275
 \multicolovershoot=\dimen276
 \multicolundershoot=\dimen277
 \mult@nat@firstbox=\box82
 \colbreak@box=\box83
-\mc@col@check@num=\count182
+\mc@col@check@num=\count184
 ))
 \Main@idxfile=\write5
 \openout5 = `Main.idx'.
@@ -1661,7 +1665,7 @@ Writing index file Main.idx
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\idxlayout\idxlayou
 t.sty"
 Package: idxlayout 2012/03/30 v0.4d Configurable index layout
-\c@idxcols=\count183
+\c@idxcols=\count185
 \indexcolsep=\skip74
 \indexrule=\skip75
 \ila@indentunit=\skip76
@@ -1705,15 +1709,15 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen278
-\Hy@linkcounter=\count184
-\Hy@pagecounter=\count185
+\Hy@linkcounter=\count186
+\Hy@pagecounter=\count187
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count186
+\Hy@SavedSpaceFactor=\count188
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1725,7 +1729,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count187
+\c@Hy@tempcnt=\count189
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
@@ -1733,7 +1737,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen279
-\Fld@menulength=\count188
+\Fld@menulength=\count190
 \Field@Width=\dimen280
 \Fld@charsize=\dimen281
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1745,17 +1749,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count189
-\c@Item=\count190
-\c@Hfootnote=\count191
+\Hy@abspage=\count191
+\c@Item=\count192
+\c@Hfootnote=\count193
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count192
-\c@bookmark@seq@number=\count193
+\Fld@listcount=\count194
+\c@bookmark@seq@number=\count195
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -1764,7 +1768,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip78
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 115.
+Package hyperref Info: Option `colorlinks' set `true' on input line 116.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\vhistory.
 sty"
@@ -1779,7 +1783,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@old@col=\dimen284
 \TX@target=\dimen285
 \TX@delta=\dimen286
-\TX@cols=\count194
+\TX@cols=\count196
 \TX@ftn=\toks51
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
@@ -1788,21 +1792,21 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip80
 \LTpre=\skip81
 \LTpost=\skip82
-\LTchunksize=\count195
+\LTchunksize=\count197
 \LTcapwidth=\dimen287
 \LT@head=\box84
 \LT@firsthead=\box85
 \LT@foot=\box86
 \LT@lastfoot=\box87
-\LT@cols=\count196
-\LT@rows=\count197
-\c@LT@tables=\count198
-\c@LT@chunks=\count199
+\LT@cols=\count198
+\LT@rows=\count199
+\c@LT@tables=\count266
+\c@LT@chunks=\count267
 \LT@p@ftn=\toks52
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\sets.sty"
 Package: sets 
-\c@s@tlength=\count266
+\c@s@tlength=\count268
 )
 File Main.hst not found.
 \vh@verfile=\write6
@@ -1821,8 +1825,8 @@ score.code.tex"
 \t@pgfplots@tokb=\toks54
 \t@pgfplots@tokc=\toks55
 \pgfplots@tmpa=\dimen288
-\c@pgfplots@coordindex=\count267
-\c@pgfplots@scanlineindex=\count268
+\c@pgfplots@coordindex=\count269
+\c@pgfplots@scanlineindex=\count270
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 plotssysgeneric.code.tex"))
@@ -1838,7 +1842,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 ompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
 ompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count269
+\c@pgfmathroundto@lastzeros=\count271
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
 fplotsutil.code.tex"
@@ -1848,13 +1852,13 @@ ucture\pgfplotsliststructure.code.tex")
 ucture\pgfplotsliststructureext.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsarray.code.tex"
-\c@pgfplotsarray@tmp=\count270
+\c@pgfplotsarray@tmp=\count272
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsmatrix.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtabl
 e\pgfplotstableshared.code.tex"
-\c@pgfplotstable@counta=\count271
+\c@pgfplotstable@counta=\count273
 \t@pgfplotstable@a=\toks56
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
@@ -1867,7 +1871,7 @@ fplotsbinary.data.code.tex"))
 fplotsutil.verb.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pg
 flibrarypgfplots.surfshading.code.tex"
-\c@pgfplotslibrarysurf@no=\count272
+\c@pgfplotslibrarysurf@no=\count274
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 librarypgfplots.surfshading.pgfsys-pdftex.def")))
@@ -1904,7 +1908,7 @@ oduledecorations.code.tex"
 \pgfdecoratedinputsegmentcompleteddistance=\dimen291
 \pgfdecoratedinputsegmentremainingdistance=\dimen292
 \pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count273
+\pgf@decorate@repeatstate=\count275
 \pgfdecorationsegmentamplitude=\dimen294
 \pgfdecorationsegmentlength=\dimen295
 )
@@ -1918,7 +1922,7 @@ corations\pgflibrarydecorations.pathmorphing.code.tex"))
 r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
 corations\pgflibrarydecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count274
+\pgfplots@numplots=\count276
 \pgfplots@xmin@reg=\dimen296
 \pgfplots@xmax@reg=\dimen297
 \pgfplots@ymin@reg=\dimen298
@@ -1943,15 +1947,15 @@ s.sty"
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count275
-\calc@Bcount=\count276
+\calc@Acount=\count277
+\calc@Bcount=\count278
 \calc@Adimen=\dimen302
 \calc@Bdimen=\dimen303
 \calc@Askip=\skip83
 \calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count277
+\calc@Ccount=\count279
 \calc@Cskip=\skip85
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
@@ -1962,7 +1966,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count278
+\g_MT_multlinerow_int=\count280
 \l_MT_multwidth_dim=\dimen304
 \origjot=\skip86
 \l_MT_shortvdotswithinadjustabove_dim=\dimen305
@@ -1980,7 +1984,7 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@thm=\count279
+\c@thm=\count281
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
@@ -2060,25 +2064,9 @@ LaTeX Font Info:    Try loading font information for T1+futs on input line 20.
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@lstlisting=\count280
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
-ii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
-\scratchdimen=\dimen311
-\scratchbox=\box89
-\nofMPsegments=\count282
-\nofMParguments=\count283
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count284
-\MPscratchDim=\dimen312
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks58
-) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
@@ -2086,7 +2074,23 @@ sty"
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count282
 
+("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen311
+\scratchbox=\box89
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen312
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks58
+) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2132,7 +2136,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count287
+\c@section@level=\count289
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
@@ -2267,10 +2271,6 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 3.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 12.
 ) [3
@@ -2280,8 +2280,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 ]
 \openout2 = `chapters/Data.aux'.
 
-
-(chapters/Data.tex
+ (chapters/Data.tex
 Chapter 2.
 ) [4
 
@@ -2306,14 +2305,14 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 (epstopdf)                    date: 2016-06-06 00:01:36
 (epstopdf)                    size: 20592 bytes
 (epstopdf)             Output file: <pictures/2DCOM-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-06 11:21:48
+(epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 9713 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/2DCOM-eps-converte
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/2DCOM-eps-converted-to.pdf, id=225, 361.35pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=218, 361.35pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2321,17 +2320,17 @@ Package pdftex.def Info: pictures/2DCOM-eps-converted-to.pdf used on input line
  23.
 (pdftex.def)             Requested size: 180.67456pt x 100.87662pt.
 Package epstopdf Info: Source file: <pictures/GLCM.eps>
-(epstopdf)                    date: 2016-06-06 00:01:36
-(epstopdf)                    size: 18257 bytes
+(epstopdf)                    date: 2016-06-06 16:02:57
+(epstopdf)                    size: 18011 bytes
 (epstopdf)             Output file: <pictures/GLCM-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-06 11:21:49
+(epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 8329 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/GLCM-eps-converted
 -to.pdf pictures/GLCM.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/GLCM-eps-converted-to.pdf, id=226, 389.455pt x 199.74625pt>
+<pictures/GLCM-eps-converted-to.pdf, id=219, 389.455pt x 199.74625pt>
 File: pictures/GLCM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/GLCM-eps-converted-to.pdf>
@@ -2363,22 +2362,22 @@ LaTeX Warning: Marginpar on page 6 moved.
 FiXme Note: '3 gange 3 gange, farv de \IeC {\o }nskede dele eller noget' on inp
 ut line 43.
 Package epstopdf Info: Source file: <pictures/3DCOM.eps>
-(epstopdf)                    date: 2016-06-06 15:21:17
-(epstopdf)                    size: 19475 bytes
+(epstopdf)                    date: 2016-06-06 16:02:57
+(epstopdf)                    size: 19892 bytes
 (epstopdf)             Output file: <pictures/3DCOM-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-06 15:26:18
+(epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 9743 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/3DCOM-eps-converte
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=243, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=236, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/3DCOM-eps-converted-to.pdf used on input line
  47.
-(pdftex.def)             Requested size: 362.55202pt x 193.92317pt.
+(pdftex.def)             Requested size: 414.34854pt x 221.6283pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2387,7 +2386,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./pictures/GLCM-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
@@ -2398,52 +2397,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./pictures/3DCOM-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <pictures/erodeSlice10x.eps>
-(epstopdf)                    date: 2016-06-06 14:45:46
-(epstopdf)                    size: 16488 bytes
-(epstopdf)             Output file: <pictures/erodeSlice10x-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2016-06-06 14:49:11
-(epstopdf)                    size: 4079 bytes
-(epstopdf)             Command: <epstopdf --outfile=pictures/erodeSlice10x-eps-
-converted-to.pdf pictures/erodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 156.
-Package epstopdf Info: Output file is already uptodate.
-
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=272, 421.575pt x 316.18124pt>
-File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
-
-<use pictures/erodeSlice10x-eps-converted-to.pdf>
-Package pdftex.def Info: pictures/erodeSlice10x-eps-converted-to.pdf used on in
-put line 156.
-(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.19173pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
 Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
-(epstopdf)                    date: 2016-06-06 14:45:27
-(epstopdf)                    size: 16981 bytes
+(epstopdf)                    date: 2016-06-06 16:02:57
+(epstopdf)                    size: 17053 bytes
 (epstopdf)             Output file: <pictures/noterodeSlice10x-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2016-06-06 14:49:11
+(epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 4491 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/noterodeSlice10x-e
 ps-converted-to.pdf pictures/noterodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 162.
+(epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=280, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=263, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/noterodeSlice10x-eps-converted-to.pdf used on
- input line 162.
-(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+ input line 88.
+(pdftex.def)             Requested size: 168.627pt x 126.47025pt.
+Package epstopdf Info: Source file: <pictures/erodeSlice10x.eps>
+(epstopdf)                    date: 2016-06-06 16:02:57
+(epstopdf)                    size: 16557 bytes
+(epstopdf)             Output file: <pictures/erodeSlice10x-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-06-06 16:02:57
+(epstopdf)                    size: 4079 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/erodeSlice10x-eps-
+converted-to.pdf pictures/erodeSlice10x.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=264, 421.575pt x 316.18124pt>
+File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/erodeSlice10x-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/erodeSlice10x-eps-converted-to.pdf used on in
+put line 93.
+(pdftex.def)             Requested size: 168.627pt x 126.47025pt.
+
+Overfull \hbox (1.71913pt too wide) in paragraph at lines 86--96
+[]$[]$ $[]$ 
+ []
+
+
+Package caption Warning: \label without proper \caption on input line 171.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ErosionExample' on page 8 undefined on input line
+ 114.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2451,31 +2454,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./pictures/erodeSlice10x-eps-converted-to.pdf> <./pictures/noterodeSlice10x
+[8 <./pictures/noterodeSlice10x-eps-converted-to.pdf> <./pictures/erodeSlice10x
 -eps-converted-to.pdf>]
-FiXme Note: 'Vi billede af eroded og original mask' on input line 205.
+
+Package caption Warning: \label without proper \caption on input line 171.
+See the caption package documentation for explanation.
 
 
-FiXme Fatal Error: 'her er noget galt' on input line 216.
+LaTeX Warning: Reference `fig:ErosionExample' on page 9 undefined on input line
+ 174.
+
+FiXme Note: 'Vi billede af eroded og original mask' on input line 213.
+
+FiXme Fatal Error: 'her er noget galt' on input line 224.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 218.
-FiXme Note: 'en note' on input line 218.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 226.
+FiXme Note: 'en note' on input line 226.
 
-LaTeX Warning: Marginpar on page 10 moved.
-
-
-FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 220.
+LaTeX Warning: Marginpar on page 9 moved.
 
 
-LaTeX Warning: Marginpar on page 10 moved.
+FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 228.
 
 
-FiXme Error: 'en fejl' on input line 222.
+LaTeX Warning: Marginpar on page 9 moved.
+
+
+FiXme Error: 'en fejl' on input line 230.
 
 )
 
-LaTeX Warning: Marginpar on page 10 moved.
+LaTeX Warning: Marginpar on page 9 moved.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2483,12 +2493,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[9]
 \openout2 = `chapters/Implementation.aux'.
 
  (chapters/Implementation.tex
 Chapter 4.
-) [11
+) [10
 
 
 
@@ -2497,7 +2507,7 @@ Chapter 4.
 
  (chapters/Result.tex
 Chapter 5.
-) [12
+) [11
 
 
 
@@ -2506,7 +2516,7 @@ Chapter 5.
 
  (chapters/Discussion.tex
 Chapter 6.
-) [13
+) [12
 
 
 
@@ -2515,11 +2525,11 @@ Chapter 6.
 
  (chapters/Conclusion.tex
 Chapter 7.
-) [14
+) [13
 
 
 
-] [15
+] [14
 
 
 
@@ -2533,7 +2543,7 @@ LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 3.
-[16
+[15
 
 
 ])
@@ -2543,7 +2553,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17] (Main.bbl) [18
+[16] (Main.bbl
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)) [17
 
 
 
@@ -2604,8 +2618,11 @@ mathrsfs.sty    1996/01/01 Math RSFS package v1.0 (jk)
   natbib.sty    2010/09/13 8.31b (PWD, AO)
  parskip.sty    2001/04/09 non-zero parskip adjustments
    float.sty    2001/11/08 v1.3d Float enhancements (AL)
-listings.sty    2015/06/04 1.6 (Carsten Heinz)
+subcaption.sty    2015/09/15 v1.1-100 Sub-captions (AR)
+ caption.sty    2015/09/17 v3.3-111 Customizing captions (AR)
+caption3.sty    2015/09/20 v1.7-115 caption3 kernel (AR)
   keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+listings.sty    2015/06/04 1.6 (Carsten Heinz)
  lstmisc.sty    2015/06/04 1.6 (Carsten Heinz)
 listings.cfg    2015/06/04 1.6 listings configuration
    array.sty    2014/10/28 v2.4c Tabular extension package (FMi)
@@ -2650,8 +2667,6 @@ pgfcomp-version-1-18.sty    2007/07/23 v3.0.1a (rcs-revision 1.1)
  pgfmath.code.tex
   pgffor.code.tex
     tikz.code.tex
- caption.sty    2015/09/17 v3.3-111 Customizing captions (AR)
-caption3.sty    2015/09/20 v1.7-115 caption3 kernel (AR)
 appendix.sty    2009/09/02 v1.2b extra appendix facilities
 geometry.sty    2010/09/12 v5.6 Page Geometry
   ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
@@ -2662,7 +2677,6 @@ geometry.cfg
 verbatim.sty    2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
  xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
  xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
-showkeys.sty    2014/10/28 v3.17 Show cite and label keys (DPC, MH)
 draftwatermark.sty    2015/02/19 1.2 Put a gray textual watermark on document p
 ages
 everypage.sty    2007/06/20 1.1 Hooks to run on every page
@@ -2720,8 +2734,8 @@ everysel.sty    2011/10/28 v1.2 EverySelectfont Package (MS)
  fmxfutm.fd    futm-extension
   ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
   t1futs.fd    2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-supp-pdf.mkii
 ltcaption.sty    2013/06/09 v1.4-94 longtable captions (AR)
+supp-pdf.mkii
  nameref.sty    2012/10/27 v2.43 Cross-referencing by name of section
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
     Main.out
@@ -2735,38 +2749,41 @@ include/natbio-farve.pdf
 include/nat-en.pdf
 abstract/abstract.tex
 chapters/Introduction.tex
-   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 chapters/Data.tex
 chapters/Method.tex
   t1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
 pictures/2DCOM-eps-converted-to.pdf
 pictures/GLCM-eps-converted-to.pdf
 pictures/3DCOM-eps-converted-to.pdf
-pictures/erodeSlice10x-eps-converted-to.pdf
 pictures/noterodeSlice10x-eps-converted-to.pdf
+pictures/erodeSlice10x-eps-converted-to.pdf
 chapters/Implementation.tex
 chapters/Result.tex
 chapters/Discussion.tex
 chapters/Conclusion.tex
 appendix/derivationImageTexture.tex
     Main.bbl
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
     Main.ind
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 8524054EDBA2B58675B1FEFA8D545128;1317.
+(rerunfilecheck)             Checksum: 589AC9A468C7D7D0BF5F52F406E6F427;1317.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 43813 strings out of 493634
- 970883 string characters out of 3141315
- 1295890 words of memory out of 3000000
- 46276 multiletter control sequences out of 15000+200000
- 142027 words of font info for 158 fonts, out of 3000000 for 9000
+ 43818 strings out of 493634
+ 971223 string characters out of 3141315
+ 1324866 words of memory out of 3000000
+ 46285 multiletter control sequences out of 15000+200000
+ 141406 words of font info for 156 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,18n,85p,10528b,998s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Users/Baby-/AppData/L
+ 62i,19n,85p,10528b,1169s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
 aby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ml.pf
 b><C:/Users/Baby-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/
@@ -2778,9 +2795,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (22 pages, 250988 bytes).
+Output written on Main.pdf (21 pages, 243701 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

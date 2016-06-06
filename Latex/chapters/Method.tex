@@ -83,11 +83,24 @@ Dette vil være en lille introduktion til de tools vi bruger til at analysere vo
 
 
 \section{Erode}
-Normalt brugte man dette til binære billeder, men senere hen er det udvidet til også at omfatte grayscale billeder. Grunden til at dette bruges er for at fjerne støj på billedet.
 
-Vi bruger Erode på vores MRI scanning, da der kan være gray-bit mix og derfor fjerner overflydig og blandet data. Hvis vi starter på hvordan 2D virker, så
+Each patients hippocampus has been segmented in the MRI scan. The problems we can run into are that the background will blur with the segmentation i.e. the hippocampus. Performing a erosion can solve this problem and we can focus on the hippocampus, with the maximum number of details. As seen in figure \ref{fig:noterodeslice} the erosion has not been performed yet, but we might have some problems with data surrounding the hippocampus is blurring out the edges of the hippocampus. To solve this, we create a mask to separate the hippocampus from the background data and end up with what is left in figure \ref{fig:erodeslice}
 
-For at illustrere hvordan erosion virker, gør vi det på et 2D plan, betragt figur \ref{Erosion2D}, hvor vi bruger et plus til at fjerne støj.
+\begin{figure}[H]
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.4]{noterodeSlice10x.eps}
+  \caption{Hippocampus at slice 10 on the X-axis}\label{fig:noterodeslice}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.4]{erodeSlice10x.eps}
+  \caption{Hippocampus at slice 10 on the X-axis after erosion has been performed}\label{fig:erodeslice}
+\end{subfigure}
+\end{figure}
+
+The erosion we have used is called a city-block metric and can be seen in figure \ref{fig:Erosion2D}.
+
 \begin{figure}[H]
   \centering
     \begin{tikzpicture}[scale=0.5]
@@ -100,11 +113,12 @@ For at illustrere hvordan erosion virker, gør vi det på et 2D plan, betragt fi
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
-  \caption{Text}\label{Erosion2D}
+  \caption{Text}\label{fig:Erosion2D}
 \end{figure}
-Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
+To give an example of how the erosion works, it will be illustrated and we will use the city-block metric for this purpose. So we will use figure \ref{fig:Erosion2D} and erode the image in figure \ref{fig:ErosionExample}.
 \begin{figure}[H]
-  \centering
+  \begin{subfigure}{.3\textwidth}
+    \centering
     \begin{tikzpicture}
     \matrix[square matrixlarge]
     {
@@ -120,6 +134,9 @@ Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     };
     \end{tikzpicture}
+    \caption{Original image}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
     \begin{tikzpicture}
     \matrix[square matrixlarge]
     {
@@ -135,6 +152,9 @@ Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     };
     \end{tikzpicture}
+    \caption{Performing erode on the image}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
     \begin{tikzpicture}
     \matrix[square matrixlarge]
     {
@@ -150,13 +170,13 @@ Så med figur \ref{Erosion2D}, bruger vi denne på figur \ref{ErosionExample}.
     |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| & |[fill=white]| \\
     };
     \end{tikzpicture}
-  \caption{Left: Middle: Right:}\label{ErosionExample}
+    \caption{The image after erosion}
+    \end{subfigure}
+  \label{fig:ErosionExample}
 \end{figure}
-Således er støjen nu fjernet. Vi vil udvide dette til 3D, da vores MRI er i 3D. Som det ses på figur \ref{Erosion2D} har denne 4 naboer den tjekker, når man udvider til 3D, får vi 2 nye naboer, dvs 6 naboer i alt. Hvis en af dem er udenfor den ønskede matrix, eksluderes pixlen.
 
+As seen in figure \ref{fig:ErosionExample} the noise (background) have been removed. This is an example in 2D. Now we wish to extend the erosion city-block to 3D. As seen in figure \ref{fig:Erosion2D} it have 4 neighbours and when we extend this to 3D we will end up with 6 neighbours instead as seen in figure \ref{fig:Erosion3D} and the concept is still the same as in 2D
 
-Da vores data er i 3D, så i udvider vi erosion, hvor det stadig er et plus, men med 2 ekstra naboer
-Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 neighbours instead of 4, where we expand it for the 3D
 \begin{figure}[H]
   \centering
     \begin{tikzpicture}
@@ -189,7 +209,7 @@ Now we expand this cross for the 3D and its the same concept for 3D. Now it 6 ne
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
-  \caption{Text}\label{Erosion3D}
+  \caption{Text}\label{fig:Erosion3D}
 \end{figure}
 
 
