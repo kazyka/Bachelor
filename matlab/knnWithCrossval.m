@@ -34,14 +34,14 @@ for i = 1:10
         knnmodels{i} = fitcknn(trainKfolds{i},label90,'Distance','euclidean',...
         'NumNeighbors',k,'Standardize',1);
     else
-        knnmodels{i} = fitcknn(horzcat(chosenTrainKfolds{i},trainKfolds{i}),label90,'Distance','euclidean',...
+        knnmodels{i} = fitcknn(horzcat(trainKfolds{i},chosenTrainKfolds{i}),label90,'Distance','euclidean',...
         'NumNeighbors',k,'Standardize',1);
     end
 end
 
 accuracies = zeros(10,1);
 for j = 1:10
-    tmppredict = predict(knnmodels{j},testKfolds{j});
+    tmppredict = predict(knnmodels{j},horzcat(testKfolds{j},chosenKfolds{i}));
     for i = 1:10
         tmp = tmppredict(i) == label(i);
         accuracies(j) = accuracies(j) + tmp/10;

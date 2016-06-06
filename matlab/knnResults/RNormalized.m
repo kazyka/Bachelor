@@ -4,6 +4,7 @@ COKTrainData = DATA2D(1:50,:);
 ADKTrainData = DATA2D(51:100,:);
 COKTrainData3D = DATA3D(1:50,:);
 ADKTrainData3D = DATA3D(51:100,:);
+
 %randomly sample from data, without replacment
 [sampledCOKTrainData2D, idxCO2D] = datasample(COKTrainData, NumberOfPatients/2, 'Replace', false);
 [sampledADKTrainData2D, idxAD2D] = datasample(ADKTrainData, NumberOfPatients/2, 'Replace', false);
