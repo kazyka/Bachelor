@@ -39,10 +39,16 @@ for a = 1:Rounds
     
     [FeatureSelected(a,1), index] = max(evaluate(:));
     [FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4)] = ind2sub(size(evaluate),index);
+    
     if a == 1
         SelectedData = dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4));
     else
-        SelectedData = horzcat(SelectedData, dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4)));
+        if FeatureSelected(a,1) >= FeatureSelected(a-1,1)
+            SelectedData = horzcat(SelectedData, dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), FeatureSelected(a,4)));
+        else
+            fprintf('Done after %d rounds \n', a)
+            return;
+        end
     end 
     dataset(:,FeatureSelected(a,2), FeatureSelected(a,3), :) = NaN; 
     fprintf('Round: %d  done \n',a)

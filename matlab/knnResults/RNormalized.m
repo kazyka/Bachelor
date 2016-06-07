@@ -27,9 +27,9 @@ dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 %Find best and accuracy K for all 4 datasets
 toD = cell(10,1);
 treD = cell(10,1);
-for i=5:5
-    toD{i} = ForwardSelection2(dataSorted2D,i,10);
-    treD{i} = ForwardSelection2(dataSorted3D,i,10);
+for i=1:10
+    toD{i} = ForwardSelection2(dataSorted2D,i,15);
+    treD{i} = ForwardSelection2(dataSorted3D,i,15);
     fprintf('FS done for k = %d  done \n',i)
 end
 save(sprintf('knnResults/notErodeRight2DNormalized'), 'toD');
