@@ -16,7 +16,7 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \]
 \fxnote[inline]{find reference}
 
-The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity  (GI) 4, i.e. if the offset is (,1) and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity  (GI) 4, i.e. if the offset is (,1) and the first element is {(x,y)(4,3)} with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
 
 \begin{figure}[H]
   \centering
@@ -34,17 +34,17 @@ The element (5,4) in the COM can be translated to meaning how many times there e
 A single image have multiple COMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. \fxnote[inline]{Lave 3x3 matrice med offsets.}
 
 Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry COMs$_{1,0}$(1,2) and COMs$_{-1,0}$ (1,1) with one, showing that COMs$_{0,1}$$^\textbf{T}$ = COMs$_{0,-1}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
-\fxnote[inline]{show 3x3 matrix with angles clearly visible}\\
+\fxnote[inline]{show 3x3 matrix with angles clearly visible}
 
 The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 COM.
-\fxnote[inline]{Show example on a 5x5 matrix with GI 8, offset [1 0] and [0 1]}\\
+\fxnote[inline]{Show example on a 5x5 matrix with GI 8, offset [1 0] and [0 1]}
 
 Extending this method to three-dimensions it is necessary to look on how the offsets are defined because the size of the COM is defined by the amount of GIs and not by the images it is derived from. Considering a 3 $\times$ 3 $\times$ 3 matrix we have a possible of 26 offsets. In two-dimensions it is possible to eliminate half of the offsets because of the relation COM$_{d,d}^\textbf{T}$ = COM$_{-d,-d}$, and it is the same case in three-dimensions with the relation being COM$_{d,d,d}^\textbf{T}$ = COM$_{-d,-d,-d}$. This leaves 13 offsets which are illustrated below.\\
 \fxnote[inline]{3 gange 3 gange, farv de ønskede dele eller noget}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.8]{3DCOM.eps}
+  \includegraphics[scale=0.6]{3DCOM.eps}
   \caption{Example of the offsets for the 3D}\label{3DCOM}
 \end{figure}
 
@@ -54,7 +54,7 @@ Extending this method to three-dimensions it is necessary to look on how the off
 \section{Machine learning methods}
 
 \subsection{10-fold cross-validation}
-Given a model with unknown paramers and a training set to which the model can be fit then the fitting process optimizes the models parameters to fit the training data. Validating this model against independent data (test data) from the same data pool as the training, it will generally turn out that the model does not fit the test data as well as the training data. It is known as overfitting and is a problem when the size of the training data set is small. Cross-validation is used to counteract overfitting.\\
+Given a model with unknown paramers and a training set to which the model can be fit then the fitting process optimizes the models parameters to fit the training data. Validating this model against independent data (test data) from the same data pool as the training, it will generally turn out that the model does not fit the test data as well as the training data. It is known as overfitting and is a problem when the size of the training data set is small. Cross-validation is used to counteract overfitting.
 
 Dividing the entire data set into 10 groups at random, one subsample is saved for testing and the reamining nine is used to fit the model. The procedures is done so all subsamples get to be used to validate exactly one time and the validation result can then be averaged to produce a single estimation. This solves the problem of overfitting, as the validation data set is never used in to fit the model.
 \fxnote[inline]{how does this remove overfitting?}
@@ -214,21 +214,4 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
 
 
 
-\fxnote[inline]{Vi billede af eroded og original mask}
 
-
-
-Image texture
-PCA
-Principal Component Analysis Application to images
-Machine learning (Knn, Ann, Gaussian)
-
-
-\small
-noget tekst \fxfatal{her er noget galt}
-
-noget mere tekst \fxnote[inline]{en note}
-
-endnu mere tekst \fxwarning{en advarsel -- noget er helt forkert}
-
-og til slut mere tekst \fxerror[inline]{en fejl}

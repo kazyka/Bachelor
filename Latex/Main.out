@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Co-occurrence matrix}{section.3.1}% 6
 \BOOKMARK [2][-]{subsection.3.1.2}{Texture features from co-occurrence matrix}{section.3.1}% 7
 \BOOKMARK [1][-]{section.3.2}{Machine learning methods}{chapter.3}% 8
-\BOOKMARK [2][-]{subsection.3.2.1}{Crossval}{section.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.2.1}{10-fold cross-validation}{section.3.2}% 9
 \BOOKMARK [2][-]{subsection.3.2.2}{Feature selection}{section.3.2}% 10
 \BOOKMARK [3][-]{subsubsection.3.2.2.1}{Naive}{subsection.3.2.2}% 11
 \BOOKMARK [3][-]{subsubsection.3.2.2.2}{Sequential Forward Feature}{subsection.3.2.2}% 12

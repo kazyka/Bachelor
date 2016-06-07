@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  6 JUN 2016 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  6 JUN 2016 20:30
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2312,7 +2312,7 @@ d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/2DCOM-eps-converted-to.pdf, id=218, 361.35pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=214, 361.35pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2330,7 +2330,7 @@ Package epstopdf Info: Source file: <pictures/GLCM.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/GLCM-eps-converted-to.pdf, id=219, 389.455pt x 199.74625pt>
+<pictures/GLCM-eps-converted-to.pdf, id=215, 389.455pt x 199.74625pt>
 File: pictures/GLCM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/GLCM-eps-converted-to.pdf>
@@ -2344,17 +2344,8 @@ Package pdftex.def Info: pictures/GLCM-eps-converted-to.pdf used on input line
  <./pictures/2DCOM-eps-converted-to.pdf>]
 FiXme Note: 'Lave 3x3 matrice med offsets.' on input line 34.
 FiXme Note: 'show 3x3 matrix with angles clearly visible' on input line 37.
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
 FiXme Note: 'Show example on a 5x5 matrix with GI 8, offset [1 0] and [0 1]' on
  input line 40.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
 
 
 LaTeX Warning: Marginpar on page 6 moved.
@@ -2371,13 +2362,13 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=236, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=232, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/3DCOM-eps-converted-to.pdf used on input line
  47.
-(pdftex.def)             Requested size: 414.34854pt x 221.6283pt.
+(pdftex.def)             Requested size: 310.76338pt x 166.22227pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2386,9 +2377,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./pictures/GLCM-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
+FiXme Note: 'how does this remove overfitting?' on input line 60.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2397,6 +2386,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./pictures/3DCOM-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
 Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 17053 bytes
@@ -2406,15 +2399,15 @@ Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    size: 4491 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/noterodeSlice10x-e
 ps-converted-to.pdf pictures/noterodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 88.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=263, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=259, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/noterodeSlice10x-eps-converted-to.pdf used on
- input line 88.
+ input line 92.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 Package epstopdf Info: Source file: <pictures/erodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-06 16:02:57
@@ -2425,28 +2418,20 @@ f>
 (epstopdf)                    size: 4079 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/erodeSlice10x-eps-
 converted-to.pdf pictures/erodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 97.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=264, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=260, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/erodeSlice10x-eps-converted-to.pdf used on in
-put line 93.
+put line 97.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 
-Overfull \hbox (1.71913pt too wide) in paragraph at lines 86--96
+Overfull \hbox (1.71913pt too wide) in paragraph at lines 90--100
 []$[]$ $[]$ 
  []
-
-
-Package caption Warning: \label without proper \caption on input line 171.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ErosionExample' on page 8 undefined on input line
- 114.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2457,36 +2442,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [8 <./pictures/noterodeSlice10x-eps-converted-to.pdf> <./pictures/erodeSlice10x
 -eps-converted-to.pdf>]
 
-Package caption Warning: \label without proper \caption on input line 171.
+Package caption Warning: \label without proper \caption on input line 175.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:ErosionExample' on page 9 undefined on input line
- 174.
-
-FiXme Note: 'Vi billede af eroded og original mask' on input line 213.
-
-FiXme Fatal Error: 'her er noget galt' on input line 224.
-
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 226.
-FiXme Note: 'en note' on input line 226.
-
-LaTeX Warning: Marginpar on page 9 moved.
+ 118.
 
 
-FiXme Warning: 'en advarsel -- noget er helt forkert' on input line 228.
+Package caption Warning: \label without proper \caption on input line 175.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Marginpar on page 9 moved.
-
-
-FiXme Error: 'en fejl' on input line 230.
+LaTeX Warning: Reference `fig:ErosionExample' on page 9 undefined on input line
+ 178.
 
 )
-
-LaTeX Warning: Marginpar on page 9 moved.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 25.19173pt.
@@ -2539,10 +2510,6 @@ Chapter 7.
 
  (appendix/derivationImageTexture.tex
 Appendix A.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 3.
 [15
 
 
@@ -2557,7 +2524,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [17
+)
+Underfull \hbox (badness 1163) in paragraph at lines 4--7
+[]\T1/futs/m/n/10.95 Dementia.  [][]$\T1/pcr/m/n/10.95 http : / / www . who . i
+nt / mediacentre / factsheets / fs362 / en/$[][]\T1/futs/m/n/10.95 .
+ []
+
+) [17
 
 
 
@@ -2566,11 +2539,11 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 8,
-(FiXme)        Number of warnings: 1,
-(FiXme)        Number of errors: 1,
-(FiXme)        Number of fatal errors: 1,
-(FiXme)        Total: 11.
+FiXme Summary: Number of notes: 7,
+(FiXme)        Number of warnings: 0,
+(FiXme)        Number of errors: 0,
+(FiXme)        Number of fatal errors: 0,
+(FiXme)        Total: 7.
 
 
 AED: lastpage setting LastPage
@@ -2769,19 +2742,19 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 589AC9A468C7D7D0BF5F52F406E6F427;1317.
+(rerunfilecheck)             Checksum: 8EB661D16396A7D563ADCFB3685CB1C0;1333.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 43818 strings out of 493634
- 971223 string characters out of 3141315
- 1324866 words of memory out of 3000000
- 46285 multiletter control sequences out of 15000+200000
- 141406 words of font info for 156 fonts, out of 3000000 for 9000
+ 43795 strings out of 493634
+ 970950 string characters out of 3141315
+ 1335573 words of memory out of 3000000
+ 46274 multiletter control sequences out of 15000+200000
+ 127808 words of font info for 134 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,19n,85p,10528b,1169s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,85p,10528b,1167s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
@@ -2795,9 +2768,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (21 pages, 243701 bytes).
+Output written on Main.pdf (21 pages, 243279 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
+ 390 PDF objects out of 1000 (max. 8388607)
  71 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{7}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Machine learning methods}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Crossval}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{7}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Feature selection}{7}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{7}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Sequential Forward Feature}{7}{subsubsection.3.2.2.2}
