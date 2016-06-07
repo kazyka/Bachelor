@@ -4,7 +4,7 @@ label60 = [label; label; label; label; label; label];
 label40 = [label; label; label; label];
 
 NumberOfPatients =100;
-[~, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'erode');
+[~, DATA3D] = dataloader(NumberOfPatients , 1, 'left', 'normal', 'noterode');
 
 COKTrainData3D = DATA3D(1:50,:);
 ADKTrainData3D = DATA3D(51:100,:);

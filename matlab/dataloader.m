@@ -50,7 +50,7 @@ if (strcmp(leftright,'left') == 1)
             for i = Start:(tmp3counter+Start-1)
                 tmp = load(['left/normal/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
                 DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
-                tmp = load(['left/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                tmp = load(['left/normal/noterode/AD/3D/datafileAD' num2str(i) '.mat']);
                 DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
             end
             for i = Start:(tmp1counter+Start-1)
@@ -85,7 +85,7 @@ if (strcmp(leftright,'left') == 1)
             for i = Start:(tmp3counter+Start-1)
                 tmp = load(['left/normalize/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
                 DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
-                tmp = load(['left/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                tmp = load(['left/normalize/noterode/AD/3D/datafileAD' num2str(i) '.mat']);
                 DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
             end
             for i = Start:(tmp1counter+Start-1)
@@ -123,7 +123,7 @@ else
             for i = Start:(tmp3counter+Start-1)
                 tmp = load(['right/normal/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
                 DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
-                tmp = load(['right/normal/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                tmp = load(['right/normal/noterode/AD/3D/datafileAD' num2str(i) '.mat']);
                 DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
             end
             for i = Start:(tmp1counter+Start-1)
@@ -158,7 +158,7 @@ else
             for i = Start:(tmp3counter+Start-1)
                 tmp = load(['right/normalize/noterode/AD/2D/datafileAD' num2str(i) '.mat']);
                 DATAthress2D{i-Start+1} = tmp.data_Derivations2D;
-                tmp = load(['right/normalize/erode/AD/3D/datafileAD' num2str(i) '.mat']);
+                tmp = load(['right/normalize/noterode/AD/3D/datafileAD' num2str(i) '.mat']);
                 DATAthress3D{i-Start+1} = tmp.data_Derivations3D;
             end
             for i = Start:(tmp1counter+Start-1)
