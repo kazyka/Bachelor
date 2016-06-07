@@ -1,4 +1,4 @@
-function accuracy = knnWithCrossval (ChosenData, data,k)
+function accuracy = knnWithCrossval2 (ChosenData, data,k)
 label = ones(10,1);
 label(6:10) = 3;
 label90 = [label; label; label; label; label; label; label; label; label];
@@ -41,7 +41,7 @@ end
 
 accuracies = zeros(10,1);
 for j = 1:10
-    tmppredict = predict(knnmodels{j},testKfolds{j});
+    tmppredict = predict(knnmodels{j},horzcat(testKfolds{j},chosenKfolds{j}));
     for i = 1:10
         tmp = tmppredict(i) == label(i);
         accuracies(j) = accuracies(j) + tmp/10;

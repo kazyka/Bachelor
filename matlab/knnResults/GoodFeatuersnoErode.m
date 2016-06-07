@@ -27,6 +27,7 @@ dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
 SingleFeatures2d = cell(13,5);
 SingleFeatures3d = cell(13,5);
+for i = 1:13
     for j = 1:10
         SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
         SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
@@ -64,6 +65,7 @@ dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
 SingleFeatures2d = cell(13,5);
 SingleFeatures3d = cell(13,5);
+for i = 1:13
     for j = 1:10
         SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
         SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
@@ -101,6 +103,7 @@ dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
 SingleFeatures2d = cell(13,5);
 SingleFeatures3d = cell(13,5);
+for i = 1:13
     for j = 1:10
         SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
         SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
@@ -138,6 +141,7 @@ dataSorted3D = forwardFeatureDataSort(sortedData3D,NumberOfPatients);
 
 SingleFeatures2d = cell(13,5);
 SingleFeatures3d = cell(13,5);
+for i = 1:13
     for j = 1:10
         SingleFeatures2d{i,j} = ForwardSelection(dataSorted2D(:,:,i,:),j,9);
         SingleFeatures3d{i,j} = ForwardSelection(dataSorted3D(:,:,i,:),j,13);
@@ -150,7 +154,7 @@ BestSingleFeatures{8} = SingleFeatures3d;
 
 
 
-save(sprintf('knnResults/GoodFeatures'), 'BestSingleFeatures');
+save(sprintf('knnResults/GoodFeaturesnoErode'), 'BestSingleFeatures');
 
 
 
