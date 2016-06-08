@@ -2,6 +2,9 @@
 
 
 \section{Image texture analysis methods}
+
+Short intro to what is image texture
+
 \subsection{Co-occurrence matrix}
 
 
@@ -51,15 +54,14 @@ Extending this method to three-dimensions it is necessary to look on how the off
 
 \subsection{Texture features from co-occurrence matrix}
 
-\section{Machine learning methods}
+\section{Machine learning}
+Short intro to Machine learning
 
 \subsection{10-fold cross-validation}
 Given a model with unknown paramers and a training set to which the model can be fit then the fitting process optimizes the models parameters to fit the training data. Validating this model against independent data (test data) from the same data pool as the training, it will generally turn out that the model does not fit the test data as well as the training data. It is known as overfitting and is a problem when the size of the training data set is small. Cross-validation is used to counteract overfitting.
 
 Dividing the entire data set into 10 groups at random, one subsample is saved for testing and the reamining nine is used to fit the model. The procedures is done so all subsamples get to be used to validate exactly one time and the validation result can then be averaged to produce a single estimation. This solves the problem of overfitting, as the validation data set is never used in to fit the model.
 \fxnote[inline]{how does this remove overfitting?}
-
-
 
 \subsection{Feature selection}
 
