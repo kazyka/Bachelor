@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Feature selection}{7}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{7}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Sequential Forward Feature}{7}{subsubsection.3.2.2.2}
-\contentsline {subsection}{\numberline {3.2.3}K-nearest neighbors algorithm}{7}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{7}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{8}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{10}{chapter.4}
 \contentsline {chapter}{\numberline {5}Result}{11}{chapter.5}

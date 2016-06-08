@@ -60,27 +60,20 @@ Dividing the entire data set into 10 groups at random, one subsample is saved fo
 \fxnote[inline]{how does this remove overfitting?}
 
 
-
 \subsection{Feature selection}
 
 \subsubsection{Naive}
 
 \subsubsection{Sequential Forward Feature}
 
-\subsection{K-nearest neighbors algorithm}
+\subsection{K Nearest Neighbors algorithm}
 
-k-NN for short is a method that is used for classification and regression. Where the output is a class and member of this class, and this object is classified by its neighbors. For instance, if we chose k to 1, then the object will be assigned to the class of the single nearest neighbor.
+The K Nearest Neighbor (KNN) is a methoed that is used for classification and regression. It should be noted, that KNN is a non parametric lazy learning algorithm, which means that it does note make any assumptions on the underlying data distribution. In other words, it means that the training phase is fast and KNN keeps all the training data. It should be noted that KNN makes decision based on the entire training data set and in the KNN an object is classified by majority vote of its neighbors, with the object being assigned to the class most common amongst its \texttt{knn}'s.
+Since the training phase is minimal, then it should be noted that the testing phase is very costly for KNN in both memory and time and often it can be a worst case for time needed, since all points might take point in the decision making.
 
-The algorithm consist of training examples, that are vectors in multidimensional space, with each its label. The most used distance metric is Euclidean distance.
+Because the KNN classifer predicts the class of a given test observation by identifying the observations that are nearest to it, the scale of the variables matters. Image that we have a large scale variabels, they will have a much larger effect on the distance between observations and hence the KNN classifier, than variables on a small scale. Often a good way to handle this problem is to standardize the data.
 
-The drawback of k-NN is that classification can be skewed in that way, that the more frequent class tend to dominate the prediction of new examples, because they tend to be common among the k-NN due to their large number.
-
-The way we wish to implement the k-NN in matlab is, first we handle the data, then we will calculate the distance between two data instances and after that, we can locate k most similar data instances and generate a response from a set. After all this is done, we have to summarize the accuracy of predictions.
-
-
-Dette vil være en lille introduktion til de tools vi bruger til at analysere vores data med. Da vores data er MRI skanninger af hjernen, som er nogen voxels\footnote{noget her} som bliver repræsenteret i 3D.\\
-
-
+The disadvantage of KNN is that choosing a \textit{k} may be tricky, so we are left to test the algorithm on multiple \textit{k}'s and often it needs a large number of samples for better accuracy.
 
 \section{Erode}
 
