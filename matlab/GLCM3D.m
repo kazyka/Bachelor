@@ -39,15 +39,13 @@ for d = 1:distance
                     end
                     
                     if (i + d < sizex && k+d < sizez)
-                        if (isnan(data(i+d,j,k+d)  == 0 && data(i+d,j,k+d) > 0))
+                        if (isnan(data(i+d,j,k+d))  == 0 && data(i+d,j,k+d) > 0)
                            glcm2(datapoint,data(i+d,j,k+d)) = glcm2(datapoint,data(i+d,j,k+d)) +1;
                         end
                     end
                     
                     if (k+d < sizez)
                         if (isnan(data(i,j,k+d)) ~= 1 && data(i,j,k+d) > 0)
-                            fprintf('%d \n',datapoint);
-                            fprintf('%d \n',data(i,j,k+d));
                             glcm3(datapoint,data(i,j,k+d)) = glcm3(datapoint,data(i,j,k+d)) +1;
                         end
                     end

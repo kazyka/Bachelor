@@ -22,18 +22,18 @@ imagesc(squeeze(mri(70,:,:)))
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normalize', 'noterode');
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normalize', 'erode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'left', 'normalize', 'noterode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'left', 'normalize', 'erode');
 
 
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normalize', 'noterode');
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normalize', 'erode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'right', 'normalize', 'noterode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'right', 'normalize', 'erode');
 
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'erode');
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'noterode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'erode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'left', 'normal', 'noterode');
 
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'erode');
-[data_Derivations2D, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'noterode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'erode');
+[~, data_Derivations3D] = datacalculation(1, 100, 'right', 'normal', 'noterode');
 
 %[data_DerivationsErode] = dataexecutionErode(1,100);
 %[data123] = dataexecutionTestErode(1,100);
