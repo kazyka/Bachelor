@@ -91,6 +91,8 @@ Because the KNN classifer predicts the class of a given test observation by iden
 
 The disadvantage of KNN is that choosing a \textit{k} may be tricky, so we are left to test the algorithm on multiple \textit{k}'s and often it needs a large number of samples for better accuracy.
 
+Typically will the KNN classifier be based on a distance, commonly it is based on the Euclidean distance between a test sample and the specified training samples. Let $x_i$ be an input sample with $p$ features $(x_{i1}, x_{i2},...,x_{ip})$, and $n$ be the total number of input samples $i=1,2,...,n$ and $p$ the total number of features $j=1,2,...,p$. The Euclidean distance between sample $x_i$ and $x_l$, $l=1,2,...,n$ is defined as $d(x_i,x_l) = \sqrt{(x_{i1}-x_{l1})^2+(x_{i2}-x_{l2})^2+...+(x_{ip}-x_{lp})^2}$
+
 \section{Erode}
 
 Each patients hippocampus has been segmented in the MRI scan. The problems we can run into are that the background will blur with the segmentation i.e. the hippocampus. Performing a erosion can solve this problem and we can focus on the hippocampus, with the maximum number of details. As seen in figure \ref{fig:noterodeslice} the erosion has not been performed yet, but we might have some problems with data surrounding the hippocampus is blurring out the edges of the hippocampus. To solve this, we create a mask to separate the hippocampus from the background data and end up with what is left in figure \ref{fig:erodeslice}
