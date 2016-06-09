@@ -8,7 +8,7 @@ Short intro to what is image texture
 \subsection{Co-occurrence matrix}
 
 
-The co-occurence matrix (COM) is second-order statistics methods, which is based on information about gray levels in pair of pixes. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
+The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixes. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
 
 \[
 C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
@@ -20,10 +20,11 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \fxnote[inline]{find reference}
 
 The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity  (GI) 4, i.e. if the offset is (,1) and the first element is {(x,y)(4,3)} with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM).
 
-A single image have multiple COMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. 
+A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. 
 
-Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry COMs$_{1,0}$(1,2) and COMs$_{-1,0}$ (1,1) with one, showing that COMs$_{0,1}$$^\textbf{T}$ = COMs$_{0,-1}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
+Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{1,0}$(1,2) and GLCMs$_{-1,0}$ (1,1) with one, showing that GLCMs$_{0,1}$$^\textbf{T}$ = GLCMs$_{0,-1}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
 
 \begin{figure}[H]
   \centering
@@ -31,7 +32,7 @@ Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1
   \caption{Example of the offsets for the 2D}\label{2DCOM}
 \end{figure}
 
-The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 COM.
+The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 GLCM.
 
 \begin{figure}[H]
   \centering
@@ -39,7 +40,7 @@ The co-occurrence matrix is quadratic with the number of rows and columns equal 
   \caption{Example how the values in the GLCM are calclulated of the 4-by-5 image I. Element (1, 1) in the GLCM contains the value 1 because there is only one instance inf the image where two horizontally adjacent pixels have the values 1 and 1.}\label{GLCM}
 \end{figure}
 
-Extending this method to three-dimensions it is necessary to look on how the offsets are defined because the size of the COM is defined by the amount of GIs and not by the images it is derived from. Considering a 3 $\times$ 3 $\times$ 3 matrix we have a possible of 26 offsets. In two-dimensions it is possible to eliminate half of the offsets because of the relation COM$_{d,d}^\textbf{T}$ = COM$_{-d,-d}$, and it is the same case in three-dimensions with the relation being COM$_{d,d,d}^\textbf{T}$ = COM$_{-d,-d,-d}$. This leaves 13 offsets which are illustrated below.\\
+Extending this method to three-dimensions it is necessary to look on how the offsets are defined because the size of the GLCM is defined by the amount of GIs and not by the images it is derived from. Considering a 3 $\times$ 3 $\times$ 3 matrix we have a possible of 26 offsets. In two-dimensions it is possible to eliminate half of the offsets because of the relation GLCM$_{d,d}^\textbf{T}$ = GLCM$_{-d,-d}$, and it is the same case in three-dimensions with the relation being GLCM$_{d,d,d}^\textbf{T}$ = GLCM$_{-d,-d,-d}$. This leaves 13 offsets which are illustrated below.\\
 
 \begin{figure}[H]
   \centering
@@ -48,7 +49,17 @@ Extending this method to three-dimensions it is necessary to look on how the off
 \end{figure}
 
 
+
+To create a two-dimensional GLCM on three-dimensional image we create slices through the image. Given a $n \times m \times l$, n = 20, m = 20 l = 20, image we can create a slice for each n. Slice$_1$ is equal to the matrix M( $n = 1 \times m \times l$), Slice$_2$ = M( $n = 2 \times m \times l$), and so on, giving a total of 20 $m \times l$ images instead. It is possible for each slice to calcualte the GLCM$_{d,d}$ for each slice, and we define GLCM$_{d,d}$ = $ \Sigma_{n=1}^20$ GLCM$_{d,d}$(Slice$_n$)
+
+These slices are done in all three directions of the image for the four difference offsets resulting in 12 GLCMs. There is an overlap between six of the GLCMs. Slicing through n axis with offset (0,d) is equal to slicing through the m axis with the same offset. Slicing through the m axis with offset (-d,d) is equal to slicing through the l axis with offset (-d,0). Slicing through the l axis with offset (-d,d) is equal to slicing through the n axis with offset (d,0), which is the transposed offset of (-d,0). Removing the duplicates leaves nine GLCMs which we calculate at distances d = (1,2,...,10), giving a total of 90 GLCMs for each mri scan.
+
+The three-dimensional versions is also calculated for distances d = (1,2,...,10) resulting in 130 GLCMs for each mri scan.
+
 \subsection{Texture features from co-occurrence matrix}
+To compare the differences between the GLCMS 13 different features are computed. They are the same as used in freeborough from 1998 \fixme[inline]{fix reference, lazy right now} except for one difference. The difference is how the correlation is calculated, correlation = sum_(i,j) (i-mui)(j-muj)glcm(i,j) / (sigmai * sigmaj), where mui, muj, sigmai, sigmaj are the means and standard deviations of Ci and Cj respectively. This correlation is called the Pearson product moment correlation coefficient and it determines how correlated a pixel is to its neighbour, over the whole image. cite http://se.mathworks.com/help/images/ref/graycoprops.html and https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient \fixme[inline]{mere reference stas}
+We calculate two versions of these features, one where we normalized the COMs and one where we do not.
+
 
 \section{Machine learning}
 Short intro to Machine learning
