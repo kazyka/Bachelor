@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Who}
 Dementia.
@@ -16,26 +16,55 @@ Pearson product.
   \url{https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient}.
 \newblock Accessed: 2016 May.
 
+\bibitem{Castellano}
+G~Castellano, L~Bonilha, LM~Li, and F~Cendes.
+\newblock Texture analysis of medical images.
+\newblock {\em Clinical radiology}, 59(12):1061--1069, 2004.
+
 \bibitem{AlzheimerLancet}
 Anne Corbett Carol Brayne Dag Aarsland Emma~Jones Clive~Ballard,
   Serge~Gauthier.
 \newblock Alzheimer's disease.
-\newblock {\em Lancet}, page~13, March 2011.
+\newblock {\em Lancet}, 377:1019--1031, March 2011.
+
+\bibitem{fischl2002whole}
+Bruce Fischl, David~H Salat, Evelina Busa, Marilyn Albert, Megan Dieterich,
+  Christian Haselgrove, Andre Van Der~Kouwe, Ron Killiany, David Kennedy, Shuna
+  Klaveness, et~al.
+\newblock Whole brain segmentation: automated labeling of neuroanatomical
+  structures in the human brain.
+\newblock {\em Neuron}, 33(3):341--355, 2002.
 
 \bibitem{MRfreeborough}
-Peter A. Freeborough \& Nick~C. Fox.
-\newblock Mr image texture analysis to the diagnosis and tracking of
+Peter~A Freeborough and Nick~C Fox.
+\newblock Mr image texture analysis applied to the diagnosis and tracking of
   alzheimer's disease.
-\newblock {\em IEEE}, 17(3):5, June 1998.
+\newblock {\em Medical Imaging, IEEE Transactions on}, 17(3):475--478, 1998.
 
-\bibitem{Castellano}
-L.M. Li F.~Cendes G.~Castellano, L.~Bonilha.
-\newblock Texture analysis of medical images.
-\newblock {\em Neuroimage Laboratory}, page~9, April 2004.
+\bibitem{jack2008alzheimer}
+Clifford~R Jack, Matt~A Bernstein, Nick~C Fox, Paul Thompson, Gene Alexander,
+  Danielle Harvey, Bret Borowski, Paula~J Britson, Jennifer L~Whitwell,
+  Chadwick Ward, et~al.
+\newblock The alzheimer's disease neuroimaging initiative (adni): Mri methods.
+\newblock {\em Journal of Magnetic Resonance Imaging}, 27(4):685--691, 2008.
 
 \bibitem{Voxel}
-Sanjay~Kalra Rouzbeh~Maani, Yee Hong~Yang.
+Rouzbeh Maani, Yee~Hong Yang, and Sanjay Kalra.
 \newblock Voxel-based texture analysis of the brain.
-\newblock {\em Plos One}, page~19, March 2015.
+\newblock {\em PloS one}, 10(3):e0117759, 2015.
+
+\bibitem{sled1998nonparametric}
+John~G Sled, Alex~P Zijdenbos, and Alan~C Evans.
+\newblock A nonparametric method for automatic correction of intensity
+  nonuniformity in mri data.
+\newblock {\em Medical Imaging, IEEE Transactions on}, 17(1):87--97, 1998.
+
+\bibitem{wyman2013standardization}
+Bradley~T Wyman, Danielle~J Harvey, Karen Crawford, Matt~A Bernstein, Owen
+  Carmichael, Patricia~E Cole, Paul~K Crane, Charles DeCarli, Nick~C Fox,
+  Jeffrey~L Gunter, et~al.
+\newblock Standardization of analysis sets for reporting results from adni mri
+  data.
+\newblock {\em Alzheimer's \& Dementia}, 9(3):332--337, 2013.
 
 \end{thebibliography}

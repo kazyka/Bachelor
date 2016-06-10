@@ -2,6 +2,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem Definition}{3}{section.1.1}
 \contentsline {chapter}{\numberline {2}Data}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}ADNI data}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Preprocessing}{4}{section.2.2}
 \contentsline {chapter}{\numberline {3}Method}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Image texture analysis methods}{6}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{6}{subsection.3.1.1}
@@ -13,6 +15,7 @@
 \contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{10}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{11}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}GLCM Features}{14}{section.4.1}
 \contentsline {chapter}{\numberline {5}Result}{15}{chapter.5}
 \contentsline {chapter}{\numberline {6}Discussion}{16}{chapter.6}
 \contentsline {chapter}{\numberline {7}Conclusion}{17}{chapter.7}

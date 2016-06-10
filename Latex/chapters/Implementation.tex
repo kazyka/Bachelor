@@ -1,3 +1,12 @@
 \chapter{Implementation}
 
 
+\section{Calculatin the GLCM Features}
+
+In the implementation of the GLCM Feature derivation we are taking two inputs. The first input variable is the GLCM matrix and the second is wether we wish to normalize the data.
+
+What we are doing first is to make sure that all variables are implemented. Firstly we find the size of the GLCM which will be the greylevels. Hereafter we can initiate the $C_x$, $C_y$, $C_{x+y}$ and $C_{x-y}$ since we know the size of the GLCM.
+
+For the $C_{x+y}$ and $C_{x-y}$ we are using MATLAB's \texttt{ind2sub} function, that is a command that determines the equivalent subscript values corresponding to a single index into an array.\fxnote[inline]{Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud}.
+
+

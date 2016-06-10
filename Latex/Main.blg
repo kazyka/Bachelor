@@ -17,8 +17,6 @@ Too many commas in name 1 of "Clive Ballard, Serge Gauthier, Anne Corbett, Carol
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Clive Ballard, Serge Gauthier, Anne Corbett, Carol Brayne, Dag Aarsland, Emma Jones" for entry AlzheimerLancet
 while executing---line 1049 of file plain.bst
-Too many commas in name 1 of "G. Castellano, L. Bonilha, L.M. Li, F. Cendes" for entry Castellano
-while executing---line 1049 of file plain.bst
 Warning--to sort, need author or key in graycoprops
 Warning--to sort, need author or key in Pearson
 Too many commas in name 1 of "Clive Ballard, Serge Gauthier, Anne Corbett, Carol Brayne, Dag Aarsland, Emma Jones" for entry AlzheimerLancet
@@ -27,6 +25,4 @@ Too many commas in name 1 of "Clive Ballard, Serge Gauthier, Anne Corbett, Carol
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Clive Ballard, Serge Gauthier, Anne Corbett, Carol Brayne, Dag Aarsland, Emma Jones" for entry AlzheimerLancet
 while executing---line 1090 of file plain.bst
-Too many commas in name 1 of "G. Castellano, L. Bonilha, L.M. Li, F. Cendes" for entry Castellano
-while executing---line 1090 of file plain.bst
-(There were 8 error messages)
+(There were 6 error messages)

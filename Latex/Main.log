@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 17:43
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -1768,49 +1768,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip78
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 116.
+Package hyperref Info: Option `colorlinks' set `true' on input line 123.
 
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\vhistory.
-sty"
-Package: vhistory 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\ltxtable.sty"
-Package: ltxtable 1995/12/11 v0.2 longtable/tabularx merge (DPC)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
-Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen282
-\TX@old@table=\dimen283
-\TX@old@col=\dimen284
-\TX@target=\dimen285
-\TX@delta=\dimen286
-\TX@cols=\count196
-\TX@ftn=\toks51
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip79
-\LTright=\skip80
-\LTpre=\skip81
-\LTpost=\skip82
-\LTchunksize=\count197
-\LTcapwidth=\dimen287
-\LT@head=\box84
-\LT@firsthead=\box85
-\LT@foot=\box86
-\LT@lastfoot=\box87
-\LT@cols=\count198
-\LT@rows=\count199
-\c@LT@tables=\count266
-\c@LT@chunks=\count267
-\LT@p@ftn=\toks52
-))
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vhistory\sets.sty"
-Package: sets 
-\c@s@tlength=\count268
-)
-File Main.hst not found.
-\vh@verfile=\write6
-)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.
 sty"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
@@ -1821,12 +1780,12 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 s.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
 score.code.tex"
-\t@pgfplots@toka=\toks53
-\t@pgfplots@tokb=\toks54
-\t@pgfplots@tokc=\toks55
-\pgfplots@tmpa=\dimen288
-\c@pgfplots@coordindex=\count269
-\c@pgfplots@scanlineindex=\count270
+\t@pgfplots@toka=\toks51
+\t@pgfplots@tokb=\toks52
+\t@pgfplots@tokc=\toks53
+\pgfplots@tmpa=\dimen282
+\c@pgfplots@coordindex=\count196
+\c@pgfplots@scanlineindex=\count197
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 plotssysgeneric.code.tex"))
@@ -1842,7 +1801,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 ompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
 ompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count271
+\c@pgfmathroundto@lastzeros=\count198
 ))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
 fplotsutil.code.tex"
@@ -1852,14 +1811,14 @@ ucture\pgfplotsliststructure.code.tex")
 ucture\pgfplotsliststructureext.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsarray.code.tex"
-\c@pgfplotsarray@tmp=\count272
+\c@pgfplotsarray@tmp=\count199
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsmatrix.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtabl
 e\pgfplotstableshared.code.tex"
-\c@pgfplotstable@counta=\count273
-\t@pgfplotstable@a=\toks56
+\c@pgfplotstable@counta=\count266
+\t@pgfplotstable@a=\toks54
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
 ucture\pgfplotsdeque.code.tex")
@@ -1871,7 +1830,7 @@ fplotsbinary.data.code.tex"))
 fplotsutil.verb.code.tex")
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pg
 flibrarypgfplots.surfshading.code.tex"
-\c@pgfplotslibrarysurf@no=\count274
+\c@pgfplotslibrarysurf@no=\count267
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
 librarypgfplots.surfshading.pgfsys-pdftex.def")))
@@ -1903,16 +1862,16 @@ s.paths.code.tex")
 r\tikz\libraries\tikzlibrarydecorations.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 oduledecorations.code.tex"
-\pgfdecoratedcompleteddistance=\dimen289
-\pgfdecoratedremainingdistance=\dimen290
-\pgfdecoratedinputsegmentcompleteddistance=\dimen291
-\pgfdecoratedinputsegmentremainingdistance=\dimen292
-\pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count275
-\pgfdecorationsegmentamplitude=\dimen294
-\pgfdecorationsegmentlength=\dimen295
+\pgfdecoratedcompleteddistance=\dimen283
+\pgfdecoratedremainingdistance=\dimen284
+\pgfdecoratedinputsegmentcompleteddistance=\dimen285
+\pgfdecoratedinputsegmentremainingdistance=\dimen286
+\pgf@decorate@distancetomove=\dimen287
+\pgf@decorate@repeatstate=\count268
+\pgfdecorationsegmentamplitude=\dimen288
+\pgfdecorationsegmentlength=\dimen289
 )
-\tikz@lib@dec@box=\box88
+\tikz@lib@dec@box=\box84
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
@@ -1922,13 +1881,13 @@ corations\pgflibrarydecorations.pathmorphing.code.tex"))
 r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
 corations\pgflibrarydecorations.pathreplacing.code.tex"))
-\pgfplots@numplots=\count276
-\pgfplots@xmin@reg=\dimen296
-\pgfplots@xmax@reg=\dimen297
-\pgfplots@ymin@reg=\dimen298
-\pgfplots@ymax@reg=\dimen299
-\pgfplots@zmin@reg=\dimen300
-\pgfplots@zmax@reg=\dimen301
+\pgfplots@numplots=\count269
+\pgfplots@xmin@reg=\dimen290
+\pgfplots@xmax@reg=\dimen291
+\pgfplots@ymin@reg=\dimen292
+\pgfplots@ymax@reg=\dimen293
+\pgfplots@zmin@reg=\dimen294
+\pgfplots@zmax@reg=\dimen295
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryplotmarks.code.tex"
@@ -1947,16 +1906,16 @@ s.sty"
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count277
-\calc@Bcount=\count278
-\calc@Adimen=\dimen302
-\calc@Bdimen=\dimen303
-\calc@Askip=\skip83
-\calc@Bskip=\skip84
+\calc@Acount=\count270
+\calc@Bcount=\count271
+\calc@Adimen=\dimen296
+\calc@Bdimen=\dimen297
+\calc@Askip=\skip79
+\calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count279
-\calc@Cskip=\skip85
+\calc@Ccount=\count272
+\calc@Cskip=\skip81
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
 sty"
@@ -1966,15 +1925,15 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count280
-\l_MT_multwidth_dim=\dimen304
-\origjot=\skip86
-\l_MT_shortvdotswithinadjustabove_dim=\dimen305
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen306
-\l_MT_above_intertext_sep=\dimen307
-\l_MT_below_intertext_sep=\dimen308
-\l_MT_above_shortintertext_sep=\dimen309
-\l_MT_below_shortintertext_sep=\dimen310
+\g_MT_multlinerow_int=\count273
+\l_MT_multwidth_dim=\dimen298
+\origjot=\skip82
+\l_MT_shortvdotswithinadjustabove_dim=\dimen299
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen300
+\l_MT_above_intertext_sep=\dimen301
+\l_MT_below_intertext_sep=\dimen302
+\l_MT_above_shortintertext_sep=\dimen303
+\l_MT_below_shortintertext_sep=\dimen304
 )
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarymatrix.code.tex"
@@ -1983,29 +1942,27 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-\c@thm=\count281
-)
+))
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip87
-\RaggedLeftLeftskip=\skip88
-\RaggedRightLeftskip=\skip89
-\CenteringRightskip=\skip90
-\RaggedLeftRightskip=\skip91
-\RaggedRightRightskip=\skip92
-\CenteringParfillskip=\skip93
-\RaggedLeftParfillskip=\skip94
-\RaggedRightParfillskip=\skip95
-\JustifyingParfillskip=\skip96
-\CenteringParindent=\skip97
-\RaggedLeftParindent=\skip98
-\RaggedRightParindent=\skip99
-\JustifyingParindent=\skip100
+\CenteringLeftskip=\skip83
+\RaggedLeftLeftskip=\skip84
+\RaggedRightLeftskip=\skip85
+\CenteringRightskip=\skip86
+\RaggedLeftRightskip=\skip87
+\RaggedRightRightskip=\skip88
+\CenteringParfillskip=\skip89
+\RaggedLeftParfillskip=\skip90
+\RaggedRightParfillskip=\skip91
+\JustifyingParfillskip=\skip92
+\CenteringParindent=\skip93
+\RaggedLeftParindent=\skip94
+\RaggedRightParindent=\skip95
+\JustifyingParindent=\skip96
 ) (Main.aux (abstract/abstract.aux) (chapters/Introduction.aux)
 (chapters/Data.aux) (chapters/Method.aux) (chapters/Implementation.aux)
 (chapters/Result.aux) (chapters/Discussion.aux) (chapters/Conclusion.aux)
@@ -2067,29 +2024,23 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
-Package caption Info: longtable package is loaded.
-
-("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
-sty"
-Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-)
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count282
+\c@lstlisting=\count274
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen311
-\scratchbox=\box89
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen312
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count275
+\scratchdimen=\dimen305
+\scratchbox=\box85
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen306
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks56
 ) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2128,7 +2079,7 @@ ii"
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 20.
-\AtBeginShipoutBox=\box90
+\AtBeginShipoutBox=\box86
 Package hyperref Info: Link coloring ON on input line 20.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2136,15 +2087,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count289
+\c@section@level=\count281
 )
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
 
 (Main.out) (Main.out)
-\@outlinefile=\write7
-\openout7 = `Main.out'.
+\@outlinefile=\write6
+\openout6 = `Main.out'.
 
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
@@ -2185,7 +2136,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=86, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=98, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2196,13 +2147,13 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=89, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=101, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
- <use include/nat-en.pdf>
+
+<use include/nat-en.pdf>
 Package pdftex.def Info: include/nat-en.pdf used on input line 47.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-[1
+ [1
 
 
 {C:/Users/Baby-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./include/n
@@ -2225,8 +2176,8 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
 )
-\tf@toc=\write8
-\openout8 = `Main.toc'.
+\tf@toc=\write7
+\openout7 = `Main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
@@ -2237,20 +2188,20 @@ l.55 \listoffigures
 
 
 ] (Main.lof)
-\tf@lof=\write9
-\openout9 = `Main.lof'.
+\tf@lof=\write8
+\openout8 = `Main.lof'.
 
  [2
 
 ] (Main.lot)
-\tf@lot=\write10
-\openout10 = `Main.lot'.
+\tf@lot=\write9
+\openout9 = `Main.lot'.
 
  [3
 
 ] (Main.lox)
-\tf@lox=\write11
-\openout11 = `Main.lox'.
+\tf@lox=\write10
+\openout10 = `Main.lox'.
 
  [1
 
@@ -2282,7 +2233,19 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
  (chapters/Data.tex
 Chapter 2.
-) [4
+
+Overfull \hbox (9.04837pt too wide) in paragraph at lines 3--5
+[][]\T1/futs/m/n/10.95 http://www.adni.loni.usc.edu/methods/mri-analysis/adni-s
+tandardized-data/[][] [[]]. The com-
+ []
+
+)
+Overfull \hbox (2.6497pt too wide) in paragraph at lines 7--65
+\T1/futs/m/n/10.95 hip-po-cam-pal seg-ment-a-tion was per-formed with the freel
+y avail-able Free-Sur-fer soft-ware pack-
+ []
+
+[4
 
 
 
@@ -2333,7 +2296,7 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/2DCOM-eps-converted-to.pdf, id=237, 361.35pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=263, 361.35pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2351,7 +2314,7 @@ ed-to.pdf pictures/ImageI.eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/ImageI-eps-converted-to.pdf, id=239, 123.46124pt x 123.46124pt>
+<pictures/ImageI-eps-converted-to.pdf, id=265, 123.46124pt x 123.46124pt>
 File: pictures/ImageI-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/ImageI-eps-converted-to.pdf>
@@ -2369,7 +2332,7 @@ to.pdf pictures/C01.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/C01-eps-converted-to.pdf, id=240, 149.55875pt x 152.57pt>
+<pictures/C01-eps-converted-to.pdf, id=266, 149.55875pt x 152.57pt>
 File: pictures/C01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/C01-eps-converted-to.pdf>
@@ -2391,7 +2354,7 @@ rted-to.pdf pictures/Cminus11.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus11-eps-converted-to.pdf, id=241, 148.555pt x 152.57pt>
+<pictures/Cminus11-eps-converted-to.pdf, id=267, 148.555pt x 152.57pt>
 File: pictures/Cminus11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus11-eps-converted-to.pdf>
@@ -2409,7 +2372,7 @@ rted-to.pdf pictures/Cminus10.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus10-eps-converted-to.pdf, id=242, 149.55875pt x 152.57pt>
+<pictures/Cminus10-eps-converted-to.pdf, id=268, 149.55875pt x 152.57pt>
 File: pictures/Cminus10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus10-eps-converted-to.pdf>
@@ -2428,7 +2391,7 @@ converted-to.pdf pictures/Cminus1minus1.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus1minus1-eps-converted-to.pdf, id=243, 148.555pt x 152.57pt>
+<pictures/Cminus1minus1-eps-converted-to.pdf, id=269, 148.555pt x 152.57pt>
 File: pictures/Cminus1minus1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus1minus1-eps-converted-to.pdf>
@@ -2461,7 +2424,7 @@ d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/3DCOM-eps-converted-to.pdf, id=287, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=313, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
@@ -2495,7 +2458,7 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 d-to.pdf pictures/KNNK5.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=312, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=338, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
@@ -2531,7 +2494,7 @@ ps-converted-to.pdf pictures/noterodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=341, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=367, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
@@ -2550,7 +2513,7 @@ converted-to.pdf pictures/erodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 163.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=342, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=368, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
@@ -2644,13 +2607,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 1163) in paragraph at lines 4--7
-[]\T1/futs/m/n/10.95 Dementia.  [][]$\T1/pcr/m/n/10.95 http : / / www . who . i
-nt / mediacentre / factsheets / fs362 / en/$[][]\T1/futs/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 4832) in paragraph at lines 9--12
 []\T1/futs/m/n/10.95 Mathworks gray-copros.  [][]$\T1/pcr/m/n/10.95 http : / / 
 se . mathworks . com / help / images / ref /
  []
@@ -2821,11 +2778,6 @@ hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
      url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
  hpdftex.def    2012/11/06 v6.83m Hyperref driver for pdfTeX
 rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-vhistory.sty    
-ltxtable.sty    1995/12/11 v0.2 longtable/tabularx merge (DPC)
-tabularx.sty    2014/10/28 v2.10 `tabularx' package (DPC)
-longtable.sty    2014/10/28 v4.11 Multi-page Table package (DPC)
-    sets.sty    
 pgfplots.sty    2016/01/06 v1.13 Data Visualization (1.13)
  eso-pic.sty    2015/07/21 v2.0g eso-pic (RN)
 mathtools.sty    2015/11/12 v1.18 mathematical typesetting tools
@@ -2838,7 +2790,6 @@ everysel.sty    2011/10/28 v1.2 EverySelectfont Package (MS)
  fmxfutm.fd    futm-extension
   ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
   t1futs.fd    2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-ltcaption.sty    2013/06/09 v1.4-94 longtable captions (AR)
 supp-pdf.mkii
  nameref.sty    2012/10/27 v2.43 Cross-referencing by name of section
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
@@ -2878,13 +2829,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 8FEA39397296E20A3D15D5B6B49B5F6B;1234.
+(rerunfilecheck)             Checksum: 2130E61214A3D4066D8B60DA74DE9B89;1413.
  ) 
 Here is how much of TeX's memory you used:
- 44152 strings out of 493634
- 974852 string characters out of 3141315
- 1341851 words of memory out of 3000000
- 46582 multiletter control sequences out of 15000+200000
+ 43827 strings out of 493634
+ 970614 string characters out of 3141315
+ 1334575 words of memory out of 3000000
+ 46270 multiletter control sequences out of 15000+200000
  136415 words of font info for 159 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,1173s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2901,9 +2852,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (25 pages, 295697 bytes).
+Output written on Main.pdf (25 pages, 301273 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,7 +3,7 @@
 
 \section{Image texture analysis methods}
 
-Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image. Texture analysis is a technique for evaluating the position and intensity of signal features. \cite{Castellano} Statistical texture analysis methods evaluate the interrelationship of voxels, based on mathematical parameters computed from the distribution and intensities of voxels in the image.
+Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image. Texture analysis is a technique for evaluating the position and intensity of signal features\cite{Castellano}. Statistical texture analysis methods evaluate the interrelationship of voxels, based on mathematical parameters computed from the distribution and intensities of voxels in the image.
 
 \subsection{Co-occurrence matrix}
 
@@ -18,7 +18,7 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \]
 \fxnote[inline]{find reference}
 
-The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity\footnote{The pixel value is a single number that represents the brightness of the pixel. Typically zero is taken to be black and 255 is taken to be white and values in between make up the different shades of grey} (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity\footnote{The pixel value is a single number that represents the brightness of the pixel. Typically one is taken to be black and 256 is taken to be white and values in between make up the different shades of grey} (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
 COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM).
 
 A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)} \fxnote[inline]{ændre til $COM_{(0,1)}...$ osv}, however they are not unique. \fxnote[inline]{Vise for transpose GLCM}

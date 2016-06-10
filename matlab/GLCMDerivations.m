@@ -15,7 +15,6 @@ cY = zeros(nGrayLevels, 1);    %Vil typisk være 256x1
 cXplusY = zeros((nGrayLevels*2-1),1);   %Vil typisk være 511x1, da i=2:512
 cXminusY = zeros(nGrayLevels,1);            %Vil typisk være 256x1
 
-
 % s = size(glcm);
 % [c, r] = meshgrid(1:s(1), 1:s(2));
 % r = r(:);
@@ -26,7 +25,6 @@ tmpsub = 1:nGrayLevels*nGrayLevels;
 % Get row and column subscripts of GLCM.  These subscripts correspond to the
 % pixel values in the GLCM.
 [I, J] = ind2sub([nGrayLevels,nGrayLevels],tmpsub);
-
 
 %Doing the GLCM Features
 %tmpGLCM = glcm(:,:); 
@@ -54,8 +52,6 @@ HXY2 = -nansum(cX(I).*cY(J).*log(cX(I).*cY(J)));
 HX   = -nansum(cX.*log(cX));
 HY   = -nansum(cY.*log(cY));
 HXY  = -nansum(glcm(:).*log(glcm(:)));
-
-
 
 stats.angularSecondMoment                = sum(glcm(:).^2);
 stats.contrast                           = sum(abs(I-J).^2.*glcm(tmpsub));
