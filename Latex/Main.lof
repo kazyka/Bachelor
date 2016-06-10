@@ -8,8 +8,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The KNN grows a spherical region until it encloses \textit {k} training samples, and labels the test point by a majority vote of these samples. In this \textit {k} = 5 case, the test point \textbf {x} would be labelled the category of the black points\relax }}{9}{figure.caption.8}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Hippocampus at slice 10 on the X-axis as bitwise\relax }}{10}{figure.caption.9}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Text\relax }}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces \relax }}{11}{figure.caption.11}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Text\relax }}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Example of a city-block erosion with before and after\relax }}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces 2D example of the 3D city-block\relax }}{11}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

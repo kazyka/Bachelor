@@ -57,8 +57,7 @@ These slices are done in all three directions of the image for the four differen
 The three-dimensional versions is also calculated for distances d = (1,2,...,10) resulting in 130 GLCMs for each mri scan.
 
 \subsection{Texture features from co-occurrence matrix}
-To compare the differences between the GLCMS 13 different features are computed. They are the same as used in freeborough from 1998 \fixme[inline]{fix reference, lazy right now} except for one difference. The difference is how the correlation is calculated, correlation = $\sum_{i,j} \frac{(i-mui)(j-muj)glcm(i,j)}{(sigmai \cdot sigmaj)}$, where mu$_i$, mu$_j$, sigma$_i$, sigma$_j$ are the means and standard deviations of Ci and Cj respectively. This correlation is called the Pearson product moment correlation coefficient and it determines how correlated a pixel is to its neighbour, over the whole image. cite %http://se.mathworks.com/help/images/ref/graycoprops.html and https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient \fixme[inline]{mere reference stas}
-We calculate two versions of these features, one where we normalized the COMs and one where we do not.
+To compare the differences between the GLCMS 13 different features are computed. They are the same as used in \cite{MRfreeborough} except for one difference. The difference is how the correlation is calculated as $\sum_{i,j} \frac{(i-\mu_i)(j-\mu_j)glcm(i,j)}{(\sigma_i \cdot \sigma_j)}$, where $\mu_i$, $\mu_j$, $\sigma_i$, $\sigma_j$ are the means and standard deviations of $C_i$ and $C_j$ respectively. This correlation is called the Pearson product moment correlation coefficient and it determines how correlated a pixel is to its neighbour, over the whole image\cite{graycoprops}\cite{Pearson}. We calculate two versions of these features, one where we normalized the COMs and one where we do not.
 
 
 \section{Machine learning}
@@ -92,7 +91,6 @@ Since the training phase is minimal, then it should be noted that the testing ph
   \includegraphics[scale=0.6]{KNNK5.eps}
   \caption{The KNN grows a spherical region until it encloses \textit{k} training samples, and labels the test point by a majority vote of these samples. In this \textit{k} = 5 case, the test point \textbf{x} would be labelled the category of the black points}\label{fig:KNNK5}
 \end{figure}
-
 
 Because the KNN classifer predicts the class of a given test observation by identifying the observations that are nearest to it, the scale of the variables matters. Image that we have a large scale variabels, they will have a much larger effect on the distance between observations and hence the KNN classifier, than variables on a small scale. Often a good way to handle this problem is to standardize the data.
 
@@ -191,7 +189,7 @@ To give an example of how the erosion works, it will be illustrated and we will 
     \end{tikzpicture}
     \caption{The image after erosion}
     \end{subfigure}
-  \caption{}\label{fig:ErosionExample}
+  \caption{Example of a city-block erosion with before and after}\label{fig:ErosionExample}
 \end{figure}
 
 As seen in figure \ref{fig:ErosionExample} the noise (background) have been removed. This is an example in 2D. Now we wish to extend the erosion city-block to 3D. As seen in figure \ref{fig:Erosion2D} it have 4 neighbours and when we extend this to 3D we will end up with 6 neighbours instead as seen in figure \ref{fig:Erosion3D} and the concept is still the same as in 2D
@@ -199,6 +197,7 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
 \begin{figure}[H]
   \centering
     \begin{subfigure}{.3\textwidth}
+    \centering
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -209,9 +208,10 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
-    \caption{Text}
+    \caption{From above}
     \end{subfigure}
     \begin{subfigure}{.3\textwidth}
+    \centering
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -222,9 +222,10 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
-    \caption{Text}
+    \caption{From the front}
     \end{subfigure}
     \begin{subfigure}{.3\textwidth}
+    \centering
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -235,9 +236,9 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
-    \caption{Text}
+    \caption{From below}
     \end{subfigure}
-  \caption{Text}\label{fig:Erosion3D}
+  \caption{2D example of the 3D city-block}\label{fig:Erosion3D}
 \end{figure}
 
 
