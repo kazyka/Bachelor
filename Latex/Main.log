@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 22:04
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2√•r/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2√•r/Bachelor/Latex/Main.tex"
@@ -2263,46 +2263,54 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 8.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 19.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 20.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 19.
-FiXme Note: 'find reference' on input line 19.
-FiXme Note: 'level or intensity?' on input line 21.
-FiXme Note: 'rigtigt offset?' on input line 21.
+line 20.
+FiXme Note: 'level or intensity?' on input line 20.
+FiXme Note: 'rigtigt offset?' on input line 20.
+FiXme Note: 'Skal passe til figure \ref {fig:ImageI}' on input line 21.
 
 
 LaTeX Warning: Marginpar on page 6 moved.
 
-FiXme Note: '\IeC {\ae }ndre til $COM_{(0,1)}...$ osv' on input line 24.
-FiXme Note: 'Vise for transpose GLCM' on input line 24.
+FiXme Note: 'Vise for transpose GLCM' on input line 23.
+
+Overfull \hbox (4.47469pt too wide) in paragraph at lines 23--24
+\T1/futs/m/n/10.95 GLCM$[]$, GLCM$[]$, GLCM$[]$, GLCM$[]$, GLCM$[]$, GLCM$[]$, 
+and GLCM$[]$ how-
+ []
+
 [6
 
 
 
 ]
+FiXme Note: 'Er dette rigtigt?' on input line 25.
+
 
 LaTeX Warning: Marginpar on page 7 moved.
 
+FiXme Note: 'Vise for transpose GLCM' on input line 42.
 Package epstopdf Info: Source file: <pictures/2DCOM.eps>
-(epstopdf)                    date: 2016-06-06 00:01:36
-(epstopdf)                    size: 20592 bytes
+(epstopdf)                    date: 2016-06-10 20:46:22
+(epstopdf)                    size: 20605 bytes
 (epstopdf)             Output file: <pictures/2DCOM-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-10 12:13:19
-(epstopdf)                    size: 9713 bytes
+(epstopdf)                    date: 2016-06-10 21:31:24
+(epstopdf)                    size: 9856 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/2DCOM-eps-converte
 d-to.pdf pictures/2DCOM.eps>
-(epstopdf)             \includegraphics on input line 30.
+(epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/2DCOM-eps-converted-to.pdf, id=279, 361.35pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=289, 365.365pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/2DCOM-eps-converted-to.pdf used on input line
- 30.
-(pdftex.def)             Requested size: 180.67456pt x 100.87662pt.
+ 48.
+(pdftex.def)             Requested size: 182.68205pt x 100.87662pt.
 Package epstopdf Info: Source file: <pictures/ImageI.eps>
 (epstopdf)                    date: 2016-06-10 15:40:53
 (epstopdf)                    size: 10267 bytes
@@ -2311,15 +2319,15 @@ Package epstopdf Info: Source file: <pictures/ImageI.eps>
 (epstopdf)                    size: 6170 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/ImageI-eps-convert
 ed-to.pdf pictures/ImageI.eps>
-(epstopdf)             \includegraphics on input line 38.
+(epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/ImageI-eps-converted-to.pdf, id=281, 123.46124pt x 123.46124pt>
+<pictures/ImageI-eps-converted-to.pdf, id=291, 123.46124pt x 123.46124pt>
 File: pictures/ImageI-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/ImageI-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/ImageI-eps-converted-to.pdf used on input lin
-e 38.
+e 56.
 (pdftex.def)             Requested size: 111.11407pt x 111.11407pt.
 Package epstopdf Info: Source file: <pictures/C01.eps>
 (epstopdf)                    date: 2016-06-10 15:44:11
@@ -2329,20 +2337,20 @@ Package epstopdf Info: Source file: <pictures/C01.eps>
 (epstopdf)                    size: 6754 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/C01-eps-converted-
 to.pdf pictures/C01.eps>
-(epstopdf)             \includegraphics on input line 42.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/C01-eps-converted-to.pdf, id=282, 149.55875pt x 152.57pt>
+<pictures/C01-eps-converted-to.pdf, id=292, 149.55875pt x 152.57pt>
 File: pictures/C01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/C01-eps-converted-to.pdf>
-Package pdftex.def Info: pictures/C01-eps-converted-to.pdf used on input line 4
-2.
+Package pdftex.def Info: pictures/C01-eps-converted-to.pdf used on input line 6
+0.
 (pdftex.def)             Requested size: 74.77919pt x 76.2848pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 43.
+(Font)              scaled to size 9.19998pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 43.
+(Font)              scaled to size 9.19998pt on input line 61.
 Package epstopdf Info: Source file: <pictures/Cminus11.eps>
 (epstopdf)                    date: 2016-06-10 15:51:56
 (epstopdf)                    size: 11525 bytes
@@ -2351,15 +2359,15 @@ Package epstopdf Info: Source file: <pictures/Cminus11.eps>
 (epstopdf)                    size: 6712 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/Cminus11-eps-conve
 rted-to.pdf pictures/Cminus11.eps>
-(epstopdf)             \includegraphics on input line 47.
+(epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus11-eps-converted-to.pdf, id=283, 148.555pt x 152.57pt>
+<pictures/Cminus11-eps-converted-to.pdf, id=293, 148.555pt x 152.57pt>
 File: pictures/Cminus11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus11-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/Cminus11-eps-converted-to.pdf used on input l
-ine 47.
+ine 65.
 (pdftex.def)             Requested size: 74.27731pt x 76.2848pt.
 Package epstopdf Info: Source file: <pictures/Cminus10.eps>
 (epstopdf)                    date: 2016-06-10 15:43:43
@@ -2369,15 +2377,15 @@ Package epstopdf Info: Source file: <pictures/Cminus10.eps>
 (epstopdf)                    size: 6716 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/Cminus10-eps-conve
 rted-to.pdf pictures/Cminus10.eps>
-(epstopdf)             \includegraphics on input line 52.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus10-eps-converted-to.pdf, id=284, 149.55875pt x 152.57pt>
+<pictures/Cminus10-eps-converted-to.pdf, id=294, 149.55875pt x 152.57pt>
 File: pictures/Cminus10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus10-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/Cminus10-eps-converted-to.pdf used on input l
-ine 52.
+ine 70.
 (pdftex.def)             Requested size: 74.77919pt x 76.2848pt.
 Package epstopdf Info: Source file: <pictures/Cminus1minus1.eps>
 (epstopdf)                    date: 2016-06-10 15:43:29
@@ -2388,20 +2396,16 @@ f>
 (epstopdf)                    size: 6716 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/Cminus1minus1-eps-
 converted-to.pdf pictures/Cminus1minus1.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus1minus1-eps-converted-to.pdf, id=285, 148.555pt x 152.57pt>
+<pictures/Cminus1minus1-eps-converted-to.pdf, id=295, 148.555pt x 152.57pt>
 File: pictures/Cminus1minus1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus1minus1-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/Cminus1minus1-eps-converted-to.pdf used on in
-put line 57.
+put line 75.
 (pdftex.def)             Requested size: 74.27731pt x 76.2848pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2409,10 +2413,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pictures/2DCOM-eps-converted-to.pdf> <./pictures/ImageI-eps-converted-to.
-pdf> <./pictures/C01-eps-converted-to.pdf> <./pictures/Cminus11-eps-converted-t
-o.pdf> <./pictures/Cminus10-eps-converted-to.pdf> <./pictures/Cminus1minus1-eps
--converted-to.pdf>]
+[7 <./pictures/2DCOM-eps-converted-to.pdf>]
+FiXme Note: 'Tjek om det passe' on input line 80.
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
 Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 (epstopdf)                    date: 2016-06-06 16:02:57
 (epstopdf)                    size: 19892 bytes
@@ -2421,15 +2428,14 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 (epstopdf)                    size: 9743 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/3DCOM-eps-converte
 d-to.pdf pictures/3DCOM.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-
-<pictures/3DCOM-eps-converted-to.pdf, id=329, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=309, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/3DCOM-eps-converted-to.pdf used on input line
- 74.
+ 92.
 (pdftex.def)             Requested size: 310.76338pt x 166.22227pt.
 
 
@@ -2438,8 +2444,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pictures/3DCOM-eps-converted-to.pdf>]
-FiXme Note: 'how does this remove overfitting?' on input line 100.
+[8 <./pictures/ImageI-eps-converted-to.pdf> <./pictures/C01-eps-converted-to.pd
+f> <./pictures/Cminus11-eps-converted-to.pdf> <./pictures/Cminus10-eps-converte
+d-to.pdf> <./pictures/Cminus1minus1-eps-converted-to.pdf> <./pictures/3DCOM-eps
+-converted-to.pdf>]
+FiXme Note: 'how does this remove overfitting?' on input line 118.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2448,6 +2457,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
 Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 (epstopdf)                    date: 2016-06-10 13:21:44
 (epstopdf)                    size: 21824 bytes
@@ -2456,24 +2472,17 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 (epstopdf)                    size: 10349 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/KNNK5-eps-converte
 d-to.pdf pictures/KNNK5.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=354, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=386, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/KNNK5-eps-converted-to.pdf used on input line
- 144.
+ 162.
 (pdftex.def)             Requested size: 236.0838pt x 154.17719pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.19173pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
-Overfull \hbox (16.99837pt too wide) in paragraph at lines 152--153
+Overfull \hbox (16.99837pt too wide) in paragraph at lines 170--171
 \T1/futs/m/n/10.95 sample $\FML/futmi/m/it/10.95 x[]$ \T1/futs/m/n/10.95 and $\
 FML/futmi/m/it/10.95 x[]$\T1/futs/m/n/10.95 , $\FML/futmi/m/it/10.95 l \FMS/fut
 m/m/n/10.95 Å \T1/futs/m/n/10.95 1\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 2\
@@ -2482,6 +2491,13 @@ t/10.95 d\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 x[]; x[]\T1/futs/m/n/10.95 )
  \FMS/futm/m/n/10.95 Å []$ 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./pictures/KNNK5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-10 13:09:38
 (epstopdf)                    size: 16403 bytes
@@ -2491,15 +2507,15 @@ Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    size: 3844 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/noterodeSlice10x-e
 ps-converted-to.pdf pictures/noterodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=383, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=404, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/noterodeSlice10x-eps-converted-to.pdf used on
- input line 161.
+ input line 179.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 Package epstopdf Info: Source file: <pictures/erodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-10 13:09:48
@@ -2510,28 +2526,21 @@ f>
 (epstopdf)                    size: 3814 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/erodeSlice10x-eps-
 converted-to.pdf pictures/erodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 166.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=384, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=405, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/erodeSlice10x-eps-converted-to.pdf used on in
-put line 166.
+put line 184.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 
-Overfull \hbox (1.71913pt too wide) in paragraph at lines 159--169
+Overfull \hbox (1.71913pt too wide) in paragraph at lines 177--187
 []$[]$ $[]$ 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.19173pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11 <./pictures/KNNK5-eps-converted-to.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 25.19173pt.
@@ -2556,7 +2565,7 @@ Package FiXme Warning: \fixme is deprecated;
 (FiXme)                please use \fxfatal instead on input line 7.
 
 
-FiXme Fatal Error: 'insert snip of code.' on input line 7.
+FiXme Fatal Error: 'insert snip of code.+ link imerode page' on input line 7.
 
 
 Package FiXme Warning: \fixme is deprecated;
@@ -2603,18 +2612,32 @@ FiXme Fatal Error: 'Fodnote der beksriver hvad en cell er?' on input line 20.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+
+Package FiXme Warning: \fixme is deprecated;
+(FiXme)                please use \fxfatal instead on input line 25.
+
+
+FiXme Fatal Error: 'snip af f\IeC {\o }rste if.' on input line 25.
+
+
+Package FiXme Warning: \fixme is deprecated;
+(FiXme)                please use \fxfatal instead on input line 27.
+
+
+FiXme Fatal Error: 'inds\IeC {\ae }t en if statement' on input line 27.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 36.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 FiXme Note: 'Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud' o
-n input line 31.
+n input line 36.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 47.
 
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd
@@ -2622,20 +2645,27 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 42.
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 42.
-)
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 47.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[15])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
 \openout2 = `chapters/Result.aux'.
 
  (chapters/Result.tex
 Chapter 5.
-) [16
+) [17
 
 
 
@@ -2644,7 +2674,7 @@ Chapter 5.
 
  (chapters/Discussion.tex
 Chapter 6.
-) [17
+) [18
 
 
 
@@ -2653,11 +2683,11 @@ Chapter 6.
 
  (chapters/Conclusion.tex
 Chapter 7.
-) [18
+) [19
 
 
 
-] [19
+] [20
 
 
 
@@ -2667,7 +2697,7 @@ Chapter 7.
 
  (appendix/derivationImageTexture.tex
 Appendix A.
-[20
+[21
 
 
 ])
@@ -2677,7 +2707,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21] (Main.bbl
+[22] (Main.bbl
 Underfull \hbox (badness 4832) in paragraph at lines 9--12
 []\T1/futs/m/n/10.95 Mathworks gray-copros.  [][]$\T1/pcr/m/n/10.95 http : / / 
 se . mathworks . com / help / images / ref /
@@ -2689,20 +2719,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--18
 wikipedia . org / wiki / Pearson _
  []
 
-) [22
+[23
 
 
 
-]
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
 runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 7,
+FiXme Summary: Number of notes: 9,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
-(FiXme)        Number of fatal errors: 5,
-(FiXme)        Total: 12.
+(FiXme)        Number of fatal errors: 7,
+(FiXme)        Total: 16.
 
 
 AED: lastpage setting LastPage
@@ -2902,16 +2939,16 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9887DC895E077B6307DA1B11619AE984;1574.
+(rerunfilecheck)             Checksum: 9BF32EA2F745D9B9DEA087154D0B6EEF;1574.
  ) 
 Here is how much of TeX's memory you used:
- 44520 strings out of 493634
- 978917 string characters out of 3141315
- 1335221 words of memory out of 3000000
- 46926 multiletter control sequences out of 15000+200000
+ 44526 strings out of 493634
+ 979060 string characters out of 3141315
+ 1325865 words of memory out of 3000000
+ 46929 multiletter control sequences out of 15000+200000
  141409 words of font info for 164 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,19n,85p,10528b,1947s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,85p,10528b,2491s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
@@ -2925,9 +2962,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (26 pages, 318697 bytes).
+Output written on Main.pdf (28 pages, 325520 bytes).
 PDF statistics:
- 571 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

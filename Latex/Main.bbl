@@ -16,6 +16,13 @@ Pearson product.
   \url{https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient}.
 \newblock Accessed: 2016 May.
 
+\bibitem{albregtsen2008statistical}
+Fritz Albregtsen et~al.
+\newblock Statistical texture measures computed from gray level coocurrence
+  matrices.
+\newblock {\em Image processing laboratory, department of informatics,
+  university of oslo}, pages 1--14, 2008.
+
 \bibitem{Castellano}
 G~Castellano, L~Bonilha, LM~Li, and F~Cendes.
 \newblock Texture analysis of medical images.

@@ -3,13 +3,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example of the offsets for the 2D\relax }}{7}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Image I that is 4-by-4\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Four different COM's for a gray-tone image. Shows how the GLCM are calculated of the 4-by-4 image I \ref {fig:ImageI}.\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Image I that is 4-by-4\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Four different COM's for a gray-tone image. Shows how the GLCM are calculated of the 4-by-4 image I \ref {fig:ImageI}.\relax }}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Example of the offsets for the 3D\relax }}{8}{figure.caption.7}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces The KNN grows a spherical region until it encloses \textit {k} training samples, and labels the test point by a majority vote of these samples. In this \textit {k} = 5 case, the test point \textbf {x} would be labelled the category of the black points\relax }}{11}{figure.caption.8}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Hippocampus at slice 10 on the X-axis as bitwise\relax }}{12}{figure.caption.9}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Text\relax }}{12}{figure.caption.10}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Example of a city-block erosion with before and after\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Example of a city-block erosion with before and after\relax }}{13}{figure.caption.11}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces 2D example of the 3D city-block\relax }}{13}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

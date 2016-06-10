@@ -7,7 +7,7 @@ Image texture is a feature that can help to segment images into regions of inter
 
 \subsection{Co-occurrence matrix}
 
-The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixels. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
+The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixels. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by \cite{albregtsen2008statistical}
 
 \[
 C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
@@ -16,14 +16,32 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
   0, \quad \text{otherwise}
 \end{dcases}
 \]
-\fxnote[inline]{find reference}
 
 The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity\footnote{The pixel value is a single number that represents the brightness of the pixel. Typically one is taken to be black and 256 is taken to be white and values in between make up the different shades of grey} (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
-COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM).
+COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM). \fxnote[inline]{Skal passe til figure \ref{fig:ImageI}}
 
-A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)} \fxnote[inline]{ændre til $COM_{(0,1)}...$ osv}, however they are not unique. \fxnote[inline]{Vise for transpose GLCM}
+A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, GLCM$_{(1,0)}$, GLCM$_{(1,1)}$, GLCM$_{(0,1)}$, GLCM$_{(-1,1)}$, GLCM$_{(-1,0)}$, GLCM$_{(-1,-1)}$, GLCM$_{(0,-1)}$, and GLCM$_{(1,-1)}$ however they are not unique. \fxnote[inline]{Vise for transpose GLCM}
 
-Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{1,0}$(1,2) and GLCMs$_({-1,0})$ (1,1) with one, showing that GLCMs$_{(0,1)}^\textbf{T}$ = GLCMs$_{(0,-1)}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$ as seen in figure \ref{2DCOM}.
+Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{(1,0)}$(1,2) and GLCMs$_{(-1,0)}$(1,1) with one, showing that \fxnote[inline]{Er dette rigtigt?}
+\[
+\text{GLCM}_{(0,1)} = \text{GLCM}_{(0,-1)}^\textbf{T}
+\] 
+
+There exist the same relation between 
+
+\[
+\text{ GLCMs}_{(1,1)}=\text{ GLCMs}_{(-1,-1)}^\textbf{T}
+\]
+\[
+\text{ GLCMs}_{(0,1)}=\text{ GLCMs}_{(0,-1)}^\textbf{T}
+\]
+\[
+\text{ GLCMs}_{(-1,1)}=\text{ GLCMs}_{(1,-1)}^\textbf{T}
+\]
+
+\fxnote[inline]{Vise for transpose GLCM}
+
+This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$ as seen in figure \ref{2DCOM}.
 
 \begin{figure}[H]
   \centering
@@ -50,7 +68,7 @@ and let figure \ref{fig:ImageI} illustrate this concept with a $4 \times 4$ imag
     \begin{subfigure}{.24\textwidth}
       \centering
       \includegraphics[scale=0.5]{Cminus10.eps}
-      \caption{$C_{(-1,1)}$}\label{fig:cminus10}
+      \caption{$C_{(-1,0)}$}\label{fig:cminus10}
     \end{subfigure}
     \begin{subfigure}{.24\textwidth}
       \centering
@@ -59,7 +77,7 @@ and let figure \ref{fig:ImageI} illustrate this concept with a $4 \times 4$ imag
     \end{subfigure}
     \caption{Four different COM's for a gray-tone image. Shows how the GLCM are calculated of the 4-by-4 image I \ref{fig:ImageI}.}
 \end{figure}
-
+\fxnote[inline]{Tjek om det passe}
 The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 GLCM.
 %\begin{figure}[H]
 %  \centering
