@@ -3,10 +3,9 @@
 
 \section{Image texture analysis methods}
 
-Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image.
+Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image. Texture analysis is a technique for evaluating the position and intensity of signal features. \cite{Castellano} Statistical texture analysis methods evaluate the interrelationship of voxels, based on mathematical parameters computed from the distribution and intensities of voxels in the image.
 
 \subsection{Co-occurrence matrix}
-
 
 The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixels. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
 
@@ -19,12 +18,12 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \]
 \fxnote[inline]{find reference}
 
-The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity\footnote{The pixel value is a single number that represents the brightness of the pixel. Typically zero is taken to be black and 255 is taken to be white and values in between make up the different shades of grey} (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
 COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM).
 
-A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)} \fxnote[inline]{ændre til $COM_{(0,1)}...$ osv}, however they are not unique.
+A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)} \fxnote[inline]{ændre til $COM_{(0,1)}...$ osv}, however they are not unique. \fxnote[inline]{Vise for transpose GLCM}
 
-Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{1,0}$(1,2) and GLCMs$_({-1,0})$ (1,1) with one, showing that GLCMs$_{(0,1)}^\textbf{T}$ = GLCMs$_{(0,-1)}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
+Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{1,0}$(1,2) and GLCMs$_({-1,0})$ (1,1) with one, showing that GLCMs$_{(0,1)}^\textbf{T}$ = GLCMs$_{(0,-1)}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$ as seen in figure \ref{2DCOM}.
 
 \begin{figure}[H]
   \centering
@@ -32,13 +31,41 @@ Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1
   \caption{Example of the offsets for the 2D}\label{2DCOM}
 \end{figure}
 
-The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 GLCM.
+and let figure \ref{fig:ImageI} illustrate this concept with a $4 \times 4$ image I with four different COM's for $I: C_{(0,1)}, C_{(-1,1)}, C_{(-1,0)} \text{ and } C_{(-1,-1)}$
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.8]{GLCM.eps}
-  \caption{Example how the values in the GLCM are calclulated of the 4-by-5 image I. Element (1, 1) in the GLCM contains the value 1 because there is only one instance inf the image where two horizontally adjacent pixels have the values 1 and 1.}\label{GLCM}
+  \includegraphics[scale=0.9]{ImageI.eps}
+  \caption{Image I that is 4-by-4}\label{fig:ImageI}
+    \begin{subfigure}{.24\textwidth}
+      \centering
+      \includegraphics[scale=0.5]{C01.eps}
+      \caption{$C_{(0,1)}$}\label{fig:c01}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+      \centering
+      \includegraphics[scale=0.5]{Cminus11.eps}
+      \caption{$C_{(-1,1)}$}\label{fig:cminus11}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+      \centering
+      \includegraphics[scale=0.5]{Cminus10.eps}
+      \caption{$C_{(-1,1)}$}\label{fig:cminus10}
+    \end{subfigure}
+    \begin{subfigure}{.24\textwidth}
+      \centering
+      \includegraphics[scale=0.5]{Cminus1minus1.eps}
+      \caption{$C_{(-1,-1)}$}\label{fig:cminus1minus1}
+    \end{subfigure}
+    \caption{Four different COM's for a gray-tone image. Shows how the GLCM are calculated of the 4-by-4 image I \ref{fig:ImageI}.}
 \end{figure}
+
+The co-occurrence matrix is quadratic with the number of rows and columns equal to the amount of GI, for example if we have 256 GI we get a 256 $\times$ 256 GLCM.
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[scale=0.8]{GLCM.eps}
+%  \caption{Example how the values in the GLCM are calclulated of the 4-by-5 image I. Element (1, 1) in the GLCM contains the value 1 because there is only one instance inf the image where two horizontally adjacent pixels have the values 1 and 1.}\label{GLCM}
+%\end{figure}
 
 Extending this method to three-dimensions it is necessary to look on how the offsets are defined because the size of the GLCM is defined by the amount of GIs and not by the images it is derived from. Considering a 3 $\times$ 3 $\times$ 3 matrix we have a possible of 26 offsets. In two-dimensions it is possible to eliminate half of the offsets because of the relation GLCM$_{d,d}^\textbf{T}$ = GLCM$_{-d,-d}$, and it is the same case in three-dimensions with the relation being GLCM$_{d,d,d}^\textbf{T}$ = GLCM$_{-d,-d,-d}$. This leaves 13 offsets which are illustrated below.\\
 
@@ -100,7 +127,7 @@ Y = Y $\cup$ F
 Step 4:
 Continue step 2-3 until the missclassification error worsen or 15 features have been selected.
 \end{lstlisting}
-The algorithm is run on 10 different k values for the k-nn model, k = 1,2,...,10. 
+The algorithm is run on 10 different k values for the k-nn model, k = 1,2,...,10.
 
 \subsubsection{Naive}
 

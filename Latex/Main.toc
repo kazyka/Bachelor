@@ -6,16 +6,16 @@
 \contentsline {section}{\numberline {3.1}Image texture analysis methods}{6}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{6}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{8}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Machine learning}{8}{section.3.2}
+\contentsline {section}{\numberline {3.2}Machine learning}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Feature selection}{9}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{10}{subsubsection.3.2.2.1}
 \contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{10}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{11}{section.3.3}
-\contentsline {chapter}{\numberline {4}Implementation}{13}{chapter.4}
-\contentsline {chapter}{\numberline {5}Result}{14}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{15}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{16}{chapter.7}
-\contentsline {chapter}{Appendices}{17}{section*.13}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{18}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{20}{equation.a.A.0.11}
+\contentsline {chapter}{\numberline {4}Implementation}{14}{chapter.4}
+\contentsline {chapter}{\numberline {5}Result}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{16}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{17}{chapter.7}
+\contentsline {chapter}{Appendices}{18}{section*.13}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{19}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{21}{equation.a.A.0.11}
