@@ -3,12 +3,12 @@
 
 \section{Image texture analysis methods}
 
-Short intro to what is image texture
+Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image.
 
 \subsection{Co-occurrence matrix}
 
 
-The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixes. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
+The co-occurence matrix (COM) is second-order statistics methods, which is based on information about colours in pair of pixels. The matrix is defined over the image with distribution values at a given offset. Mathematically we have a COM matrix \textbf{C} which is defined over an $n \times m$ image \textbf{I}, with $\Delta x, \Delta y$ being the parameterized offset, is calculated by
 
 \[
 C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
@@ -19,10 +19,10 @@ C_{\Delta x, \Delta y}(i, j) = \Sigma_{p=1}^n\Sigma_{q=1}^m
 \]
 \fxnote[inline]{find reference}
 
-The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity  (GI) 4, i.e. if the offset is (,1) and the first element is {(x,y)(4,3)} with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
+The element (5,4) in the COM can be translated to meaning how many times there exist an element in the image with GI \fxnote[inline]{level or intensity?} 5 and another element offset $\Delta x, \Delta y$ from the originial with greyscale intensity (GI) 4, i.e. if the offset is (0,1)\fxnote[inline]{rigtigt offset?} and the first element is (x,y)(4,3) with GI 5 it would mean that element (x,y)(5,3) would have GI 4. If COM(4,4) is ten, it translates into there being ten instances with element (x,y) = 5 and (x+$\Delta x$,y+$\Delta y$) = 4.
 COMs calculated on GIs are often called gray-level co-occurence matrices (GLCM).
 
-A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)}, however they are not unique. 
+A single image have multiple GLCMs as different offsets creates different relations. Consider a 3 $\times$ 3 matrix looking at element (2,2) we can then create eight different offsets, {(1,0),(1,1), (0,1)),(-1,1),(-1,0),(-1,-1),(0,-1),(1,-1)} \fxnote[inline]{ændre til $COM_{(0,1)}...$ osv}, however they are not unique.
 
 Focusing on the two offsets {(0,1), (0,-1)} in element (2,2) and (1,2) with GI 1 and 2 respectfully increases the entry GLCMs$_{1,0}$(1,2) and GLCMs$_{-1,0}$ (1,1) with one, showing that GLCMs$_{0,1}$$^\textbf{T}$ = GLCMs$_{0,-1}$. There exist the same relation between (1,1)(-1,-1), (0,1)(0,-1), and (-1,1)(1,-1). This leaves four different offsets for analysis {(0,1),(-1,1), (-1,0)),(-1,-1)} in general {(0,d),(-d,d),(-d,0),(-d,-d)} where d is the distance which are commonly named angles 0$^\circ$, 45$^\circ$, 90$^\circ$ and 135$^\circ$.
 
@@ -57,7 +57,7 @@ These slices are done in all three directions of the image for the four differen
 The three-dimensional versions is also calculated for distances d = (1,2,...,10) resulting in 130 GLCMs for each mri scan.
 
 \subsection{Texture features from co-occurrence matrix}
-To compare the differences between the GLCMS 13 different features are computed. They are the same as used in freeborough from 1998 \fixme[inline]{fix reference, lazy right now} except for one difference. The difference is how the correlation is calculated, correlation = sum_(i,j) (i-mui)(j-muj)glcm(i,j) / (sigmai * sigmaj), where mui, muj, sigmai, sigmaj are the means and standard deviations of Ci and Cj respectively. This correlation is called the Pearson product moment correlation coefficient and it determines how correlated a pixel is to its neighbour, over the whole image. cite http://se.mathworks.com/help/images/ref/graycoprops.html and https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient \fixme[inline]{mere reference stas}
+To compare the differences between the GLCMS 13 different features are computed. They are the same as used in freeborough from 1998 \fixme[inline]{fix reference, lazy right now} except for one difference. The difference is how the correlation is calculated, correlation = $\sum_{i,j} \frac{(i-mui)(j-muj)glcm(i,j)}{(sigmai \cdot sigmaj)}$, where mu$_i$, mu$_j$, sigma$_i$, sigma$_j$ are the means and standard deviations of Ci and Cj respectively. This correlation is called the Pearson product moment correlation coefficient and it determines how correlated a pixel is to its neighbour, over the whole image. cite %http://se.mathworks.com/help/images/ref/graycoprops.html and https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient \fixme[inline]{mere reference stas}
 We calculate two versions of these features, one where we normalized the COMs and one where we do not.
 
 
@@ -84,8 +84,15 @@ A problem with SFS is due to its greedy nature, there is no guarantee that the f
 
 \subsection{K Nearest Neighbors algorithm}
 
-The K Nearest Neighbor (KNN) is a methoed that is used for classification and regression. It should be noted, that KNN is a non parametric lazy learning algorithm, which means that it does note make any assumptions on the underlying data distribution. In other words, it means that the training phase is fast and KNN keeps all the training data. It should be noted that KNN makes decision based on the entire training data set and in the KNN an object is classified by majority vote of its neighbors, with the object being assigned to the class most common amongst its \texttt{knn}'s.
+The K Nearest Neighbor (KNN) is a methoed that is used for classification and regression. It should be noted, that KNN is a non parametric lazy learning algorithm, which means that it does note make any assumptions on the underlying data distribution. In other words, it means that the training phase is fast and KNN keeps all the training data. It should be noted that KNN makes decision based on the entire training data set and in the KNN an object is classified by majority vote of its neighbors, with the object being assigned to the class most common amongst its \textit{KNN}'s. \ref{fig:KNNK5}\\
 Since the training phase is minimal, then it should be noted that the testing phase is very costly for KNN in both memory and time and often it can be a worst case for time needed, since all points might take point in the decision making.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.6]{KNNK5.eps}
+  \caption{The KNN grows a spherical region until it encloses \textit{k} training samples, and labels the test point by a majority vote of these samples. In this \textit{k} = 5 case, the test point \textbf{x} would be labelled the category of the black points}\label{fig:KNNK5}
+\end{figure}
+
 
 Because the KNN classifer predicts the class of a given test observation by identifying the observations that are nearest to it, the scale of the variables matters. Image that we have a large scale variabels, they will have a much larger effect on the distance between observations and hence the KNN classifier, than variables on a small scale. Often a good way to handle this problem is to standardize the data.
 
@@ -98,16 +105,17 @@ Typically will the KNN classifier be based on a distance, commonly it is based o
 Each patients hippocampus has been segmented in the MRI scan. The problems we can run into are that the background will blur with the segmentation i.e. the hippocampus. Performing a erosion can solve this problem and we can focus on the hippocampus, with the maximum number of details. As seen in figure \ref{fig:noterodeslice} the erosion has not been performed yet, but we might have some problems with data surrounding the hippocampus is blurring out the edges of the hippocampus. To solve this, we create a mask to separate the hippocampus from the background data and end up with what is left in figure \ref{fig:erodeslice}
 
 \begin{figure}[H]
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{noterodeSlice10x.eps}
-  \caption{Hippocampus at slice 10 on the X-axis}\label{fig:noterodeslice}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[scale=0.4]{erodeSlice10x.eps}
-  \caption{Hippocampus at slice 10 on the X-axis after erosion has been performed}\label{fig:erodeslice}
-\end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{noterodeSlice10x.eps}
+      \caption{Note eroded}\label{fig:noterodeslice}
+    \end{subfigure}
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[scale=0.4]{erodeSlice10x.eps}
+      \caption{After erosion has been performed}\label{fig:erodeslice}
+    \end{subfigure}
+    \caption{Hippocampus at slice 10 on the X-axis as bitwise}
 \end{figure}
 
 The erosion we have used is called a city-block metric and can be seen in figure \ref{fig:Erosion2D}.
@@ -183,13 +191,14 @@ To give an example of how the erosion works, it will be illustrated and we will 
     \end{tikzpicture}
     \caption{The image after erosion}
     \end{subfigure}
-  \label{fig:ErosionExample}
+  \caption{}\label{fig:ErosionExample}
 \end{figure}
 
 As seen in figure \ref{fig:ErosionExample} the noise (background) have been removed. This is an example in 2D. Now we wish to extend the erosion city-block to 3D. As seen in figure \ref{fig:Erosion2D} it have 4 neighbours and when we extend this to 3D we will end up with 6 neighbours instead as seen in figure \ref{fig:Erosion3D} and the concept is still the same as in 2D
 
 \begin{figure}[H]
   \centering
+    \begin{subfigure}{.3\textwidth}
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -200,6 +209,9 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
+    \caption{Text}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -210,6 +222,9 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
+    \caption{Text}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
     \begin{tikzpicture}
     \matrix[square matrix]
     {
@@ -220,6 +235,8 @@ As seen in figure \ref{fig:ErosionExample} the noise (background) have been remo
     |[fill=white]| & |[fill=white]|   & |[fill=white]|   & |[fill=white]|   & |[fill=white]| \\
     };
     \end{tikzpicture}
+    \caption{Text}
+    \end{subfigure}
   \caption{Text}\label{fig:Erosion3D}
 \end{figure}
 

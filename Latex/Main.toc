@@ -7,15 +7,16 @@
 \contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{7}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}Machine learning}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Feature selection}{7}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Feature selection}{8}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Sequential Forward Feature}{8}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Naive}{8}{subsubsection.3.2.2.2}
-\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{8}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Erode}{9}{section.3.3}
-\contentsline {chapter}{\numberline {4}Implementation}{11}{chapter.4}
-\contentsline {chapter}{\numberline {5}Result}{12}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{14}{chapter.7}
-\contentsline {chapter}{Appendices}{15}{section*.12}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{16}{Appendix.a.A}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Naive}{9}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{9}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Erode}{10}{section.3.3}
+\contentsline {chapter}{\numberline {4}Implementation}{12}{chapter.4}
+\contentsline {chapter}{\numberline {5}Result}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{14}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{15}{chapter.7}
+\contentsline {chapter}{Appendices}{16}{section*.13}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{17}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{19}{equation.a.A.0.11}
