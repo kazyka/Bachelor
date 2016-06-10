@@ -23,4 +23,4 @@
 \contentsline {chapter}{\numberline {7}Conclusion}{19}{chapter.7}
 \contentsline {chapter}{Appendices}{20}{section*.13}
 \contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{21}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{23}{equation.a.A.0.15}
+\contentsline {chapter}{Litteratur}{23}{equation.a.A.0.20}

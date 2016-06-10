@@ -12,37 +12,65 @@
 \begin{equation}\label{Cxminusy}
   C_{x+y}(k) = \underset{|i-j|=k}{\sum_{i=1}^{N}\sum_{j=1}^{N}}, \quad \text{k=0,1,...,N-1}
 \end{equation}
+Where \ref{AngularSecondMoment} is the Angular second moment
 \begin{equation}\label{AngularSecondMoment}
   f_1 = \sum_{i=1}^{N}\sum_{j=1}^{N}\{C(i,j)\}^2
 \end{equation}
+and \ref{Contrast} is the Contrast
 \begin{equation}\label{Contrast}
   f_2 = \sum_{n=0}^{N-1} n^2 \left\{C_{x+y}(k)\right\}
 \end{equation}
+and \ref{Correlation} is the Correlation
 \begin{equation}\label{Correlation}
   f_3 = \frac{\sum_{i=1}^{N}\sum_{j=1}^{n} i j C(i,j) - \mu_x \mu_y}{\sigma_x\sigma_y}
 \end{equation}
+and \ref{Variance} is the Variance
 \begin{equation}\label{Variance}
   f_4 = \sum_{i=1}^{N}\sum_{j=1}^{N}(i-\mu)^2 C(i,j)
 \end{equation}
+and \ref{InverseDifferenceMoment} is the Inverse Difference Moment
 \begin{equation}\label{InverseDifferenceMoment}
   f_5 = \sum_{i=1}^{N}\sum_{j=1}^{n} \frac{1}{1+(i-j)^2} C(i,j)
 \end{equation}
+and \ref{SumAverage} is the Sum Average
 \begin{equation}\label{SumAverage}
   f_6 = \sum_{i=2}^{2N} i C_{x+y}(i)
 \end{equation}
+and \ref{SumVariance} is the Sum Variance
 \begin{equation}\label{SumVariance}
   f_7 = \sum_{i=2}^{2N} (i - f_6)^2 C_{x+y}(i)
 \end{equation}
+and \ref{SumEntropy} is the Sum Entropy
 \begin{equation}\label{SumEntropy}
   f_8 = \sum_{i=2}^{2N}C_{x+y}(i) \log(C_{x+y}(i))
 \end{equation}
+and \ref{Entropy} is the Entropy
 \begin{equation}\label{Entropy}
   f_9 = -\sum_{i=1}^{N}\sum_{j=1}^{N} C(i,j) \log(C(i,j))
 \end{equation}
+and \ref{DifferenceVariance} is the Difference Variance
 \begin{equation}\label{DifferenceVariance}
   f_{10} = \text{variance of }C_{x-y}
 \end{equation}
-
+and \ref{DifferenceEntropy} is the Difference Entropy
 \begin{equation}\label{DifferenceEntropy}
   f_{11} = -\sum_{i=0}^{N-1} C_{x-y}(i) \log(C_{x-y}(i))
-\end{equation} 
+\end{equation}
+and \ref{Informationmeasuresofcorrelation1} is the Information measures of correlation
+\begin{equation}\label{Informationmeasuresofcorrelation1}
+  f_{12} = \frac{HXY-HXY1}{\max\{HX,HY\}}
+\end{equation}
+and \ref{Informationmeasuresofcorrelation2} is the Information measures of correlation
+\begin{equation}\label{Informationmeasuresofcorrelation2}
+  f_{13} = \sqrt{1-exp\{-2(HXY2-HXY)\}}
+\end{equation}
+Where HX and HY are the entropies of $C_x$ and $C_y$ and
+\begin{equation}\label{HXY}
+  HXY = -\sum_{i=1}^{N}\sum_{j=1}^{N}C(i,j)\log\{C(i,j)\}
+\end{equation}
+\begin{equation}\label{HXY1}
+  HXY1 = -\sum_{i=1}^{N}\sum_{j=1}^{N}C(i,j)\log\{C_x(i)C_y(j)\}
+\end{equation}
+\begin{equation}\label{HXY2}
+  HXY2 = -\sum_{i=1}^{N}\sum_{j=1}^{N}C_x(i)C_y(j)\log\{C_x(i)C_y(j)\}
+\end{equation}

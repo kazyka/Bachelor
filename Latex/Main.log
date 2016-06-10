@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 23:56
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2939,13 +2939,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9BF32EA2F745D9B9DEA087154D0B6EEF;1574.
+(rerunfilecheck)             Checksum: 318F318E044E43FE959B9EE432ECA995;1574.
  ) 
 Here is how much of TeX's memory you used:
- 44526 strings out of 493634
- 979060 string characters out of 3141315
- 1325865 words of memory out of 3000000
- 46929 multiletter control sequences out of 15000+200000
+ 44536 strings out of 493634
+ 979232 string characters out of 3141315
+ 1326240 words of memory out of 3000000
+ 46934 multiletter control sequences out of 15000+200000
  141409 words of font info for 164 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,2491s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2962,9 +2962,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (28 pages, 325520 bytes).
+Output written on Main.pdf (28 pages, 330254 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
