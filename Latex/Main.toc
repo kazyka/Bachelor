@@ -15,10 +15,12 @@
 \contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{10}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{11}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}GLCM Features}{14}{section.4.1}
-\contentsline {chapter}{\numberline {5}Result}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{16}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{17}{chapter.7}
-\contentsline {chapter}{Appendices}{18}{section*.13}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{19}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{21}{equation.a.A.0.11}
+\contentsline {section}{\numberline {4.1}Preparation of Data}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Calculating GLCMs}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Calculating(Computing) the GLCM Features}{15}{section.4.3}
+\contentsline {chapter}{\numberline {5}Result}{16}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{17}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{18}{chapter.7}
+\contentsline {chapter}{Appendices}{19}{section*.13}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{20}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{22}{equation.a.A.0.15}

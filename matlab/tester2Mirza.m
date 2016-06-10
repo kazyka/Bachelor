@@ -6,3 +6,4 @@ glcm2d = glcm2dFast(hippoBox, 10);
 glcm = glcm2dx(:,:,1);
 
 glcm = glcm./sum(glcm(:));
+test > 0

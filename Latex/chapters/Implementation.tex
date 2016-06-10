@@ -1,12 +1,12 @@
 \chapter{Implementation}
 
-\section{Preperation of Data}
-The mri files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
+\section{Preparation of Data}
+The MRI files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
 We have created the function HippoMatrix, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
 First we assign a value based on if we are looking for the right hippocampus, as they are associeated with 1 and 2 respectfully.
-If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use matlabs build in function imerode to perform the erosion. \fixme[inline]{insert snip of code.}
+If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use MATLABs build in function imerode to perform the erosion. \fixme[inline]{insert snip of code.}
 
-Looping through the entiere segmentation matrix we identify all the datapoints where segmentation is one for the left hippocampus or two if we are trying to identify the right hippocampus. For each instance in segmentation we save the coordinate (i,j,k) and the mri(i,j,k) value in an array as v(1) = (i$_1$,j$_1$,k$_1$,mri(i$_1$,j$_1$,k$_1$)).\fixme[inline]{snip of main loop, explain left is also used incase of right}
+Looping through the entire segmentation matrix we identify all the datapoints where segmentation is one for the left hippocampus or two if we are trying to identify the right hippocampus. For each instance in segmentation we save the coordinate (i,j,k) and the mri(i,j,k) value in an array as v(1) = (i$_1$,j$_1$,k$_1$, MRI(i$_1$,j$_1$,k$_1$)).\fixme[inline]{snip of main loop, explain left is also used incase of right}
 
 On the basis of this we can create a three-dimensional matrix which contains all the datapoints, hippoBox = max(i) - min(i) + 1 $\times$ max(j) - min(j) +1 $\times$ maj(k) - min(k) + 1.
 Then we simply loop through our array with the relevant data and input them into hippoBox, all other elements inside the matrix are set to NaN. \fixme[inline]{snip of last loop}
@@ -15,19 +15,48 @@ The return value from the function is the matrix hippoBox containing only the re
 
 \section{Calculating GLCMs}
 
- To calculate the GLCMs in two-dimensions we have taken advantage of matlabs built-in function graycomatrix. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.\fixme[inline]{snip af glcm2dallangels hvor vi udregner}
+To calculate the GLCM's in two-dimensions we have taken advantage of MATLABs built-in function graycomatrix. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.\fixme[inline]{snip af glcm2dallangels hvor vi udregner}
 
-We ultimately save all 90 glcms in a cell.\fixme[inline]{Fodnote der beksriver hvad en cell er?}
+We ultimately save all 90 glcm's in a cell.\fixme[inline]{Fodnote der beksriver hvad en cell er?}
 
-To implement the three-dimensional GLCMs we have created our own function.
+To implement the three-dimensional GLCM's we have created our own function.
 
 
-\section{Calculatin the GLCM Features}
+\section{Calculating(Computing) the GLCM Features}
 
 In the implementation of the GLCM Feature derivation we are taking two inputs. The first input variable is the GLCM matrix and the second is wether we wish to normalize the data.
 
 What we are doing first is to make sure that all variables are implemented. Firstly we find the size of the GLCM which will be the greylevels. Hereafter we can initiate the $C_x$, $C_y$, $C_{x+y}$ and $C_{x-y}$ since we know the size of the GLCM.
 
-For the $C_{x+y}$ and $C_{x-y}$ we are using MATLAB's \texttt{ind2sub} function, that is a command that determines the equivalent subscript values corresponding to a single index into an array.\fxnote[inline]{Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud}.
+For the pixel values in the GLCM we are using MATLAB's \texttt{ind2sub} function, that is a command that determines the equivalent subscript values corresponding to a single index into an array.\fxnote[inline]{Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud}. We are using these variables in the GLCM Features as seen in Appendix \ref{derivationfeatures}.
+
+To calculate the $C_{x+y}$ and $C_{x-y}$ we have two for loops as seen in Appendix \ref{Cxplusy} and \ref{Cxminusy} where N of course is the greylevels.
+
+To find the mean and standard deviation for $C_x$ and $C_y$ we just use the functions that MATLAB have.
+
+The GLCM features, as seen in Appendix \ref{derivationfeatures}, utilizes MATLABs use of vectorization. This is rewarding in the vectorized code appears more like the mathematical expressions and makes the code easier to understand and is shorter. There is often a performance gain in using vectorized code than the corresponding code containing loops.
+
+It should be obvious for the reader to tell that the code looks alot like the mathematical expression like in Appendix \ref{derivationfeatures}.
+
+\begin{lstlisting}[language=Matlab]
+HXY1 = -nansum(glcm(tmpsub)'.*log(cX(I).*cY(J)));
+HXY2 = -nansum(cX(I).*cY(J).*log(cX(I).*cY(J)));
+HX   = -nansum(cX.*log(cX));
+HY   = -nansum(cY.*log(cY));
+HXY  = -nansum(glcm(:).*log(glcm(:)));
+
+stats.angularSecondMoment                = sum(glcm(:).^2);
+stats.contrast                           = sum(abs(I-J).^2.*glcm(tmpsub));
+stats.correlation                        = (sum(I.*J.*glcm(tmpsub)) - muX*muY) ./ (stdX*stdY);
+stats.variance                           = sum(((I - mean(glcm(:))).^2).*glcm(tmpsub));
+stats.inverseDifferenceMoment            = sum(glcm(tmpsub)./(1 + (I-J).^2));
+stats.sumAverage                         = sum(bsxfun(@times,(2:2*nGrayLevels)',cXplusY));
+stats.sumVariance                        = sum(((2:2*nGrayLevels) - stats.sumAverage)'.^2.*cXplusY((2:2*nGrayLevels)-1,1));
+stats.sumEntropy                         = nansum(cXplusY.*log(cXplusY));
+stats.entropy                            = HXY;
+stats.differenceVariance                 = var(cXminusY);
+stats.differenceEntropy                  = nansum(cXminusY.*log(cXminusY));
+stats.informationMeasuresOfCorrelation1  = (HXY - HXY1)./(max(HX,HY));
+\end{lstlisting}
 
 

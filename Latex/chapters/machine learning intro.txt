@@ -1,0 +1,6 @@
+
+\section{Machine learning}
+
+Machine learning is a method used to create complex models and algorithms that lend themselves to prediction, when the models are exposed to new data that should be able to teach themselves to grow and change.
+There are several different categories of machine learning, one of them being supervised learning. In supervised laerning given a large sample of input and output pairings, the goal is to find the complex function that maps that relation between input and output. With a sufficient large dataset it would be possible to train a supervised algorithm to predict output values for some new input values that it have not seen before. 
+
