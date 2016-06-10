@@ -1,5 +1,26 @@
 \chapter{Implementation}
 
+\section{Preperation of Data}
+The mri files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
+We have created the function HippoMatrix, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
+First we assign a value based on if we are looking for the right hippocampus, as they are associeated with 1 and 2 respectfully.
+If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use matlabs build in function imerode to perform the erosion. \fixme[inline]{insert snip of code.}
+
+Looping through the entiere segmentation matrix we identify all the datapoints where segmentation is one for the left hippocampus or two if we are trying to identify the right hippocampus. For each instance in segmentation we save the coordinate (i,j,k) and the mri(i,j,k) value in an array as v(1) = (i$_1$,j$_1$,k$_1$,mri(i$_1$,j$_1$,k$_1$)).\fixme[inline]{snip of main loop, explain left is also used incase of right}
+
+On the basis of this we can create a three-dimensional matrix which contains all the datapoints, hippoBox = max(i) - min(i) + 1 $\times$ max(j) - min(j) +1 $\times$ maj(k) - min(k) + 1.
+Then we simply loop through our array with the relevant data and input them into hippoBox, all other elements inside the matrix are set to NaN. \fixme[inline]{snip of last loop}
+
+The return value from the function is the matrix hippoBox containing only the relevant data.
+
+\section{Calculating GLCMs}
+
+ To calculate the GLCMs in two-dimensions we have taken advantage of matlabs built-in function graycomatrix. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.\fixme[inline]{snip af glcm2dallangels hvor vi udregner}
+
+We ultimately save all 90 glcms in a cell.\fixme[inline]{Fodnote der beksriver hvad en cell er?}
+
+To implement the three-dimensional GLCMs we have created our own function.
+
 
 \section{Calculatin the GLCM Features}
 
