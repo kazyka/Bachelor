@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  10 JUN 2016 15:01
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2√•r/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2√•r/Bachelor/Latex/Main.tex"
@@ -2185,7 +2185,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=90, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=86, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2196,7 +2196,7 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=93, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=89, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
  <use include/nat-en.pdf>
 Package pdftex.def Info: include/nat-en.pdf used on input line 47.
@@ -2287,6 +2287,13 @@ Chapter 2.
 
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
 \openout2 = `chapters/Method.aux'.
 
  (chapters/Method.tex
@@ -2304,10 +2311,10 @@ FiXme Note: 'level or intensity?' on input line 22.
 FiXme Note: 'rigtigt offset?' on input line 22.
 
 
-LaTeX Warning: Marginpar on page 5 moved.
+LaTeX Warning: Marginpar on page 6 moved.
 
 FiXme Note: '\IeC {\ae }ndre til $COM_{(0,1)}...$ osv' on input line 25.
-[5
+[6
 
 
 
@@ -2322,7 +2329,7 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/2DCOM-eps-converted-to.pdf, id=230, 361.35pt x 201.75375pt>
+ <pictures/2DCOM-eps-converted-to.pdf, id=231, 361.35pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2340,7 +2347,7 @@ Package epstopdf Info: Source file: <pictures/GLCM.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/GLCM-eps-converted-to.pdf, id=231, 389.455pt x 199.74625pt>
+<pictures/GLCM-eps-converted-to.pdf, id=232, 389.455pt x 199.74625pt>
 File: pictures/GLCM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/GLCM-eps-converted-to.pdf>
@@ -2362,7 +2369,7 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=232, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=233, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
@@ -2376,7 +2383,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./pictures/2DCOM-eps-converted-to.pdf> <./pictures/GLCM-eps-converted-to.pd
+[7 <./pictures/2DCOM-eps-converted-to.pdf> <./pictures/GLCM-eps-converted-to.pd
 f>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2384,7 +2391,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./pictures/3DCOM-eps-converted-to.pdf>]
+[8 <./pictures/3DCOM-eps-converted-to.pdf>]
 FiXme Note: 'how does this remove overfitting?' on input line 70.
 
 
@@ -2393,7 +2400,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[9]
 Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 (epstopdf)                    date: 2016-06-10 13:21:44
 (epstopdf)                    size: 21824 bytes
@@ -2402,17 +2409,24 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 (epstopdf)                    size: 10349 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/KNNK5-eps-converte
 d-to.pdf pictures/KNNK5.eps>
-(epstopdf)             \includegraphics on input line 91.
+(epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=274, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=282, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/KNNK5-eps-converted-to.pdf used on input line
- 91.
+ 114.
 (pdftex.def)             Requested size: 236.0838pt x 154.17719pt.
 
-Overfull \hbox (16.99837pt too wide) in paragraph at lines 99--100
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./pictures/KNNK5-eps-converted-to.pdf>]
+Overfull \hbox (16.99837pt too wide) in paragraph at lines 122--123
 \T1/futs/m/n/10.95 sample $\FML/futmi/m/it/10.95 x[]$ \T1/futs/m/n/10.95 and $\
 FML/futmi/m/it/10.95 x[]$\T1/futs/m/n/10.95 , $\FML/futmi/m/it/10.95 l \FMS/fut
 m/m/n/10.95 Å \T1/futs/m/n/10.95 1\FML/futmi/m/it/10.95 ; \T1/futs/m/n/10.95 2\
@@ -2421,13 +2435,6 @@ t/10.95 d\T1/futs/m/n/10.95 (\FML/futmi/m/it/10.95 x[]; x[]\T1/futs/m/n/10.95 )
  \FMS/futm/m/n/10.95 Å []$ 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 25.19173pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9 <./pictures/KNNK5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-10 13:09:38
 (epstopdf)                    size: 16403 bytes
@@ -2437,15 +2444,15 @@ Package epstopdf Info: Source file: <pictures/noterodeSlice10x.eps>
 (epstopdf)                    size: 3844 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/noterodeSlice10x-e
 ps-converted-to.pdf pictures/noterodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=289, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=310, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/noterodeSlice10x-eps-converted-to.pdf used on
- input line 108.
+ input line 131.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 Package epstopdf Info: Source file: <pictures/erodeSlice10x.eps>
 (epstopdf)                    date: 2016-06-10 13:09:48
@@ -2456,18 +2463,18 @@ f>
 (epstopdf)                    size: 3814 bytes
 (epstopdf)             Command: <epstopdf --outfile=pictures/erodeSlice10x-eps-
 converted-to.pdf pictures/erodeSlice10x.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 136.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=290, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=311, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
 Package pdftex.def Info: pictures/erodeSlice10x-eps-converted-to.pdf used on in
-put line 113.
+put line 136.
 (pdftex.def)             Requested size: 168.627pt x 126.47025pt.
 
-Overfull \hbox (1.71913pt too wide) in paragraph at lines 106--116
+Overfull \hbox (1.71913pt too wide) in paragraph at lines 129--139
 []$[]$ $[]$ 
  []
 
@@ -2477,7 +2484,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./pictures/noterodeSlice10x-eps-converted-to.pdf> <./pictures/erodeSlice10
+[11 <./pictures/noterodeSlice10x-eps-converted-to.pdf> <./pictures/erodeSlice10
 x-eps-converted-to.pdf>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2485,12 +2492,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[12]
 \openout2 = `chapters/Implementation.aux'.
 
  (chapters/Implementation.tex
 Chapter 4.
-) [12
+) [13
 
 
 
@@ -2499,7 +2506,7 @@ Chapter 4.
 
  (chapters/Result.tex
 Chapter 5.
-) [13
+) [14
 
 
 
@@ -2508,7 +2515,7 @@ Chapter 5.
 
  (chapters/Discussion.tex
 Chapter 6.
-) [14
+) [15
 
 
 
@@ -2517,11 +2524,11 @@ Chapter 6.
 
  (chapters/Conclusion.tex
 Chapter 7.
-) [15
+) [16
 
 
 
-] [16
+] [17
 
 
 
@@ -2531,7 +2538,7 @@ Chapter 7.
 
  (appendix/derivationImageTexture.tex
 Appendix A.
-[17
+[18
 
 
 ])
@@ -2541,7 +2548,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] (Main.bbl
+[19] (Main.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -2563,7 +2570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--18
 wikipedia . org / wiki / Pearson _
  []
 
-) [19
+) [20
 
 
 
@@ -2776,16 +2783,16 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 68ED0AEA422A9EE1B9AEA8BD7E253987;1325.
+(rerunfilecheck)             Checksum: 8FEA39397296E20A3D15D5B6B49B5F6B;1234.
  ) 
 Here is how much of TeX's memory you used:
- 43822 strings out of 493634
- 971402 string characters out of 3141315
- 1323884 words of memory out of 3000000
- 46286 multiletter control sequences out of 15000+200000
- 131074 words of font info for 144 fonts, out of 3000000 for 9000
+ 44105 strings out of 493634
+ 973661 string characters out of 3141315
+ 1337607 words of memory out of 3000000
+ 46546 multiletter control sequences out of 15000+200000
+ 131491 words of font info for 146 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,19n,85p,10528b,1173s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,85p,10528b,1885s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Baby-/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/B
@@ -2799,9 +2806,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (23 pages, 262854 bytes).
+Output written on Main.pdf (24 pages, 273789 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 446 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

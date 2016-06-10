@@ -129,14 +129,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="312.66145"
+     inkscape:cx="198.37574"
      inkscape:cy="592.61105"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -147,7 +147,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -305,7 +305,7 @@
              height="19.192862"
              width="91.923897"
              id="rect6624-5-7" /></flowRegion><flowPara
-           id="flowPara6652-6">135 [-1 0]</flowPara></flowRoot>      <flowRoot
+           id="flowPara6652-6">  90  [-1 0]</flowPara></flowRoot>      <flowRoot
          transform="matrix(0.56729896,0,0,0.47224684,247.25281,148.76878)"
          style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot6656-0"
@@ -331,7 +331,7 @@
              height="19.192862"
              width="91.923897"
              id="rect6624-5-5" /></flowRegion><flowPara
-           id="flowPara6652-8">90 [-1 1]</flowPara></flowRoot>      <flowRoot
+           id="flowPara6652-8">45  [-1 1]</flowPara></flowRoot>      <flowRoot
          transform="matrix(0.56729896,0,0,0.47224684,383.21986,164.93123)"
          style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot6656-3"
