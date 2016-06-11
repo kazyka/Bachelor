@@ -1,7 +1,7 @@
 \chapter{Implementation}
 
-\section{Preperation of Data}
-The mri files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
+\section{Preparation of Data}
+The MRI files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
 We have created the function HippoMatrix, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
 First we assign a value based on if we are looking for the right hippocampus, as they are associeated with 1 and 2 respectfully.
 If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use matlabs build in function imerode to perform the erosion. \fixme[inline]{insert snip of code.+ link imerode page}
@@ -13,7 +13,34 @@ Then we simply loop through our array with the relevant data and input them into
 
 The return value from the function is the matrix hippoBox containing only the relevant data.
 
-\section{Calculating GLCMs}
+\section{Data Calculations}
+
+In our function file, we do a lot of stuff that will be described in details. But in this file, we load our labels file, and take care of calculating every patient file to find a GLCM and from this GLCM we find the GLCM features.
+
+First we check wether we have a patient with AD or not and name them respectively to their group.
+
+Now we calculate the GLCM for the 2D and 3D which we have two function doing the work. These functions, \texttt{glcm2dFast} and \texttt{GLCM3D}, take the \texttt{HippoMatrix} data, as mentioned in preparation data, and the desired distance that we wish to calculate to.
+
+Now we initiate two cells for the GLCM Features which we derivative using the function \texttt{GLCMDerivations} which will take the GLCM data and if we wish to normalize the GLCM or not as input.
+
+\begin{lstlisting}[language=Matlab]
+        data_glcm2D = glcm2dFast(HippoMatrix(files(j).name, erode, leftright), 10);
+        data_glcm3D = GLCM3D(HippoMatrix(files(j).name, erode, leftright),10);
+
+        data_Derivations2D = cell(90, 1);
+        data_Derivations3D = cell(130, 1);
+
+        for k = 1:size(data_Derivations2D, 1)
+            data_Derivations2D{k} = GLCMDerivations(data_glcm2D{k}, norm);
+        end
+        for k = 1:size(data_Derivations3D, 1)
+            data_Derivations3D{k} = GLCMDerivations(data_glcm3D{k}, norm);
+        end
+\end{lstlisting}
+
+Lastly we save the data to their respectively folders.
+
+\subsection{Calculating GLCMs}
 
 To calculate the GLCMs in two-dimensions we have taken advantage of matlabs built-in function graycomatrix. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.\fixme[inline]{snip af glcm2dallangels hvor vi udregner}
 
@@ -27,7 +54,9 @@ Given that the datapoint is relevant, i.e. larger than zero, we then have to loo
 \fixme[inline]{indsæt en if statement}
 
 
-\section{Calculating(Computing) the GLCM Features}
+\subsection{Calculating(Computing) the GLCM Features}
+
+\fxnote[inline]{Snak om Datacalculation filen}
 
 In the implementation of the GLCM Feature derivation we are taking two inputs. The first input variable is the GLCM matrix and the second is wether we wish to normalize the data.
 
@@ -62,9 +91,22 @@ stats.entropy                            = HXY;
 stats.differenceVariance                 = var(cXminusY);
 stats.differenceEntropy                  = nansum(cXminusY.*log(cXminusY));
 stats.informationMeasuresOfCorrelation1  = (HXY - HXY1)./(max(HX,HY));
+if (strcmp(norm, 'normalize') == 1)
+    stats.informationMeasuresOfCorrelation2  = sqrt(1-exp(-2.*(HXY2 - HXY)));
+else
+    stats.informationMeasuresOfCorrelation2  = NaN;
+end
 \end{lstlisting}
 
 
-\section{Plotting the GLCm features}
-Now that we have calculated the 13 GLCM features, we can plot them. Remember that one GLCM matrix have one specific distance for a specific offset, so this equals 90 GLCMs for the 2D, after some cuts and 130 GLCMs for the 3D version.
+As seen from line 19 to 23, we have an if-statement. This checks if we call our plot on the normalized data or not, since the values on \texttt{informationMeasuresOfCorrelation2} end up being $\pm \infty$ when the data are not normalized. \fxnote[inline]{Snakke om hvorfor normalized data. Features vi har valgt fra freebourug har gjort det og måske gjort i det mente om at de kan ende med pæne værdier -- i method muligvis}
+
+
+\section{Plotting the GLCM features}
+Now that we have calculated the 13 GLCM features, we can plot them. Remember that one GLCM matrix have one specific distance for a specific offset, so this equals 90 GLCMs for the 2D, after some cuts and 130 GLCMs for the 3D version. To plot, you would simply have to call the function \texttt{simpleAllplot} that takes 4 inputs, the \texttt{DATA} which are the GLCM data, \texttt{NumberOfPatients} i.e. how many patients we wish to plot, \texttt{looping} which tells the function how many features it should count on, counting from feature one and Lastly in the \texttt{simpleAllplot} function we give us self the possibility to chose between plotting the mean values, for a specific number of patients or both.
+
+We have discussed how our plain data is sorted when \texttt{datacalculation}, now we wish to sort it differently for our plots, so it is easier to handle. Since we have 13 GLCM features  we create 13 cells to easier name our plots for the for loop sorting the data. The way we chose to sort our data is to have it in the following way \texttt{Dataset(NumberOfPatients*10, 9, 13)}. So we have 9 subplots per Feature where each subplot for every plot have distance 1 to 10 \fxnote[inline]{Plot af en Metric}
+
+
+
 

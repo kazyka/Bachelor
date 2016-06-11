@@ -15,12 +15,14 @@
 \contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{11}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{12}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Preperation of Data}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Calculating GLCMs}{14}{section.4.2}
-\contentsline {section}{\numberline {4.3}Calculating(Computing) the GLCM Features}{15}{section.4.3}
-\contentsline {chapter}{\numberline {5}Result}{17}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{18}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{19}{chapter.7}
-\contentsline {chapter}{Appendices}{20}{section*.13}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{21}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{23}{equation.a.A.0.20}
+\contentsline {section}{\numberline {4.1}Preparation of Data}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data Calculations}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Calculating GLCMs}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Calculating(Computing) the GLCM Features}{16}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Plotting the GLCM features}{17}{section.4.3}
+\contentsline {chapter}{\numberline {5}Result}{18}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{20}{chapter.7}
+\contentsline {chapter}{Appendices}{21}{section*.13}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{22}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{24}{equation.a.A.0.20}

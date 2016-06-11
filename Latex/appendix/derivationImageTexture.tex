@@ -24,7 +24,9 @@ and \ref{Correlation} is the Correlation
 \begin{equation}\label{Correlation}
   f_3 = \frac{\sum_{i=1}^{N}\sum_{j=1}^{n} i j C(i,j) - \mu_x \mu_y}{\sigma_x\sigma_y}
 \end{equation}
-and \ref{Variance} is the Variance
+where $\mu_x$, $\mu_y$, $\sigma_x$ and $\sigma_y$ are the means and standard deviations of $C_x$ and $C_y$ respectively.
+
+The \ref{Variance} is the Variance
 \begin{equation}\label{Variance}
   f_4 = \sum_{i=1}^{N}\sum_{j=1}^{N}(i-\mu)^2 C(i,j)
 \end{equation}
@@ -73,4 +75,4 @@ Where HX and HY are the entropies of $C_x$ and $C_y$ and
 \end{equation}
 \begin{equation}\label{HXY2}
   HXY2 = -\sum_{i=1}^{N}\sum_{j=1}^{N}C_x(i)C_y(j)\log\{C_x(i)C_y(j)\}
-\end{equation}
+\end{equation} 
