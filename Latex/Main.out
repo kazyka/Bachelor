@@ -19,9 +19,10 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Calculating GLCMs}{section.4.2}% 19
 \BOOKMARK [2][-]{subsection.4.2.2}{Calculating\(Computing\) the GLCM Features}{section.4.2}% 20
 \BOOKMARK [1][-]{section.4.3}{Plotting the GLCM features}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Result}{}% 22
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 23
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 24
-\BOOKMARK [0][-]{section*.13}{Appendices}{}% 25
-\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 26
-\BOOKMARK [0][-]{equation.a.A.0.20}{Litteratur}{}% 27
+\BOOKMARK [1][-]{section.4.4}{Forward feature selection}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Result}{}% 23
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 24
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 25
+\BOOKMARK [0][-]{section*.13}{Appendices}{}% 26
+\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 27
+\BOOKMARK [0][-]{equation.a.A.0.20}{Litteratur}{}% 28
