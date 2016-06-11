@@ -26,12 +26,9 @@ The reason we also insist that it should also be larger than zero is because a f
 Given that the datapoint is relevant, i.e. larger than zero, we then have to look at the thirteen offsets, to see if we need to increment an element in on of the GLCMs. For each offset check if the offset is inside the hippobox, and is the offset elemnt a non NaN nonzero value. If so we then increment the relevant GLCM, lets say it is the offset(d,0,0), d = 1, in element GLCM$_(d,0,0)$(x,y) (hippoBox(i,j,k),hippoBox(i+1,j,k)).
 \fixme[inline]{indsæt en if statement}
 
-
-
-Skriv vi har valgt sjove vinkler..
-
-
-
+We have defined our thirteen offsets as {(d,0,0),(d,0,d),(0,0,d),(-d,0,d),(d,-d,0),(d,-d,d),(0,-d,d),(-d,-d,d),(-d,-d,0),(-d,-d,-d),(0,-d,-d),(d,-d,-d)(0,-d,0)}.
+Because of the relationship between the offsets, as in GLCM$_(d,0,0)$ = GLCM$_(-d,0,0)^T$, the results do not change depending of the dimensions as long as there are no offsets where offset$_i$ = offset$_j^T$ holds.
+We calculate those thirteen offsets for distances one through ten, and save all 130 GLCMS in a cell.
 
 \section{Naive feature}
 only done it 3D
