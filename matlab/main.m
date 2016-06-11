@@ -51,6 +51,7 @@ NumberOfPatients = 100;
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
 simpleAllplot(DATA2D, NumberOfPatients, 1, 'simple');
+plot3D(DATA3D, NumberOfPatients, 13, 'both');
 
 
 %----SKAL TILPASSES NY DATALOADER----% dataloader(NumberOfPatients , start, 'left/right', 'normal/normalize', 'erode/noterode');
