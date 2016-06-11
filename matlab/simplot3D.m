@@ -1,4 +1,4 @@
-function simpleplot(data, figname, variable_index)
+function simplot3D(data, figname, variable_index)
 
 %Plotter for data og variablen
 %Distance 1-10, angle, plan, my_asm
