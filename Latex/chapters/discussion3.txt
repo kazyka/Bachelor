@@ -1,0 +1,11 @@
+Overfitting
+
+
+Is the data overfitted? yes why is it overfitted? happens in feature selection? why does ith appen?
+
+
+
+In the forward feature selection algorithm we attempt to avoid overfitting by creating a 10-fold cross validation, but in order to avoid overfitting more successfully it would be a better idea to keep randomizing the folds, our implementation creates the folds firstly and then run the entire feature selection without shuffling the folds. Since we do not reshuffle the data we are making our feature selection biased towards this specific partition. We can see this bias by running a test using our forward feature selection on 60 patients, and using the last 40 to test.
+Running the feature selection on the data gained from using three-dimensional GLCMs with erosion and normalizing, and using 10-fold cross validation, with 6 (3 Control and 3 AD) in each folds. The feature selection results in an accuracy of 98% on knn model, with k = 1. However testing this model on the remaining 40 patients using 10-fold cross validation with 4(2 Control and 2 AD) in each fold, the accuracy is instead 80% and the best k value for the knn model is instead  k = 3 or k = 5.
+Running the same test on the two-dimensional we get an accuracy of 95% with optimal k = 1 or k = 3, where each k does not select the same features but do have some overlap. The model created using the features from the first k gives us an accuracy of 82.50% when validating with the test set and optimal k = 9, the other model has an accuracy of 80%, obtained for each of k ={2,3,5,7}.
+This biased could have been prevented by shuffled the data a significant amount times, and for each sample run a 10-fold cross-validation to test each feature, this however would be very computational heavy, as each feature selection already takes roughly 30 minutes to run.
