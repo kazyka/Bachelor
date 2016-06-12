@@ -22,9 +22,9 @@
 \contentsline {subsection}{\numberline {4.3.1}Calculating(Computing) the GLCM Features}{16}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Plotting the GLCM features}{17}{section.4.4}
 \contentsline {section}{\numberline {4.5}Forward feature selection}{18}{section.4.5}
-\contentsline {chapter}{\numberline {5}Result}{19}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{20}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{21}{chapter.7}
-\contentsline {chapter}{Appendices}{22}{section*.13}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{23}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{25}{equation.a.A.0.20}
+\contentsline {chapter}{\numberline {5}Result}{20}{chapter.5}
+\contentsline {chapter}{\numberline {6}Discussion}{21}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{22}{chapter.7}
+\contentsline {chapter}{Appendices}{23}{section*.14}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{24}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{26}{equation.a.A.0.20}

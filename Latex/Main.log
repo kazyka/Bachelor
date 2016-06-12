@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  12 JUN 2016 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  12 JUN 2016 19:41
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2304,7 +2304,7 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/2DCOM-eps-converted-to.pdf, id=317, 365.365pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=319, 365.365pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2322,7 +2322,7 @@ ed-to.pdf pictures/ImageI.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/ImageI-eps-converted-to.pdf, id=319, 123.46124pt x 123.46124pt>
+<pictures/ImageI-eps-converted-to.pdf, id=321, 123.46124pt x 123.46124pt>
 File: pictures/ImageI-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/ImageI-eps-converted-to.pdf>
@@ -2340,7 +2340,7 @@ to.pdf pictures/C01.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/C01-eps-converted-to.pdf, id=320, 149.55875pt x 152.57pt>
+<pictures/C01-eps-converted-to.pdf, id=322, 149.55875pt x 152.57pt>
 File: pictures/C01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/C01-eps-converted-to.pdf>
@@ -2362,7 +2362,7 @@ rted-to.pdf pictures/Cminus11.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus11-eps-converted-to.pdf, id=321, 148.555pt x 152.57pt>
+<pictures/Cminus11-eps-converted-to.pdf, id=323, 148.555pt x 152.57pt>
 File: pictures/Cminus11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus11-eps-converted-to.pdf>
@@ -2380,7 +2380,7 @@ rted-to.pdf pictures/Cminus10.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus10-eps-converted-to.pdf, id=322, 149.55875pt x 152.57pt>
+<pictures/Cminus10-eps-converted-to.pdf, id=324, 149.55875pt x 152.57pt>
 File: pictures/Cminus10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus10-eps-converted-to.pdf>
@@ -2399,7 +2399,7 @@ converted-to.pdf pictures/Cminus1minus1.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus1minus1-eps-converted-to.pdf, id=323, 148.555pt x 152.57pt>
+<pictures/Cminus1minus1-eps-converted-to.pdf, id=325, 148.555pt x 152.57pt>
 File: pictures/Cminus1minus1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus1minus1-eps-converted-to.pdf>
@@ -2430,7 +2430,7 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=337, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=339, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
@@ -2474,7 +2474,7 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 d-to.pdf pictures/KNNK5.eps>
 (epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=414, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=416, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
@@ -2510,7 +2510,7 @@ ps-converted-to.pdf pictures/noterodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=432, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=434, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
@@ -2529,7 +2529,7 @@ converted-to.pdf pictures/erodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=433, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=435, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
@@ -2690,7 +2690,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 FiXme Note: 'Snakke om hvorfor normalized data. Features vi har valgt fra freeb
 ourug har gjort det og m\IeC {\r a}ske gjort i det mente om at de kan ende med 
 p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis' on input line 115.
-FiXme Note: 'Plot af en Metric' on input line 121.
+Package epstopdf Info: Source file: <pictures/ASMerode.eps>
+(epstopdf)                    date: 2016-06-12 18:05:24
+(epstopdf)                    size: 1941457 bytes
+(epstopdf)             Output file: <pictures/ASMerode-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 18:06:17
+(epstopdf)                    size: 358819 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/ASMerode-eps-conve
+rted-to.pdf pictures/ASMerode.eps>
+(epstopdf)             \includegraphics on input line 125.
+Package epstopdf Info: Output file is already uptodate.
+ <pictures/ASMerode-eps-converted-to.pdf, id=503, 421.575pt x 316.18124pt>
+File: pictures/ASMerode-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pictures/ASMerode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/ASMerode-eps-converted-to.pdf used on input l
+ine 125.
+(pdftex.def)             Requested size: 274.0205pt x 205.51537pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2698,19 +2714,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17])
+[17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 25.19173pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[18 <./pictures/ASMerode-eps-converted-to.pdf>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
 \openout2 = `chapters/Result.aux'.
 
  (chapters/Result.tex
 Chapter 5.
-) [19
+) [20
 
 
 
@@ -2719,7 +2742,7 @@ Chapter 5.
 
  (chapters/Discussion.tex
 Chapter 6.
-) [20
+) [21
 
 
 
@@ -2728,11 +2751,11 @@ Chapter 6.
 
  (chapters/Conclusion.tex
 Chapter 7.
-) [21
+) [22
 
 
 
-] [22
+] [23
 
 
 
@@ -2742,7 +2765,7 @@ Chapter 7.
 
  (appendix/derivationImageTexture.tex
 Appendix A.
-[23
+[24
 
 
 ])
@@ -2752,7 +2775,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] (Main.bbl
+[25] (Main.bbl
 Underfull \hbox (badness 4832) in paragraph at lines 9--12
 []\T1/futs/m/n/10.95 Mathworks gray-copros.  [][]$\T1/pcr/m/n/10.95 http : / / 
 se . mathworks . com / help / images / ref /
@@ -2764,7 +2787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--18
 wikipedia . org / wiki / Pearson _
  []
 
-[25
+[26
 
 
 
@@ -2775,16 +2798,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[27]
 runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 13,
+FiXme Summary: Number of notes: 12,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 8,
-(FiXme)        Total: 21.
+(FiXme)        Total: 20.
 
 
 AED: lastpage setting LastPage
@@ -2974,6 +2997,7 @@ chapters/Implementation.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 lstlang1.sty    2015/06/04 1.6 listings language file
  ts1futs.fd    2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+pictures/ASMerode-eps-converted-to.pdf
 chapters/Result.tex
 chapters/Discussion.tex
 chapters/Conclusion.tex
@@ -2984,13 +3008,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: B47E40B391F11C9E8A267742827C5886;1861.
+(rerunfilecheck)             Checksum: 3A2B0CE3CE3AD6092534BEC5BA22523B;1861.
  ) 
 Here is how much of TeX's memory you used:
- 44597 strings out of 493634
- 980103 string characters out of 3141315
- 1330163 words of memory out of 3000000
- 46966 multiletter control sequences out of 15000+200000
+ 44606 strings out of 493634
+ 980368 string characters out of 3141315
+ 1330443 words of memory out of 3000000
+ 46972 multiletter control sequences out of 15000+200000
  141409 words of font info for 164 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,1926s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3007,9 +3031,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (30 pages, 354099 bytes).
+Output written on Main.pdf (31 pages, 713474 bytes).
 PDF statistics:
- 676 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 328 words of extra memory for PDF output out of 10000 (max. 10000000)
 
