@@ -1,7 +1,7 @@
 \chapter{Implementation}
 
 \section{Preparation of Data}
-The MRI files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
+The mri files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
 We have created the function HippoMatrix, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
 First we assign a value based on if we are looking for the right hippocampus, as they are associeated with 1 and 2 respectfully.
 If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use matlabs build in function imerode to perform the erosion. \fixme[inline]{insert snip of code.+ link imerode page}
@@ -53,6 +53,19 @@ The reason we also insist that it should also be larger than zero is because a f
 Given that the datapoint is relevant, i.e. larger than zero, we then have to look at the thirteen offsets, to see if we need to increment an element in on of the GLCMs. For each offset check if the offset is inside the hippobox, and is the offset elemnt a non NaN nonzero value. If so we then increment the relevant GLCM, lets say it is the offset(d,0,0), d = 1, in element GLCM$_(d,0,0)$(x,y) (hippoBox(i,j,k),hippoBox(i+1,j,k)).
 \fixme[inline]{indsæt en if statement}
 
+We have defined our thirteen offsets as \{(d,0,0),(d,0,d),(0,0,d),(-d,0,d),(d,-d,0),(d,-d,d),(0,-d,d),(-d,-d,d),(-d,-d,0),(-d,-d,-d),(0,-d,-d),(d,-d,-d)(0,-d,0)\}.
+Because of the relationship between the offsets, as in GLCM$_{(d,0,0)}$ = GLCM$_{(-d,0,0)}^T$, the results do not change depending of the dimensions as long as there are no offsets where offset$_i$ = offset$_j^T$ holds.
+We calculate those thirteen offsets for distances one through ten, and save all 130 GLCMS in a cell.
+\fixme[inline]{indsæt en if statement}
+
+\section{Naive feature}
+only done it 3D
+Left Hippo
+Features selected: 8
+Imoc2: A7D2, A3D3, A13D3
+Imoc1: A13D9, A7D6
+Entro: A13D10, A7D6
+SumAv: A7D6
 
 \subsection{Calculating(Computing) the GLCM Features}
 

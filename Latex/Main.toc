@@ -18,9 +18,10 @@
 \contentsline {section}{\numberline {4.1}Preparation of Data}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Data Calculations}{14}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Calculating GLCMs}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Calculating(Computing) the GLCM Features}{16}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Plotting the GLCM features}{17}{section.4.3}
-\contentsline {section}{\numberline {4.4}Forward feature selection}{17}{section.4.4}
+\contentsline {section}{\numberline {4.3}Naive feature}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Calculating(Computing) the GLCM Features}{16}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Plotting the GLCM features}{17}{section.4.4}
+\contentsline {section}{\numberline {4.5}Forward feature selection}{18}{section.4.5}
 \contentsline {chapter}{\numberline {5}Result}{19}{chapter.5}
 \contentsline {chapter}{\numberline {6}Discussion}{20}{chapter.6}
 \contentsline {chapter}{\numberline {7}Conclusion}{21}{chapter.7}

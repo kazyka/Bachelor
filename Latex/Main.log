@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  11 JUN 2016 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  12 JUN 2016 16:02
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -2136,7 +2136,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=118, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=122, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2147,7 +2147,7 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=121, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=125, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
 
 <use include/nat-en.pdf>
@@ -2304,7 +2304,7 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/2DCOM-eps-converted-to.pdf, id=310, 365.365pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=317, 365.365pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2322,7 +2322,7 @@ ed-to.pdf pictures/ImageI.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/ImageI-eps-converted-to.pdf, id=312, 123.46124pt x 123.46124pt>
+<pictures/ImageI-eps-converted-to.pdf, id=319, 123.46124pt x 123.46124pt>
 File: pictures/ImageI-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/ImageI-eps-converted-to.pdf>
@@ -2340,7 +2340,7 @@ to.pdf pictures/C01.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/C01-eps-converted-to.pdf, id=313, 149.55875pt x 152.57pt>
+<pictures/C01-eps-converted-to.pdf, id=320, 149.55875pt x 152.57pt>
 File: pictures/C01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/C01-eps-converted-to.pdf>
@@ -2362,7 +2362,7 @@ rted-to.pdf pictures/Cminus11.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus11-eps-converted-to.pdf, id=314, 148.555pt x 152.57pt>
+<pictures/Cminus11-eps-converted-to.pdf, id=321, 148.555pt x 152.57pt>
 File: pictures/Cminus11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus11-eps-converted-to.pdf>
@@ -2380,7 +2380,7 @@ rted-to.pdf pictures/Cminus10.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus10-eps-converted-to.pdf, id=315, 149.55875pt x 152.57pt>
+<pictures/Cminus10-eps-converted-to.pdf, id=322, 149.55875pt x 152.57pt>
 File: pictures/Cminus10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus10-eps-converted-to.pdf>
@@ -2399,7 +2399,7 @@ converted-to.pdf pictures/Cminus1minus1.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus1minus1-eps-converted-to.pdf, id=316, 148.555pt x 152.57pt>
+<pictures/Cminus1minus1-eps-converted-to.pdf, id=323, 148.555pt x 152.57pt>
 File: pictures/Cminus1minus1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus1minus1-eps-converted-to.pdf>
@@ -2430,7 +2430,7 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=330, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=337, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
@@ -2474,7 +2474,7 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 d-to.pdf pictures/KNNK5.eps>
 (epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=407, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=414, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
@@ -2510,7 +2510,7 @@ ps-converted-to.pdf pictures/noterodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=425, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=432, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
@@ -2529,7 +2529,7 @@ converted-to.pdf pictures/erodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=426, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=433, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
@@ -2647,11 +2647,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15]
-FiXme Note: 'Snak om Datacalculation filen' on input line 59.
-FiXme Note: 'Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud' o
-n input line 65.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 76.
 
+Package FiXme Warning: \fixme is deprecated;
+(FiXme)                please use \fxfatal instead on input line 59.
+
+
+FiXme Fatal Error: 'inds\IeC {\ae }t en if statement' on input line 59.
+
+
+Overfull \hbox (10.48988pt too wide) in paragraph at lines 56--60
+[]\T1/futs/m/n/10.95 We have defined our thir-teen off-sets as {(d,0,0),(d,0,d)
+,(0,0,d),(-d,0,d),(d,-d,0),(d,-d,d),(0,-d,d),(-
+ []
+
+
+Overfull \hbox (1.18608pt too wide) in paragraph at lines 56--60
+\T1/futs/m/n/10.95 d,-d,d),(-d,-d,0),(-d,-d,-d),(0,-d,-d),(d,-d,-d)(0,-d,0)}. B
+e-cause of the re-la-tion-ship between the
+ []
+
+FiXme Note: 'Snak om Datacalculation filen' on input line 72.
+FiXme Note: 'Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud' o
+n input line 78.
+FiXme Note: 'Snakke om optimeret alts\IeC {\r a} filerne Cx+-y' on input line 8
+0.
+
+LaTeX Warning: Marginpar on page 16 moved.
+
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 89.
 
 ("C:\Users\Baby-\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd
 "
@@ -2666,8 +2689,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [16]
 FiXme Note: 'Snakke om hvorfor normalized data. Features vi har valgt fra freeb
 ourug har gjort det og m\IeC {\r a}ske gjort i det mente om at de kan ende med 
-p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis' on input line 102.
-FiXme Note: 'Plot af en Metric' on input line 108.
+p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis' on input line 115.
+FiXme Note: 'Plot af en Metric' on input line 121.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2757,11 +2780,11 @@ runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
 
-FiXme Summary: Number of notes: 12,
+FiXme Summary: Number of notes: 13,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
-(FiXme)        Number of fatal errors: 7,
-(FiXme)        Total: 19.
+(FiXme)        Number of fatal errors: 8,
+(FiXme)        Total: 21.
 
 
 AED: lastpage setting LastPage
@@ -2961,13 +2984,13 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 557A30A8F0A6F584A578887338EFB033;1800.
+(rerunfilecheck)             Checksum: B47E40B391F11C9E8A267742827C5886;1861.
  ) 
 Here is how much of TeX's memory you used:
- 44595 strings out of 493634
- 980079 string characters out of 3141315
- 1342097 words of memory out of 3000000
- 46965 multiletter control sequences out of 15000+200000
+ 44597 strings out of 493634
+ 980103 string characters out of 3141315
+ 1330163 words of memory out of 3000000
+ 46966 multiletter control sequences out of 15000+200000
  141409 words of font info for 164 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,1926s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2984,9 +3007,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (30 pages, 351744 bytes).
+Output written on Main.pdf (30 pages, 354099 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
