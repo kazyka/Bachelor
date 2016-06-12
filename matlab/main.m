@@ -20,6 +20,8 @@ load('2.mat');
 imagesc(squeeze(mri(70,:,:)))
 
 
+
+
 %KØR KUN HVIS DATA IKKE ER BLEVET KØRT FØR; ELLERS LOAD
 %HVIS UDREGNINGSMETODEN ER ÆNDRET; SÅ SKAL DEN KØRES IGEN
 %Kalder GLCM2D -> (glcm2dx,glcm2dy,glcm2dz) -> GLCM Toolbox
@@ -51,7 +53,7 @@ NumberOfPatients = 100;
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
 simpleAllplot(DATA2D, NumberOfPatients, 3, 'simple');
-plot3D(DATA3D, NumberOfPatients, 1, 'simple');
+plot3D(DATA3D, NumberOfPatients, 13, 'simple');
 
 
 %----SKAL TILPASSES NY DATALOADER----% dataloader(NumberOfPatients , start, 'left/right', 'normal/normalize', 'erode/noterode');

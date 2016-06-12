@@ -5,5 +5,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Accuracy for number of features with a unknown k value, we looked after the best accuracy. So this table tells us that no matter what, we would get the best accuracy with only 4 features selected\relax }}{29}{table.caption.27}
+\contentsline {table}{\numberline {6.2}{\ignorespaces For feature 3 and feature 1, where it seem that we get the best accuracy with feature 4 and 5\relax }}{29}{table.caption.28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

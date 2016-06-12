@@ -1,7 +1,56 @@
 \chapter{Discussion}
+%
+%In this paper when calculating the GLCMs we have chosen to work with offsets similar to those used in the paper by Peter A. Freeborough and Nick C. Fox \cite{MRfreeborough} in contrast to the radius method used by Rouzbeh Maani, Yee Hong Yang, Sanjay Kalra \cite{Voxel}.
+%The reason we chose to work with offsets is because we wished to compare our results with \cite{MRfreeborough}
 
-In this paper when calculating the GLCMs we have chosen to work with offsets similar to those used in the paper by Peter A. Freeborough and Nick C. Fox \cite{MRfreeborough} in contrast to the radius method used by Rouzbeh Maani, Yee Hong Yang, Sanjay Kalra \cite{Voxel}.
-The reason we chose to work with offsets is because we wished to compare our results with \cite{MRfreeborough}
+
+The advantage with using offsets compared to the radius computatinal wise is that despite an increase in distance the amount of angles does not increase, the amount of GLCMs to calculate are No. of offsets $\times$ distances, where as if we were to take the radius the No. of offsets at a given distance, increases with the distance, even when we take into account that we can ignore half of the angles. For  the radius the No. of GLCMs to calculate at distance d is equal to $\sigma_{i=1}^d$3$\cdot$i + 1. So for each additional distance one would have to calculate 3*d+1 additional GLCMS if we were using the radius, compared to just the four offsets. These calculations are just for the two-dimensional, where as in three dimensions this problem is amplified, as each increase in distance increases the number of GLCMS by $\frac{1}{2}$((2d+1)$^3$-1).\fixme[inline]{skriv pænt op} However as this clearly demonstrates the radius method would gather a lot more information, but considering that we have over a thousand features for each patients, we are not in need of more information. In addition the subject of this paper is inspired by the paper from Peter A. Freeborough and Nick C. Fox \cite{MRfreeborough}, so we are keeping our method similar to theirs, so it  is possible to compare the results.
+
+\section{GOD SECTION TITEL}
+In the previous chapter we saw the plots of our data, which are early AD patient, more specific 24-month follow-ups and controle. As our data consists of early AD patients, it can be very difficult to differentiate one from another and thus make it challenging to get some good results, specially if we are to select some features to do machine learning. But luckily we can lean on our algorithm to select features better than we can. In consideration of that we have to feature selection method, the first one is naive selection and the second one is Sequential Feature Selection.
+
+\subsection{Naive Selection}
+As described previously, often there is no clear visual difference in the plots of the GLCM features, which makes it hard to make a naive selections. This forces us to look after some kind of relationship in the slope, if the data increases or decreases from a distance to another or if either AD or control have a steep slope where the other would have a straight slope. We have chosen to only select features for GLCM 3D since we \fxnote[inline]{argument her} and the features are normalized and eroded.\\
+We have chosen to select the following 8 features. The Information measures of correlation 2 with the offsets \{(0 -2 2), (0 0 3), (0 -3 0)\} because we can se that generally the control data have a shift down, e.g. the slope is behaving differently than the slope for the AD patients. The next two we elected to our features are information measures of correlation 1 with offsets \{(0 -9 0), (0 -6 6)\} since the AD data seems to have lower values than the control and AD is more spread and has a steep sleep downwards compared to the control. Entropy with the offsets \{(0 -6 6), (0 -10 0)\} is chosen because the AD seems to be more spread and have lower values than control whereas the control is more concentrated in the same spot and the slope seems to be linear for the control. Lastly we have chosen Sum Average with only one offset \{(0 -6 6)\} and this is because it seems that the AD data deviate more than the control.
+
+We found the accuracy with crossvalidation\fxnote[inline]{Mere her}
+
+With our tests we came to the conclusion that we got the best accuracy for only 4 of our 8 features as seen in table \ref{tab:numberOfFeatures}. This table is compares the best accuracy we can get for an unspecific \textit{k} but compares how many features we have to chose out of the 8.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    0.79  & 0.83  & 0.84  & 0.85  & 0.79  & 0.79  & 0.79  & 0.79 \\
+    \hline
+    \end{tabular}%
+  \caption{Accuracy for number of features with a unknown k value, we looked after the best accuracy. So this table tells us that no matter what, we would get the best accuracy with only 4 features selected}\label{tab:numberOfFeatures}%
+\end{table}%
+
+The highest accuracy we end up with is 85\% for the 4 features selected. As you can see in table \ref{tab:AccuracyTable}, those features are feature 4, 5, 3 and 1 which is equivalent to IMOC2 angle 7 distance 2, IMOC2 angle 13 distance 3, IMOC1 angle 13 distance 9, IMOC1 angle 7 distance 6 \fxnote[inline]{Skriv de offsets her}.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+               &Feature 1 &Feature 2 &Feature 3 &Feature 4 &Feature 5 &Feature 6 &Feature 7 &Feature 8   \\ \hline
+     Featurea 1&        0 &        0 &        0 &        0 &        0 &        0 &        0 &        0   \\ \hline
+     Featurea 2&        0 &        0 &        0 &   0.7400 &   0.7900 &   0.8200 &   0.7800 &   0.7100   \\ \hline
+     Featurea 3&        0 &        0 &        0 &        0 &        0 &        0 &        0 &       0   \\ \hline
+     Featurea 4&        0 &   0 &        0 &        0 &   \textbf{0.8500} &   0.7900 &   0.8200 &  0.7400   \\ \hline
+     Featurea 5&        0 &   0 &        0 &   0 &        0 &   0.8000 &   0.7900 &  0.7000   \\ \hline
+     Featurea 6&        0 &   0 &        0 &   0 &  0 &        0 &   0.8100 &   0.7900   \\ \hline
+     Featurea 7&        0 &   0 &        0 &   0 &   0 &   0&        0 &   0.7200   \\ \hline
+     Featurea 8&        0 &   0 &        0 &   0 &   0 &   0 &   0 &       0   \\ 
+    \hline
+    \end{tabular}%
+  \caption{For feature 3 and feature 1, where it seem that we get the best accuracy with feature 4 and 5. The reason that rows for feature 3 and 1 are zeros is because those features are already selected.}\label{tab:AccuracyTable}%
+\end{table}%
+
+
+
+
+FFS vs naive selection
 
 
 lille intro :)
@@ -20,15 +69,14 @@ Diskutere valg af offsets og Offsets vs radius
 
 På baggrund af graferne hvorfor det kan være svært at få gode res.
 
-\section{GOD SECTION TITEL}
-In the previous chapter we saw the plots of our data, which are early AD patient, more specific 24-month follow-ups. As our data consists of early AD patients, it can be very difficult to differentiate one from another and thus make it challenging to get some good results, specially if we are to select some features to do machine learning. But luckily we can lean on our algorithm to select features better than we are. In consideration of that the data is so
 
-FFS vs naive selection
-
+Hvorfor har vi valgt de algoritmer vi har
 
 Hvorfor, hvorfor ikke normalisere.
 
 Diskutere Erode vs Ikke Erode
+
+Left Hippo vs right Hippo
 
 Snakke om 60/40
 

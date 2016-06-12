@@ -118,7 +118,7 @@ As seen from line 19 to 23, we have an if-statement. This checks if we call our 
 \section{Plotting the GLCM features}
 Now that we have calculated the 13 GLCM features, we can plot them. Remember that one GLCM matrix have one specific distance for a specific offset, so this equals 90 GLCMs for the 2D, after some cuts and 130 GLCMs for the 3D version. To plot, you would simply have to call the function \texttt{simpleAllplot} that takes 4 inputs, the \texttt{DATA} which are the GLCM data, \texttt{NumberOfPatients} i.e. how many patients we wish to plot, \texttt{looping} which tells the function how many features it should count on, counting from feature one and Lastly in the \texttt{simpleAllplot} function we give us self the possibility to chose between plotting the mean values, for a specific number of patients or both.
 
-We have discussed how our plain data is sorted when \texttt{datacalculation}, now we wish to sort it differently for our plots, so it is easier to handle. Since we have 13 GLCM features  we create 13 cells to easier name our plots for the for loop sorting the data. The way we chose to sort our data is to have it in the following way \texttt{Dataset(NumberOfPatients*10, 9, 13)}. So we have 9 subplots per Feature where each subplot for every plot have distance 1 to 10 
+We have discussed how our plain data is sorted when \texttt{datacalculation}, now we wish to sort it differently for our plots, so it is easier to handle. Since we have 13 GLCM features  we create 13 cells to easier name our plots for the for loop sorting the data. The way we chose to sort our data is to have it in the following way \texttt{Dataset(NumberOfPatients*10, 9, 13)}. So we have 9 subplots per Feature where each subplot for every plot have distance 1 to 10
 
 \begin{figure}[H]
   \centering
@@ -149,4 +149,6 @@ We then find the feature with the highest accuracy and for the next iteration of
 Where horzcat is a horizontal concatenation of matrices.
 If the best evaluation of the features is worse than if no new feature is selected the algorithm breaks, and returns a matrix of selected features and iterated accuracy, as well as the last best feature not to be selected.
 Incase of ties for best feature we select the first entry in the matrix.
+
+\fxnote[inline]{MERE?}
 
