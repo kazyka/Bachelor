@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  12 JUN 2016 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.1)  12 JUN 2016 20:40
 entering extended mode
 **"C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
 ("C:/Users/Baby-/Google Drive/KU/Datalogi/2år/Bachelor/Latex/Main.tex"
@@ -1965,7 +1965,41 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \JustifyingParindent=\skip96
 ) (Main.aux (abstract/abstract.aux) (chapters/Introduction.aux)
 (chapters/Data.aux) (chapters/Method.aux) (chapters/Implementation.aux)
-(chapters/Result.aux) (chapters/Discussion.aux) (chapters/Conclusion.aux)
+(chapters/Result.aux
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+
+LaTeX Warning: Label `fig:ContrastLeftNormalizedEroded' multiply defined.
+
+) (chapters/Discussion.aux) (chapters/Conclusion.aux)
 (appendix/derivationImageTexture.aux))
 \openout1 = `Main.aux'.
 
@@ -2136,7 +2170,7 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<include/natbio-farve.pdf, id=122, 597.23125pt x 845.1575pt>
+<include/natbio-farve.pdf, id=142, 597.23125pt x 845.1575pt>
 File: include/natbio-farve.pdf Graphic file (type pdf)
 
 <use include/natbio-farve.pdf>
@@ -2147,7 +2181,7 @@ File: include/natbio-farve.pdf Graphic file (type pdf)
 Package pdftex.def Info: include/natbio-farve.pdf used on input line 47.
 (pdftex.def)             Requested size: 702.625pt x 1003.75pt.
 
-<include/nat-en.pdf, id=125, 597.23125pt x 845.1575pt>
+<include/nat-en.pdf, id=145, 597.23125pt x 845.1575pt>
 File: include/nat-en.pdf Graphic file (type pdf)
 
 <use include/nat-en.pdf>
@@ -2175,29 +2209,109 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 3.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
-)
-\tf@toc=\write7
-\openout7 = `Main.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 \listoffigures
-                    [1
+l.33 ...ine {chapter}{Appendices}{30}{section*.27}
+                                                   [1
 
 
-] (Main.lof)
+])
+\tf@toc=\write7
+\openout7 = `Main.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (Main.lof
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 19--19
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 20--20
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 21--21
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 22--22
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 23--23
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 24--24
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 25--25
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 26--26
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+[3
+
+]
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 27--27
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 28--28
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+
+Overfull \hbox (6.75595pt too wide) in paragraph at lines 29--29
+ [][] [][][]\T1/futs/m/n/10.95 Plot of the Cor-rel-a-tion fea-tures where the d
+ata have been nor-mal-ized and eroded. 
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `Main.lof'.
 
- [2
 
-] (Main.lot)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] (Main.lot)
 \tf@lot=\write9
 \openout9 = `Main.lot'.
 
- [3
+ [5
 
 ] (Main.lox)
 \tf@lox=\write10
@@ -2208,13 +2322,13 @@ l.55 \listoffigures
 ]
 \openout2 = `abstract/abstract.aux'.
 
-
-(abstract/abstract.tex) [2
+ (abstract/abstract.tex) [2
 
 ]
 \openout2 = `chapters/Introduction.aux'.
 
- (chapters/Introduction.tex
+
+(chapters/Introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
@@ -2304,7 +2418,7 @@ Package epstopdf Info: Source file: <pictures/2DCOM.eps>
 d-to.pdf pictures/2DCOM.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/2DCOM-eps-converted-to.pdf, id=319, 365.365pt x 201.75375pt>
+<pictures/2DCOM-eps-converted-to.pdf, id=394, 365.365pt x 201.75375pt>
 File: pictures/2DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/2DCOM-eps-converted-to.pdf>
@@ -2322,7 +2436,7 @@ ed-to.pdf pictures/ImageI.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/ImageI-eps-converted-to.pdf, id=321, 123.46124pt x 123.46124pt>
+<pictures/ImageI-eps-converted-to.pdf, id=396, 123.46124pt x 123.46124pt>
 File: pictures/ImageI-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/ImageI-eps-converted-to.pdf>
@@ -2340,7 +2454,7 @@ to.pdf pictures/C01.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/C01-eps-converted-to.pdf, id=322, 149.55875pt x 152.57pt>
+<pictures/C01-eps-converted-to.pdf, id=397, 149.55875pt x 152.57pt>
 File: pictures/C01-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/C01-eps-converted-to.pdf>
@@ -2362,7 +2476,7 @@ rted-to.pdf pictures/Cminus11.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus11-eps-converted-to.pdf, id=323, 148.555pt x 152.57pt>
+<pictures/Cminus11-eps-converted-to.pdf, id=398, 148.555pt x 152.57pt>
 File: pictures/Cminus11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus11-eps-converted-to.pdf>
@@ -2380,7 +2494,7 @@ rted-to.pdf pictures/Cminus10.eps>
 (epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus10-eps-converted-to.pdf, id=324, 149.55875pt x 152.57pt>
+<pictures/Cminus10-eps-converted-to.pdf, id=399, 149.55875pt x 152.57pt>
 File: pictures/Cminus10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus10-eps-converted-to.pdf>
@@ -2399,7 +2513,7 @@ converted-to.pdf pictures/Cminus1minus1.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/Cminus1minus1-eps-converted-to.pdf, id=325, 148.555pt x 152.57pt>
+<pictures/Cminus1minus1-eps-converted-to.pdf, id=400, 148.555pt x 152.57pt>
 File: pictures/Cminus1minus1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/Cminus1minus1-eps-converted-to.pdf>
@@ -2430,7 +2544,7 @@ Package epstopdf Info: Source file: <pictures/3DCOM.eps>
 d-to.pdf pictures/3DCOM.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<pictures/3DCOM-eps-converted-to.pdf, id=339, 517.935pt x 277.035pt>
+<pictures/3DCOM-eps-converted-to.pdf, id=415, 517.935pt x 277.035pt>
 File: pictures/3DCOM-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/3DCOM-eps-converted-to.pdf>
@@ -2474,7 +2588,7 @@ Package epstopdf Info: Source file: <pictures/KNNK5.eps>
 d-to.pdf pictures/KNNK5.eps>
 (epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/KNNK5-eps-converted-to.pdf, id=416, 393.47pt x 256.96pt>
+ <pictures/KNNK5-eps-converted-to.pdf, id=491, 393.47pt x 256.96pt>
 File: pictures/KNNK5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/KNNK5-eps-converted-to.pdf>
@@ -2510,7 +2624,7 @@ ps-converted-to.pdf pictures/noterodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/noterodeSlice10x-eps-converted-to.pdf, id=434, 421.575pt x 316.18124p
+<pictures/noterodeSlice10x-eps-converted-to.pdf, id=509, 421.575pt x 316.18124p
 t>
 File: pictures/noterodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
  <use pictures/noterodeSlice10x-eps-converted-to.pdf>
@@ -2529,7 +2643,7 @@ converted-to.pdf pictures/erodeSlice10x.eps>
 (epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<pictures/erodeSlice10x-eps-converted-to.pdf, id=435, 421.575pt x 316.18124pt>
+<pictures/erodeSlice10x-eps-converted-to.pdf, id=510, 421.575pt x 316.18124pt>
 File: pictures/erodeSlice10x-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pictures/erodeSlice10x-eps-converted-to.pdf>
@@ -2690,23 +2804,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 FiXme Note: 'Snakke om hvorfor normalized data. Features vi har valgt fra freeb
 ourug har gjort det og m\IeC {\r a}ske gjort i det mente om at de kan ende med 
 p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis' on input line 115.
-Package epstopdf Info: Source file: <pictures/ASMerode.eps>
-(epstopdf)                    date: 2016-06-12 18:05:24
-(epstopdf)                    size: 1941457 bytes
-(epstopdf)             Output file: <pictures/ASMerode-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-12 18:06:17
-(epstopdf)                    size: 358819 bytes
-(epstopdf)             Command: <epstopdf --outfile=pictures/ASMerode-eps-conve
-rted-to.pdf pictures/ASMerode.eps>
+Package epstopdf Info: Source file: <pictures/ASMleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:10:43
+(epstopdf)                    size: 1953518 bytes
+(epstopdf)             Output file: <pictures/ASMleftnormalizederode-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:47
+(epstopdf)                    size: 365431 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/ASMleftnormalizede
+rode-eps-converted-to.pdf pictures/ASMleftnormalizederode.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
- <pictures/ASMerode-eps-converted-to.pdf, id=503, 421.575pt x 316.18124pt>
-File: pictures/ASMerode-eps-converted-to.pdf Graphic file (type pdf)
 
-<use pictures/ASMerode-eps-converted-to.pdf>
-Package pdftex.def Info: pictures/ASMerode-eps-converted-to.pdf used on input l
-ine 125.
-(pdftex.def)             Requested size: 274.0205pt x 205.51537pt.
+<pictures/ASMleftnormalizederode-eps-converted-to.pdf, id=578, 544.0325pt x 428
+.60126pt>
+File: pictures/ASMleftnormalizederode-eps-converted-to.pdf Graphic file (type p
+df)
+ <use pictures/ASMleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/ASMleftnormalizederode-eps-converted-to.pdf u
+sed on input line 125.
+(pdftex.def)             Requested size: 353.61693pt x 278.58751pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2721,7 +2838,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./pictures/ASMerode-eps-converted-to.pdf>])
+[18 <./pictures/ASMleftnormalizederode-eps-converted-to.pdf>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 25.19173pt.
@@ -2733,16 +2850,349 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (chapters/Result.tex
 Chapter 5.
-) [20
+Package epstopdf Info: Source file: <pictures/ASMleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:10:43
+(epstopdf)                    size: 1953518 bytes
+(epstopdf)             Output file: <pictures/ASMleftnormalizederode-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:47
+(epstopdf)                    size: 365431 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/ASMleftnormalizede
+rode-eps-converted-to.pdf pictures/ASMleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 9.
+Package epstopdf Info: Output file is already uptodate.
+File: pictures/ASMleftnormalizederode-eps-converted-to.pdf Graphic file (type p
+df)
+<use pictures/ASMleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/ASMleftnormalizederode-eps-converted-to.pdf u
+sed on input line 9.
+(pdftex.def)             Requested size: 353.61693pt x 278.58751pt.
+Package epstopdf Info: Source file: <pictures/Contrastleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:10:52
+(epstopdf)                    size: 1960484 bytes
+(epstopdf)             Output file: <pictures/Contrastleftnormalizederode-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:49
+(epstopdf)                    size: 418718 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/Contrastleftnormal
+izederode-eps-converted-to.pdf pictures/Contrastleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/Contrastleftnormalizederode-eps-converted-to.pdf, id=621, 541.02126pt
+ x 427.5975pt>
+File: pictures/Contrastleftnormalizederode-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use pictures/Contrastleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/Contrastleftnormalizederode-eps-converted-to.
+pdf used on input line 15.
+(pdftex.def)             Requested size: 351.65964pt x 277.93507pt.
+
+[20
 
 
 
 ]
+Package epstopdf Info: Source file: <pictures/Correlationleftnormalizederode.ep
+s>
+(epstopdf)                    date: 2016-06-12 20:40:06
+(epstopdf)                    size: 2024583 bytes
+(epstopdf)             Output file: <pictures/Correlationleftnormalizederode-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:40:14
+(epstopdf)                    size: 429993 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/Correlationleftnor
+malizederode-eps-converted-to.pdf pictures/Correlationleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 21.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/Correlationleftnormalizederode-eps-converted-to.pdf, id=626, 520.9462
+4pt x 422.57875pt>
+File: pictures/Correlationleftnormalizederode-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use pictures/Correlationleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/Correlationleftnormalizederode-eps-converted-
+to.pdf used on input line 21.
+(pdftex.def)             Requested size: 338.61105pt x 274.67293pt.
+Package epstopdf Info: Source file: <pictures/Varianceleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:02:20
+(epstopdf)                    size: 1960621 bytes
+(epstopdf)             Output file: <pictures/Varianceleftnormalizederode-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:09:14
+(epstopdf)                    size: 428395 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/Varianceleftnormal
+izederode-eps-converted-to.pdf pictures/Varianceleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 27.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/Varianceleftnormalizederode-eps-converted-to.pdf, id=627, 572.1375pt 
+x 404.51125pt>
+File: pictures/Varianceleftnormalizederode-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use pictures/Varianceleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/Varianceleftnormalizederode-eps-converted-to.
+pdf used on input line 27.
+(pdftex.def)             Requested size: 371.88496pt x 262.92918pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./pictures/Contrastleftnormalizederode-eps-converted-to.pdf> <./pictures/C
+orrelationleftnormalizederode-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/IDMleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:06:26
+(epstopdf)                    size: 1953866 bytes
+(epstopdf)             Output file: <pictures/IDMleftnormalizederode-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:09:16
+(epstopdf)                    size: 415497 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/IDMleftnormalizede
+rode-eps-converted-to.pdf pictures/IDMleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 33.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/IDMleftnormalizederode-eps-converted-to.pdf, id=645, 544.0325pt x 432
+.61626pt>
+File: pictures/IDMleftnormalizederode-eps-converted-to.pdf Graphic file (type p
+df)
+ <use pictures/IDMleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/IDMleftnormalizederode-eps-converted-to.pdf u
+sed on input line 33.
+(pdftex.def)             Requested size: 353.61693pt x 281.19724pt.
+Package epstopdf Info: Source file: <pictures/SumAverageleftnormalizederode.eps
+>
+(epstopdf)                    date: 2016-06-12 20:07:39
+(epstopdf)                    size: 1954760 bytes
+(epstopdf)             Output file: <pictures/SumAverageleftnormalizederode-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:09:19
+(epstopdf)                    size: 423353 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/SumAverageleftnorm
+alizederode-eps-converted-to.pdf pictures/SumAverageleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/SumAverageleftnormalizederode-eps-converted-to.pdf, id=646, 545.03625
+pt x 432.61626pt>
+File: pictures/SumAverageleftnormalizederode-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use pictures/SumAverageleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/SumAverageleftnormalizederode-eps-converted-t
+o.pdf used on input line 39.
+(pdftex.def)             Requested size: 354.26936pt x 281.19724pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./pictures/Varianceleftnormalizederode-eps-converted-to.pdf> <./pictures/I
+DMleftnormalizederode-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/SumVarianceleftnormalizederode.ep
+s>
+(epstopdf)                    date: 2016-06-12 20:08:52
+(epstopdf)                    size: 1962305 bytes
+(epstopdf)             Output file: <pictures/SumVarianceleftnormalizederode-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:09:21
+(epstopdf)                    size: 422972 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/SumVarianceleftnor
+malizederode-eps-converted-to.pdf pictures/SumVarianceleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 45.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/SumVarianceleftnormalizederode-eps-converted-to.pdf, id=660, 544.0325
+pt x 432.61626pt>
+File: pictures/SumVarianceleftnormalizederode-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use pictures/SumVarianceleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/SumVarianceleftnormalizederode-eps-converted-
+to.pdf used on input line 45.
+(pdftex.def)             Requested size: 353.61693pt x 281.19724pt.
+Package epstopdf Info: Source file: <pictures/SumEntropyleftnormalizederode.eps
+>
+(epstopdf)                    date: 2016-06-12 20:11:10
+(epstopdf)                    size: 2279692 bytes
+(epstopdf)             Output file: <pictures/SumEntropyleftnormalizederode-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:52
+(epstopdf)                    size: 411857 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/SumEntropyleftnorm
+alizederode-eps-converted-to.pdf pictures/SumEntropyleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/SumEntropyleftnormalizederode-eps-converted-to.pdf, id=661, 543.02875
+pt x 429.605pt>
+File: pictures/SumEntropyleftnormalizederode-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use pictures/SumEntropyleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/SumEntropyleftnormalizederode-eps-converted-t
+o.pdf used on input line 51.
+(pdftex.def)             Requested size: 352.9645pt x 279.23993pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./pictures/SumAverageleftnormalizederode-eps-converted-to.pdf> <./pictures
+/SumVarianceleftnormalizederode-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/Entropyleftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:11:25
+(epstopdf)                    size: 2271277 bytes
+(epstopdf)             Output file: <pictures/Entropyleftnormalizederode-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:55
+(epstopdf)                    size: 411170 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/Entropyleftnormali
+zederode-eps-converted-to.pdf pictures/Entropyleftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/Entropyleftnormalizederode-eps-converted-to.pdf, id=675, 545.03625pt 
+x 431.6125pt>
+File: pictures/Entropyleftnormalizederode-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use pictures/Entropyleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/Entropyleftnormalizederode-eps-converted-to.p
+df used on input line 57.
+(pdftex.def)             Requested size: 354.26936pt x 280.54478pt.
+Package epstopdf Info: Source file: <pictures/DifferenceVarianceleftnormalizede
+rode.eps>
+(epstopdf)                    date: 2016-06-12 20:11:44
+(epstopdf)                    size: 2025644 bytes
+(epstopdf)             Output file: <pictures/DifferenceVarianceleftnormalizede
+rode-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:13:58
+(epstopdf)                    size: 396892 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/DifferenceVariance
+leftnormalizederode-eps-converted-to.pdf pictures/DifferenceVarianceleftnormali
+zederode.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/DifferenceVarianceleftnormalizederode-eps-converted-to.pdf, id=676, 5
+44.0325pt x 430.60875pt>
+File: pictures/DifferenceVarianceleftnormalizederode-eps-converted-to.pdf Graph
+ic file (type pdf)
+
+<use pictures/DifferenceVarianceleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/DifferenceVarianceleftnormalizederode-eps-con
+verted-to.pdf used on input line 63.
+(pdftex.def)             Requested size: 353.61693pt x 279.89236pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./pictures/SumEntropyleftnormalizederode-eps-converted-to.pdf> <./pictures
+/Entropyleftnormalizederode-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/DifferenceEntropyleftnormalizeder
+ode.eps>
+(epstopdf)                    date: 2016-06-12 20:11:59
+(epstopdf)                    size: 2270524 bytes
+(epstopdf)             Output file: <pictures/DifferenceEntropyleftnormalizeder
+ode-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:14:00
+(epstopdf)                    size: 413025 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/DifferenceEntropyl
+eftnormalizederode-eps-converted-to.pdf pictures/DifferenceEntropyleftnormalize
+derode.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/DifferenceEntropyleftnormalizederode-eps-converted-to.pdf, id=690, 54
+4.0325pt x 429.605pt>
+File: pictures/DifferenceEntropyleftnormalizederode-eps-converted-to.pdf Graphi
+c file (type pdf)
+
+<use pictures/DifferenceEntropyleftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/DifferenceEntropyleftnormalizederode-eps-conv
+erted-to.pdf used on input line 69.
+(pdftex.def)             Requested size: 353.61693pt x 279.23993pt.
+Package epstopdf Info: Source file: <pictures/IMOC1leftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:12:14
+(epstopdf)                    size: 1913916 bytes
+(epstopdf)             Output file: <pictures/IMOC1leftnormalizederode-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:14:03
+(epstopdf)                    size: 408232 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/IMOC1leftnormalize
+derode-eps-converted-to.pdf pictures/IMOC1leftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 75.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/IMOC1leftnormalizederode-eps-converted-to.pdf, id=691, 544.0325pt x 4
+27.5975pt>
+File: pictures/IMOC1leftnormalizederode-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use pictures/IMOC1leftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/IMOC1leftnormalizederode-eps-converted-to.pdf
+ used on input line 75.
+(pdftex.def)             Requested size: 353.61693pt x 277.93507pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./pictures/DifferenceVarianceleftnormalizederode-eps-converted-to.pdf> <./
+pictures/DifferenceEntropyleftnormalizederode-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pictures/IMOC2leftnormalizederode.eps>
+(epstopdf)                    date: 2016-06-12 20:12:27
+(epstopdf)                    size: 2267365 bytes
+(epstopdf)             Output file: <pictures/IMOC2leftnormalizederode-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2016-06-12 20:14:06
+(epstopdf)                    size: 406683 bytes
+(epstopdf)             Command: <epstopdf --outfile=pictures/IMOC2leftnormalize
+derode-eps-converted-to.pdf pictures/IMOC2leftnormalizederode.eps>
+(epstopdf)             \includegraphics on input line 81.
+Package epstopdf Info: Output file is already uptodate.
+
+<pictures/IMOC2leftnormalizederode-eps-converted-to.pdf, id=710, 545.03625pt x 
+429.605pt>
+File: pictures/IMOC2leftnormalizederode-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use pictures/IMOC2leftnormalizederode-eps-converted-to.pdf>
+Package pdftex.def Info: pictures/IMOC2leftnormalizederode-eps-converted-to.pdf
+ used on input line 81.
+(pdftex.def)             Requested size: 354.26936pt x 279.23993pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./pictures/IMOC1leftnormalizederode-eps-converted-to.pdf> <./pictures/IMOC
+2leftnormalizederode-eps-converted-to.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 25.19173pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
 \openout2 = `chapters/Discussion.aux'.
 
  (chapters/Discussion.tex
 Chapter 6.
-) [21
+) [28
 
 
 
@@ -2751,11 +3201,11 @@ Chapter 6.
 
  (chapters/Conclusion.tex
 Chapter 7.
-) [22
+) [29
 
 
 
-] [23
+] [30
 
 
 
@@ -2765,7 +3215,7 @@ Chapter 7.
 
  (appendix/derivationImageTexture.tex
 Appendix A.
-[24
+[31
 
 
 ])
@@ -2775,7 +3225,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] (Main.bbl
+[32] (Main.bbl
 Underfull \hbox (badness 4832) in paragraph at lines 9--12
 []\T1/futs/m/n/10.95 Mathworks gray-copros.  [][]$\T1/pcr/m/n/10.95 http : / / 
 se . mathworks . com / help / images / ref /
@@ -2787,7 +3237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--18
 wikipedia . org / wiki / Pearson _
  []
 
-[26
+[33
 
 
 
@@ -2798,7 +3248,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[34]
 runsystem(makeindex Main.idx)...executed (allowed).
 
  (Main.ind)
@@ -2997,8 +3447,21 @@ chapters/Implementation.tex
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 lstlang1.sty    2015/06/04 1.6 listings language file
  ts1futs.fd    2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-pictures/ASMerode-eps-converted-to.pdf
+pictures/ASMleftnormalizederode-eps-converted-to.pdf
 chapters/Result.tex
+pictures/ASMleftnormalizederode-eps-converted-to.pdf
+pictures/Contrastleftnormalizederode-eps-converted-to.pdf
+pictures/Correlationleftnormalizederode-eps-converted-to.pdf
+pictures/Varianceleftnormalizederode-eps-converted-to.pdf
+pictures/IDMleftnormalizederode-eps-converted-to.pdf
+pictures/SumAverageleftnormalizederode-eps-converted-to.pdf
+pictures/SumVarianceleftnormalizederode-eps-converted-to.pdf
+pictures/SumEntropyleftnormalizederode-eps-converted-to.pdf
+pictures/Entropyleftnormalizederode-eps-converted-to.pdf
+pictures/DifferenceVarianceleftnormalizederode-eps-converted-to.pdf
+pictures/DifferenceEntropyleftnormalizederode-eps-converted-to.pdf
+pictures/IMOC1leftnormalizederode-eps-converted-to.pdf
+pictures/IMOC2leftnormalizederode-eps-converted-to.pdf
 chapters/Discussion.tex
 chapters/Conclusion.tex
 appendix/derivationImageTexture.tex
@@ -3008,13 +3471,16 @@ appendix/derivationImageTexture.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A2B0CE3CE3AD6092534BEC5BA22523B;1861.
+(rerunfilecheck)             Checksum: 1DE52A0566BD07F833FE32A6CFBC7C14;2242.
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 44606 strings out of 493634
- 980368 string characters out of 3141315
- 1330443 words of memory out of 3000000
- 46972 multiletter control sequences out of 15000+200000
+ 44712 strings out of 493634
+ 985000 string characters out of 3141315
+ 1335281 words of memory out of 3000000
+ 47039 multiletter control sequences out of 15000+200000
  141409 words of font info for 164 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,19n,85p,10528b,1926s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3031,9 +3497,9 @@ bx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Main.pdf (31 pages, 713474 bytes).
+Output written on Main.pdf (40 pages, 5706331 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 

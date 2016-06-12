@@ -50,7 +50,7 @@ NumberOfPatients = 100;
 %LOADER OG PLOTTER DATA
 %Kalder dataloader -> loader fra data folder
 %(DATA, NumberOfPatients ,looping, var)
-simpleAllplot(DATA2D, NumberOfPatients, 1, 'simple');
+simpleAllplot(DATA2D, NumberOfPatients, 3, 'simple');
 plot3D(DATA3D, NumberOfPatients, 1, 'simple');
 
 

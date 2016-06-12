@@ -23,8 +23,13 @@
 \contentsline {section}{\numberline {4.4}Plotting the GLCM features}{17}{section.4.4}
 \contentsline {section}{\numberline {4.5}Forward feature selection}{18}{section.4.5}
 \contentsline {chapter}{\numberline {5}Result}{20}{chapter.5}
-\contentsline {chapter}{\numberline {6}Discussion}{21}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{22}{chapter.7}
-\contentsline {chapter}{Appendices}{23}{section*.14}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{24}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{26}{equation.a.A.0.20}
+\contentsline {section}{\numberline {5.1}Plots of 2D data}{20}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Left Hippocampus, normalized and eroded}{20}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Plots of 3D data}{27}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Left Hippocampus, normalized and eroded}{27}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}Discussion}{28}{chapter.6}
+\contentsline {section}{\numberline {6.1}GOD SECTION TITEL}{28}{section.6.1}
+\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.7}
+\contentsline {chapter}{Appendices}{30}{section*.27}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{31}{Appendix.a.A}
+\contentsline {chapter}{Litteratur}{33}{equation.a.A.0.20}

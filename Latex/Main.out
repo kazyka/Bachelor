@@ -22,8 +22,13 @@
 \BOOKMARK [1][-]{section.4.4}{Plotting the GLCM features}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.5}{Forward feature selection}{chapter.4}% 23
 \BOOKMARK [0][-]{chapter.5}{Result}{}% 24
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 26
-\BOOKMARK [0][-]{section*.14}{Appendices}{}% 27
-\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 28
-\BOOKMARK [0][-]{equation.a.A.0.20}{Litteratur}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Plots of 2D data}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.1.1}{Left Hippocampus, normalized and eroded}{section.5.1}% 26
+\BOOKMARK [1][-]{section.5.2}{Plots of 3D data}{chapter.5}% 27
+\BOOKMARK [2][-]{subsection.5.2.1}{Left Hippocampus, normalized and eroded}{section.5.2}% 28
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 29
+\BOOKMARK [1][-]{section.6.1}{GOD SECTION TITEL}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 31
+\BOOKMARK [0][-]{section*.27}{Appendices}{}% 32
+\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 33
+\BOOKMARK [0][-]{equation.a.A.0.20}{Litteratur}{}% 34
