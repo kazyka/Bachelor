@@ -33,3 +33,42 @@ for i=1:10
 end
 save(sprintf('knnResults/notErodeLeft2DNormalized'), 'toD');
 save(sprintf('knnResults/notErodeLeft3DNormalized'), 'treD');
+
+
+
+
+for i = 1:10
+    test2d(i) = max(toD{i}(:,1));
+    test3d(i) = max(treDnormalized{i}(:,1));
+end
+% tre d k = 3,1, 2d k = 5
+features3d = zeros(4,3);
+for i = 1:size(features3d,1)
+    features3d(i,1) = treDnormalized{3}(i,2);
+    features3d(i,2) = treDnormalized{3}(i,3);
+    features3d(i,3) = treDnormalized{3}(i,4);
+end
+
+features2d = zeros(10,3);
+for i = 1:size(features2d,1)
+    features2d(i,1) = toD{5}(i,2);
+    features2d(i,2) = toD{5}(i,3);
+    features2d(i,3) = toD{5}(i,4);
+end
+
+selFeat3D = [];
+
+selFeat2D = [];
+for i = 1:size(features3d,1)
+    selFeat3D = cat(2,selFeat3D,dataSorted3D(:,features3d(i,1),features3d(i,2),features3d(i,3)));
+end
+selFeat2D = [];
+for i = 1:size(features2d,1)
+    selFeat2D = cat(2,selFeat2D,dataSorted2D(:,features2d(i,1),features2d(i,2),features2d(i,3)));
+end
+
+for i = 1:10
+    acc2D(i) = knnWithCrossval2([],selFeat2D,i);
+    acc3D(i) = knnWithCrossval2([],selFeat3D,i);
+
+end

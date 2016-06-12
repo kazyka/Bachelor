@@ -33,3 +33,50 @@ for i=1:10
 end
 save(sprintf('knnResults/notErodeLeft2DudenNorm'), 'toD');
 save(sprintf('knnResults/notErodeLeft3DudenNorm'), 'treD');
+
+
+
+
+
+
+
+for i = 1:10
+    test2d(i) = max(toD{i}(:,1));
+    test3d(i) = max(treD{i}(:,1));
+end
+% tre d k = 3,1, 2d k = 2
+features3d1k = zeros(4,3);
+features3d3k = zeros(4,3);
+for i = 1:size(features3d1k,1)
+    features3d1k(i,1) = treD{1}(i,2);
+    features3d1k(i,2) = treD{1}(i,3);
+    features3d1k(i,3) = treD{1}(i,4);
+    features3d3k(i,1) = treD{3}(i,2);
+    features3d3k(i,2) = treD{3}(i,3);
+    features3d3k(i,3) = treD{3}(i,4);
+end
+
+features2d3k = zeros(5,3);
+for i = 1:size(features2d3k,1)
+    features2d3k(i,1) = toD{2}(i,2);
+    features2d3k(i,2) = toD{2}(i,3);
+    features2d3k(i,3) = toD{2}(i,4);
+end
+
+selFeat3D1k = [];
+selFeat3D3k = [];
+selFeat2D3k = [];
+for i = 1:size(features3d1k,1)
+    selFeat3D1k = cat(2,selFeat3D1k,dataSorted3D(:,features3d1k(i,1),features3d1k(i,2),features3d1k(i,3)));
+    selFeat3D3k = cat(2,selFeat3D3k,dataSorted3D(:,features3d3k(i,1),features3d3k(i,2),features3d3k(i,3)));
+end
+selFeat2D3k = [];
+for i = 1:size(features2d3k,1)
+    selFeat2D3k = cat(2,selFeat2D3k,dataSorted2D(:,features2d3k(i,1),features2d3k(i,2),features2d3k(i,3)));
+end
+
+for i = 1:10
+    acc2D3k(i) = knnWithCrossval2([],selFeat2D3k,i);
+    acc3D1k(i) = knnWithCrossval2([],selFeat3D1k,i);
+    acc3D3k(i) = knnWithCrossval2([],selFeat3D3k,i);
+end
