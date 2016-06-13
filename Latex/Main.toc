@@ -11,26 +11,30 @@
 \contentsline {section}{\numberline {3.2}Machine learning}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Feature selection}{10}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{11}{subsubsection.3.2.2.1}
-\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{11}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Erode}{12}{section.3.3}
-\contentsline {chapter}{\numberline {4}Implementation}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Preparation of Data}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}Data Calculations}{14}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Calculating GLCMs}{15}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Naive feature}{16}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Calculating(Computing) the GLCM Features}{16}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Plotting the GLCM features}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Forward feature selection}{18}{section.4.5}
-\contentsline {chapter}{\numberline {5}Result}{20}{chapter.5}
-\contentsline {section}{\numberline {5.1}Plots of 2D data}{20}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Left Hippocampus, normalized and eroded}{20}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Plots of 3D data}{27}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Left Hippocampus, not normalized and eroded}{27}{subsection.5.2.1}
-\contentsline {chapter}{\numberline {6}Discussion}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}GOD SECTION TITEL}{28}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Naive Selection}{28}{subsection.6.1.1}
-\contentsline {chapter}{\numberline {7}Conclusion}{31}{chapter.7}
-\contentsline {chapter}{Appendices}{32}{section*.29}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{33}{Appendix.a.A}
-\contentsline {chapter}{Litteratur}{35}{equation.a.A.0.20}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{12}{subsubsection.3.2.2.1}
+\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{12}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Erode}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4}Implementation}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preparation of Data}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data Calculations}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Calculating GLCMs}{17}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Naive feature}{18}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Calculating(Computing) the GLCM Features}{18}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Plotting the GLCM features}{20}{section.4.4}
+\contentsline {section}{\numberline {4.5}Forward feature selection}{21}{section.4.5}
+\contentsline {chapter}{\numberline {5}Result}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Plots of 2D data}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Left Hippocampus, normalized and eroded}{23}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Plots of 3D data}{30}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Left Hippocampus, not normalized and eroded}{30}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}Discussion}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Comparison of image textures}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}GOD SECTION TITEL}{34}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Naive Selection}{35}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Overfitting}{38}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusion}{40}{chapter.7}
+\contentsline {chapter}{Appendices}{41}{section*.45}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{42}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Feature Offset helper}{44}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}For the 3D}{44}{section.a.B.1}
+\contentsline {chapter}{Litteratur}{45}{table.caption.46}

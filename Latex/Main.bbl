@@ -23,6 +23,11 @@ Fritz Albregtsen et~al.
 \newblock {\em Image processing laboratory, department of informatics,
   university of oslo}, pages 1--14, 2008.
 
+\bibitem{arlot2010survey}
+Sylvain Arlot, Alain Celisse, et~al.
+\newblock A survey of cross-validation procedures for model selection.
+\newblock {\em Statistics surveys}, 4:40--79, 2010.
+
 \bibitem{Castellano}
 G~Castellano, L~Bonilha, LM~Li, and F~Cendes.
 \newblock Texture analysis of medical images.

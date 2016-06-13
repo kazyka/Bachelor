@@ -1,4 +1,4 @@
-k = 257;
+k = 500;
 Values = [];
 for i = 1:256
     for j = 1:256
@@ -7,7 +7,7 @@ for i = 1:256
         end
     end
 end
-
+Values = Values'
 
 A = ones(256);
 CxplusyTest = C_xplusy(A,k);

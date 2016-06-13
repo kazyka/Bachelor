@@ -1,0 +1,65 @@
+
+We wish to compare the two-dimensional (2D) GLCM method to the three-dimensional (3D), to see if one is superior. To make this comparison we have for our data of 100 patients extracted four data sets for left hippocampus. Data set one, D$_1$, we performed erosion before calculating the GLCMs which are normalized, both are done for the 2D and 3D methods. Data set two, D$_2$, is the same as D$_1$ except no erosion has been performed. Data set three, D$_3$, is with erosion, but no normalizing. Data set four, D$_4$, is without erosion and normalizing.
+We also wish to determine which of the left or right hippocampus is best suited to diagnose AD, if there is a difference. Data sets D$_5$, D$_6$, D$_7$, D$_8$ are created as D$_{1-4}$ but on the right hippocampus. \fixme[inline]{Create a table to show what each data set contains?}
+Lastly we wish to determine if we can correctly diagnose AD with an accuracy higher than 80\%.
+
+
+\section{Comparison of image textures}
+For each of the methods, and for each data set we have run a feature selection and fitted a model the features selected for each model. For the 3D model on D$_4$ there was a tie between two different k, and the accuracy for both models were calculated.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{rrrrr}
+    K     & 2DLNE & 2DLE  & 2DLN  & 2DL \\
+    1     & 0,8816 & 0,9203 & 0,8441 & 0,9255 \\
+    2     & 0,8487 & 0,8511 & 0,8688 & 0,9186 \\
+    3     & 0,8882 & 0,8641 & 0,8837 & 0,875 \\
+    4     & 0,865 & 0,8351 & 0,8878 & 0,8376 \\
+    5     & 0,8617 & 0,8011 & 0,8997 & 0,8385 \\
+    6     & 0,8483 & 0,8003 & 0,8712 & 0,8317 \\
+    7     & 0,8883 & 0,7975 & 0,8713 & 0,8187 \\
+    8     & 0,8841 & 0,7945 & 0,8751 & 0,8286 \\
+    9     & 0,869 & 0,7938 & 0,869 & 0,8249 \\
+    10    & 0,8688 & 0,783 & 0,8496 & 0,8266 \\
+    \end{tabular}%
+  \caption{2D: Accuracy of final KNN-model L = left, E = erosion, N = normalized}\label{tab:2DFinalModel}%
+\end{table}%
+Interestingly for the the 2D method is the best accuracies occur when the data is not normalized, suggesting that their is a significant difference in the amount GIs between the two groups. Their is also a substantial drop in accuracy with increased k value for the KNN, further validating that the size difference between the groups is relevant. This is in stark contrast to the normalized data, as they do not vary a lot between the ks, there is some peaks though.
+There is no clear difference between the eroded and non eroded models. We erode the image with a three-dimensional model, so it is possible that the offsets in the 2D model does not get the benefit of this erosion. It could also be that the original segmentation is done very well and erosion is not necessary for these images. It does not decrease performance either, so it does not suggest relevant data is lost.
+
+\begin{table}[H]
+  \centering
+    \begin{tabular}{rrrrrr}
+    K     & 3DLNE & 3DLE  & 3DLN  & 3DLk1 & 3DLk3 \\
+    1     & 0,9223 & 0,8561 & 0,8374 & 0,8892 & 0,8436 \\
+    2     & 0,8397 & 0,8954 & 0,7977 & 0,8072 & 0,8034 \\
+    3     & 0,8063 & 0,8199 & 0,8914 & 0,8261 & 0,8426 \\
+    4     & 0,7935 & 0,7828 & 0,8191 & 0,7697 & 0,763 \\
+    5     & 0,7961 & 0,7617 & 0,8041 & 0,7626 & 0,7295 \\
+    6     & 0,7824 & 0,7717 & 0,8002 & 0,7299 & 0,704 \\
+    7     & 0,8048 & 0,7714 & 0,7712 & 0,7077 & 0,6922 \\
+    8     & 0,7865 & 0,7777 & 0,7875 & 0,7193 & 0,7121 \\
+    9     & 0,7966 & 0,7808 & 0,7795 & 0,7294 & 0,7152 \\
+    10    & 0,7786 & 0,793 & 0,78  & 0,7524 & 0,7371 \\
+    \end{tabular}%
+  \caption{3D: Accuracy of final KNN-model, two values for 3DL since feature selection resulted in a tie between k = 1 and k = 3}\label{tab:3DFinalModel}%
+\end{table}%
+The poor performance of 3Dlk3 compared to 3DLk1 suggest that the feature selection overfit the data to its specific sample, as in that separation into 10-folds is biased toward a k = 3 for its solution. It also shows that k = 1 is most likely the best KNN model for that data set, as even though 3DLk3 is biased toward k = 3, it performs equally well for k = 1, where as 3DLk1 is clearly performs better for k = 1 opposed to k = 3. All the models best k value is also equal to the k returned from their feature selection, highlighting the overfitting towards that specific model done in the feature selection.
+For the normalized data the model created on the data set with erosion perform better than without erosion, but there is no difference on the data that is not normalized. On the data sets that is not normalized the number of observations is a relevant factor, then it is not unrealistic that the erosion removes a similar percentage of data from both control and AD, thus not being creating a difference between a model using erosion and one that does not, and would only impact their overall accuracy if there is a lot of noise in the border region of the segmentation. But as we saw in the 2D method, where erosion did not play a significant role in accuracy it is not clear it is does for the 3D method either.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

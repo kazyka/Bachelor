@@ -27,9 +27,13 @@
 \BOOKMARK [1][-]{section.5.2}{Plots of 3D data}{chapter.5}% 27
 \BOOKMARK [2][-]{subsection.5.2.1}{Left Hippocampus, not normalized and eroded}{section.5.2}% 28
 \BOOKMARK [0][-]{chapter.6}{Discussion}{}% 29
-\BOOKMARK [1][-]{section.6.1}{GOD SECTION TITEL}{chapter.6}% 30
-\BOOKMARK [2][-]{subsection.6.1.1}{Naive Selection}{section.6.1}% 31
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
-\BOOKMARK [0][-]{section*.29}{Appendices}{}% 33
-\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 34
-\BOOKMARK [0][-]{equation.a.A.0.20}{Litteratur}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Comparison of image textures}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{GOD SECTION TITEL}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.2.1}{Naive Selection}{section.6.2}% 32
+\BOOKMARK [1][-]{section.6.3}{Overfitting}{chapter.6}% 33
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 34
+\BOOKMARK [0][-]{section*.45}{Appendices}{}% 35
+\BOOKMARK [0][-]{Appendix.a.A}{Co occurrence matrix derivation features}{}% 36
+\BOOKMARK [0][-]{Appendix.a.B}{Feature Offset helper}{}% 37
+\BOOKMARK [1][-]{section.a.B.1}{For the 3D}{Appendix.a.B}% 38
+\BOOKMARK [0][-]{table.caption.46}{Litteratur}{}% 39

@@ -1,0 +1,33 @@
+\subsection{Feature selection}
+Feature selection is the process of selection af subset of relevant features for use in model contruction.
+The main goal of feature selection is to choose a subset of the entire set of input features so the subset can predict the output with an accuracy comparable to using the entire set to predict the output, but with a large reduction in the computational cost.
+When a dataset contains many feautres that are either redundant og irrelevant it is possible to remove them without incurring much loss of information. Features may be redundant due to the pressence of another feature with which it is strongly correlated, while they may be very informative for the model their information have already been provided by a different feature. Only choosing a subset of the possible features have the added advantage of decreasing the complexity of the model.
+
+Sequential forward feature selection(SFS) is a greedy algorrithm to choose features.
+It starts off with finding the best possible single feature to describe the model. Given the feature set of that single feature, the next step is to find which other feature would improve the predictiveness of the model and then add that to the set of selected featuers. It continues to grow the set of selected features, until the goal have been reached. The goal can either be a specific amount of features, a specific accuracy for the model or it can stop if all choices of a new feature would decrease the accuracy.
+A problem with SFS is due to its greedy nature, there is no guarantee that the first feature selected is part of the optimal solution. Given three features X$_1$, X$_2$ and X$_3$ where X$_1$ is the best single feature, X$_2$ is second best and X$_3$ the worst, it does not necessitate that pairing {X$_1$, X$_2$ } is better than {X$_2$, X$_3$}, nor does it secure any other relation, meaning that the SFS does not guarantee the optimal solution. Which leads to one of the drawbacks of this feature selection, if a feature is selected it is not possible to exclude it later even if it would increase the evaluation score to do so.
+\begin{lstlisting}
+[mathescape=true]
+The algorithm for SFS with 10-fold cross validation
+Step 1:
+Set selected features Y = \emptyset
+X = entire featuerset
+Seperate dataset into 10 folds of equal size with 5 of each class, {K$_1$,K$_2$,...,K$_10$}.
+
+Step 2:
+For feature i= 1 to No. of features
+	for fold j=1 to No. of folds
+		Train a k-nn model on {Y,X$_i$} using fold K$_{1,2,...,10} \setminus $  K$_{j} $ as training
+		Calcualte missclassification error of model on K$_j$
+Average the error for all 10 folds.
+
+Step 3:
+F = feature with lowest error
+X = X \setminus F
+Y = Y \cup F
+
+Step 4:
+Continue step 2-3 until the missclassification error worsen or 15 features have been selected.
+
+\end{lstlisting}
+The algorithm is run on 10 different k values for the k-nn model, k = 1,2,...,10. 

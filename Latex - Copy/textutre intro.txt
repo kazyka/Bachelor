@@ -1,0 +1,5 @@
+\section{Image texture analysis methods}
+
+
+Image texture is a feature that can help to segment images into regions of interest and to classify those regions. Textures gives us some information about the arrangement of the intensities in an image. Texture analysis is a technique for evaluating the position and intensity of signal faetures. \cite{Castellano} Statistical texture analysis methods evalutate the interrelationship of voxels, based on mathmateical parameters computed from the distribution and intensities of voxels in the image. 
+

@@ -1,25 +1,12 @@
-\contentsline {fixme}{Note: level or intensity?}{6}{subsection.3.1.1}
-\contentsline {fixme}{Note: rigtigt offset?}{6}{subsection.3.1.1}
-\contentsline {fixme}{Note: Skal passe til figure \ref {fig:ImageI}}{6}{subsection.3.1.1}
-\contentsline {fixme}{Note: Vise for transpose GLCM}{7}{subsection.3.1.1}
-\contentsline {fixme}{Note: Er dette rigtigt?}{7}{subsection.3.1.1}
-\contentsline {fixme}{Note: Vise for transpose GLCM}{7}{subsection.3.1.1}
-\contentsline {fixme}{Note: Tjek om det passe}{8}{figure.caption.6}
-\contentsline {fixme}{Note: how does this remove overfitting?}{10}{subsection.3.2.1}
-\contentsline {fixme}{Fatal: insert snip of code.+ link imerode page}{14}{section.4.1}
-\contentsline {fixme}{Fatal: snip of main loop, explain left is also used incase of right}{14}{section.4.1}
-\contentsline {fixme}{Fatal: snip of last loop}{14}{section.4.1}
-\contentsline {fixme}{Fatal: snip af glcm2dallangels hvor vi udregner}{15}{subsection.4.2.1}
-\contentsline {fixme}{Fatal: Fodnote der beksriver hvad en cell er?}{15}{subsection.4.2.1}
-\contentsline {fixme}{Fatal: snip af f\IeC {\o }rste if.}{15}{subsection.4.2.1}
-\contentsline {fixme}{Fatal: inds\IeC {\ae }t en if statement}{16}{subsection.4.2.1}
-\contentsline {fixme}{Fatal: inds\IeC {\ae }t en if statement}{16}{subsection.4.2.1}
-\contentsline {fixme}{Note: Snak om Datacalculation filen}{16}{subsection.4.3.1}
-\contentsline {fixme}{Note: Lav et eksempel (diagram) af hvordan cxminusy og cxplusy ser ud}{16}{subsection.4.3.1}
-\contentsline {fixme}{Note: Snakke om optimeret alts\IeC {\r a} filerne Cx+-y}{16}{subsection.4.3.1}
-\contentsline {fixme}{Note: Snakke om hvorfor normalized data. Features vi har valgt fra freebourug har gjort det og m\IeC {\r a}ske gjort i det mente om at de kan ende med p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis}{17}{lstnumber.-3.23}
-\contentsline {fixme}{Note: MERE?}{19}{lstnumber.-5.2}
-\contentsline {fixme}{Fatal: skriv p\IeC {\ae }nt op}{28}{chapter.6}
-\contentsline {fixme}{Note: argument her}{29}{subsection.6.1.1}
-\contentsline {fixme}{Note: Mere her}{29}{subsection.6.1.1}
-\contentsline {fixme}{Note: Skriv de offsets her}{29}{table.caption.27}
+\contentsline {fixme}{Fatal: skriv Matthew har skrevet data beskrivelsen}{4}{chapter.2}
+\contentsline {fixme}{Note: Noget her}{12}{subsubsection.3.2.2.1}
+\contentsline {fixme}{Note: features for KNN then we run 10 fold crossvall and resample the data 100 times}{12}{figure.caption.10}
+\contentsline {fixme}{Note: Tal her}{18}{section.4.3}
+\contentsline {fixme}{Note: Snak om Datacalculation filen}{18}{subsection.4.3.1}
+\contentsline {fixme}{Note: Snakke om hvorfor normalized data. Features vi har valgt fra freebourug har gjort det og m\IeC {\r a}ske gjort i det mente om at de kan ende med p\IeC {\ae }ne v\IeC {\ae }rdier -- i method muligvis}{20}{lstnumber.-10.23}
+\contentsline {fixme}{Note: MERE?}{22}{lstnumber.-12.2}
+\contentsline {fixme}{Fatal: Create a table to show what each data set contains?}{31}{chapter.6}
+\contentsline {fixme}{Note: Skriv at vi kun kigger p\IeC {\r a} 3d/2d normalized erode}{34}{section.6.2}
+\contentsline {fixme}{Note: argument her}{35}{subsection.6.2.1}
+\contentsline {fixme}{Note: Mere her}{35}{subsection.6.2.1}
+\contentsline {fixme}{Note: Skriv de offsets her}{35}{table.caption.39}

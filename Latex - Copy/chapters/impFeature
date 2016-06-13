@@ -1,0 +1,22 @@
+\section{Forward feature selection}
+
+We want to use cross validation on our feature selection. To do achieve this we need to create 10-folds for our patients, which means we have to randomize the order of the patients. We use Matlabs build in function datasample to randomize the data and the pick five Control patitens, followed by five AD, for each fold, which we continue until all 100 patients have been selected, leaving us with 10 folds with each five control and five AD.
+
+To make the data easy to work with we sort it into a matrix, F = (No. of patients $\times$ No. of offsets $\times$ No. of GLCM features $\times$ No. of distances). It is not necessary to split the matrix up into one for each fold, it is easier just to remember the first ten are fold one, fold two are F(11-20, :, :, :), etc.
+
+Firstly we wish to calculate how well each feature is at predicting on it its own. So we create a matrix, evaluate = (No. of offsets $\times$ No. of GLCM features $\times$ No. of distances). For the two-dimensional data evaluate is a 9 $\times$ 13  $\times$ 10, which is equal to 1170 different features for each patient, in three-dimensions we have 13 $\times$  13  $\times$  10 = 1690. This huge amount of features allow us to make a preliminary cursory feature elimination, where any feature that is not complete i.e. any feature that has a NaN value for one or more of the patients we choose to ignore. In practice this is done by setting their entry in evaluate to zero. The check for NaN is done with
+\begin{lstlisting}[mathescape=true]
+	if (~isempty(find(isnan(dataset(:,i,j,k)) == 1, 1)) == 1)
+\end{lstlisting}
+For the GLCM feature j calculated at offset i with distance k, it finds for all the time that value is NaN for all the patients, and checks if that set is an empty set. If the set is not empty it returns 0, which is negated and is equal to 1, so the if statement returns true and evaluate(i,j,k) = 0. We set it to zero as we evaluate each features over how well it predicts, and not how many missclassifications it makes. It is a trivial difference as 1 - succes = error.
+
+The prediction of each feature is evaluated using the function knnWithCrossval. The function splits the data up into the appropriate sets and trains a knn for each training set. We use Matlabs fitcknn function to fit the model, with euclidean distance, standardized data and for k = 1,2,...,10. However we run the entire feature selection for each k seperately. The functions returns the averaged prediction score for the folds.
+We then find the feature with the highest accuracy and for the next iteration of evaluations the selected data is used in the creation of the knn models in knnWithCrossval.
+\begin{lstlisting}[mathescape=true]
+    knnmodels{i} = fitcknn(horzcat(trainKfolds{i},chosenTrainKfolds{i}),label90,'Distance','euclidean',...
+    'NumNeighbors',k,'Standardize',1);
+\end{lstlisting}
+Where horzcat is a horizontal concatenation of matrices.
+If the best evaluation of the features is worse than if no new feature is selected the algorithm breaks, and returns a matrix of selected features and iterated accuracy, as well as the last best feature not to be selected.
+Incase of ties for best feature we select the first entry in the matrix.
+ 
