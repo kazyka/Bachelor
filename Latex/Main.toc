@@ -2,17 +2,14 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem Definition}{3}{section.1.1}
 \contentsline {chapter}{\numberline {2}Data}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}ADNI data}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Preprocessing}{4}{section.2.2}
-\contentsline {chapter}{\numberline {3}Method}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Image texture analysis methods}{6}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{6}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Machine learning}{9}{section.3.2}
+\contentsline {chapter}{\numberline {3}Method}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Image texture analysis methods}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Co-occurrence matrix}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Texture features from co-occurrence matrix}{8}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Machine learning}{8}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}10-fold cross-validation}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Feature selection}{10}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Naive}{12}{subsubsection.3.2.2.1}
-\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{12}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}Feature selection}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}K Nearest Neighbors algorithm}{11}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Erode}{13}{section.3.3}
 \contentsline {chapter}{\numberline {4}Implementation}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Preparation of Data}{15}{section.4.1}
@@ -20,21 +17,22 @@
 \contentsline {subsection}{\numberline {4.2.1}Calculating GLCMs}{17}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Naive feature}{18}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Calculating(Computing) the GLCM Features}{18}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Plotting the GLCM features}{20}{section.4.4}
+\contentsline {section}{\numberline {4.4}Plotting the GLCM features}{21}{section.4.4}
 \contentsline {section}{\numberline {4.5}Forward feature selection}{21}{section.4.5}
-\contentsline {chapter}{\numberline {5}Result}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Plots of 2D data}{23}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Left Hippocampus, normalized and eroded}{23}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Plots of 3D data}{30}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Left Hippocampus, not normalized and eroded}{30}{subsection.5.2.1}
-\contentsline {chapter}{\numberline {6}Discussion}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Comparison of image textures}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}GOD SECTION TITEL}{34}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Naive Selection}{35}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Overfitting}{38}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclusion}{40}{chapter.7}
-\contentsline {chapter}{Appendices}{41}{section*.45}
-\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{42}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Feature Offset helper}{44}{Appendix.a.B}
-\contentsline {section}{\numberline {B.1}For the 3D}{44}{section.a.B.1}
-\contentsline {chapter}{Litteratur}{45}{table.caption.46}
+\contentsline {section}{\numberline {4.6}KNN models}{22}{section.4.6}
+\contentsline {chapter}{\numberline {5}Result}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Plots of 2D data}{24}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Left Hippocampus, normalized and eroded}{24}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Plots of 3D data}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Left Hippocampus, not normalized and eroded}{31}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}Discussion}{38}{chapter.6}
+\contentsline {section}{\numberline {6.1}Naive feature selection}{38}{section.6.1}
+\contentsline {section}{\numberline {6.2}Comparison of image textures}{42}{section.6.2}
+\contentsline {section}{\numberline {6.3}Hippocampus comparison}{46}{section.6.3}
+\contentsline {section}{\numberline {6.4}Overfitting}{46}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion}{48}{chapter.7}
+\contentsline {chapter}{Appendices}{49}{section*.60}
+\contentsline {chapter}{\numberline {A}Co occurrence matrix derivation features}{50}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Feature Offset helper}{52}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}For the 3D}{52}{section.a.B.1}
+\contentsline {chapter}{Litteratur}{53}{table.caption.61}

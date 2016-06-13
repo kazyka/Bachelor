@@ -48,13 +48,13 @@ for a = 1:rounds
         features(i,1,1,8) = dataSorted3D(i,7,6,6);
     end
 %     features2 = cell(8,1);
-%     features2{1} = dataSorted3D(:,7,13,2); % 
-%     features2{2} = dataSorted3D(:,3,13,3);
-%     features2{3} = dataSorted3D(:,13,13,3); %
+%     features2{1} = dataSorted3D(:,7,13,2); 
+%     features2{2} = dataSorted3D(:,3,13,3); %
+%     features2{3} = dataSorted3D(:,13,13,3); 
 %     features2{4} = dataSorted3D(:,13,12,9); %
-%     features2{5} = dataSorted3D(:,7,12,6); %
-%     features2{6} = dataSorted3D(:,13,9,10);
-%     features2{7} = dataSorted3D(:,7,9,6);
+%     features2{5} = dataSorted3D(:,7,12,6); 
+%     features2{6} = dataSorted3D(:,13,9,10); %
+%     features2{7} = dataSorted3D(:,7,9,6); %
 %     features2{8} = dataSorted3D(:,7,6,6);
 % 
 
@@ -110,7 +110,7 @@ maxVector(3) = max(naivetriples(:));
 maxVector(2) = max(naivedoubles(:));
 maxVector(1)= max(naivesingles(:));
 
-[~, index] = max(naive4(:));
+[acc, index] = max(naive4(:));
 [a, b, c, d, e] =ind2sub(size(naive4),index);
 
 

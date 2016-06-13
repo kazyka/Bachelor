@@ -7,4 +7,6 @@
     \textbf{Abstract}
 \end{center}
 
-This report will examine MRI scans of brains, using image texture analysis and machine learning 
+In this paper we will examine the values of magnetic resonance image (MRI) texture in Alzheimer's disease (AD) as a diagnostic tool. The MRI scans were acquired from 50 controls and 50 AD patients and on each scan several texture vectors were evaluated over the hippocampus. Each texture vector consist of over a thousand features derived from grey level co-occurrence matrices (GLCM) in both two- and three-dimensions. The difference between the texture vectors, in addition to the difference in dimensions they are derived from is, wether or not image erosion was applied on the MRI scans and wether or not we normalized the GLCMs.\\
+A naive feature selection was applied on one of the texture vectors to attempt to achieve a prediction above 80\% which was obtained with an accuracy of 83\%. To improve on this result a sequential forward feature selection (SFS) was applied on each of the texture vectors to construct a K nearest-neighbour (KNN) standardized which performance was evaluated with a 10-fold cross-validation.\\
+The best result for the two-dimensions was 92\% and for the three-dimensional was 92\%. There is no increased prediction accuracy for the 3D method and it has a higher computational cost, so we would recommend using the 2D method. 

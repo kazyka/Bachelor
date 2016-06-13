@@ -1,10 +1,10 @@
 \chapter{Implementation}
 
 \section{Preparation of Data}
-The mri files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either 1 (left hippocampus) or 2 (right hippocampus).
-We have created the function \texttt{HippoMatrix}, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
-First we assign a value based on if we are looking for the right hippocampus, as they are associated with 1 and 2 respectfully.
-If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance 1 from the origin point. With the city-block defined we can use matlabs build in function \texttt{imerode} to perform the erosion. From matlabs website we have the function \textbf{imerode} \href{http://se.mathworks.com/help/images/ref/imerode.html}{http://se.mathworks.com/help/images/ref/imerode.html} which shows that \textbf{imerode} takes two arguments, the image and the argument of which erosion type we use.
+The MRI files are 256 $\times$ 256 $\times$ 256 matrices but we are only interested in the small part which overlaps with the masks from segmentation, i.e. where the elements in segmentation is either one (left hippocampus) or two (right hippocampus).\\
+We have created the function \textbf{HippoMatrix}, which takes three variables, which file to load, wether or not erosion should be performed, and if the left or right hippocampus is desired.
+First we assign a value based on if we are looking for the right hippocampus, as they are associated with one and two respectfully.
+If erosion is desired we create the city-block for erosion by taking advantage of distances calculations, distance = $\sqrt{x^2+y^2+z^2}$. All parts of the city-block have distance = 1 from the origin point. With the city-block defined we can use MATLABs build in function \textbf{imerode} to perform the erosion. From MATLABs website we have the function \textbf{imerode} \href{http://se.mathworks.com/help/images/ref/imerode.html}{http://se.mathworks.com/help/images/ref/imerode.html} which shows that \textbf{imerode} takes two arguments, the image and the argument of which erosion type we use.
 
 \begin{lstlisting}[language=Matlab]
 if (strcmp(var,'noterode') == 1)
@@ -50,7 +50,7 @@ for i = 1:sum_of_1
 end
 \end{lstlisting}
 
-The return value from the function is the matrix hippoBox containing only the relevant data.
+The return value from the function is the matrix hippoBox containing only the relevant data, and is greatly reduced in size compared to the full mri image.
 
 \section{Data Calculations}
 
@@ -81,7 +81,7 @@ Lastly we save the data to their respectively folders.
 
 \subsection{Calculating GLCMs}
 
-To calculate the GLCMs in two-dimensions we have taken advantage of Matlabs built-in function graycomatrix. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.
+To calculate the GLCMs in two-dimensions we have taken advantage of MATLABs built-in function \textbf{graycomatrix}. It calculates as described in methods. It is then a matter of giving the proper offsets, and the right number of GIs. We can then loop through the hippoBox slices and sum up the GLCMs.
 
 \begin{lstlisting}[language=Matlab]
     tmp0 = graycomatrix(squeeze(data(i,:,:)),'Offset', offsets,'NumLevels', 256, 'GrayLimits', [0 256]);
@@ -93,12 +93,11 @@ To calculate the GLCMs in two-dimensions we have taken advantage of Matlabs buil
 
 And the same counts for angle y and angle z, but where \texttt{data(:,i,:)} is for angle y and \texttt{data(:,:,i)} for angle z.
 
-
 We ultimately save all 90 GLCMs in a cell.\footnote{A cell array in MATLAB is a general container that will hold any object}
 
 To implement the three-dimensional GLCMs we have created our own function.
-The function GLCM3D takes a hippoBox as data and how many distances desired. I then for each distance loop through the entire matrix, and for each element it checks if it is NaN value and larger than zero. The check utilizes that NaN is not larger than zero, so data(i,j,k) > 0 returns false incase of data(i,j,k) = NaN.
-The reason we also insist that it should also be larger than zero is because a few of the right hippocampus include GI of value zero in their hippoBox, but as zero is the value the mri scans have outside the brain we choose to ignore the few instances. To include them would mean we had to increase our GLCMs by 1 in size, which would make them differ from the GLCMs derived in two-dimensions, making the comparison unfair. In addition matlab start their index for their matrices with one and not zero so we would also have to add every index with one creating greater complexity.
+The function GLCM3D takes a hippoBox as data and how many distances desired. We then for each distance loop through the entire matrix, and for each element it checks if it is NaN value and larger than zero. The check utilizes that NaN is not larger than zero, so data(i,j,k) > 0 returns false incase of data(i,j,k) = NaN.
+The reason we also insist that it should also be larger than zero is because a few of the right hippocampus include GI of value zero in their hippoBox, but as zero is the value the mri scans have outside the brain we choose to ignore the few instances. To include them would mean we had to increase our GLCMs by 1 in size, which would make them differ from the GLCMs derived in two-dimensions, making the comparison unfair. In addition MATLAB start their index for their matrices with one and not zero so we would also have to add every index with one creating greater complexity.
 
 \begin{lstlisting}[language=Matlab]
 ...
@@ -108,10 +107,10 @@ if (datapoint > 0)
     if (i + d < sizex)
         %if different for NaN set into GLCM
         if (isnan(data(i+d,j,k)) == 0 && data(i+d,j,k) > 0)
-...                    
+...
 \end{lstlisting}
 
-Given that the datapoint is relevant, i.e. larger than zero, we then have to look at the thirteen offsets, to see if we need to increment an element in on of the GLCMs. For each offset check if the offset is inside the hippobox, and is the offset elemnt a non NaN nonzero value. If so we then increment the relevant GLCM, lets say it is the offset(d,0,0), d = 1, in element GLCM$_(d,0,0)$(x,y) (hippoBox(i,j,k),hippoBox(i+1,j,k)).
+Given that the datapoint is relevant, i.e. larger than zero, we then have to look at the thirteen offsets, to see if we need to increment an element in on of the GLCMs. For each offset check if the offset is inside the hippobox, and is the offset element a non NaN nonzero value. If so we then increment the relevant GLCM, lets say it is the offset(d,0,0), d = 1, in element GLCM$_(d,0,0)$(x,y) (hippoBox(i,j,k),hippoBox(i+1,j,k)).
 
 \begin{lstlisting}[language=Matlab]
             glcm1(datapoint,data(i+d,j,k)) = glcm1(datapoint,data(i+d,j,k)) +1;
@@ -122,18 +121,31 @@ Because of the relationship between the offsets, as in GLCM$_{(d,0,0)}$ = GLCM$_
 We calculate those thirteen offsets for distances one through ten, and save all 130 GLCMs in a cell.
 
 \section{Naive feature}
-only done it 3D
-Left Hippo
-Features selected: 8
-Imoc2: A7D2, A3D3, A13D3
-Imoc1: A13D9, A7D6
-Entro: A13D10, A7D6
-SumAv: A7D6
-\fxnote[inline]{Tal her}
+
+We have chosen eight features from the 3D GLCMs which can be seen in table \ref{tab:naivefeaturesel}
+
+\begin{table}
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Features & Offset \\
+    IMOC2 & 0 -2 2 \\
+    IMOC2 & 0 0 3 \\
+    IMOC2 & 0 -3 0 \\
+    IMOC1 & 0 -9 0 \\
+    IMOC1 & 0 -6 6 \\
+    Entropy & 0 -10 0 \\
+    Entropy & 0 -6 6 \\
+    Sum Average & 0 -6 6 \\
+    \hline
+  \end{tabular}
+  \caption{Features chosen for the naive feature selection that shows the features with the offset and distance}\label{tab:naivefeaturesel}
+\end{table}
+
+The reason we chose these features is because we found them to be the features with the most notable difference between control and AD data on the plots.
 
 \subsection{Calculating(Computing) the GLCM Features}
-
-\fxnote[inline]{Snak om Datacalculation filen}
 
 In the implementation of the GLCM Feature derivation we are taking two inputs. The first input variable is the GLCM matrix and the second is wether we wish to normalize the data.
 
@@ -141,13 +153,13 @@ What we are doing first is to make sure that all variables are implemented. Firs
 
 For the pixel values in the GLCM we are using MATLAB's \textbf{ind2sub} function, that is a command that determines the equivalent subscript values corresponding to a single index into an array. We are using these variables in the GLCM Features as seen in Appendix \ref{derivationfeatures}.
 
-To give some examples of how $C_{x-y}$, look at table \ref{tab:cxminusyk254} where the k value is 254. This gives us 4 values, since we subtract the values, whereas it has to match $k=254$
+To give some examples of how $C_{x-y}$, look at table \ref{tab:cxminusyk254} where the k value is 254. This gives us four values, since we subtract the values, whereas it has to match $k=254$
 
 \begin{table}[H]
   \centering
     \begin{tabular}{|c|c|}
     \hline
-    i & j \\ 
+    i & j \\
     \hline
     1     & 255 \\
     \hline
@@ -161,7 +173,7 @@ To give some examples of how $C_{x-y}$, look at table \ref{tab:cxminusyk254} whe
   \caption{$C_{x-y}$ for k value 254}\label{tab:cxminusyk254}%
 \end{table}%
 
-For a k value of $k=249$ we have 14 different possibilities as seen in table \ref{tab:cxminusyk249}
+For a \emph{k} value of $k=249$ we have fourteen different possibilities as seen in table \ref{tab:cxminusyk249}
 
 \begin{table}[H]
   \centering
@@ -191,7 +203,7 @@ and for $C_{x+y}$ that can be a max value of 512 and this will of course make bo
   \caption{$C_{x+y}$ for k value 511}\label{tab:cxplusyk511}%
 \end{table}%
 
-but for lower k until we reach $k=256$ we will have more entries for \textit{i} and \textit{j} as seen in table \ref{tab:cxplusyk500}, but as we diverge from $k=256$ we will get fewer and fewer entries.
+but for lower \emph{k} until we reach $k=256$ we will have more entries for \textit{i} and \textit{j} as seen in table \ref{tab:cxplusyk500}, but as we diverge from $k=256$ we will get fewer and fewer entries.
 
 \begin{table}[H]
   \centering
@@ -205,10 +217,9 @@ but for lower k until we reach $k=256$ we will have more entries for \textit{i} 
   \caption{$C_{x+y}$ for k value 500}\label{tab:cxplusyk500}%
 \end{table}%
 
-To calculate the $C_{x+y}$ and $C_{x-y}$ we have two for loops as seen in Appendix \ref{Cxplusy} and \ref{Cxminusy} where N of course is the greylevels. As seen for \ref{Cxminusy} then for our GLCM that is 256 we only have 255 possible outcomes whereas for \ref{Cxplusy} we end up with a maximus of 512 outcomes!
+To calculate the $C_{x+y}$ and $C_{x-y}$ we have two for loops as seen in Appendix \ref{Cxplusy} and \ref{Cxminusy} where N is the greylevels. As seen for \ref{Cxminusy} then for our GLCM that is 256 we only have 255 possible outcomes whereas for \ref{Cxplusy} we end up with a maximum of 512 outcomes!
 
 \begin{lstlisting}[language=Matlab]
-
 for i = 2:2*nGrayLevels
     cXplusY(i-1,1) = C_xplusy(glcm,i);
 end
@@ -219,13 +230,13 @@ for i = 0:nGrayLevels-1
 end
 \end{lstlisting}
 
-As seen in the above snip code from our \textbf{GLCMDerivation} we have made both $C_{x+y}$ and $C_{x-y}$ we calculate them only once for all \textit{i} and \textit{j} entries.
+As seen in the above snip code from our \textbf{GLCMDerivation} we have made both $C_{x+y}$ and $C_{x-y}$ we calculate them only once for all \textit{i} and \textit{j} entries. In \cite{MRfreeborough} and in our Appendix \ref{Cxplusy},\ref{Cxminusy} we have optimized the way to calculate both $C_{x+y}$ and $C_{x-y}$. As seen in table \ref{tab:cxplusyk500} and \ref{tab:cxminusyk249} we only calculate the \textit{k}'s we need whereas the function will have to loop for every \textit{i} and \textit{j} \textit{k} times, this can end up for a total for $256 \cdot 512 = 131072$ calculations where our implementation have considerably lower calculations as seen in the snip code.
 
 To find the mean and standard deviation for $C_x$ and $C_y$ we just use the functions that MATLAB have.
 
 The GLCM features, as seen in Appendix \ref{derivationfeatures}, utilizes MATLABs use of vectorization. This is rewarding in the vectorized code appears more like the mathematical expressions and makes the code easier to understand and is shorter. There is often a performance gain in using vectorized code than the corresponding code containing loops.
 
-It should be obvious for the reader to tell that the code looks alot like the mathematical expression like in Appendix \ref{derivationfeatures}.
+It should be obvious for the reader to tell that the code looks a lot like the mathematical expression like in Appendix \ref{derivationfeatures}.
 
 \begin{lstlisting}[language=Matlab]
 HXY1 = -nansum(glcm(tmpsub)'.*log(cX(I).*cY(J)));
@@ -253,8 +264,7 @@ else
 end
 \end{lstlisting}
 
-
-As seen from line 19 to 23, we have an if-statement. This checks if we call our plot on the normalized data or not, since the values on \texttt{informationMeasuresOfCorrelation2} end up being $\pm \infty$ when the data are not normalized. \fxnote[inline]{Snakke om hvorfor normalized data. Features vi har valgt fra freebourug har gjort det og måske gjort i det mente om at de kan ende med pæne værdier -- i method muligvis}
+As seen from line 19 to 23, we have an if-statement. This checks if we call our plot on the normalized data or not, since the values on \texttt{informationMeasuresOfCorrelation2} end up being $\pm \infty$ when the data are not normalized. The reason we also calculate the data without normalizing it, is we suspect, based on early testing of the \textbf{hippoMatrix} function, there might a difference between the two groups amounts of entries in the GLCMs.
 
 
 \section{Plotting the GLCM features}
@@ -272,25 +282,31 @@ We have discussed how our plain data is sorted when \textbf{datacalculation}, no
 
 \section{Forward feature selection}
 
-We want to use cross validation on our feature selection. To do achieve this we need to create 10-folds for our patients, which means we have to randomize the order of the patients. We use Matlabs build in function data sample to randomize the data and the pick five Control patients, followed by five AD, for each fold, which we continue until all 100 patients have been selected, leaving us with 10 folds with each five control and five AD.
+We want to use cross validation on our feature selection. To do achieve this we need to create 10-folds for our patients, which means we have to randomize the order of the patients. We use MATLABs build in function data sample to randomize the data and the pick five Control patients, followed by five AD, for each fold, which we continue until all 100 patients have been selected, leaving us with 10 folds with each five control and five AD.
 
 To make the data easy to work with we sort it into a matrix, F = (No. of patients $\times$ No. of offsets $\times$ No. of GLCM features $\times$ No. of distances). It is not necessary to split the matrix up into one for each fold, it is easier just to remember the first ten are fold one, fold two are F(11-20, :, :, :), etc.
 
 Firstly we wish to calculate how well each feature is at predicting on it its own. So we create a matrix, evaluate = (No. of offsets $\times$ No. of GLCM features $\times$ No. of distances). For the two-dimensional data evaluate is a 9 $\times$ 13  $\times$ 10, which is equal to 1170 different features for each patient, in three-dimensions we have 13 $\times$  13  $\times$  10 = 1690. This huge amount of features allow us to make a preliminary cursory feature elimination, where any feature that is not complete i.e. any feature that has a NaN value for one or more of the patients we choose to ignore. In practice this is done by setting their entry in evaluate to zero. The check for NaN is done with
+
 \begin{lstlisting}[mathescape=true]
 	if (~isempty(find(isnan(data set(:,i,j,k)) == 1, 1)) == 1)
 \end{lstlisting}
+
 For the GLCM feature j calculated at offset i with distance k, it finds for all the time that value is NaN for all the patients, and checks if that set is an empty set. If the set is not empty it returns 0, which is negated and is equal to 1, so the if statement returns true and evaluate(i,j,k) = 0. We set it to zero as we evaluate each features over how well it predicts, and not how many miss classifications it makes. It is a trivial difference as 1 - success = error.
 
-The prediction of each feature is evaluated using the function knnWithCrossval. The function splits the data up into the appropriate sets and trains a knn for each training set. We use Matlabs fitcknn function to fit the model, with euclidean distance, standardized data and for k = 1,2,...,10. However we run the entire feature selection for each k separately. The functions returns the averaged prediction score for the folds.
+The prediction of each feature is evaluated using the function knnWithCrossval. The function splits the data up into the appropriate sets and trains a knn for each training set. We use Matlabs fitcknn function to fit the model, with euclidean distance, standardized data and for k = 1,2,...,10. However we run the entire feature selection for each k separately. The functions returns the averaged prediction score for the folds.\\
 We then find the feature with the highest accuracy and for the next iteration of evaluations the selected data is used in the creation of the KNN models in knnWithCrossval.
+
 \begin{lstlisting}[mathescape=true]
     knnmodels{i} = fitcknn(horzcat(trainKfolds{i},chosenTrainKfolds{i}),label90,'Distance','euclidean',...
     'NumNeighbors',k,'Standardize',1);
 \end{lstlisting}
-Where horzcat is a horizontal concatenation of matrices.
-If the best evaluation of the features is worse than if no new feature is selected the algorithm breaks, and returns a matrix of selected features and iterated accuracy, as well as the last best feature not to be selected.
+
+Where horzcat is a horizontal concatenation of matrices.\\
+If the best evaluation of the features is worse than if no new feature is selected the algorithm breaks, and returns a matrix of selected features and iterated accuracy, as well as the last best feature not to be selected.\\
 Incase of ties for best feature we select the first entry in the matrix.
 
-\fxnote[inline]{MERE?}
+\section{KNN models}
+Based on the features selected from the SFS we create a model in KNN which we evaluate using 10-fold cross-validation. We run the cross-validation 100 times in order to limit the effect of variance and average the accuracy, and we test the KNN model on $k = 1,2,..,10$. We use the same MATLAB function as we used in SFS to randomize the data.
+
 
